@@ -5,9 +5,9 @@
         .module('infinitescrollApp')
         .controller('PersonaController', PersonaController);
 
-    PersonaController.$inject = ['Persona', 'ParseLinks', 'AlertService', 'paginationConstants'];
+    PersonaController.$inject = ['Persona', 'AlertService', 'paginationConstants'];
 
-    function PersonaController(Persona, ParseLinks, AlertService, paginationConstants) {
+    function PersonaController(Persona, AlertService, paginationConstants) {
 
         var vm = this;
 
@@ -21,6 +21,7 @@
         vm.predicate = 'id';
         vm.reset = reset;
         vm.reverse = true;
+        vm.hasNextPage = false;
 
         loadAll();
 
@@ -39,14 +40,12 @@
             }
 
             function onSuccess(data, headers) {
+                vm.hasNextPage = headers('X-Has-Next-Page') === "true";
                 console.log(data);
-                console.log(headers('link'));
-                console.log(headers('X-Total-Count'));
-                vm.links = ParseLinks.parse(headers('link'));
-                vm.totalItems = headers('X-Total-Count');
                 for (var i = 0; i < data.length; i++) {
                     vm.personas.push(data[i]);
                 }
+
             }
 
             function onError(error) {

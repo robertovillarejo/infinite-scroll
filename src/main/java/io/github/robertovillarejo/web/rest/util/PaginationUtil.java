@@ -1,6 +1,7 @@
 package io.github.robertovillarejo.web.rest.util;
 
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Slice;
 import org.springframework.http.HttpHeaders;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -42,4 +43,10 @@ public final class PaginationUtil {
     private static String generateUri(String baseUrl, int page, int size) {
         return UriComponentsBuilder.fromUriString(baseUrl).queryParam("page", page).queryParam("size", size).toUriString();
     }
+
+    public static HttpHeaders generateSliceHttpHeaders(Slice<?> slice) {
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("X-Has-Next-Page", "" + slice.hasNext());
+        return headers;
+      }
 }

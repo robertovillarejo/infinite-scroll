@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -98,9 +99,12 @@ public class PersonaResource {
     @Timed
     public ResponseEntity<List<Persona>> getAllPersonas(PersonaCriteria criteria,@ApiParam Pageable pageable) {
         log.debug("REST request to get Personas by criteria: {}", criteria);
-        Page<Persona> page = personaQueryService.findByCriteria(criteria, pageable);
-        HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/personas");
-        return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+        Slice<Persona> slice = personaService.findSliceBy(pageable);
+        HttpHeaders headers = PaginationUtil.generateSliceHttpHeaders(slice);
+        //Page<Persona> page = personaQueryService.findByCriteria(criteria, pageable);
+        //HttpHeaders headers = PaginationUtil.generatePaginationHttpHeaders(page, "/api/personas");
+        //return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
+        return new ResponseEntity<>(slice.getContent(), headers, HttpStatus.OK);
     }
 
     /**

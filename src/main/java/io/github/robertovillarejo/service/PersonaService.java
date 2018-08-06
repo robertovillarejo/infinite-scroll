@@ -3,6 +3,7 @@ package io.github.robertovillarejo.service;
 import io.github.robertovillarejo.domain.Persona;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Slice;
 
 /**
  * Service Interface for managing Persona.
@@ -39,4 +40,6 @@ public interface PersonaService {
      *  @param id the id of the entity
      */
     void delete(Long id);
+
+    Slice<Persona> findSliceBy(Pageable pageable);
 }

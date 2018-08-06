@@ -23,7 +23,7 @@
                     <th></th>
                 </tr>
             </thead>
-            <tbody infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="vm.page >= vm.links['last']">
+            <tbody infinite-scroll="vm.loadPage(vm.page + 1)" infinite-scroll-disabled="!vm.hasNextPage">
                 <tr ng-repeat="persona in vm.personas track by persona.id">
                     <td><a ui-sref="persona-detail({id:persona.id})">{{persona.id}}</a></td>
                     <td>{{persona.name}}</td>
