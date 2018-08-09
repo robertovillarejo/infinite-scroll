@@ -16,14 +16,14 @@
 
 spring:
     application:
-        name: infinitescroll
+        name: handsontable
     jackson:
         serialization.write_dates_as_timestamps: false
     cache:
-        type: none
+        type: simple
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:infinitescroll;DB_CLOSE_DELAY=-1
+        url: jdbc:h2:mem:handsontable;DB_CLOSE_DELAY=-1
         name:
         username:
         password:
@@ -55,10 +55,6 @@ spring:
 
 liquibase:
     contexts: test
-
-security:
-    basic:
-        enabled: false
 
 server:
     port: 10344
@@ -92,7 +88,7 @@ jhipster:
     security:
         authentication:
             jwt:
-                secret: 90501653648a9a6d5309eabc688d08b699184c87
+                secret: b811449f6c0926263c7d47deef1df9edc3f734f8
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration

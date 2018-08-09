@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .config(alertServiceConfig);
 
     alertServiceConfig.$inject = ['AlertServiceProvider'];

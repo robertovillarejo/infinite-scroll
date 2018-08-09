@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .filter('capitalize', capitalize);
 
     function capitalize() {

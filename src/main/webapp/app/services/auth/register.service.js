@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('Register', Register);
 
     Register.$inject = ['$resource'];

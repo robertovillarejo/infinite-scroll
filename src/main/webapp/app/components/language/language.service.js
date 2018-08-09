@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('JhiLanguageService', JhiLanguageService);
 
     JhiLanguageService.$inject = ['$q', '$http', '$translate', 'LANGUAGES'];

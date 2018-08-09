@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('translationStorageProvider', translationStorageProvider);
 
     translationStorageProvider.$inject = ['$cookies', '$log', 'LANGUAGES'];

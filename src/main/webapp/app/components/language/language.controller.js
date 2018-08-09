@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .controller('JhiLanguageController', JhiLanguageController);
 
     JhiLanguageController.$inject = ['$translate', 'JhiLanguageService', 'tmhDynamicLocale'];

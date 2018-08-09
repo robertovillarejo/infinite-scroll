@@ -3,8 +3,6 @@
 #
 # This configuration overrides the application.yml file.
 #
-# More information on profiles: http://www.jhipster.tech/profiles/
-# More information on configuration properties: http://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
 # ===================================================================
@@ -13,6 +11,12 @@
 # http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
 # ===================================================================
 
+logging:
+    level:
+        ROOT: DEBUG
+        com.example: DEBUG
+        io.github.jhipster: DEBUG
+
 spring:
     profiles:
         active: dev
@@ -20,14 +24,15 @@ spring:
     devtools:
         restart:
             enabled: true
+            exclude: .h2.server.properties,static/**,templates/**
         livereload:
             enabled: false # we use gulp + BrowserSync for livereload
     jackson:
         serialization.indent_output: true
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:file:./target/h2db/db/infinitescroll;DB_CLOSE_DELAY=-1
-        username: infinitescroll
+        url: jdbc:h2:mem:handsontable;DB_CLOSE_DELAY=-1
+        username: handsontable
         password:
     h2:
         console:
@@ -38,10 +43,9 @@ spring:
         show-sql: true
         properties:
             hibernate.id.new_generator_mappings: true
-            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_second_level_cache: false
             hibernate.cache.use_query_cache: false
             hibernate.generate_statistics: true
-            hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.NoDefaultJCacheRegionFactory
     mail:
         host: localhost
         port: 25
@@ -57,7 +61,7 @@ liquibase:
 
 # ===================================================================
 # To enable SSL, generate a certificate using:
-# keytool -genkey -alias infinitescroll -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
+# keytool -genkey -alias handsontable -storetype PKCS12 -keyalg RSA -keysize 2048 -keystore keystore.p12 -validity 3650
 #
 # You can also use Let's Encrypt:
 # https://maximilian-boehm.com/hp2121/Create-a-Java-Keystore-JKS-from-Let-s-Encrypt-Certificates.htm
@@ -69,17 +73,11 @@ liquibase:
 #    ssl:
 #        key-store: keystore.p12
 #        key-store-password: <your-password>
-#        keyStoreType: PKCS12
-#        keyAlias: infinitescroll
+#        key-store-type: PKCS12
+#        key-alias: handsontable
 # ===================================================================
 server:
     port: 8080
-
-# ===================================================================
-# JHipster specific properties
-#
-# Full reference is available at: http://www.jhipster.tech/common-application-properties/
-# ===================================================================
 
 jhipster:
     http:
@@ -93,7 +91,7 @@ jhipster:
         allowed-origins: "*"
         allowed-methods: "*"
         allowed-headers: "*"
-        exposed-headers: "Authorization"
+        exposed-headers: "Authorization,Link,X-Total-Count"
         allow-credentials: true
         max-age: 1800
     security:
@@ -103,8 +101,8 @@ jhipster:
                 # Token is valid 24 hours
                 token-validity-in-seconds: 86400
                 token-validity-in-seconds-for-remember-me: 2592000
-    mail: # specific JHipster mail property, for standard properties see MailProperties
-        from: infinitescroll@localhost
+    mail: # specific mail property, for standard properties see MailProperties
+        from: handsontable@localhost
         base-url: http://127.0.0.1:8080
     metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
         jmx.enabled: true
@@ -112,7 +110,7 @@ jhipster:
             enabled: false
             host: localhost
             port: 2003
-            prefix: infinitescroll
+            prefix: handsontable
         prometheus: # Use the "prometheus" Maven profile to have the Prometheus dependencies
             enabled: false
             endpoint: /prometheusMetrics
@@ -126,13 +124,12 @@ jhipster:
             port: 5000
             queue-size: 512
 
+
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
-# to have type-safe configuration, like in the JHipsterProperties above
+# to have type-safe configuration
 #
-# More documentation is available at:
-# http://www.jhipster.tech/common-application-properties/
 # ===================================================================
 
 application:

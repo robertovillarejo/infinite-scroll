@@ -1,10 +1,11 @@
 {
-    "infinitescrollApp": {
+    "handsontableApp": {
         "persona" : {
             "home": {
                 "title": "Personas",
                 "createLabel": "Crear nuevo Persona",
-                "createOrEditLabel": "Crear o editar Persona"
+                "createOrEditLabel": "Crear o editar Persona",
+                "search": "Buscar Persona"
             },
             "created": "Un nuevo Persona ha sido creado con el identificador {{ param }}",
             "updated": "Un Persona ha sido actualizado con el identificador {{ param }}",
@@ -15,7 +16,7 @@
             "detail": {
                 "title": "Persona"
             },
-            "name": "Name"
+            "nombre": "Nombre"
         }
     }
 }

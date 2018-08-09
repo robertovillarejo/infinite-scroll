@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('AuthServerProvider', AuthServerProvider);
 
     AuthServerProvider.$inject = ['$http', '$localStorage', '$sessionStorage', '$q'];
@@ -19,6 +19,7 @@
         return service;
 
         function getToken () {
+
             return $localStorage.authenticationToken || $sessionStorage.authenticationToken;
         }
 
@@ -63,6 +64,7 @@
         }
 
         function logout () {
+
             delete $localStorage.authenticationToken;
             delete $sessionStorage.authenticationToken;
         }

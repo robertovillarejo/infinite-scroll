@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .controller('LogsController', LogsController);
 
     LogsController.$inject = ['LogsService'];

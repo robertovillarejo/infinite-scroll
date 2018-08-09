@@ -1,14 +1,14 @@
 version: '2'
 services:
-    infinitescroll-app:
-        image: infinitescroll
+    handsontable-app:
+        image: handsontable
         environment:
             - SPRING_PROFILES_ACTIVE=prod,swagger
-            - SPRING_DATASOURCE_URL=jdbc:mysql://infinitescroll-mysql:3306/infinitescroll?useUnicode=true&characterEncoding=utf8&useSSL=false
-            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+            - SPRING_DATASOURCE_URL=jdbc:mysql://handsontable-mysql:3306/handsontable?useUnicode=true&characterEncoding=utf8&useSSL=false
+            - APP_SLEEP=10 # gives time for the database to boot before the application
         ports:
             - 8080:8080
-    infinitescroll-mysql:
+    handsontable-mysql:
         extends:
             file: mysql.yml
-            service: infinitescroll-mysql
+            service: handsontable-mysql

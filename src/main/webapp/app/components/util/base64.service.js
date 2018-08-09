@@ -3,7 +3,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('Base64', Base64);
 
     function Base64 () {

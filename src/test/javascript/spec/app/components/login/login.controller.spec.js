@@ -2,7 +2,7 @@
 
 describe('Controller Tests', function () {
 
-    beforeEach(module('infinitescrollApp'));
+    beforeEach(module('handsontableApp'));
 
     describe('LoginController', function () {
         var $scope, authService;

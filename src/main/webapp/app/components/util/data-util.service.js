@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('DataUtils', DataUtils);
 
     DataUtils.$inject = ['$window'];

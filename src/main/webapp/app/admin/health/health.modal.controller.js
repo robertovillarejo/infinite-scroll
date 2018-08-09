@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('infinitescrollApp')
+    angular.module('handsontableApp')
         .controller('HealthModalController', HealthModalController);
 
     HealthModalController.$inject = ['$uibModalInstance', 'currentHealth', 'baseName', 'subSystemName'];

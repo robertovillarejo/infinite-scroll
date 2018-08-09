@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .controller('PersonaDetailController', PersonaDetailController);
 
     PersonaDetailController.$inject = ['$scope', '$rootScope', '$stateParams', 'previousState', 'entity', 'Persona'];
@@ -13,7 +13,7 @@
         vm.persona = entity;
         vm.previousState = previousState.name;
 
-        var unsubscribe = $rootScope.$on('infinitescrollApp:personaUpdate', function(event, result) {
+        var unsubscribe = $rootScope.$on('handsontableApp:personaUpdate', function(event, result) {
             vm.persona = result;
         });
         $scope.$on('$destroy', unsubscribe);

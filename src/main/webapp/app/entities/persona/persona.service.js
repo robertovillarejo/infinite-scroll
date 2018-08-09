@@ -1,13 +1,13 @@
 (function() {
     'use strict';
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('Persona', Persona);
 
     Persona.$inject = ['$resource'];
 
     function Persona ($resource) {
-        var resourceUrl =  'api/personas/:id';
+        var resourceUrl = 'api/personas/:id';
 
         return $resource(resourceUrl, {}, {
             'query': { method: 'GET', isArray: true},

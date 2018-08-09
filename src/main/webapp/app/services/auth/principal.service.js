@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('Principal', Principal);
 
     Principal.$inject = ['$q', 'Account'];

@@ -1,0 +1,16 @@
+{
+  "id" : "handsontable",
+  "packaging" : "com.example",
+  "version" : "0.0.1",
+  "author" : "kukulkan",
+  "year" : "2018",
+  "targetDatabase" : {
+    "databaseType" : "SQL_MYSQL",
+    "globalGenerationType" : "IDENTITY"
+  },
+  "layers" : [ "angular-js", "spring-rest", "spring-service", "spring-repository", "domain-core", "liquibase" ],
+  "layersToProcess" : [ "angular-js", "spring-rest", "spring-service", "spring-repository", "domain-core", "liquibase" ],
+  "entities" : [ "handsontable/src/main/java/com/example/repository/PersonaRepository.java", "handsontable/src/main/java/com/example/domain/Persona.java", "handsontable/src/main/resources/config/liquibase/changelog/20180809165808_added_entity_Persona.xml", "handsontable/src/main/webapp/app/entities/persona/persona.controller.js", "handsontable/src/main/webapp/app/entities/persona/persona-delete-dialog.controller.js", "handsontable/src/main/webapp/app/entities/persona/persona-delete-dialog.html", "handsontable/src/main/webapp/app/entities/persona/persona-detail.controller.js", "handsontable/src/main/webapp/app/entities/persona/persona-detail.html", "handsontable/src/main/webapp/app/entities/persona/persona-dialog.controller.js", "handsontable/src/main/webapp/app/entities/persona/persona-dialog.html", "handsontable/src/main/webapp/app/entities/persona/personas.html", "handsontable/src/main/webapp/app/entities/persona/persona.search.service.js", "handsontable/src/main/webapp/app/entities/persona/persona.service.js", "handsontable/src/main/webapp/app/entities/persona/persona.state.js", "handsontable/src/main/webapp/i18n/es/persona.json", "handsontable/src/main/webapp/i18n/en/persona.json", "handsontable/src/main/java/com/example/web/rest/PersonaResource.java", "handsontable/src/main/java/com/example/service/PersonaService.java", "handsontable/src/main/java/com/example/service/impl/PersonaServiceImpl.java" ],
+  "timestamp" : "2018-08-09T16:58:07.151",
+  "plugins" : [ ]
+}

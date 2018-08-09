@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .directive('activeMenu', activeMenu);
 
     activeMenu.$inject = ['$translate', '$locale', 'tmhDynamicLocale'];

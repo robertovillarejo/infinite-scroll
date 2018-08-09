@@ -11,7 +11,7 @@
     };
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .component('jhiAlert', jhiAlert);
 
     jhiAlertController.$inject = ['$scope', 'AlertService'];

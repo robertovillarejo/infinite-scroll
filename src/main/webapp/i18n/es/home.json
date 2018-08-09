@@ -1,19 +1,19 @@
 {
     "home": {
-        "title": "¡Bienvenido, Java Hipster!",
+        "title": "¡Bienvenido, Handsontable!",
         "subtitle": "Esta es su página de inicio",
         "logged": {
             "message": "Está conectado como \"{{username}}\"."
         },
-        "question": "Si tiene preguntas sobre JHipster:",
+        "question": "Si tiene preguntas sobre Handsontable:",
         "link": {
-            "homepage": "Página de inicio de JHipster",
-            "stackoverflow": "JHipster en Stack Overflow",
-            "bugtracker": "JHipster seguimiento de errores",
-            "chat": "Sala de chat pública de JHipster",
-            "follow": "contacto @java_hipster en Twitter"
+            "homepage": "Página de inicio de Handsontable",
+            "stackoverflow": "Handsontable en Stack Overflow",
+            "bugtracker": "Handsontable seguimiento de errores",
+            "chat": "Sala de chat pública de Handsontable",
+            "follow": "contacto @java_Handsontable en Twitter"
         },
-        "like": "Si te gusta JHipster, danos una estrella en",
+        "like": "Si te gusta Handsontable, danos una estrella en",
         "github": "GitHub"
     }
 }

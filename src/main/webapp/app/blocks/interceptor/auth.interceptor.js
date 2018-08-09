@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .factory('authInterceptor', authInterceptor);
 
     authInterceptor.$inject = ['$rootScope', '$q', '$location', '$localStorage', '$sessionStorage'];
@@ -15,6 +15,8 @@
         return service;
 
         function request (config) {
+            if (!config || !config.url || /^http/.test(config.url)) return config;
+
             /*jshint camelcase: false */
             config.headers = config.headers || {};
             var token = $localStorage.authenticationToken || $sessionStorage.authenticationToken;

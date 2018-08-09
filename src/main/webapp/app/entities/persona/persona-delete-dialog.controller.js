@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .controller('PersonaDeleteController',PersonaDeleteController);
 
     PersonaDeleteController.$inject = ['$uibModalInstance', 'entity', 'Persona'];

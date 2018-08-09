@@ -1,4 +1,4 @@
-// Generated on 2018-08-06 using generator-jhipster 4.8.2
+// Generated on 2018-01-15 using generator-jhipster 4.13.3
 'use strict';
 
 var gulp = require('gulp'),
@@ -15,7 +15,8 @@ var gulp = require('gulp'),
     KarmaServer = require('karma').Server,
     plumber = require('gulp-plumber'),
     changed = require('gulp-changed'),
-    gulpIf = require('gulp-if');
+    gulpIf = require('gulp-if'),
+    wbBuild = require('workbox-build');
 
 var handleErrors = require('./gulp/handle-errors'),
     serve = require('./gulp/serve'),
@@ -85,7 +86,7 @@ gulp.task('html', function () {
     return gulp.src(config.app + 'app/**/*.html')
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(templateCache({
-            module: 'infinitescrollApp',
+            module: 'handsontableApp',
             root: 'app/',
             moduleSystem: 'IIFE'
         }))
@@ -94,7 +95,7 @@ gulp.task('html', function () {
 
 gulp.task('ngconstant:dev', function () {
     return ngConstant({
-        name: 'infinitescrollApp',
+        name: 'handsontableApp',
         constants: {
             VERSION: util.parseVersion(),
             DEBUG_INFO_ENABLED: true,
@@ -109,7 +110,7 @@ gulp.task('ngconstant:dev', function () {
 
 gulp.task('ngconstant:prod', function () {
     return ngConstant({
-        name: 'infinitescrollApp',
+        name: 'handsontableApp',
         constants: {
             VERSION: util.parseVersion(),
             DEBUG_INFO_ENABLED: false,
@@ -166,7 +167,21 @@ gulp.task('install', function () {
 gulp.task('serve', ['install'], serve);
 
 gulp.task('build', ['clean'], function (cb) {
-    runSequence(['copy', 'inject:vendor', 'ngconstant:prod', 'copy:languages'], 'inject:app', 'inject:troubleshoot', 'assets:prod', cb);
+    runSequence(['copy', 'inject:vendor', 'ngconstant:prod', 'copy:languages'], 'inject:app', 'inject:troubleshoot', 'assets:prod', 'bundle-sw');
 });
 
 gulp.task('default', ['serve']);
+
+gulp.task('bundle-sw', () => {
+  return wbBuild.generateSW({
+    globDirectory: config.dist,
+    swDest: `${config.dist}/sw.js`,
+    globPatterns: ['**\/*.{html,js,css,png,svg,jpg,gif,json}'],
+  })
+  .then(() => {
+    console.log('Service worker generated.');
+  })
+  .catch((err) => {
+    console.log('[ERROR] This happened: ' + err);
+  });
+})

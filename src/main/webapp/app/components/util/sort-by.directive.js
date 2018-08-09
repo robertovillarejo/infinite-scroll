@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .directive('jhSortBy', jhSortBy);
 
     function jhSortBy() {

@@ -2,18 +2,17 @@
     'use strict';
 
     angular
-        .module('infinitescrollApp')
+        .module('handsontableApp')
         .controller('PersonaDialogController', PersonaDialogController);
 
-    PersonaDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', 'entity', 'Persona'];
+    PersonaDialogController.$inject = ['$timeout', '$scope', '$stateParams', '$uibModalInstance', '$q', 'entity', 'Persona'];
 
-    function PersonaDialogController ($timeout, $scope, $stateParams, $uibModalInstance, entity, Persona) {
+    function PersonaDialogController ($timeout, $scope, $stateParams, $uibModalInstance, $q, entity, Persona) {
         var vm = this;
 
         vm.persona = entity;
         vm.clear = clear;
         vm.save = save;
-
         $timeout(function (){
             angular.element('.form-group:eq(1)>input').focus();
         });
@@ -32,7 +31,7 @@
         }
 
         function onSaveSuccess (result) {
-            $scope.$emit('infinitescrollApp:personaUpdate', result);
+            $scope.$emit('handsontableApp:personaUpdate', result);
             $uibModalInstance.close(result);
             vm.isSaving = false;
         }
