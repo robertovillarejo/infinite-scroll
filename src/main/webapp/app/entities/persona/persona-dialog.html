@@ -49,6 +49,21 @@
             </div>	
         </div>
 			<div class="form-group">
+				<label class="control-label" data-translate="handsontableApp.persona.fechaNacimiento"
+					for="field_fechaNacimiento">fechaNacimiento</label>
+				<div class="input-group">
+					<input id="field_fechaNacimiento" type="text" class="form-control"
+						name="fechaNacimiento" uib-datepicker-popup="{{dateformat}}" ng-model="vm.persona.fechaNacimiento"
+						is-open="vm.datePickerOpenStatus.fechaNacimiento" 
+ />
+					<span class="input-group-btn">
+						<button type="button" class="btn btn-default" ng-click="vm.openCalendar('fechaNacimiento')">
+							<i class="glyphicon glyphicon-calendar"></i>
+						</button>
+					</span>
+				</div>
+			</div>
+			<div class="form-group">
 				<label class="control-label" data-translate="handsontableApp.persona.sueldo"
 					for="field_sueldo">sueldo</label>
 				<input type="number" class="form-control" name="sueldo" id="field_sueldo"

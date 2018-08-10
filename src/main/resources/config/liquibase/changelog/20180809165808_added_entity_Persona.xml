@@ -35,6 +35,9 @@
             <column name="empresa" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="fecha_nacimiento" type="date">
+                <constraints nullable="true" />
+            </column>
             <column name="sueldo" type="${floatType}">
                 <constraints nullable="true" />
             </column>
@@ -49,6 +52,7 @@
             <column name="apellido" type="string"/>
             <column name="correo" type="string"/>
             <column name="empresa" type="string"/>
+            <column name="fecha_nacimiento" header="fechaNacimiento" type="date"/>
             <column name="sueldo" type="numeric"/>
         </loadData>
 

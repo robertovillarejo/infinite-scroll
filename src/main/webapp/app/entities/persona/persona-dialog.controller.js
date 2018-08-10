@@ -12,7 +12,10 @@
 
         vm.persona = entity;
         vm.clear = clear;
+        vm.datePickerOpenStatus = {};
+        vm.openCalendar = openCalendar;
         vm.save = save;
+        vm.datePickerOpenStatus.fechaNacimiento = false;
         $timeout(function (){
             angular.element('.form-group:eq(1)>input').focus();
         });
@@ -41,5 +44,8 @@
         }
 
 
+        function openCalendar (date) {
+            vm.datePickerOpenStatus[date] = true;
+        }
     }
 })();

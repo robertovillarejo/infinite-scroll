@@ -3,5 +3,6 @@ entity Persona {
 	apellido : String,
 	correo : String,
 	empresa : String,
+	fechaNacimiento : LocalDate,
 	sueldo : Float
 }

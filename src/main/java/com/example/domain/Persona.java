@@ -23,6 +23,7 @@
  */
 package com.example.domain;
 
+import java.time.LocalDate;
 import javax.persistence.*;
 
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
@@ -102,6 +103,18 @@ public class Persona implements Serializable {
     @SheetColumn
     @Column(name = "empresa")
     private String empresa;
+    
+
+	
+    /**
+     * Este campo fue generado automaticamente por kukulkan 
+     * Este campo corresponde a la tabla personas
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    @SheetColumn
+    @Column(name = "fecha_nacimiento")
+    private LocalDate fechaNacimiento;
     
 
 	
@@ -248,6 +261,32 @@ public class Persona implements Serializable {
     
     /**
      * Este método fue generado automaticamente por kukulkan 
+     * Este método GETTER fue generado para la propiedad personas.fecha_nacimiento
+     *
+     * @return el valor de fechaNacimiento
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método SETTER fue generado para la propiedad. personas.fechaNacimiento
+     *
+     * @return el valor de FechaNacimiento
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public void setFechaNacimiento(LocalDate fechaNacimiento) {
+        this.fechaNacimiento = fechaNacimiento;
+    }
+    
+
+    
+    /**
+     * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la propiedad personas.sueldo
      *
      * @return el valor de sueldo
@@ -300,6 +339,7 @@ public class Persona implements Serializable {
         sb.append(", apellido=").append(apellido);
         sb.append(", correo=").append(correo);
         sb.append(", empresa=").append(empresa);
+        sb.append(", fechaNacimiento=").append(fechaNacimiento);
         sb.append(", sueldo=").append(sueldo);
         sb.append("]");
         return sb.toString();

@@ -1,1001 +1,1001 @@
-id;nombre;apellido;correo;empresa;sueldo
-1;Marcos;Domínguez;alfredo.cázares@hotmail.com;Beltrán Beltrán S.A.;63.09
-2;Roberto;Sotelo;ramiro.campos@prodigy.net.mx;Venegas y Venegas S.A. de C.V.;48.64
-3;Eduardo;Rosales;josefina.ponce@hotmail.com;Hernández Hernández S.R.L;54.37
-4;Ramiro;Guevara;josé alfredo.carranza@yahoo.com;Balderas Balderas S.R.L;72.08
-5;Omar;Barrera;josé luis.quintero@yahoo.com;de los Santos de los Santos S.R.L;19.94
-6;LucĂ­a;Arteaga;silvia.zavala@prodigy.net.mx;"Silva; Silva y Silva Asociados S.C.";62.09
-7;Isidro;Sierra;leonardo.aguilera@hotmail.com;Grupo Financiero Medrano S.C.;71.82
-8;BenjamĂ­n;Aguirre;alberto.santos@gmail.com;"Medina; Medina y Medina Asociados S.A.B.";84.38
-9;Juan Carlos;Saucedo;samuel.rubio@prodigy.net.mx;"Vega; Vega y Vega Asociados S.C.";80.05
-10;Fabiola;Luna;hugo.jaramillo@hotmail.com;Peña y Peña S.C.;91.16
-11;Benito;Rodríguez;paula.ortiz@prodigy.net.mx;Garduño y Garduño S.C.;53.34
-12;JosĂ© Antonio;May;olivia.caballero@yahoo.com;"Nájera; Nájera y Nájera Asociados S.A.B.";57.53
-13;Gabriela;Romo;josé angel.ochoa@yahoo.com;Sociedad Núñez S.R.L;24.42
-14;MarĂ­a;Esquivel;rodolfo.salazar@gmail.com;"Galván; Galván y Galván Asociados S.A. de C.V.";32.40
-15;MoisĂ©s;Medrano;juan.villanueva@yahoo.com;Grupo Treviño S.A. de C.V.;14.02
-16;Carlos Alberto;Ramírez;angélica.del ángel@gmail.com;"Toledo; Toledo y Toledo Asociados S.R.L";11.78
-17;Carlos Alberto;Valencia;magdalena.de la torre@gmail.com;"Carrillo; Carrillo y Carrillo Asociados S.A. de C.V.";76.23
-18;Antonio;Galindo;estela.cabrera@prodigy.net.mx;Leal Leal S.C.;20.82
-19;Rogelio;Padilla;estela.carrasco@hotmail.com;Alcántara Alcántara S.R.L;28.41
-20;Mario Alberto;Navarro;miguel.gómez@prodigy.net.mx;Guillén Guillén S.R.L;26.49
-21;Israel;Cruz;beatriz.guerrero@hotmail.com;Colegio Duarte S.A. de C.V.;39.05
-22;Mario Alberto;Juárez;benjamín.santos@gmail.com;Soto Soto S.R.L;50.69
-23;Julio CĂ©sar;Nájera;javier.espinoza@hotmail.com;Armenta y Armenta S.R.L;29.76
-24;Teresa;Quintana;juan antonio.carbajal@gmail.com;Luna y Luna S.A. de C.V.;26.39
-25;AgustĂ­n;Marín;maría.caballero@prodigy.net.mx;Ordoñez y Ordoñez S.A.;57.76
-26;Alberto;Blanco;juan carlos.coronado@yahoo.com;Grupo Financiero Gallegos S.A. de C.V.;33.81
-27;Daniel;Tovar;gloria.castro@yahoo.com;Guevara y Guevara S.R.L;91.15
-28;Edgar;Álvarez;rodolfo.monroy@yahoo.com;Fondo Herrera S.A.;71.96
-29;Reyna;Arenas;ángel.báez@yahoo.com;de León de León S.R.L;0.05
-30;Elena;Valadez;gabriel.duarte@gmail.com;Álvarez y Álvarez S.A. de C.V.;0.79
-31;Agustina;del Ángel;teresa.salas@prodigy.net.mx;"Acevedo; Acevedo y Acevedo Asociados S.C.";38.32
-32;Ăngel;Reyna;rosa maría.amador@prodigy.net.mx;Santillán y Santillán S.C.;24.35
-33;Laura;Navarrete;guillermo.trejo@yahoo.com;Grupo Cordero S.A. de C.V.;26.66
-34;Arturo;Rangel;lorenzo.guzmán@gmail.com;Quintero S.A.;52.66
-35;Petra;Mendoza;carlos.peña@hotmail.com;Félix Félix S.R.L;9.21
-36;Andrea;Maldonado;josé juan.varela@hotmail.com;"Castro; Castro y Castro Asociados S.C.";64.49
-37;Maribel;Esparza;hugo.de la rosa@gmail.com;Sociedad Valdés S.C.;4.00
-38;Jorge;Montes;sofía.mondragón@hotmail.com;Zapata y Zapata S.C.;13.21
-39;Alejandra;Ordoñez;susana.nava@hotmail.com;Saldaña y Saldaña S.C.;6.52
-40;Armando;Ríos;silvia.quintana@prodigy.net.mx;Jímenez y Jímenez S.A.B.;47.21
-41;Mario Alberto;Leal;josé luis.ocampo@hotmail.com;"Padilla; Padilla y Padilla Asociados S.A.";14.04
-42;NicolĂˇs;Rojas;maricela.olivares@gmail.com;Arredondo y Arredondo S.C.;15.45
-43;Esperanza;Acevedo;francisco.córdova@hotmail.com;Molina y Molina S.R.L;85.79
-44;Luis Alberto;Cisneros;guadalupe.molina@hotmail.com;Gálvez S.C.;61.87
-45;Magdalena;Salas;laura.huerta@hotmail.com;Arroyo Arroyo S.A.B.;33.33
-46;Lorenzo;Reyes;rocío.zaragoza@prodigy.net.mx;"Áviles; Áviles y Áviles Asociados S.C.";79.53
-47;Miguel Ăngel;Escalante;josé alfredo.anaya@hotmail.com;Gallegos Gallegos S.A.B.;84.11
-48;Elvira;Sánchez;martín.armenta@gmail.com;Santillán S.A.B.;52.86
-49;Gerardo;Tapia;josé juan.álvarez@gmail.com;Sandoval y Sandoval S.C.;85.63
-50;Ismael;Mercado;josé luis.morales@gmail.com;"Garza; Garza y Garza Asociados S.A.B.";4.24
-51;Arturo;Ángeles;erika.solís@yahoo.com;"Rangel; Rangel y Rangel Asociados S.A. de C.V.";21.95
-52;Lidia;Zavala;hugo.montiel@gmail.com;Palacios Palacios S.R.L;25.64
-53;TomĂˇs;Téllez;felipe.meléndez@yahoo.com;Villarreal Villarreal S.R.L;20.45
-54;Esther;Gálvez;gabriel.romo@hotmail.com;"Chávez; Chávez y Chávez Asociados S.A.";99.09
-55;Martina;Granados;francisco.palacios@yahoo.com;Zamudio Zamudio S.A.;4.47
-56;Mario Alberto;Gálvez;sofía.parra@prodigy.net.mx;Fondo Ruiz S.C.;27.21
-57;Pedro;Carmona;marco antonio.valencia@gmail.com;"Figueroa; Figueroa y Figueroa Asociados S.C.";33.96
-58;Alfonso;Amador;patricia.nieto@hotmail.com;Marín y Marín S.C.;30.03
-59;Dolores;Ortiz;daniel.cortés@yahoo.com;Quintero Quintero S.R.L;7.55
-60;Santiago;Amador;salvador.carrasco@hotmail.com;"Mondragón; Mondragón y Mondragón Asociados S.A. de C.V.";43.09
-61;Martha;Ruiz;socorro.yáñez@yahoo.com;Mondragón Mondragón S.A.B.;27.81
-62;Elvira;Baltazar;carlos.de la rosa@prodigy.net.mx;"Zapata; Zapata y Zapata Asociados S.A.B.";38.02
-63;Ignacio;Olivares;beatriz.anaya@gmail.com;Grupo Financiero Ruiz S.A.B.;58.46
-64;Rosario;Aguilar;maría.lugo@prodigy.net.mx;Guevara Guevara S.R.L;97.62
-65;Silvia;Barajas;julia.navarrete@prodigy.net.mx;Leyva y Leyva S.R.L;96.68
-66;Edgar;Yáñez;fernando.villanueva@hotmail.com;Lozano Lozano S.C.;17.06
-67;Gregorio;Escamilla;gerardo.alcántara@gmail.com;Carrillo Carrillo S.A. de C.V.;11.50
-68;Esteban;Rojas;juan.torres@prodigy.net.mx;Grupo Financiero Hidalgo S.A.B.;78.77
-69;Martina;Osorio;elizabeth.de la rosa@gmail.com;Orozco S.C.;45.69
-70;Juan;Duarte;estela.armenta@hotmail.com;Leyva Leyva S.C.;5.63
-71;Consuelo;Castro;rosalba.ponce@yahoo.com;"Navarrete; Navarrete y Navarrete Asociados S.R.L";74.93
-72;Petra;Corona;rosa maría.rocha@yahoo.com;Nieto Nieto S.A.B.;34.60
-73;Fabiola;Ayala;mercedes.quezada@gmail.com;Carrillo y Carrillo S.R.L;65.54
-74;Rosa MarĂ­a;Barajas;mario alberto.de la torre@hotmail.com;Cortez y Cortez S.A.B.;53.94
-75;Rodrigo;Reyna;raymundo.barron@gmail.com;Colegio Medina S.R.L;66.94
-76;JosĂ© Antonio;Peralta;julia.herrera@gmail.com;"Montoya; Montoya y Montoya Asociados S.A.B.";4.21
-77;Amalia;Romo;lidia.lozano@gmail.com;"Ramírez; Ramírez y Ramírez Asociados S.A. de C.V.";34.64
-78;BenjamĂ­n;Ponce;fabiola.valle@hotmail.com;Fondo Aguilera S.A.B.;78.39
-79;Antonio;de la Rosa;adela.sandoval@hotmail.com;"Valdés; Valdés y Valdés Asociados S.A.";65.84
-80;Edith;Soriano;esther.carrillo@yahoo.com;Arroyo y Arroyo S.A.B.;53.06
-81;JosĂ© Antonio;Magaña;lidia.méndez@gmail.com;Alonso S.C.;75.38
-82;Alicia;Esquivel;gloria.carrillo@gmail.com;Acosta S.A. de C.V.;4.09
-83;TomĂˇs;Aguilar;gerardo.molina@yahoo.com;Venegas S.A. de C.V.;72.20
-84;VĂ­ctor Hugo;Ávila;leticia.bautista@prodigy.net.mx;"Cortez; Cortez y Cortez Asociados S.A. de C.V.";79.76
-85;Carlos Alberto;Lugo;patricia.ventura@yahoo.com;Peralta S.A. de C.V.;64.67
-86;Ramiro;Villalobos;eduardo.rojas@gmail.com;Sociedad Velasco S.A.B.;26.36
-87;Adriana;Ortega;salvador.romero@gmail.com;Grupo Villalobos S.A.B.;19.44
-88;Gustavo;Rocha;rosa maría.guillén@gmail.com;Ramírez Ramírez S.A.;49.40
-89;Yolanda;Camacho;verónica.córdova@yahoo.com;Varela Varela S.C.;87.67
-90;Miguel;Hurtado;esteban.vidal@hotmail.com;Robles S.R.L;93.28
-91;Gerardo;Cabrera;claudia.arriaga@yahoo.com;Santos y Santos S.A. de C.V.;53.15
-92;Marcos;Pacheco;ismael.contreras@gmail.com;Carmona S.C.;87.28
-93;Sergio;Madrigal;felipe.moreno@yahoo.com;"Escamilla; Escamilla y Escamilla Asociados S.A. de C.V.";28.02
-94;Armando;Ojeda;aurora.de los santos@yahoo.com;Colegio Castellanos S.A.;22.34
-95;Rogelio;Esquivel;jorge luis.cisneros@gmail.com;"Gallegos; Gallegos y Gallegos Asociados S.A. de C.V.";49.44
-96;Salvador;Esparza;virginia.bravo@prodigy.net.mx;Saldaña y Saldaña S.A. de C.V.;35.81
-97;TomĂˇs;Guzmán;miguel.márquez@prodigy.net.mx;Grupo Pineda S.R.L;7.98
-98;Maricela;Gutiérrez;sonia.fuentes@hotmail.com;"Sotelo; Sotelo y Sotelo Asociados S.A. de C.V.";16.68
-99;Patricia;Gaytán;lorenzo.cordero@yahoo.com;Herrera Herrera S.A. de C.V.;57.60
-100;Magdalena;Hidalgo;beatriz.medrano@yahoo.com;Grupo Financiero Gutiérrez S.A.B.;37.63
-101;Araceli;Torres;enrique.durán@gmail.com;Colegio Mondragón S.R.L;27.42
-102;BenjamĂ­n;Maldonado;alfredo.quintero@hotmail.com;"Rendón; Rendón y Rendón Asociados S.A. de C.V.";38.77
-103;Gerardo;Madrigal;santiago.garcía@gmail.com;Aguilera y Aguilera S.A.;33.64
-104;Carlos Alberto;May;francisco.ocampo@yahoo.com;Santiago y Santiago S.C.;58.11
-105;RamĂłn;Cázares;josé juan.gonzález@prodigy.net.mx;"Ocampo; Ocampo y Ocampo Asociados S.R.L";1.89
-106;MartĂ­n;Ocampo;josé juan.moreno@gmail.com;Trejo y Trejo S.A.B.;33.03
-107;Victoria;Ortiz;daniel.báez@gmail.com;Núñez y Núñez S.A.;77.62
-108;FĂ©lix;Aguilera;josé angel.zapata@prodigy.net.mx;Escobedo S.A.;1.71
-109;Gloria;Padilla;martín.valdez@gmail.com;"Bravo; Bravo y Bravo Asociados S.A. de C.V.";67.01
-110;VĂ­ctor Hugo;Solís;antonia.bravo@prodigy.net.mx;Osorio y Osorio S.C.;62.36
-111;Juan;Estrada;carlos.cuevas@hotmail.com;Alfaro y Alfaro S.A.;0.04
-112;MarĂ­a Elena;Amador;felipe.caballero@prodigy.net.mx;Sociedad Treviño S.A. de C.V.;8.43
-113;Rafael;Arteaga;josefina.leal@yahoo.com;Saucedo S.R.L;98.78
-114;Jorge Alberto;Aranda;rocío.martínez@gmail.com;Suárez S.A.;38.58
-115;JosĂ© Antonio;Hurtado;gustavo.juárez@yahoo.com;Domínguez Domínguez S.A. de C.V.;20.29
-116;Rogelio;Velázquez;josefina.rivas@yahoo.com;"Esquivel; Esquivel y Esquivel Asociados S.R.L";38.83
-117;Edith;Miranda;rodolfo.marín@prodigy.net.mx;Cuevas Cuevas S.A.;97.65
-118;Juan Antonio;Rivas;paula.castillo@yahoo.com;Palma S.A.;81.63
-119;Rosa;Ochoa;miriam.moreno@prodigy.net.mx;Muñiz y Muñiz S.A.;43.70
-120;Rodrigo;de León;alberto.cortés@yahoo.com;"Rivera; Rivera y Rivera Asociados S.A. de C.V.";69.09
-121;Gregorio;Escamilla;lorenzo.castillo@yahoo.com;Ríos y Ríos S.A.;97.95
-122;Lorena;Leyva;ignacio.corona@gmail.com;Rojas y Rojas S.A.;38.25
-123;Ernesto;Ramos;amalia.rico@prodigy.net.mx;Anaya Anaya S.R.L;72.71
-124;Salvador;Villalobos;rodolfo.soto@prodigy.net.mx;Rivas Rivas S.A.;21.41
-125;Rosa;Covarrubias;lorenzo.hurtado@yahoo.com;Fondo Alvarado S.A.;93.65
-126;Rosalba;Trejo;victoria.treviño@gmail.com;Fondo Trujillo S.C.;27.45
-127;Mariana;Sosa;jesús.balderas@hotmail.com;Nava S.C.;82.55
-128;Alfredo;Meza;josé juan.acosta@gmail.com;Arias y Arias S.A. de C.V.;48.94
-129;Guadalupe;Díaz;andrés.saldaña@hotmail.com;Téllez y Téllez S.A. de C.V.;16.45
-130;Petra;Sandoval;joel.rico@yahoo.com;"de León; de León y de León Asociados S.R.L";56.78
-131;JosĂ© Antonio;Rodríguez;israel.correa@yahoo.com;"Reséndiz; Reséndiz y Reséndiz Asociados S.A. de C.V.";31.91
-132;Edgar;Cisneros;beatriz.de la torre@hotmail.com;Segura Segura S.C.;79.63
-133;Carmen;Dávila;isabel.alarcón@yahoo.com;"Díaz; Díaz y Díaz Asociados S.A. de C.V.";62.89
-134;MarĂ­a de Lourdes;Saucedo;carmen.ochoa@hotmail.com;Montoya y Montoya S.A. de C.V.;71.57
-135;Ramiro;Jímenez;teresa.bravo@gmail.com;"Contreras; Contreras y Contreras Asociados S.A. de C.V.";85.35
-136;Gerardo;García;mónica.nieto@prodigy.net.mx;Corona S.R.L;98.62
-137;Gerardo;Galván;adela.león@gmail.com;Martínez S.A.B.;43.26
-138;Lorenzo;Rosas;david.de león@hotmail.com;Valadez y Valadez S.A. de C.V.;57.17
-139;Rodolfo;León;ofelia.bernal@hotmail.com;"Cuevas; Cuevas y Cuevas Asociados S.C.";95.41
-140;ConcepciĂłn;Granados;josé angel.guevara@hotmail.com;Ángeles Ángeles S.A. de C.V.;15.05
-141;JosĂ© Luis;Medina;agustina.palma@prodigy.net.mx;"Solís; Solís y Solís Asociados S.R.L";17.34
-142;Luis Alberto;Sosa;laura.medrano@prodigy.net.mx;Mejía S.R.L;13.31
-143;SaĂşl;Enríquez;margarita.villa@yahoo.com;Fondo Domínguez S.A.;30.01
-144;RocĂ­o;León;david.arias@prodigy.net.mx;Mora y Mora S.A. de C.V.;15.93
-145;Graciela;Valencia;carolina.alvarado@gmail.com;Ángeles S.A.B.;89.05
-146;Miguel;García;raquel.magaña@prodigy.net.mx;Villarreal S.A. de C.V.;59.36
-147;CĂ©sar;Vargas;abel.becerra@gmail.com;Sociedad Castillo S.A. de C.V.;33.10
-148;Abel;Jímenez;jorge.quezada@gmail.com;Sandoval y Sandoval S.R.L;56.85
-149;JosĂ© Luis;Enríquez;amalia.trujillo@gmail.com;"Calderón; Calderón y Calderón Asociados S.R.L";55.75
-150;Esperanza;Trejo;rigoberto.de la cruz@gmail.com;Herrera Herrera S.A. de C.V.;9.35
-151;CĂ©sar;Meza;marisol.cervantes@yahoo.com;Villarreal y Villarreal S.A. de C.V.;75.46
-152;Elizabeth;Alvarado;gabriel.barrios@hotmail.com;Juárez Juárez S.C.;77.69
-153;Pablo;Ortiz;yolanda.acosta@yahoo.com;Espinosa Espinosa S.A.;46.13
-154;JosĂ© Alfredo;Zavala;alfredo.fernández@prodigy.net.mx;Ibarra y Ibarra S.C.;76.28
-155;JosĂ© Angel;Medrano;adrián.ibarra@prodigy.net.mx;Serrano Serrano S.A.B.;86.14
-156;Guadalupe;Acevedo;margarita.hidalgo@prodigy.net.mx;Grupo Cárdenas S.A. de C.V.;59.64
-157;Israel;Escalante;gilberto.arreola@hotmail.com;Medina y Medina S.C.;35.67
-158;Beatriz;Correa;ángel.cano@prodigy.net.mx;Grupo Financiero Santillán S.C.;26.94
-159;VerĂłnica;Medina;mario.rubio@gmail.com;Fernández S.A. de C.V.;55.26
-160;Pablo;Marín;concepción.rico@hotmail.com;Gil S.A. de C.V.;59.49
-161;Margarita;Tovar;rosa.mondragón@gmail.com;Grupo Financiero Reyna S.A.;97.99
-162;Aurora;Aguirre;esther.escalante@gmail.com;Zamora y Zamora S.A.B.;10.30
-163;Ignacio;Jaramillo;juan.lugo@gmail.com;Fondo Román S.R.L;63.63
-164;Petra;Segura;isabel.salas@prodigy.net.mx;Olivares S.R.L;66.68
-165;Mercedes;Olivares;eduardo.delgado@gmail.com;Caballero y Caballero S.C.;36.64
-166;Andrea;Solís;leticia.sánchez@prodigy.net.mx;Trejo Trejo S.C.;25.34
-167;Ăngel;Guzmán;sonia.leal@prodigy.net.mx;Fondo Granados S.R.L;26.22
-168;Andrea;Tapia;margarita.sotelo@gmail.com;Grupo Financiero Carrillo S.A.;29.48
-169;Guillermina;Molina;jorge luis.quiroz@prodigy.net.mx;Barragán S.A.B.;42.84
-170;Ignacio;Domínguez;óscar.antonio@yahoo.com;Estrada Estrada S.C.;77.32
-171;JosĂ© Angel;Velasco;elvira.ángeles@hotmail.com;Lugo y Lugo S.A. de C.V.;32.65
-172;AndrĂ©s;Vásquez;maría.arias@gmail.com;"Salinas; Salinas y Salinas Asociados S.A. de C.V.";87.20
-173;RamĂłn;Maldonado;miguel ángel.zapata@yahoo.com;"del Ángel; del Ángel y del Ángel Asociados S.C.";41.49
-174;Jorge Luis;de la Torre;luis alberto.armenta@hotmail.com;Grupo Financiero Morales S.C.;95.72
-175;Leticia;Arredondo;aurora.rubio@hotmail.com;"Medrano; Medrano y Medrano Asociados S.A. de C.V.";30.14
-176;Juan Carlos;Carranza;agustín.padilla@gmail.com;"Durán; Durán y Durán Asociados S.A.B.";27.77
-177;Mario Alberto;Duarte;óscar.trejo@yahoo.com;Colegio Enríquez S.R.L;20.72
-178;JosĂ© Juan;Velázquez;rosa maría.antonio@yahoo.com;Camacho y Camacho S.C.;51.22
-179;Ismael;Yáñez;sandra.antonio@prodigy.net.mx;Rosales S.R.L;22.54
-180;Arturo;Félix;josé angel.carrera@hotmail.com;"Barrios; Barrios y Barrios Asociados S.C.";61.80
-181;Erika;Barajas;catalina.pacheco@hotmail.com;Salgado Salgado S.C.;87.80
-182;Juan Antonio;Tovar;carolina.morales@yahoo.com;de la Rosa y de la Rosa S.R.L;14.63
-183;Teresa;Alvarado;antonia.vega@gmail.com;Villalobos y Villalobos S.A. de C.V.;51.93
-184;SofĂ­a;Gómez;alejandra.olvera@hotmail.com;Tovar S.A. de C.V.;67.53
-185;Mercedes;Márquez;moisés.valadez@prodigy.net.mx;May May S.A.B.;58.52
-186;Joel;Chávez;salvador.lópez@yahoo.com;"Figueroa; Figueroa y Figueroa Asociados S.A.B.";46.30
-187;Claudia;Pineda;jesús.tovar@prodigy.net.mx;Grupo Valdés S.A. de C.V.;88.94
-188;Raymundo;Aguilera;guillermo.bernal@gmail.com;Rocha S.A.B.;14.69
-189;Silvia;Chávez;alejandra.barrera@gmail.com;Méndez Méndez S.A.;66.33
-190;Estela;Ruiz;petra.santos@hotmail.com;Macías Macías S.C.;90.95
-191;TomĂˇs;Blanco;omar.salinas@yahoo.com;Guerrero S.C.;82.30
-192;Edgar;Enríquez;micaela.pacheco@gmail.com;"Gallardo; Gallardo y Gallardo Asociados S.R.L";19.29
-193;LucĂ­a;Valencia;karina.vega@hotmail.com;Colegio Morales S.C.;72.37
-194;BenjamĂ­n;Ruiz;elizabeth.rosas@gmail.com;Escamilla Escamilla S.R.L;80.08
-195;Celia;Arellano;ángela.villalobos@gmail.com;Núñez Núñez S.A.;8.43
-196;CĂ©sar;Segura;juan carlos.balderas@gmail.com;"Guevara; Guevara y Guevara Asociados S.A. de C.V.";16.59
-197;Gabriel;Ocampo;josé antonio.navarro@gmail.com;Castellanos Castellanos S.A.B.;68.58
-198;MarĂ­a Luisa;Valencia;marco antonio.aguirre@prodigy.net.mx;"Varela; Varela y Varela Asociados S.A.B.";11.56
-199;Petra;Rico;marina.arreola@prodigy.net.mx;Grupo Santos S.R.L;18.26
-200;Cristina;Vega;marina.santillán@prodigy.net.mx;Rodríguez S.A.B.;64.65
-201;Gerardo;Parra;julia.lira@hotmail.com;Colegio Camacho S.A. de C.V.;91.95
-202;AngĂ©lica;Soto;sandra.mata@hotmail.com;"Núñez; Núñez y Núñez Asociados S.R.L";84.38
-203;Esther;Dávila;gilberto.rangel@gmail.com;"Herrera; Herrera y Herrera Asociados S.A.B.";99.37
-204;Angelina;Francisco;luis.mercado@hotmail.com;León S.A.B.;7.15
-205;Marina;Parra;carmen.salas@hotmail.com;Santana Santana S.A.B.;10.16
-206;Ignacio;Zavala;yolanda.arroyo@prodigy.net.mx;Dávila S.A. de C.V.;15.78
-207;NicolĂˇs;Áviles;raquel.sierra@prodigy.net.mx;Torres S.A.B.;59.53
-208;Alejandra;Salas;karina.castañeda@yahoo.com;Sosa Sosa S.A.B.;30.88
-209;Ofelia;Huerta;salvador.olvera@prodigy.net.mx;Sociedad Salas S.A. de C.V.;96.08
-210;Silvia;Aparicio;rosa.córdova@hotmail.com;Molina Molina S.A.B.;56.84
-211;Teresa;Miranda;jorge.córdova@yahoo.com;Santana y Santana S.A.B.;89.77
-212;Antonia;Salas;antonia.valadez@yahoo.com;Molina y Molina S.R.L;50.68
-213;Gerardo;Medina;liliana.guillén@hotmail.com;Grupo Parra S.A.B.;82.17
-214;MarĂ­a Luisa;Montes;patricia.solís@hotmail.com;Sociedad Carranza S.A.B.;53.58
-215;Adela;Áviles;tomás.acevedo@prodigy.net.mx;"Ibarra; Ibarra y Ibarra Asociados S.A. de C.V.";84.22
-216;Margarita;Villarreal;andrés.villalobos@hotmail.com;"Báez; Báez y Báez Asociados S.A. de C.V.";42.50
-217;Carolina;Arellano;maría de lourdes.ayala@prodigy.net.mx;Pérez Pérez S.A.;74.06
-218;Graciela;Cano;jorge alberto.de la torre@prodigy.net.mx;Cázares y Cázares S.R.L;70.81
-219;NicolĂˇs;Godínez;benjamín.barajas@gmail.com;Reséndiz S.A. de C.V.;77.71
-220;Vicente;Morán;arturo.cabrera@prodigy.net.mx;Colegio Santiago S.A.;24.04
-221;RubĂ©n;Huerta;olivia.macías@gmail.com;Santana Santana S.A.;7.45
-222;Susana;Luna;concepción.de león@yahoo.com;"Alonso; Alonso y Alonso Asociados S.A.";7.70
-223;Julia;Bravo;angelina.valenzuela@hotmail.com;Quintero S.A.B.;11.78
-224;Jorge Luis;Yáñez;agustín.aparicio@yahoo.com;Granados y Granados S.A.B.;51.44
-225;Benito;Lara;lilia.ávalos@yahoo.com;Saucedo S.A. de C.V.;52.25
-226;AgustĂ­n;Zamora;reyna.navarrete@hotmail.com;Colegio Ríos S.R.L;86.04
-227;Elizabeth;Acosta;gerardo.velasco@hotmail.com;Sociedad Zavala S.R.L;55.27
-228;Isidro;Bernal;celia.márquez@prodigy.net.mx;Leyva y Leyva S.A.B.;60.57
-229;Francisco;Barragán;nicolás.dávila@hotmail.com;de León S.A.B.;3.55
-230;MarĂ­a Elena;Álvarez;irene.alarcón@gmail.com;Escobedo S.A. de C.V.;84.76
-231;Catalina;May;eva.lira@yahoo.com;Cortés y Cortés S.A. de C.V.;86.63
-232;SofĂ­a;Peña;verónica.arellano@hotmail.com;Martínez y Martínez S.A.B.;31.87
-233;Antonia;Hernández;moisés.madrigal@prodigy.net.mx;Sierra y Sierra S.C.;50.32
-234;Ăngel;Santillán;josé antonio.campos@hotmail.com;Suárez S.C.;27.70
-235;Ofelia;Mata;gustavo.ponce@yahoo.com;Herrera S.A.B.;91.36
-236;Alicia;Zavala;margarita.miranda@prodigy.net.mx;Quezada S.R.L;98.74
-237;Dolores;Gámez;ramiro.gallardo@gmail.com;"Arteaga; Arteaga y Arteaga Asociados S.A.B.";79.61
-238;Rodolfo;Valencia;david.enríquez@hotmail.com;Barrios y Barrios S.A. de C.V.;5.40
-239;Lorenzo;Rendón;óscar.rojas@yahoo.com;Cárdenas Cárdenas S.C.;40.59
-240;Isabel;Benítez;roberto.vidal@yahoo.com;Esparza S.A.B.;51.25
-241;Samuel;Zúñiga;sergio.soriano@yahoo.com;Grupo Financiero Rosales S.C.;56.59
-242;Sergio;Soto;norma.magaña@prodigy.net.mx;Bernal y Bernal S.C.;26.41
-243;Esperanza;Meléndez;laura.galindo@prodigy.net.mx;Grupo Alonso S.C.;94.44
-244;Guillermo;Navarrete;maricela.saldaña@yahoo.com;Meléndez S.A.B.;9.54
-245;Martha;Romo;dolores.antonio@yahoo.com;Castellanos S.A. de C.V.;18.82
-246;Humberto;Gómez;maría.varela@prodigy.net.mx;Colegio Alarcón S.A. de C.V.;48.59
-247;Joel;Nava;sandra.carranza@gmail.com;de la Torre S.A.B.;17.19
-248;MarĂ­a Elena;Solano;víctor.granados@gmail.com;Muñoz S.A.;53.70
-249;Agustina;Solís;césar.villarreal@gmail.com;"Francisco; Francisco y Francisco Asociados S.C.";36.99
-250;Guadalupe;Monroy;irene.vásquez@gmail.com;Salas Salas S.R.L;36.84
-251;Armando;Galicia;carolina.ordoñez@gmail.com;Sociedad Figueroa S.C.;0.63
-252;Leticia;Gámez;julia.ramírez@gmail.com;"Galván; Galván y Galván Asociados S.A.";1.29
-253;JosĂ© Alfredo;Ayala;juan carlos.alarcón@yahoo.com;Dávila Dávila S.A.;23.70
-254;Gilberto;González;mercedes.piña@gmail.com;Sociedad Islas S.R.L;30.11
-255;Mario;Zamora;edgar.vargas@prodigy.net.mx;Sociedad Mata S.A.;66.31
-256;Julio;Ochoa;lilia.amador@hotmail.com;Hernández S.A.B.;17.17
-257;JosĂ© Luis;Gallardo;edith.moreno@prodigy.net.mx;Armenta y Armenta S.A.;17.01
-258;AgustĂ­n;Valle;celia.dávila@hotmail.com;Áviles Áviles S.R.L;77.37
-259;Ă“scar;Santillán;lucía.huerta@hotmail.com;"Villarreal; Villarreal y Villarreal Asociados S.A.";58.08
-260;Claudia;Islas;josé juan.segura@hotmail.com;Ortiz S.C.;25.74
-261;SaĂşl;Guerrero;rosalba.santillán@prodigy.net.mx;"Fernández; Fernández y Fernández Asociados S.A.";25.88
-262;JosĂ© Alfredo;Salazar;elena.molina@gmail.com;Grupo Aranda S.A.B.;20.32
-263;Alfonso;Gallegos;eduardo.villarreal@prodigy.net.mx;"Jímenez; Jímenez y Jímenez Asociados S.R.L";42.11
-264;Silvia;Marín;adriana.lópez@yahoo.com;Núñez S.A.;70.76
-265;JosĂ© Juan;Zamora;marina.lugo@hotmail.com;Grupo Financiero Espinoza S.R.L;1.16
-266;Jaime;Orozco;elvira.meza@gmail.com;Grupo Blanco S.C.;58.47
-267;VerĂłnica;Félix;rodrigo.tapia@yahoo.com;Arias Arias S.C.;3.09
-268;Celia;Zaragoza;juan carlos.piña@yahoo.com;Alarcón S.A.B.;34.36
-269;Rosalba;Zúñiga;verónica.ventura@prodigy.net.mx;Santiago Santiago S.A.;87.53
-270;Lilia;Colín;olivia.núñez@yahoo.com;Fondo Suárez S.A. de C.V.;31.37
-271;Angelina;Alvarado;samuel.zamudio@yahoo.com;Corona S.C.;62.67
-272;Carlos;Gallardo;carolina.navarro@hotmail.com;"Martínez; Martínez y Martínez Asociados S.R.L";83.35
-273;Rodolfo;Valdés;julio césar.rendón@gmail.com;Arellano y Arellano S.A. de C.V.;19.32
-274;Cecilia;Aparicio;socorro.gonzález@hotmail.com;Mora S.A. de C.V.;92.45
-275;Alejandro;Domínguez;martha.zavala@yahoo.com;Lugo y Lugo S.A.B.;48.95
-276;Luz MarĂ­a;Leal;tomás.ramos@hotmail.com;"Anaya; Anaya y Anaya Asociados S.A.B.";58.48
-277;Teresa;Fuentes;víctor.carmona@gmail.com;Contreras S.R.L;46.34
-278;Julia;Gálvez;guillermina.jaramillo@prodigy.net.mx;Medrano y Medrano S.A.;28.73
-279;Isabel;Torres;pedro.escamilla@hotmail.com;Gómez Gómez S.A.B.;14.33
-280;Sergio;Dávila;susana.esquivel@prodigy.net.mx;"Ávila; Ávila y Ávila Asociados S.C.";60.07
-281;Armando;Ávalos;hugo.salinas@prodigy.net.mx;Sociedad Contreras S.A. de C.V.;14.57
-282;Raymundo;Román;carolina.castro@gmail.com;Cabrera y Cabrera S.R.L;1.91
-283;Virginia;Vázquez;lilia.herrera@yahoo.com;Carrillo S.A. de C.V.;32.97
-284;SaĂşl;Cisneros;miguel.de la torre@yahoo.com;"Vargas; Vargas y Vargas Asociados S.A.B.";12.35
-285;HĂ©ctor;Yáñez;ana maría.carrera@gmail.com;Murillo y Murillo S.A. de C.V.;80.98
-286;Javier;Quiroz;tomás.gálvez@yahoo.com;Aguirre y Aguirre S.A.B.;47.34
-287;HĂ©ctor;Espinosa;elena.arreola@gmail.com;Vásquez S.A. de C.V.;9.12
-288;Carmen;Aguilera;ana maría.molina@prodigy.net.mx;"Arroyo; Arroyo y Arroyo Asociados S.R.L";7.78
-289;Celia;Bonilla;ignacio.trujillo@yahoo.com;Ramos S.R.L;11.76
-290;RaĂşl;Macías;eduardo.de la rosa@hotmail.com;Padilla Padilla S.R.L;69.77
-291;Gabriela;Lira;ángela.franco@gmail.com;"Barrera; Barrera y Barrera Asociados S.A.";92.51
-292;Francisca;Galindo;armando.monroy@prodigy.net.mx;Gallegos S.R.L;42.70
-293;Luis Alberto;Flores;juan carlos.vargas@prodigy.net.mx;May May S.A.B.;98.92
-294;SofĂ­a;Rivas;laura.carbajal@yahoo.com;Mata Mata S.R.L;17.32
-295;Mariana;del Ángel;elizabeth.núñez@prodigy.net.mx;Yáñez S.C.;28.35
-296;Eduardo;Cortés;rosa.vargas@yahoo.com;"Madrigal; Madrigal y Madrigal Asociados S.A.";56.00
-297;Araceli;Cisneros;angelina.del ángel@yahoo.com;Carbajal S.A. de C.V.;31.40
-298;Virginia;Estrada;raquel.vázquez@yahoo.com;Grupo Financiero Hidalgo S.A.B.;98.25
-299;JosĂ©;Mora;leticia.castellanos@hotmail.com;Córdova S.A. de C.V.;65.72
-300;Juan Carlos;Delgado;maría de lourdes.flores@yahoo.com;Fondo Peralta S.A.;73.78
-301;Pedro;Molina;adela.murillo@prodigy.net.mx;de León S.C.;73.80
-302;Abel;Hernández;sandra.segura@yahoo.com;Santillán y Santillán S.C.;29.40
-303;Raquel;Villanueva;marcela.pacheco@yahoo.com;Carrera y Carrera S.A.;10.64
-304;FĂ©lix;Venegas;mercedes.rivera@yahoo.com;Grupo Financiero Estrada S.A. de C.V.;44.50
-305;Eduardo;Carrera;consuelo.santiago@prodigy.net.mx;Soriano S.A.B.;38.37
-306;Esperanza;Becerra;ernesto.varela@hotmail.com;Báez Báez S.A.;69.41
-307;Rafael;de Jesús;miriam.molina@hotmail.com;Pacheco Pacheco S.A. de C.V.;37.67
-308;David;Medina;guillermo.delgado@gmail.com;"Rivera; Rivera y Rivera Asociados S.A.";21.68
-309;VerĂłnica;Chávez;edgar.piña@prodigy.net.mx;Mendoza y Mendoza S.C.;84.00
-310;Enrique;Salas;rafael.aguirre@prodigy.net.mx;Grupo Ávalos S.R.L;95.04
-311;Humberto;Leyva;leticia.venegas@hotmail.com;Luna S.R.L;67.58
-312;Angelina;Marín;gregorio.domínguez@yahoo.com;Villarreal y Villarreal S.R.L;14.06
-313;Micaela;Meza;juan antonio.bautista@yahoo.com;Fondo Sánchez S.R.L;39.71
-314;Humberto;Guevara;pedro.hurtado@yahoo.com;"Quiroz; Quiroz y Quiroz Asociados S.A. de C.V.";24.95
-315;Edgar;Arteaga;arturo.de jesús@prodigy.net.mx;Fondo Salgado S.R.L;77.55
-316;Samuel;Solís;isabel.sierra@hotmail.com;Zepeda y Zepeda S.A.;76.77
-317;Julio CĂ©sar;Ortega;angélica.pérez@hotmail.com;Durán y Durán S.A.B.;29.61
-318;Jaime;Báez;manuel.granados@yahoo.com;Francisco S.A. de C.V.;81.41
-319;Fernando;Cordero;josé.osorio@prodigy.net.mx;Segura y Segura S.A. de C.V.;35.16
-320;NicolĂˇs;Islas;esteban.ventura@hotmail.com;"Cano; Cano y Cano Asociados S.A. de C.V.";61.49
-321;Sergio;Garduño;silvia.ángeles@gmail.com;"Vega; Vega y Vega Asociados S.R.L";71.19
-322;Lilia;Valdés;omar.solano@gmail.com;May y May S.A.;7.68
-323;Adela;Cisneros;marcos.castellanos@prodigy.net.mx;Espinoza Espinoza S.A.B.;37.70
-324;Salvador;Leal;alfredo.monroy@prodigy.net.mx;Orozco Orozco S.A.;77.97
-325;Araceli;Medina;gabriela.santana@gmail.com;Caballero S.R.L;29.62
-326;MarĂ­a de Lourdes;Magaña;edgar.velasco@gmail.com;Fondo Saldaña S.A. de C.V.;26.35
-327;MarĂ­a;del Ángel;carolina.bautista@hotmail.com;Caballero y Caballero S.R.L;94.31
-328;Elena;Nájera;agustina.gallegos@prodigy.net.mx;Ramos Ramos S.A.;45.45
-329;Karina;Salas;adela.nava@hotmail.com;Montiel S.A. de C.V.;36.87
-330;Graciela;Félix;miguel ángel.leal@prodigy.net.mx;Cabrera Cabrera S.A.B.;32.36
-331;Luis;Espinoza;angelina.reyna@hotmail.com;Rojas Rojas S.A. de C.V.;10.11
-332;Manuela;Vargas;cecilia.meléndez@gmail.com;Carbajal Carbajal S.A. de C.V.;27.88
-333;Alejandro;Francisco;ángel.armenta@yahoo.com;Fondo Acevedo S.R.L;26.31
-334;Araceli;Fernández;martina.alfaro@yahoo.com;Figueroa y Figueroa S.A.;63.21
-335;FĂ©lix;Macías;rosa.pacheco@yahoo.com;del Ángel del Ángel S.A. de C.V.;18.56
-336;Ramiro;Ávalos;carmen.cázares@hotmail.com;Valle Valle S.A.;54.29
-337;Gabriel;Ocampo;martina.toledo@hotmail.com;Guillén Guillén S.C.;91.28
-338;Ramiro;Balderas;maribel.pérez@hotmail.com;Reséndiz Reséndiz S.C.;78.45
-339;RubĂ©n;Ruiz;margarita.díaz@gmail.com;Olivares Olivares S.A.;61.16
-340;Luis Alberto;Calderón;araceli.muñiz@hotmail.com;"Mora; Mora y Mora Asociados S.A. de C.V.";22.44
-341;Ăngel;Guillén;maribel.mercado@yahoo.com;Olvera S.A.;48.79
-342;Martina;Villanueva;victoria.torres@prodigy.net.mx;Rivera y Rivera S.R.L;10.86
-343;Eva;Saldaña;israel.martínez@hotmail.com;Olivares y Olivares S.R.L;32.23
-344;Juan Carlos;Ángeles;maría.muñoz@yahoo.com;Rendón S.A. de C.V.;72.25
-345;Paula;Carrera;antonio.mata@hotmail.com;Grupo Financiero Ocampo S.A.B.;78.67
-346;Gregorio;Meza;josé alberto.montes@hotmail.com;"Flores; Flores y Flores Asociados S.A. de C.V.";22.29
-347;Norma;Hernández;rodrigo.palacios@yahoo.com;Mondragón y Mondragón S.C.;90.24
-348;ConcepciĂłn;Zamudio;susana.carrillo@prodigy.net.mx;Varela y Varela S.A.;93.98
-349;Carlos;Serrano;esther.chávez@gmail.com;Luna Luna S.A.B.;12.74
-350;JosĂ© Alberto;de León;rosalba.rangel@prodigy.net.mx;Grupo Financiero Treviño S.A. de C.V.;8.76
-351;Pedro;Valencia;marcela.vega@prodigy.net.mx;"Rosales; Rosales y Rosales Asociados S.C.";87.22
-352;RocĂ­o;Alonso;beatriz.flores@yahoo.com;Gámez S.A.;5.34
-353;Joel;Aguilar;rocío.alonso@yahoo.com;Mata Mata S.C.;68.57
-354;Jorge Alberto;Rentería;daniel.saldaña@hotmail.com;Morales y Morales S.R.L;51.39
-355;Roberto;Vargas;david.jímenez@gmail.com;Benítez y Benítez S.A.B.;82.96
-356;Martha;Zavala;josé alfredo.solís@hotmail.com;Camacho S.R.L;91.60
-357;Sonia;Domínguez;andrea.armenta@gmail.com;Hurtado y Hurtado S.A.;58.07
-358;Eduardo;Quintero;sergio.aguilar@prodigy.net.mx;"Medina; Medina y Medina Asociados S.A.B.";2.34
-359;Roberto;Treviño;gregorio.arreola@prodigy.net.mx;Grupo Financiero Córdova S.A. de C.V.;91.58
-360;Erika;Uribe;juan.palacios@gmail.com;Baltazar Baltazar S.R.L;53.33
-361;Rosa MarĂ­a;Hurtado;francisco.arroyo@gmail.com;Espinosa Espinosa S.A.B.;52.42
-362;Mario;Huerta;mario alberto.trujillo@hotmail.com;Zamudio Zamudio S.A. de C.V.;28.39
-363;Jorge Luis;Enríquez;omar.mata@prodigy.net.mx;Fondo Toledo S.A.;54.77
-364;Celia;Zaragoza;beatriz.arellano@prodigy.net.mx;Vázquez S.C.;47.46
-365;MarĂ­a de Lourdes;Lira;julio.camacho@hotmail.com;Sociedad Segura S.A.;51.75
-366;Ignacio;Flores;luis.herrera@gmail.com;Castañeda Castañeda S.A. de C.V.;8.61
-367;LucĂ­a;Olvera;marcela.cuevas@gmail.com;Ayala Ayala S.A. de C.V.;48.22
-368;Alberto;Nájera;benjamín.rivera@hotmail.com;Villegas S.A.;38.97
-369;Yolanda;Ramírez;marcela.nieto@gmail.com;Lara S.A.;90.50
-370;Martina;Alvarado;guillermina.soriano@yahoo.com;Fondo Blanco S.R.L;97.12
-371;HĂ©ctor;de la Torre;samuel.escamilla@prodigy.net.mx;"Zavala; Zavala y Zavala Asociados S.A.B.";5.45
-372;Adriana;Ventura;fabiola.morales@hotmail.com;de León S.R.L;3.13
-373;MoisĂ©s;Márquez;irene.sierra@hotmail.com;Santana y Santana S.A.;7.52
-374;Teresa;Torres;reyna.sierra@gmail.com;Guillén Guillén S.R.L;17.20
-375;Elizabeth;Alvarado;reyna.romo@prodigy.net.mx;Pineda S.A.;86.79
-376;SaĂşl;Zárate;alberto.de león@hotmail.com;Alvarado S.A. de C.V.;31.00
-377;Lidia;Santillán;benito.rodríguez@hotmail.com;Pérez y Pérez S.A.B.;23.71
-378;Juan Carlos;Robles;jesús.islas@yahoo.com;Grupo Velasco S.R.L;48.62
-379;Olivia;Salas;omar.mata@hotmail.com;"Galindo; Galindo y Galindo Asociados S.A.";30.45
-380;Sara;de Jesús;paula.arias@hotmail.com;Leal Leal S.R.L;94.56
-381;VĂ­ctor;Contreras;ángela.hurtado@yahoo.com;Grupo Muñiz S.A.;99.55
-382;Catalina;Campos;socorro.duarte@hotmail.com;Reyna S.A.B.;6.85
-383;Claudia;Valdés;luis alberto.galván@hotmail.com;Serrano Serrano S.C.;97.03
-384;Marcela;Estrada;rosa maría.bautista@hotmail.com;"Campos; Campos y Campos Asociados S.A.";22.13
-385;Graciela;Rubio;rogelio.ríos@yahoo.com;Grupo Financiero Magaña S.A.B.;89.60
-386;Margarita;Muñiz;jaime.ponce@gmail.com;Colegio Salazar S.A.B.;89.37
-387;TomĂˇs;Fernández;alejandra.covarrubias@hotmail.com;Rico y Rico S.C.;59.59
-388;JosĂ© Juan;Huerta;irene.quiroz@hotmail.com;Corona y Corona S.R.L;19.60
-389;Francisca;Rosales;mario alberto.leal@prodigy.net.mx;Téllez Téllez S.C.;72.01
-390;Marcela;Serrano;ernesto.vázquez@gmail.com;Guerrero Guerrero S.A.B.;82.43
-391;Andrea;Castellanos;petra.lugo@prodigy.net.mx;Arroyo S.C.;96.79
-392;Daniel;Gutiérrez;karina.garcía@prodigy.net.mx;Colegio Valdés S.A. de C.V.;48.32
-393;Alicia;Fernández;consuelo.espinosa@yahoo.com;"Arias; Arias y Arias Asociados S.A. de C.V.";7.15
-394;Ă“scar;Castañeda;jorge alberto.vera@hotmail.com;Camacho y Camacho S.R.L;79.61
-395;Sara;Arteaga;maría de lourdes.balderas@yahoo.com;May y May S.A. de C.V.;18.88
-396;NicolĂˇs;Magaña;armando.amador@yahoo.com;"Chávez; Chávez y Chávez Asociados S.R.L";36.95
-397;Celia;Serrano;yolanda.rentería@hotmail.com;Solís S.C.;71.41
-398;Isabel;Rico;fernando.bautista@yahoo.com;Arenas S.A. de C.V.;62.58
-399;Teresa;Campos;guillermo.ramos@prodigy.net.mx;Molina Molina S.R.L;92.84
-400;Elena;Ortega;humberto.galicia@yahoo.com;Sotelo Sotelo S.R.L;60.83
-401;Araceli;Rico;ángela.meza@prodigy.net.mx;Tapia y Tapia S.C.;19.76
-402;Alejandro;Moreno;elvira.guillén@gmail.com;"Ocampo; Ocampo y Ocampo Asociados S.A.B.";34.07
-403;Lorena;Olvera;joel.carrillo@gmail.com;Trujillo S.A.B.;36.24
-404;Abel;Sosa;paula.ortiz@hotmail.com;Vázquez Vázquez S.A. de C.V.;70.31
-405;Celia;Gutiérrez;carmen.solano@prodigy.net.mx;Grupo Financiero Delgado S.C.;53.80
-406;Elvira;Vidal;socorro.tovar@gmail.com;Morales S.C.;73.03
-407;Edith;Cortés;juan carlos.pérez@gmail.com;Félix Félix S.R.L;17.82
-408;Salvador;Salazar;maría luisa.rivera@prodigy.net.mx;"Peralta; Peralta y Peralta Asociados S.A. de C.V.";87.13
-409;JosĂ© Luis;Alvarado;patricia.hernández@yahoo.com;May S.A.;10.81
-410;Vicente;Rentería;mario.mata@hotmail.com;"Félix; Félix y Félix Asociados S.A.";2.94
-411;Maribel;Serrano;marisol.mora@hotmail.com;Colegio Rico S.A.;36.62
-412;Marco Antonio;Correa;martha.gálvez@yahoo.com;Bautista y Bautista S.A.B.;16.50
-413;Jorge Luis;Montoya;yolanda.díaz@hotmail.com;Arenas Arenas S.R.L;43.64
-414;MartĂ­n;Aparicio;miguel ángel.del ángel@hotmail.com;Fondo Velázquez S.R.L;25.72
-415;Ernesto;Rico;margarita.francisco@gmail.com;Fondo Barrera S.C.;51.41
-416;Ernesto;Zaragoza;alfonso.de jesús@yahoo.com;Miranda S.A.B.;42.25
-417;Fabiola;Bonilla;pedro.lara@prodigy.net.mx;Vargas y Vargas S.A. de C.V.;31.41
-418;Susana;Yáñez;arturo.ayala@gmail.com;Grupo Andrade S.A. de C.V.;75.39
-419;Javier;Trujillo;alfredo.rubio@gmail.com;Grupo Baltazar S.R.L;97.51
-420;Vicente;Ortiz;jorge.lópez@prodigy.net.mx;"Serrano; Serrano y Serrano Asociados S.A.";81.52
-421;Virginia;Alonso;araceli.duarte@hotmail.com;"Yáñez; Yáñez y Yáñez Asociados S.A. de C.V.";46.45
-422;Pablo;Zamora;adela.guillén@hotmail.com;"Guzmán; Guzmán y Guzmán Asociados S.A.B.";88.78
-423;Angelina;Morales;bertha.ordoñez@hotmail.com;Santillán Santillán S.A.B.;58.91
-424;Estela;Moreno;sandra.olvera@gmail.com;Gaytán y Gaytán S.C.;76.75
-425;Virginia;Amador;abel.gómez@gmail.com;Pineda S.A.;4.57
-426;Rafael;May;gabriela.salas@prodigy.net.mx;"Áviles; Áviles y Áviles Asociados S.R.L";73.47
-427;Ana MarĂ­a;Calderón;martín.madrigal@hotmail.com;Serrano S.A.;60.27
-428;Edgar;Zúñiga;jorge.armenta@gmail.com;Villegas Villegas S.C.;93.24
-429;Elizabeth;Franco;marina.zavala@prodigy.net.mx;Grupo Financiero de Jesús S.A. de C.V.;41.99
-430;Miguel;Olivares;nicolás.gallegos@hotmail.com;"Valdés; Valdés y Valdés Asociados S.R.L";77.37
-431;Lorena;de Jesús;israel.zaragoza@hotmail.com;Carrillo Carrillo S.C.;5.59
-432;MĂłnica;Valencia;héctor.quintero@prodigy.net.mx;Colegio Zamudio S.A. de C.V.;72.60
-433;Sara;Amador;andrea.mendoza@hotmail.com;Cordero y Cordero S.R.L;95.52
-434;Santiago;Treviño;rubén.arias@hotmail.com;"Gallardo; Gallardo y Gallardo Asociados S.C.";28.75
-435;Elizabeth;Zamora;adriana.zavala@gmail.com;Rosales y Rosales S.C.;18.17
-436;Ăngela;Islas;sonia.romero@prodigy.net.mx;Áviles y Áviles S.C.;64.67
-437;Jaime;Rojas;maricela.ponce@hotmail.com;Duarte S.C.;10.14
-438;Lorenzo;Ortega;félix.de la torre@gmail.com;Cisneros y Cisneros S.R.L;20.62
-439;JosĂ© Alberto;de la Torre;paula.rivas@gmail.com;Gámez y Gámez S.R.L;29.83
-440;MĂłnica;Gallardo;gloria.gómez@yahoo.com;"Trujillo; Trujillo y Trujillo Asociados S.A. de C.V.";23.48
-441;Norma;Gaytán;óscar.quintana@prodigy.net.mx;Cortés y Cortés S.A.;62.30
-442;Esperanza;Montoya;david.uribe@gmail.com;Grupo Leal S.R.L;59.50
-443;Julio CĂ©sar;Valdez;adrián.olivares@gmail.com;Ojeda y Ojeda S.A.B.;26.72
-444;Mario;Medrano;maribel.acosta@gmail.com;Guzmán y Guzmán S.R.L;6.52
-445;Lorenzo;Villalobos;maría de lourdes.guerra@yahoo.com;Sociedad Calderón S.A. de C.V.;66.28
-446;Beatriz;Benítez;teresa.peralta@prodigy.net.mx;de la Torre de la Torre S.R.L;84.58
-447;JesĂşs;Ordoñez;alfonso.lira@prodigy.net.mx;Covarrubias Covarrubias S.R.L;83.33
-448;JosĂ© Alfredo;Gallardo;leonardo.luna@yahoo.com;Álvarez Álvarez S.A. de C.V.;60.63
-449;JosĂ© Antonio;Galindo;roberto.arteaga@hotmail.com;Peralta S.A. de C.V.;26.42
-450;FĂ©lix;Segura;mariana.ortega@gmail.com;Quintero S.A.B.;90.76
-451;Hugo;Quiroz;silvia.juárez@hotmail.com;Silva Silva S.C.;7.12
-452;Ăngela;Montiel;luis alberto.olivares@hotmail.com;Zamora y Zamora S.A.;12.96
-453;Carolina;de Jesús;francisca.alvarado@prodigy.net.mx;Alcántara y Alcántara S.A.;8.19
-454;Teresa;Galicia;miguel ángel.yáñez@gmail.com;Ordoñez Ordoñez S.A. de C.V.;56.37
-455;Luis;Valadez;patricia.olivares@prodigy.net.mx;del Ángel y del Ángel S.A. de C.V.;71.68
-456;Patricia;Blanco;socorro.duarte@gmail.com;Yáñez Yáñez S.C.;10.69
-457;Francisco;Cisneros;edith.escobar@yahoo.com;Franco y Franco S.C.;27.77
-458;Francisca;Estrada;antonio.medina@gmail.com;Grupo Domínguez S.A.;85.02
-459;Elena;Hernández;raymundo.garcía@prodigy.net.mx;Grupo Financiero Medrano S.C.;38.40
-460;Lorena;de la Cruz;maría luisa.martínez@prodigy.net.mx;Montiel Montiel S.C.;69.41
-461;Vicente;Gutiérrez;francisca.guillén@hotmail.com;López S.A.;1.41
-462;Ăngel;Santillán;aurora.márquez@gmail.com;Espinoza Espinoza S.R.L;19.57
-463;Jorge;Vega;alicia.rubio@gmail.com;Carrillo y Carrillo S.A.;53.29
-464;Raquel;Tapia;sandra.campos@prodigy.net.mx;Bernal y Bernal S.R.L;96.87
-465;Vicente;Cruz;fernando.bonilla@yahoo.com;Piña y Piña S.C.;53.42
-466;Julio;Muñoz;carlos.gutiérrez@hotmail.com;Colegio García S.A.B.;76.12
-467;Esperanza;Castillo;sonia.mejía@hotmail.com;Sociedad Quiroz S.R.L;59.02
-468;JosĂ© Antonio;Ortega;césar.báez@prodigy.net.mx;Santiago S.A.;56.08
-469;Esperanza;Castellanos;vicente.rocha@yahoo.com;Colegio Quiroz S.A. de C.V.;55.01
-470;Rodrigo;Villegas;micaela.molina@gmail.com;Cuevas S.A.;75.92
-471;JosĂ©;Varela;josé.saucedo@gmail.com;"Caballero; Caballero y Caballero Asociados S.A.";80.09
-472;Sonia;Galván;moisés.valle@hotmail.com;Sociedad Ochoa S.A.;19.67
-473;Vicente;Santos;guadalupe.castellanos@prodigy.net.mx;"Castañeda; Castañeda y Castañeda Asociados S.A.B.";54.56
-474;Rigoberto;Sierra;andrea.olvera@hotmail.com;Castañeda y Castañeda S.A.;23.79
-475;TomĂˇs;Tapia;rocío.vidal@hotmail.com;Félix Félix S.C.;23.69
-476;Erika;Morales;alberto.ojeda@yahoo.com;Fondo Espinosa S.A. de C.V.;46.26
-477;Esteban;Madrigal;isidro.rangel@yahoo.com;"Valdez; Valdez y Valdez Asociados S.A. de C.V.";64.70
-478;Socorro;Medina;omar.guerra@hotmail.com;Solís S.A.B.;93.41
-479;Gabriel;Segura;olivia.gil@gmail.com;Varela S.R.L;88.07
-480;MarĂ­a Luisa;Zepeda;verónica.sierra@prodigy.net.mx;"Zamora; Zamora y Zamora Asociados S.C.";78.59
-481;Martha;Zamudio;gustavo.romo@prodigy.net.mx;Jaramillo y Jaramillo S.A.;91.31
-482;Luis;Anaya;marcela.de los santos@yahoo.com;"Ortiz; Ortiz y Ortiz Asociados S.A.B.";31.52
-483;AdriĂˇn;Gámez;marco antonio.acosta@prodigy.net.mx;Colegio Mendoza S.R.L;85.93
-484;Abel;Quintana;alejandro.becerra@gmail.com;"Cuevas; Cuevas y Cuevas Asociados S.A. de C.V.";23.08
-485;Rosa;Pérez;sergio.velázquez@yahoo.com;Colegio Téllez S.R.L;25.34
-486;Manuela;Juárez;abel.gaytán@hotmail.com;Villanueva Villanueva S.A.B.;85.90
-487;Irene;Rosales;josé luis.varela@gmail.com;"Suárez; Suárez y Suárez Asociados S.A. de C.V.";70.92
-488;Samuel;Bernal;josé alfredo.villa@hotmail.com;Colegio Duarte S.A. de C.V.;21.16
-489;Irene;Calderón;maría elena.vargas@hotmail.com;Trujillo S.C.;69.60
-490;Ăngel;Saldaña;margarita.coronado@prodigy.net.mx;Áviles y Áviles S.A. de C.V.;95.42
-491;Alejandro;Hurtado;esteban.palacios@gmail.com;"Martínez; Martínez y Martínez Asociados S.C.";2.33
-492;Marina;Castellanos;jorge luis.arreola@hotmail.com;Grupo Financiero Mendoza S.A. de C.V.;63.51
-493;Cecilia;Rubio;césar.meza@prodigy.net.mx;Zárate y Zárate S.A.;39.56
-494;RubĂ©n;Barrios;rosa maría.escalante@prodigy.net.mx;Tovar Tovar S.C.;54.18
-495;Ernesto;León;alejandro.baltazar@hotmail.com;"González; González y González Asociados S.A.";94.96
-496;Socorro;Saucedo;susana.rico@yahoo.com;González González S.A. de C.V.;30.44
-497;VerĂłnica;Carbajal;hugo.aguilar@yahoo.com;Ponce Ponce S.A.;59.66
-498;Guadalupe;Magaña;rafael.lira@gmail.com;Gómez Gómez S.C.;76.38
-499;Norma;Balderas;concepción.solano@prodigy.net.mx;Grupo Financiero Alfaro S.C.;79.00
-500;Carlos;Magaña;óscar.zapata@prodigy.net.mx;Fondo Arteaga S.A. de C.V.;63.60
-501;Benito;Barron;félix.velasco@gmail.com;Monroy Monroy S.A. de C.V.;74.82
-502;Marcela;Ochoa;rosalba.márquez@hotmail.com;Anaya S.A.;43.80
-503;Olivia;Galván;josé guadalupe.valdez@gmail.com;"Peralta; Peralta y Peralta Asociados S.A.";38.57
-504;Hugo;Soto;socorro.jaramillo@gmail.com;Hidalgo Hidalgo S.A.;87.62
-505;Aurora;Escobar;reyna.zaragoza@prodigy.net.mx;Ávalos S.C.;10.70
-506;Jaime;Saucedo;adela.león@prodigy.net.mx;Durán Durán S.A. de C.V.;13.45
-507;Rosario;Chávez;juan carlos.murillo@yahoo.com;"González; González y González Asociados S.A.B.";5.98
-508;Vicente;Rojas;maría de lourdes.corona@hotmail.com;Márquez y Márquez S.A.;3.63
-509;Maricela;Rivas;rocío.antonio@hotmail.com;Palacios Palacios S.R.L;45.45
-510;Graciela;Valle;sara.arriaga@hotmail.com;"Acevedo; Acevedo y Acevedo Asociados S.A.";99.52
-511;Reyna;Zúñiga;gabriela.arellano@hotmail.com;Fondo Ríos S.A.B.;64.30
-512;Leonardo;Ochoa;carlos.reséndiz@hotmail.com;Colegio Vásquez S.A. de C.V.;70.78
-513;Virginia;Ocampo;juan antonio.piña@yahoo.com;"Armenta; Armenta y Armenta Asociados S.A. de C.V.";0.94
-514;Norma;Barragán;pedro.santiago@hotmail.com;Arenas y Arenas S.R.L;20.68
-515;Martina;Bautista;pablo.molina@gmail.com;Fondo León S.A.;50.36
-516;Joel;Gómez;ramón.garcía@gmail.com;Grupo Valencia S.C.;77.11
-517;JosĂ© Alberto;Palacios;maría de lourdes.montoya@prodigy.net.mx;Barron Barron S.A.B.;21.91
-518;Juan;Espinosa;araceli.zepeda@yahoo.com;Grupo Torres S.C.;21.54
-519;Silvia;Cortés;ricardo.valadez@prodigy.net.mx;Gaytán Gaytán S.R.L;56.91
-520;Raymundo;Delgado;raquel.andrade@prodigy.net.mx;Serrano y Serrano S.A.B.;76.20
-521;Victoria;Arreola;agustina.moreno@yahoo.com;Escamilla Escamilla S.A.;87.82
-522;Irma;Quintana;victoria.rodríguez@gmail.com;"Carrasco; Carrasco y Carrasco Asociados S.R.L";35.31
-523;Alejandra;Lira;ofelia.rodríguez@yahoo.com;Saucedo Saucedo S.C.;3.78
-524;Norma;Escobar;irene.barron@prodigy.net.mx;Fondo Luna S.A.B.;32.34
-525;Luis;Flores;sofía.esparza@hotmail.com;"Cervantes; Cervantes y Cervantes Asociados S.A.B.";94.18
-526;Javier;Acosta;raúl.zúñiga@gmail.com;Fondo Fuentes S.A.;53.70
-527;Elizabeth;Galicia;leticia.velasco@yahoo.com;Colegio Morán S.C.;85.45
-528;Consuelo;Jaramillo;alejandra.armenta@prodigy.net.mx;Grupo Financiero Reyes S.A. de C.V.;73.74
-529;Elena;Carrasco;josé juan.alvarado@prodigy.net.mx;"Coronado; Coronado y Coronado Asociados S.A.B.";47.48
-530;Socorro;Saldaña;maría.sotelo@yahoo.com;Rendón S.A.B.;9.64
-531;Maribel;Jaramillo;ernesto.navarrete@prodigy.net.mx;Gallardo S.A. de C.V.;4.95
-532;Guadalupe;Valenzuela;jorge.sandoval@prodigy.net.mx;Valencia S.R.L;0.52
-533;MarĂ­a de Lourdes;Campos;david.félix@hotmail.com;Colegio Flores S.C.;41.07
-534;VĂ­ctor;Rocha;verónica.suárez@yahoo.com;Salas Salas S.C.;58.48
-535;Samuel;Santana;mónica.zepeda@yahoo.com;Grupo Ponce S.C.;72.72
-536;Aurora;Olvera;olivia.rico@yahoo.com;Ramos S.A.;32.32
-537;MarĂ­a de Lourdes;Aguilar;elena.carrera@gmail.com;de Jesús y de Jesús S.A. de C.V.;18.21
-538;SofĂ­a;Córdova;virginia.yáñez@hotmail.com;Leal S.R.L;64.28
-539;Santiago;Zamudio;celia.quiroz@hotmail.com;"Magaña; Magaña y Magaña Asociados S.C.";83.04
-540;Victoria;Ortiz;felipe.del ángel@yahoo.com;Martínez S.R.L;9.01
-541;AdriĂˇn;Mora;santiago.félix@yahoo.com;Dávila y Dávila S.A.;82.62
-542;Celia;Aguirre;verónica.ramos@yahoo.com;Sociedad Nájera S.A.;59.12
-543;Ăngel;Sosa;julio.luna@gmail.com;Garduño Garduño S.A.B.;80.23
-544;Humberto;Arroyo;josé angel.sosa@prodigy.net.mx;Alfaro Alfaro S.A. de C.V.;77.01
-545;Roberto;Barrios;martín.ordoñez@yahoo.com;"Guerra; Guerra y Guerra Asociados S.A.B.";87.26
-546;Marco Antonio;Osorio;pablo.medrano@prodigy.net.mx;Sociedad Guzmán S.R.L;45.39
-547;Felipe;Aguilar;vicente.vidal@hotmail.com;Sierra S.R.L;92.49
-548;Alejandro;Carrera;marcos.román@yahoo.com;Fondo Valdez S.A. de C.V.;3.88
-549;Carmen;Yáñez;jorge.áviles@prodigy.net.mx;Fondo Zaragoza S.A. de C.V.;17.37
-550;HĂ©ctor;Espinosa;gilberto.castro@yahoo.com;"Bravo; Bravo y Bravo Asociados S.A.B.";53.86
-551;Julio CĂ©sar;Pacheco;jesús.cortés@prodigy.net.mx;Fondo Bonilla S.C.;41.77
-552;Bertha;Delgado;karina.ibarra@hotmail.com;"Trejo; Trejo y Trejo Asociados S.A.";64.09
-553;Elvira;Zavala;petra.reyes@yahoo.com;Ríos Ríos S.A.;85.34
-554;Gabriela;Espinoza;omar.zepeda@prodigy.net.mx;Saldaña y Saldaña S.R.L;53.37
-555;Alicia;Leyva;araceli.sotelo@prodigy.net.mx;"Valadez; Valadez y Valadez Asociados S.A.B.";35.02
-556;Petra;Luna;martina.ayala@prodigy.net.mx;Fondo Vargas S.C.;30.22
-557;Norma;Cordero;rogelio.alonso@gmail.com;"Valencia; Valencia y Valencia Asociados S.A. de C.V.";71.59
-558;VerĂłnica;Antonio;benito.quintana@yahoo.com;"Valenzuela; Valenzuela y Valenzuela Asociados S.C.";32.23
-559;Martha;Valencia;celia.colín@gmail.com;Hurtado Hurtado S.A.;4.07
-560;Francisca;Venegas;aurora.muñoz@yahoo.com;"Mondragón; Mondragón y Mondragón Asociados S.R.L";85.24
-561;Norma;Acosta;mario alberto.corona@gmail.com;Meléndez Meléndez S.R.L;78.52
-562;Vicente;Huerta;rodolfo.villarreal@prodigy.net.mx;Castillo y Castillo S.A.B.;35.64
-563;Maricela;Aguilera;marcos.vidal@yahoo.com;Guillén S.R.L;89.56
-564;Luz MarĂ­a;Anaya;sara.bravo@hotmail.com;Sociedad Galindo S.C.;44.35
-565;Ignacio;Peralta;joel.jímenez@prodigy.net.mx;"Ayala; Ayala y Ayala Asociados S.R.L";12.33
-566;SofĂ­a;Rendón;elena.torres@prodigy.net.mx;Calderón y Calderón S.A.B.;48.78
-567;Carlos;Becerra;mario alberto.zavala@gmail.com;Galindo S.A.;57.42
-568;Jorge Luis;Zapata;paula.zapata@yahoo.com;Sociedad Sosa S.A.;37.36
-569;Ismael;Montiel;josé.arredondo@gmail.com;"Rubio; Rubio y Rubio Asociados S.A.B.";71.68
-570;NicolĂˇs;Lara;adriana.nájera@gmail.com;Grupo Barrera S.R.L;61.17
-571;Lorenzo;Cervantes;lilia.vásquez@gmail.com;Flores S.A. de C.V.;95.75
-572;Julio CĂ©sar;Soriano;sergio.cárdenas@yahoo.com;Rivera y Rivera S.R.L;56.58
-573;Fabiola;Arias;armando.téllez@hotmail.com;Molina Molina S.A. de C.V.;1.22
-574;Miriam;Mora;víctor hugo.padilla@gmail.com;Díaz Díaz S.A.B.;33.96
-575;Julio CĂ©sar;Guillén;guillermo.valle@gmail.com;Cázares S.R.L;64.67
-576;AndrĂ©s;Piña;josé guadalupe.santiago@yahoo.com;Alfaro y Alfaro S.C.;19.24
-577;Julio;Arteaga;claudia.rangel@hotmail.com;Dávila y Dávila S.C.;63.22
-578;Alicia;Zepeda;fernando.saucedo@gmail.com;Méndez S.A.;19.18
-579;Ăngel;Medina;raúl.nava@hotmail.com;Rangel S.R.L;61.72
-580;Elvira;Rentería;gabriela.gámez@hotmail.com;Grupo Medina S.A.B.;28.35
-581;Miguel Ăngel;Ayala;elizabeth.quintero@prodigy.net.mx;"Becerra; Becerra y Becerra Asociados S.A. de C.V.";91.15
-582;Gloria;Cabrera;alejandro.beltrán@yahoo.com;Álvarez y Álvarez S.R.L;47.55
-583;HĂ©ctor;Macías;lorena.soto@yahoo.com;Espinosa S.R.L;21.82
-584;Jorge Luis;Hurtado;paula.zárate@gmail.com;Dávila S.R.L;41.45
-585;MarĂ­a;Escobedo;josé antonio.peralta@prodigy.net.mx;Monroy Monroy S.C.;15.32
-586;Adela;Ocampo;eva.márquez@prodigy.net.mx;Hurtado Hurtado S.A.;9.69
-587;Martina;Galicia;julio césar.castro@gmail.com;"Arias; Arias y Arias Asociados S.R.L";91.94
-588;Juan Antonio;Barajas;maría de lourdes.medina@prodigy.net.mx;"Meza; Meza y Meza Asociados S.A. de C.V.";72.73
-589;Manuel;Castillo;edgar.barrios@gmail.com;Gómez S.A. de C.V.;92.53
-590;SaĂşl;Montiel;josé alfredo.mata@gmail.com;Nava S.A.;4.54
-591;Hugo;Ponce;miriam.galván@hotmail.com;"Arroyo; Arroyo y Arroyo Asociados S.A.";8.21
-592;Lilia;Quiroz;adela.báez@yahoo.com;Arteaga S.A. de C.V.;60.81
-593;Lorenzo;Pacheco;alejandra.delgado@yahoo.com;Arias y Arias S.A.B.;29.30
-594;Santiago;Salinas;petra.alvarado@gmail.com;Grupo Estrada S.R.L;18.48
-595;Francisco;Carbajal;leticia.rivera@gmail.com;Baltazar Baltazar S.A.;55.69
-596;CĂ©sar;Cortés;césar.figueroa@yahoo.com;"Leal; Leal y Leal Asociados S.A.";31.88
-597;JosĂ© Angel;Ayala;micaela.valadez@prodigy.net.mx;Colegio Guerra S.R.L;61.29
-598;MĂłnica;Flores;ramón.soriano@prodigy.net.mx;Villegas Villegas S.C.;28.52
-599;Rafael;Correa;olivia.romo@yahoo.com;"Parra; Parra y Parra Asociados S.A.";9.75
-600;Irma;Santiago;salvador.alarcón@yahoo.com;Grupo Financiero Navarro S.C.;75.66
-601;Mercedes;Salinas;moisés.arreola@hotmail.com;"Ramírez; Ramírez y Ramírez Asociados S.A.B.";40.42
-602;Abel;de la Cruz;samuel.arenas@gmail.com;"Lozano; Lozano y Lozano Asociados S.A. de C.V.";94.05
-603;Julio;Alcántara;rocío.peña@prodigy.net.mx;Arellano S.A.B.;41.98
-604;Ricardo;Fernández;hugo.carrasco@prodigy.net.mx;Cárdenas y Cárdenas S.A.;30.53
-605;Yolanda;Fuentes;marcos.quezada@prodigy.net.mx;Valdés S.R.L;85.43
-606;Jorge Luis;Garza;lidia.arias@prodigy.net.mx;Muñoz y Muñoz S.R.L;12.84
-607;Martina;Villarreal;david.ortiz@prodigy.net.mx;Salas S.C.;23.21
-608;Agustina;Aranda;jaime.garcía@hotmail.com;Rivera y Rivera S.A. de C.V.;43.36
-609;Ramiro;Zaragoza;alejandro.delgado@hotmail.com;Sociedad Serrano S.A.B.;71.76
-610;Miriam;Quiroz;marcos.zúñiga@yahoo.com;"Castañeda; Castañeda y Castañeda Asociados S.A.";69.13
-611;Irene;González;gustavo.arias@hotmail.com;"Lira; Lira y Lira Asociados S.R.L";71.62
-612;Erika;Piña;rosa.hurtado@hotmail.com;"Alcántara; Alcántara y Alcántara Asociados S.A.";29.12
-613;Luis;Arriaga;manuela.villalobos@gmail.com;"Córdova; Córdova y Córdova Asociados S.A. de C.V.";72.25
-614;Fernando;Camacho;yolanda.flores@gmail.com;Ortiz S.A. de C.V.;94.36
-615;Gregorio;Gómez;carmen.gallardo@prodigy.net.mx;"Zepeda; Zepeda y Zepeda Asociados S.R.L";74.91
-616;Andrea;de la Cruz;francisca.anaya@gmail.com;Sociedad Duarte S.R.L;6.38
-617;Sergio;Yáñez;marcela.vidal@gmail.com;Palacios Palacios S.A.B.;11.42
-618;Julio CĂ©sar;Barajas;maría elena.alfaro@gmail.com;Vázquez S.R.L;94.27
-619;Samuel;Colín;antonia.márquez@yahoo.com;"Lara; Lara y Lara Asociados S.R.L";62.00
-620;JosĂ© Antonio;Parra;micaela.soto@gmail.com;"Franco; Franco y Franco Asociados S.A.";25.51
-621;Alejandro;Valenzuela;enrique.anaya@prodigy.net.mx;"de los Santos; de los Santos y de los Santos Asociados S.A. de C.V.";62.95
-622;Martina;Delgado;jorge.zavala@hotmail.com;Cervantes y Cervantes S.C.;70.12
-623;Israel;Castillo;liliana.ochoa@yahoo.com;Solano Solano S.A.;11.91
-624;Daniel;Garduño;miriam.ortega@hotmail.com;Zapata S.A.B.;38.13
-625;Catalina;Valenzuela;esther.armenta@prodigy.net.mx;"Rojas; Rojas y Rojas Asociados S.C.";2.62
-626;Guillermo;Rangel;víctor.ojeda@yahoo.com;Grupo Villarreal S.R.L;76.29
-627;Rogelio;Romo;jesús.serrano@hotmail.com;Grupo Financiero López S.A.;65.49
-628;Silvia;Ángeles;ignacio.reséndiz@gmail.com;Esquivel Esquivel S.C.;79.15
-629;JosĂ© Juan;Acosta;josé guadalupe.acevedo@gmail.com;Medrano Medrano S.R.L;26.85
-630;Liliana;Molina;adrián.soriano@gmail.com;"Morales; Morales y Morales Asociados S.A.B.";11.81
-631;Juan Antonio;Alvarado;aurora.olivares@gmail.com;Huerta Huerta S.A. de C.V.;48.93
-632;Gerardo;Arredondo;sara.alarcón@gmail.com;Solano y Solano S.A. de C.V.;45.05
-633;Martina;Rivas;andrea.cisneros@yahoo.com;Saucedo y Saucedo S.R.L;61.18
-634;JosĂ© Angel;Villegas;agustín.vargas@hotmail.com;Fondo Aguilera S.A. de C.V.;38.87
-635;Andrea;Solano;miriam.gallardo@hotmail.com;"Barrera; Barrera y Barrera Asociados S.C.";27.02
-636;Margarita;Blanco;marina.salinas@yahoo.com;Garza Garza S.A.;56.40
-637;JesĂşs;Pineda;susana.rodríguez@prodigy.net.mx;Grupo Financiero Mondragón S.A.;11.91
-638;JesĂşs;Segura;humberto.escobedo@hotmail.com;Trejo S.R.L;58.24
-639;Marcela;Montoya;micaela.espinosa@hotmail.com;Serrano Serrano S.A. de C.V.;79.26
-640;JosĂ©;Tapia;ricardo.rosas@hotmail.com;Flores y Flores S.A.;86.19
-641;Francisca;Carrera;martín.sánchez@hotmail.com;Espinosa y Espinosa S.A.;59.66
-642;Juan;Leyva;víctor hugo.valle@yahoo.com;Fondo Salgado S.A. de C.V.;48.10
-643;Mario;Salgado;vicente.alonso@gmail.com;Lara y Lara S.C.;31.55
-644;Guillermo;Saucedo;felipe.vega@gmail.com;Fondo Cortés S.A.;20.94
-645;Catalina;Bravo;micaela.guerrero@gmail.com;Chávez Chávez S.A.;53.73
-646;Marina;Cortés;josé guadalupe.garcía@gmail.com;"Calderón; Calderón y Calderón Asociados S.R.L";90.85
-647;Lilia;Cázares;félix.rosas@prodigy.net.mx;"Salazar; Salazar y Salazar Asociados S.R.L";82.82
-648;Javier;Carmona;ángel.carrillo@yahoo.com;Escobedo S.A.B.;96.64
-649;Ăngel;Molina;bertha.sotelo@yahoo.com;Contreras Contreras S.A. de C.V.;42.89
-650;Ăngel;Sosa;gabriela.rivas@prodigy.net.mx;de Jesús S.R.L;70.50
-651;BenjamĂ­n;Bernal;juan antonio.montiel@hotmail.com;Mendoza S.C.;37.21
-652;Adriana;Arteaga;julio.villalobos@prodigy.net.mx;González González S.A.B.;18.02
-653;Petra;Esparza;irma.arteaga@gmail.com;Fondo Soto S.A.B.;69.81
-654;Micaela;Valenzuela;josé.castillo@yahoo.com;Hidalgo Hidalgo S.C.;22.32
-655;Alberto;Contreras;rosario.paredes@hotmail.com;Acosta S.C.;89.50
-656;Rogelio;May;josé alberto.huerta@gmail.com;Guerra y Guerra S.A.B.;26.10
-657;RamĂłn;Rodríguez;ignacio.barajas@yahoo.com;Grupo Financiero Ruiz S.R.L;64.01
-658;Vicente;Morán;andrea.valdez@prodigy.net.mx;Villarreal Villarreal S.A.;55.98
-659;Juan;Armenta;elena.rojas@yahoo.com;Huerta S.R.L;14.77
-660;Teresa;Mondragón;karina.parra@gmail.com;"Colín; Colín y Colín Asociados S.R.L";26.49
-661;Martha;Gallegos;jaime.domínguez@hotmail.com;Zavala y Zavala S.R.L;91.17
-662;Maricela;Morán;luis alberto.gutiérrez@gmail.com;Meza y Meza S.R.L;53.38
-663;Julio;Márquez;jaime.cruz@hotmail.com;Córdova y Córdova S.C.;81.14
-664;ConcepciĂłn;Zavala;socorro.alcántara@hotmail.com;Mercado S.A.B.;28.98
-665;Marco Antonio;Arellano;claudia.rivas@gmail.com;Grupo Financiero Amador S.A.B.;55.80
-666;Enrique;Lara;cristina.anaya@gmail.com;Segura y Segura S.A.B.;63.52
-667;Miriam;Téllez;josé alfredo.cuevas@yahoo.com;Sociedad de la Rosa S.A.;39.12
-668;Yolanda;Quezada;sandra.zamudio@gmail.com;Núñez S.A.;77.27
-669;Felipe;Zúñiga;jorge luis.ortiz@hotmail.com;Osorio S.C.;8.12
-670;Silvia;Camacho;alicia.valdés@yahoo.com;Sotelo Sotelo S.A.B.;77.88
-671;Esperanza;Ordoñez;rosa.rodríguez@prodigy.net.mx;"Zúñiga; Zúñiga y Zúñiga Asociados S.A. de C.V.";40.24
-672;Aurora;Castellanos;maría de lourdes.aguilera@gmail.com;Macías Macías S.A.;67.30
-673;Gabriel;Escalante;teresa.colín@yahoo.com;Arredondo Arredondo S.A. de C.V.;76.53
-674;Alejandra;Bonilla;norma.contreras@hotmail.com;de los Santos de los Santos S.A.B.;71.95
-675;Amalia;Sandoval;benito.hernández@yahoo.com;Morán y Morán S.A.;3.49
-676;Alberto;León;marisol.villalobos@prodigy.net.mx;"Téllez; Téllez y Téllez Asociados S.C.";62.24
-677;Manuel;López;paula.solano@prodigy.net.mx;Valdés Valdés S.R.L;32.32
-678;Juan Antonio;Mejía;edgar.alfaro@hotmail.com;Ibarra Ibarra S.A. de C.V.;41.27
-679;JosĂ© Guadalupe;Corona;carlos alberto.tovar@hotmail.com;"Guillén; Guillén y Guillén Asociados S.A.B.";78.61
-680;Gabriela;Cano;carmen.baltazar@yahoo.com;"Galván; Galván y Galván Asociados S.R.L";12.75
-681;Mercedes;Ponce;erika.sosa@gmail.com;Grupo Rivera S.A.B.;94.82
-682;Salvador;Ángeles;antonio.de la cruz@hotmail.com;Padilla y Padilla S.A.B.;43.53
-683;Enrique;García;luis alberto.castañeda@yahoo.com;Cordero Cordero S.C.;52.14
-684;Teresa;Rentería;cristina.núñez@hotmail.com;Fondo de los Santos S.A. de C.V.;82.33
-685;Antonia;Toledo;olivia.áviles@gmail.com;Gil y Gil S.R.L;1.88
-686;MarĂ­a Elena;Zárate;erika.pérez@gmail.com;Beltrán Beltrán S.A.;82.39
-687;Ăngel;Estrada;fabiola.díaz@hotmail.com;Molina Molina S.C.;4.23
-688;AdriĂˇn;Rojas;cristina.tovar@yahoo.com;"Rivera; Rivera y Rivera Asociados S.C.";59.20
-689;VĂ­ctor Hugo;Meza;abel.vidal@yahoo.com;Ávila y Ávila S.R.L;3.10
-690;Ă“scar;Alfaro;mario.islas@hotmail.com;Castañeda y Castañeda S.A.;32.89
-691;Olivia;Villalobos;martha.salgado@yahoo.com;"Aranda; Aranda y Aranda Asociados S.A.";52.11
-692;Agustina;Vásquez;omar.ordoñez@yahoo.com;Morán y Morán S.A.;8.57
-693;MarĂ­a Luisa;Mata;alfredo.nieto@prodigy.net.mx;"Mondragón; Mondragón y Mondragón Asociados S.C.";81.67
-694;Martha;Varela;antonio.guillén@hotmail.com;Rentería y Rentería S.A. de C.V.;13.94
-695;RubĂ©n;Cázares;olivia.antonio@prodigy.net.mx;Calderón y Calderón S.A. de C.V.;9.42
-696;Mario;Valencia;patricia.ocampo@gmail.com;Sierra y Sierra S.A. de C.V.;82.11
-697;MartĂ­n;Arriaga;catalina.del ángel@gmail.com;Ramírez y Ramírez S.A. de C.V.;73.91
-698;Rosa MarĂ­a;Guerra;raymundo.piña@gmail.com;Barragán S.A. de C.V.;58.83
-699;TomĂˇs;Chávez;miguel ángel.olivares@yahoo.com;Santiago S.A.;49.92
-700;Lorena;Gámez;socorro.navarro@gmail.com;Sociedad Valle S.R.L;55.09
-701;JosĂ© Alberto;Navarro;manuela.lugo@prodigy.net.mx;"de la Torre; de la Torre y de la Torre Asociados S.A.B.";35.60
-702;Amalia;Herrera;eva.carrasco@gmail.com;"Duarte; Duarte y Duarte Asociados S.C.";21.32
-703;Cristina;Contreras;adrián.ávalos@hotmail.com;Colegio Ramos S.A. de C.V.;88.62
-704;RocĂ­o;Orozco;andrea.cabrera@prodigy.net.mx;Martínez y Martínez S.A.B.;5.95
-705;Victoria;Espinosa;fernando.alarcón@hotmail.com;Carmona y Carmona S.A.B.;98.67
-706;LucĂ­a;Jímenez;manuela.arroyo@prodigy.net.mx;Baltazar Baltazar S.R.L;81.72
-707;Martha;Ángeles;luis alberto.villegas@prodigy.net.mx;Madrigal y Madrigal S.C.;83.76
-708;Alejandra;Cázares;agustín.nieto@prodigy.net.mx;Serrano y Serrano S.R.L;87.66
-709;Marcela;Alvarado;juan antonio.morales@gmail.com;"Covarrubias; Covarrubias y Covarrubias Asociados S.A. de C.V.";72.92
-710;SaĂşl;Serrano;yolanda.acevedo@gmail.com;Colegio Sandoval S.A.;85.36
-711;Sandra;Cárdenas;mario alberto.solís@yahoo.com;Colegio Mora S.R.L;18.99
-712;Guadalupe;Silva;samuel.delgado@hotmail.com;Sociedad Alvarado S.A.B.;66.16
-713;AngĂ©lica;Galicia;maribel.ortega@gmail.com;Saldaña y Saldaña S.C.;73.31
-714;Gerardo;Balderas;esperanza.arenas@yahoo.com;Colegio Galicia S.C.;53.85
-715;JosĂ© Luis;Trejo;omar.zavala@gmail.com;Gallegos S.A.;46.91
-716;Gabriel;Méndez;josefina.villegas@prodigy.net.mx;Jímenez y Jímenez S.C.;16.82
-717;Josefina;Luna;adrián.áviles@yahoo.com;Olvera S.A.;95.54
-718;Esther;Galicia;abel.bravo@hotmail.com;"Mejía; Mejía y Mejía Asociados S.C.";58.59
-719;Manuel;Benítez;araceli.trejo@yahoo.com;Fondo Gil S.A.B.;61.86
-720;Sonia;Paredes;gilberto.vásquez@yahoo.com;Sánchez y Sánchez S.C.;76.92
-721;Lidia;Magaña;olivia.acosta@yahoo.com;Molina S.C.;20.14
-722;Virginia;Mondragón;lidia.aguilar@hotmail.com;Grupo Suárez S.A.;35.56
-723;Francisca;Acevedo;vicente.sánchez@gmail.com;Grupo Financiero Figueroa S.A. de C.V.;23.20
-724;Rodolfo;Quiroz;agustina.vargas@yahoo.com;Espinosa S.C.;49.38
-725;Marisol;Rodríguez;francisco.lópez@prodigy.net.mx;Guerra S.A.B.;98.13
-726;Ignacio;Cruz;agustina.flores@yahoo.com;Ramos Ramos S.C.;50.49
-727;Josefina;Calderón;ignacio.durán@gmail.com;Colegio Blanco S.A. de C.V.;68.47
-728;Eva;Alcántara;marcos.andrade@gmail.com;Quintero S.C.;40.98
-729;Elena;Aguilera;josé angel.acevedo@hotmail.com;Covarrubias Covarrubias S.C.;60.59
-730;Miguel;Ávila;julio.arreola@gmail.com;Rivas S.A.B.;94.51
-731;Jorge Alberto;Dávila;marco antonio.maldonado@prodigy.net.mx;"Pérez; Pérez y Pérez Asociados S.A.B.";40.00
-732;Juan;Carrasco;sofía.cárdenas@gmail.com;Juárez S.R.L;96.94
-733;CĂ©sar;León;petra.gutiérrez@prodigy.net.mx;"Ocampo; Ocampo y Ocampo Asociados S.A.";98.27
-734;JosĂ© Alfredo;Palma;cecilia.ojeda@gmail.com;"de los Santos; de los Santos y de los Santos Asociados S.A.";1.53
-735;JosĂ© Angel;Balderas;josé antonio.ruiz@prodigy.net.mx;Alvarado Alvarado S.A.;98.10
-736;Teresa;Guillén;víctor hugo.lara@yahoo.com;Aguilar Aguilar S.A.B.;62.94
-737;MarĂ­a;Tapia;luis alberto.zárate@prodigy.net.mx;Reyes Reyes S.C.;78.07
-738;Lidia;Quintero;marcos.jaramillo@hotmail.com;Barragán S.R.L;30.84
-739;Edgar;Ruiz;ismael.zárate@gmail.com;"Moreno; Moreno y Moreno Asociados S.A. de C.V.";9.70
-740;MarĂ­a;López;julia.arias@gmail.com;Fondo Reyes S.A.;65.54
-741;Luis;Vázquez;mónica.piña@yahoo.com;Nieto Nieto S.A. de C.V.;98.21
-742;Rosa MarĂ­a;Mejía;olivia.osorio@prodigy.net.mx;Vázquez y Vázquez S.A. de C.V.;51.21
-743;Alberto;Pérez;josé guadalupe.cázares@gmail.com;Díaz S.A.B.;81.67
-744;FĂ©lix;Juárez;esperanza.sandoval@gmail.com;Colegio Meza S.A.B.;52.42
-745;Rodrigo;Hernández;césar.rocha@gmail.com;Valdés y Valdés S.C.;35.57
-746;SaĂşl;Robles;humberto.islas@prodigy.net.mx;"Duarte; Duarte y Duarte Asociados S.A.";95.62
-747;Alfonso;Lira;virginia.galindo@hotmail.com;"Delgado; Delgado y Delgado Asociados S.C.";55.17
-748;Esther;Reséndiz;reyna.silva@hotmail.com;Bravo y Bravo S.C.;75.06
-749;JosĂ© Alfredo;Villarreal;enrique.ibarra@gmail.com;del Ángel y del Ángel S.R.L;5.59
-750;Micaela;del Ángel;irma.palma@hotmail.com;Molina S.A. de C.V.;30.24
-751;Jorge Alberto;Nava;manuela.enríquez@yahoo.com;Grupo Esquivel S.A.;89.27
-752;Angelina;Cruz;felipe.serrano@prodigy.net.mx;Sociedad Leyva S.C.;28.14
-753;Elizabeth;Ayala;tomás.juárez@gmail.com;Fondo Cabrera S.A.;37.31
-754;Gabriela;Ramírez;lucía.arriaga@prodigy.net.mx;Estrada Estrada S.R.L;95.38
-755;VĂ­ctor Hugo;Tapia;cristina.alonso@gmail.com;Arredondo S.A.B.;40.02
-756;Carlos;Benítez;estela.muñoz@prodigy.net.mx;Guerra Guerra S.A.;82.25
-757;Carolina;Aranda;lilia.chávez@hotmail.com;Guevara Guevara S.A.B.;64.73
-758;Cristina;Ordoñez;rosa.mendoza@gmail.com;Zepeda S.A.;31.67
-759;LucĂ­a;Rojas;jorge luis.de león@yahoo.com;"Navarrete; Navarrete y Navarrete Asociados S.A.";84.60
-760;JosĂ© Guadalupe;Martínez;concepción.báez@gmail.com;Rico S.A. de C.V.;59.63
-761;Raquel;Leyva;moisés.aparicio@prodigy.net.mx;Robles S.R.L;49.02
-762;Alfredo;Santos;rodrigo.escobar@yahoo.com;Sociedad Correa S.A. de C.V.;0.10
-763;Francisca;Salas;maría de lourdes.peralta@gmail.com;Carrasco y Carrasco S.C.;49.31
-764;Ăngel;Espinoza;josé angel.guerra@yahoo.com;Villanueva y Villanueva S.A.B.;6.26
-765;Josefina;Suárez;susana.de la torre@yahoo.com;Colegio Trujillo S.A.B.;75.75
-766;Arturo;Pineda;silvia.olivares@hotmail.com;Rentería Rentería S.A.;41.45
-767;Alicia;Guerrero;erika.de jesús@prodigy.net.mx;Fondo Saldaña S.A.;74.65
-768;Luis Alberto;Gil;edgar.galicia@prodigy.net.mx;Leyva S.A.B.;7.57
-769;NicolĂˇs;Barrios;fernando.aguilar@hotmail.com;Sociedad Quintero S.A.;16.28
-770;Pedro;Mondragón;petra.orozco@yahoo.com;Zamora Zamora S.A.;97.37
-771;JesĂşs;Rivas;joel.camacho@prodigy.net.mx;Ponce Ponce S.A.;91.48
-772;Rafael;Aguilera;maría de lourdes.valdés@hotmail.com;"Zepeda; Zepeda y Zepeda Asociados S.A.";80.48
-773;MartĂ­n;Villarreal;guillermina.zapata@yahoo.com;Aguilar y Aguilar S.R.L;3.12
-774;Miguel Ăngel;Francisco;josé alfredo.aguilar@prodigy.net.mx;Gutiérrez Gutiérrez S.A. de C.V.;33.09
-775;Alicia;de la Torre;omar.esquivel@hotmail.com;Mora Mora S.A.B.;87.71
-776;Eva;Aguilera;olivia.durán@hotmail.com;de la Torre y de la Torre S.C.;49.26
-777;Ignacio;Guzmán;dolores.alcántara@yahoo.com;Lara S.R.L;45.20
-778;Adriana;Morales;guillermo.zavala@yahoo.com;Arroyo S.A.B.;60.24
-779;Marcos;Rubio;mario.rivera@prodigy.net.mx;Sociedad Macías S.A. de C.V.;17.06
-780;CĂ©sar;Varela;mariana.islas@hotmail.com;Parra Parra S.A. de C.V.;79.47
-781;Guillermina;Guerrero;maribel.medrano@prodigy.net.mx;Carmona Carmona S.C.;1.03
-782;Arturo;Franco;benjamín.lópez@hotmail.com;Romo S.R.L;56.82
-783;VerĂłnica;Arellano;felipe.blanco@prodigy.net.mx;Macías y Macías S.A.B.;38.09
-784;MarĂ­a Luisa;Lozano;rosa.luna@prodigy.net.mx;Rico Rico S.C.;0.51
-785;Esperanza;Acevedo;rocío.huerta@yahoo.com;Grupo Financiero Maldonado S.R.L;35.24
-786;Josefina;García;reyna.pineda@gmail.com;Grupo Financiero Díaz S.R.L;21.35
-787;RaĂşl;Fernández;francisco.vidal@gmail.com;Palma Palma S.R.L;75.09
-788;Carmen;Córdova;magdalena.treviño@hotmail.com;"Bautista; Bautista y Bautista Asociados S.A.B.";94.89
-789;Maricela;Correa;estela.francisco@gmail.com;Nájera y Nájera S.A.;7.09
-790;Paula;Silva;araceli.valdés@gmail.com;"Esparza; Esparza y Esparza Asociados S.A.";78.07
-791;MarĂ­a de Lourdes;Galván;rigoberto.maldonado@prodigy.net.mx;Colegio Campos S.C.;60.52
-792;Rosario;Flores;lucía.castellanos@yahoo.com;Granados Granados S.A.;70.30
-793;Carlos;Sandoval;joel.villegas@hotmail.com;Islas S.C.;78.23
-794;David;de la Torre;elvira.álvarez@gmail.com;Martínez Martínez S.R.L;70.92
-795;Marisol;Baltazar;isidro.navarro@hotmail.com;Durán S.A.;52.72
-796;Manuela;Segura;rodrigo.arenas@gmail.com;Fondo Ibarra S.A.;59.16
-797;Marcela;Arredondo;reyna.colín@gmail.com;"Covarrubias; Covarrubias y Covarrubias Asociados S.C.";81.64
-798;MarĂ­a;Cordero;angélica.aguilera@gmail.com;Alarcón Alarcón S.C.;45.63
-799;Pablo;Torres;concepción.lópez@prodigy.net.mx;"Campos; Campos y Campos Asociados S.A.B.";22.71
-800;Armando;Meléndez;josé antonio.andrade@gmail.com;Cisneros Cisneros S.R.L;9.46
-801;RamĂłn;Trejo;karina.cisneros@gmail.com;Pacheco y Pacheco S.R.L;63.34
-802;Juan Carlos;Sandoval;norma.silva@hotmail.com;Blanco y Blanco S.A.;21.15
-803;Cristina;Barajas;mónica.rivas@yahoo.com;"Alfaro; Alfaro y Alfaro Asociados S.C.";68.80
-804;Bertha;Monroy;carmen.castillo@gmail.com;Colegio Cruz S.A.;40.81
-805;Consuelo;Gómez;ángela.villegas@yahoo.com;Salgado Salgado S.C.;94.46
-806;Irma;Lira;karina.sosa@prodigy.net.mx;"Aranda; Aranda y Aranda Asociados S.A. de C.V.";94.26
-807;Lidia;Bonilla;josé guadalupe.acosta@gmail.com;"Barrios; Barrios y Barrios Asociados S.C.";48.95
-808;Hugo;Santos;leonardo.arreola@gmail.com;Figueroa y Figueroa S.C.;39.79
-809;Omar;Galindo;marcela.caballero@prodigy.net.mx;"Zamora; Zamora y Zamora Asociados S.A.";52.30
-810;Leticia;Mercado;josé alfredo.escamilla@yahoo.com;"Ortiz; Ortiz y Ortiz Asociados S.A.";4.72
-811;Daniel;Miranda;catalina.arroyo@hotmail.com;"Salas; Salas y Salas Asociados S.A.";17.26
-812;Marcela;Carrillo;ángel.olivares@prodigy.net.mx;Grupo Méndez S.A.B.;60.16
-813;Yolanda;Rendón;lorenzo.gálvez@yahoo.com;Arredondo Arredondo S.A.B.;85.90
-814;Alejandro;Garza;beatriz.leal@yahoo.com;Zamudio Zamudio S.A.B.;12.06
-815;Fabiola;Suárez;adriana.balderas@yahoo.com;Cano Cano S.C.;13.30
-816;Teresa;Hidalgo;rosalba.mora@yahoo.com;Mercado S.A. de C.V.;74.87
-817;BenjamĂ­n;Madrigal;salvador.cordero@yahoo.com;Fondo Becerra S.C.;14.41
-818;Ăngela;Cuevas;martina.pineda@gmail.com;Arias Arias S.R.L;99.74
-819;Ana MarĂ­a;Olivares;cecilia.nava@prodigy.net.mx;Grupo Financiero Hidalgo S.A. de C.V.;80.75
-820;Amalia;Barragán;hugo.may@yahoo.com;Segura y Segura S.A. de C.V.;99.41
-821;Beatriz;Tapia;saúl.nava@prodigy.net.mx;"Gámez; Gámez y Gámez Asociados S.A.";54.31
-822;Jorge;Valenzuela;tomás.cortez@hotmail.com;Alfaro Alfaro S.R.L;27.57
-823;Yolanda;de Jesús;mónica.valencia@prodigy.net.mx;Grupo Financiero Piña S.A.B.;85.23
-824;Patricia;Anaya;francisca.cruz@yahoo.com;Cabrera Cabrera S.C.;69.01
-825;JesĂşs;Zárate;elizabeth.vásquez@hotmail.com;"Godínez; Godínez y Godínez Asociados S.A. de C.V.";35.69
-826;Julia;Alcántara;maría luisa.camacho@hotmail.com;Grupo Granados S.A.;99.04
-827;Cecilia;Becerra;javier.galván@hotmail.com;Reséndiz y Reséndiz S.C.;60.44
-828;Reyna;Salgado;rogelio.villalobos@yahoo.com;de los Santos de los Santos S.C.;5.70
-829;JosĂ© Guadalupe;Santos;agustín.félix@gmail.com;Rosas S.A.;46.84
-830;Araceli;López;gabriel.galicia@gmail.com;Calderón y Calderón S.C.;96.76
-831;Omar;May;mario alberto.morales@hotmail.com;"Nieto; Nieto y Nieto Asociados S.R.L";36.22
-832;Marina;Campos;lorena.salinas@yahoo.com;Barron S.R.L;55.51
-833;Mariana;Quezada;dolores.guzmán@yahoo.com;Grupo Financiero Zúñiga S.A.B.;41.74
-834;Irene;Nava;fernando.varela@yahoo.com;"Castellanos; Castellanos y Castellanos Asociados S.C.";66.07
-835;Ăngel;Guzmán;enrique.sánchez@prodigy.net.mx;Soto S.C.;92.66
-836;Mariana;Vidal;dolores.valdés@hotmail.com;"Peña; Peña y Peña Asociados S.A.B.";11.15
-837;Humberto;Escobar;luz maría.ojeda@hotmail.com;Meléndez Meléndez S.A. de C.V.;55.42
-838;JosĂ© Antonio;Jímenez;araceli.acevedo@hotmail.com;Rojas S.A. de C.V.;94.80
-839;Julio CĂ©sar;Lozano;silvia.palma@prodigy.net.mx;"Leal; Leal y Leal Asociados S.R.L";40.30
-840;Jorge Alberto;Arreola;félix.muñiz@gmail.com;Arias y Arias S.A.B.;60.62
-841;Ismael;Sánchez;alfredo.quezada@gmail.com;Esquivel Esquivel S.R.L;98.65
-842;MartĂ­n;Delgado;jaime.carmona@hotmail.com;"Áviles; Áviles y Áviles Asociados S.A.";45.18
-843;Cecilia;Nájera;isabel.quezada@hotmail.com;"Galicia; Galicia y Galicia Asociados S.R.L";47.93
-844;Juan Antonio;Gutiérrez;silvia.bautista@prodigy.net.mx;Venegas y Venegas S.R.L;18.67
-845;Patricia;Cruz;mónica.meza@hotmail.com;Valencia y Valencia S.A.;45.04
-846;Jorge;de León;antonia.carrillo@prodigy.net.mx;Sociedad Enríquez S.R.L;43.01
-847;Arturo;Pacheco;miguel ángel.osorio@yahoo.com;Jaramillo y Jaramillo S.A.;26.86
-848;Samuel;Bravo;alberto.de león@yahoo.com;"Rangel; Rangel y Rangel Asociados S.A. de C.V.";4.63
-849;Guadalupe;Alarcón;rodolfo.pérez@prodigy.net.mx;Sociedad Díaz S.C.;81.54
-850;Margarita;del Ángel;abel.zúñiga@yahoo.com;de la Cruz de la Cruz S.C.;18.83
-851;Alicia;Meléndez;carmen.zamora@gmail.com;Covarrubias Covarrubias S.A.;33.31
-852;Martha;Chávez;maría.varela@yahoo.com;Colegio Quintero S.A. de C.V.;27.33
-853;Ofelia;Cárdenas;patricia.venegas@yahoo.com;Ángeles S.A.B.;66.07
-854;RubĂ©n;Olivares;sonia.dávila@yahoo.com;"Sotelo; Sotelo y Sotelo Asociados S.A.B.";25.70
-855;Gabriel;Arellano;petra.de los santos@prodigy.net.mx;"Reséndiz; Reséndiz y Reséndiz Asociados S.A.B.";68.89
-856;Alfonso;Rodríguez;graciela.corona@gmail.com;"Arenas; Arenas y Arenas Asociados S.C.";26.25
-857;Adriana;Ángeles;silvia.álvarez@yahoo.com;Sociedad Bautista S.C.;25.05
-858;Catalina;Lara;teresa.montiel@hotmail.com;"Islas; Islas y Islas Asociados S.A. de C.V.";29.27
-859;Catalina;Carbajal;sonia.escalante@prodigy.net.mx;Fondo Álvarez S.A.B.;43.57
-860;NicolĂˇs;Balderas;roberto.anaya@gmail.com;"Delgado; Delgado y Delgado Asociados S.C.";96.10
-861;Marina;Venegas;virginia.carmona@hotmail.com;Sociedad Rico S.C.;27.84
-862;Rogelio;Valdés;humberto.olivares@gmail.com;Orozco y Orozco S.C.;77.26
-863;Abel;Trujillo;verónica.zamora@yahoo.com;Flores Flores S.R.L;14.79
-864;Rosa MarĂ­a;Saldaña;enrique.navarrete@hotmail.com;Morán Morán S.R.L;91.74
-865;MarĂ­a;Mendoza;irma.leal@prodigy.net.mx;Grupo Financiero de la Cruz S.A.;95.32
-866;Juan;Piña;andrés.méndez@hotmail.com;Flores y Flores S.A.;7.22
-867;Ăngela;Arenas;marco antonio.meléndez@gmail.com;Grupo Dávila S.C.;32.04
-868;Edith;Escalante;fernando.vidal@hotmail.com;Galván Galván S.A. de C.V.;69.92
-869;Antonia;Murillo;benito.romo@hotmail.com;Leyva S.A. de C.V.;35.15
-870;Alejandro;Báez;josefina.salazar@gmail.com;Colegio Olivares S.C.;44.49
-871;Lidia;Becerra;magdalena.barragán@prodigy.net.mx;Vega y Vega S.A. de C.V.;97.12
-872;Rodrigo;Ávila;samuel.villarreal@hotmail.com;"Salgado; Salgado y Salgado Asociados S.A.B.";75.01
-873;Javier;Caballero;nicolás.santana@yahoo.com;Leyva S.A. de C.V.;47.91
-874;Rodrigo;Piña;micaela.amador@prodigy.net.mx;Martínez Martínez S.R.L;75.31
-875;MarĂ­a de Lourdes;Trejo;antonio.gaytán@hotmail.com;Grupo Financiero Corona S.A.;96.70
-876;Gregorio;Valadez;mercedes.carrasco@gmail.com;Valadez S.A.;16.76
-877;Yolanda;Ángeles;marco antonio.solís@yahoo.com;Grupo Acosta S.A.B.;14.89
-878;Julio;Ayala;israel.lópez@yahoo.com;Guevara Guevara S.A.;54.13
-879;Carmen;de Jesús;alicia.mejía@gmail.com;Medina y Medina S.R.L;76.31
-880;Guillermina;Navarrete;omar.vera@prodigy.net.mx;Becerra Becerra S.A.B.;20.16
-881;Celia;Acosta;catalina.román@gmail.com;Alcántara Alcántara S.R.L;61.05
-882;Juan Carlos;Velasco;nicolás.acosta@gmail.com;Barrera Barrera S.C.;18.60
-883;Esteban;Gómez;rosario.enríquez@gmail.com;Coronado Coronado S.A. de C.V.;2.37
-884;Salvador;Valadez;guillermo.gámez@prodigy.net.mx;Salgado y Salgado S.A.B.;49.59
-885;Gilberto;Zepeda;erika.arriaga@yahoo.com;"Márquez; Márquez y Márquez Asociados S.A.";84.62
-886;Jaime;Escamilla;teresa.téllez@yahoo.com;Palacios S.R.L;40.90
-887;VerĂłnica;Salgado;jorge luis.carbajal@yahoo.com;Villegas y Villegas S.A.;2.67
-888;Alberto;Mora;jaime.gonzález@gmail.com;Arellano y Arellano S.A.;22.58
-889;Dolores;Becerra;marco antonio.castillo@prodigy.net.mx;Zamora S.C.;58.76
-890;Carmen;Martínez;mariana.gaytán@prodigy.net.mx;Grupo Granados S.R.L;40.03
-891;Samuel;Nieto;benjamín.ventura@prodigy.net.mx;Antonio S.A. de C.V.;84.55
-892;Fabiola;Villarreal;liliana.alvarado@hotmail.com;"Ávalos; Ávalos y Ávalos Asociados S.A.B.";32.07
-893;Alfonso;Hurtado;lorenzo.alfaro@yahoo.com;Mata y Mata S.A. de C.V.;40.01
-894;Raymundo;May;roberto.mercado@yahoo.com;Ortiz S.R.L;15.89
-895;MarĂ­a de Lourdes;Núñez;consuelo.de los santos@yahoo.com;Palma S.A. de C.V.;4.79
-896;Pablo;Rocha;armando.robles@gmail.com;"Durán; Durán y Durán Asociados S.A.";90.22
-897;Alicia;Parra;claudia.de la cruz@hotmail.com;"Cabrera; Cabrera y Cabrera Asociados S.A. de C.V.";63.19
-898;Susana;Leyva;lucía.acevedo@gmail.com;"Carranza; Carranza y Carranza Asociados S.A.";43.15
-899;Ricardo;Aparicio;ismael.anaya@prodigy.net.mx;Colegio Vega S.A. de C.V.;5.70
-900;Arturo;Arriaga;mónica.solís@yahoo.com;Salazar y Salazar S.R.L;91.86
-901;CĂ©sar;Tovar;sara.arteaga@prodigy.net.mx;González S.A.B.;63.28
-902;Miriam;Maldonado;martha.cázares@yahoo.com;Jaramillo Jaramillo S.R.L;80.57
-903;JosĂ© Luis;Gallardo;paula.gutiérrez@yahoo.com;Salas y Salas S.A.;37.60
-904;Pedro;Cárdenas;paula.morán@yahoo.com;Valencia S.C.;71.03
-905;Sara;Zepeda;rafael.correa@hotmail.com;Hidalgo S.R.L;40.78
-906;Luis Alberto;Olvera;miguel ángel.lara@yahoo.com;Enríquez y Enríquez S.A.;9.80
-907;Guillermina;Figueroa;mariana.sotelo@gmail.com;"Covarrubias; Covarrubias y Covarrubias Asociados S.R.L";59.70
-908;Carmen;Murillo;esperanza.godínez@hotmail.com;"Jímenez; Jímenez y Jímenez Asociados S.A.B.";90.15
-909;Isabel;Juárez;esperanza.uribe@prodigy.net.mx;Villalobos Villalobos S.A. de C.V.;79.35
-910;Joel;Robles;josefina.serrano@yahoo.com;Velázquez S.R.L;16.37
-911;Sonia;Félix;lorenzo.arredondo@prodigy.net.mx;Colegio Arellano S.C.;48.38
-912;Felipe;Román;isidro.león@hotmail.com;"Ayala; Ayala y Ayala Asociados S.C.";58.20
-913;Marisol;Valle;esperanza.varela@gmail.com;Molina S.A. de C.V.;31.50
-914;JosĂ© Angel;Ordoñez;moisés.guillén@prodigy.net.mx;Durán Durán S.A. de C.V.;65.44
-915;Raymundo;Acevedo;norma.quintero@yahoo.com;Grupo Financiero Fernández S.A.B.;45.04
-916;Marina;Bravo;gerardo.muñoz@hotmail.com;Velasco y Velasco S.A.B.;21.58
-917;Sara;Parra;elena.mendoza@gmail.com;Grupo Financiero Estrada S.A.;11.86
-918;Adriana;Navarrete;josé alberto.maldonado@hotmail.com;Medina Medina S.C.;4.95
-919;Mercedes;Alonso;micaela.anaya@yahoo.com;"Cruz; Cruz y Cruz Asociados S.R.L";43.64
-920;Laura;Acevedo;rosalba.téllez@prodigy.net.mx;Grupo Financiero Áviles S.C.;9.34
-921;Consuelo;Gálvez;irma.lugo@hotmail.com;Arriaga S.R.L;75.81
-922;Amalia;Rosas;arturo.román@gmail.com;Hurtado y Hurtado S.A. de C.V.;49.41
-923;JosĂ© Angel;Félix;olivia.zamora@gmail.com;Alarcón y Alarcón S.R.L;52.65
-924;Ăngela;Zaragoza;ramón.barajas@hotmail.com;Trujillo Trujillo S.C.;43.06
-925;JosĂ© Guadalupe;Gámez;pablo.esquivel@hotmail.com;Espinosa S.A.B.;15.93
-926;Carmen;Leyva;jesús.gaytán@gmail.com;Camacho S.A.B.;59.31
-927;Israel;Morales;andrea.dávila@gmail.com;Tapia S.C.;65.46
-928;Silvia;Espinosa;estela.ángeles@prodigy.net.mx;Grupo Hernández S.A. de C.V.;40.96
-929;Martha;Nieto;juan.ventura@hotmail.com;Chávez y Chávez S.A.;78.69
-930;Mario Alberto;Coronado;jorge alberto.vera@yahoo.com;Castillo S.R.L;33.02
-931;Paula;Salgado;rafael.treviño@gmail.com;Godínez y Godínez S.A.B.;38.89
-932;JosĂ©;Gil;rosalba.molina@gmail.com;de León S.A.;55.52
-933;Miguel Ăngel;Tapia;maricela.muñoz@prodigy.net.mx;Reyna Reyna S.A. de C.V.;89.50
-934;JesĂşs;Montiel;gustavo.zapata@prodigy.net.mx;"Robles; Robles y Robles Asociados S.A. de C.V.";70.65
-935;Dolores;Esparza;andrea.vidal@gmail.com;"Arellano; Arellano y Arellano Asociados S.A.";10.15
-936;AndrĂ©s;Carbajal;marisol.vázquez@yahoo.com;"Garduño; Garduño y Garduño Asociados S.C.";84.66
-937;Margarita;Montiel;julio.caballero@yahoo.com;"Venegas; Venegas y Venegas Asociados S.A.";75.18
-938;JosĂ© Alberto;Vega;ofelia.leal@yahoo.com;"Vega; Vega y Vega Asociados S.A.";52.84
-939;Luz MarĂ­a;Acevedo;leticia.marín@gmail.com;Fuentes y Fuentes S.A.B.;79.48
-940;Claudia;Herrera;sandra.de jesús@hotmail.com;Sociedad Carmona S.C.;87.31
-941;Catalina;Castillo;israel.torres@yahoo.com;Alvarado S.A.;90.49
-942;Gilberto;Bautista;jorge.zúñiga@gmail.com;Fondo Paredes S.A. de C.V.;1.23
-943;Salvador;Fernández;josé alfredo.cisneros@prodigy.net.mx;Reséndiz Reséndiz S.A.B.;47.60
-944;RocĂ­o;Soto;héctor.padilla@yahoo.com;Garza y Garza S.A.B.;16.25
-945;Jorge Luis;Gil;ernesto.villalobos@hotmail.com;Robles S.A. de C.V.;86.96
-946;Yolanda;Islas;miriam.tovar@yahoo.com;Guzmán Guzmán S.C.;51.86
-947;MĂłnica;Escamilla;pablo.guillén@yahoo.com;León y León S.A.B.;25.14
-948;Paula;Trejo;olivia.quiroz@hotmail.com;Grupo Zavala S.R.L;53.18
-949;Gerardo;Alonso;rosa.segura@yahoo.com;Dávila Dávila S.A.B.;11.42
-950;Julio CĂ©sar;Gallardo;pedro.velázquez@prodigy.net.mx;Gutiérrez y Gutiérrez S.A.B.;78.23
-951;Ramiro;May;erika.andrade@prodigy.net.mx;Treviño Treviño S.A.;24.59
-952;Hugo;Castillo;carolina.rangel@gmail.com;"López; López y López Asociados S.C.";94.22
-953;Maricela;Alfaro;micaela.delgado@gmail.com;"Ayala; Ayala y Ayala Asociados S.R.L";84.36
-954;Lorena;Reyes;gregorio.espinosa@hotmail.com;Mondragón y Mondragón S.A.B.;46.03
-955;AgustĂ­n;de León;cristina.serrano@gmail.com;Fondo Salas S.A.;4.49
-956;Marina;Vega;alejandra.caballero@hotmail.com;Quintana Quintana S.A.B.;87.51
-957;Israel;Mata;óscar.garza@prodigy.net.mx;Zamora S.C.;88.65
-958;ConcepciĂłn;Venegas;humberto.macías@yahoo.com;Paredes Paredes S.A. de C.V.;68.65
-959;Paula;Arriaga;benjamín.andrade@prodigy.net.mx;"Córdova; Córdova y Córdova Asociados S.A.";60.06
-960;Alejandro;Guevara;elizabeth.rivas@gmail.com;Villarreal y Villarreal S.A.;68.79
-961;Mario;Miranda;adriana.cárdenas@yahoo.com;Vidal Vidal S.A.B.;93.27
-962;AgustĂ­n;Mora;guillermo.osorio@hotmail.com;Grupo Chávez S.A. de C.V.;58.86
-963;Maricela;Uribe;victoria.arredondo@hotmail.com;"Salazar; Salazar y Salazar Asociados S.A.";45.08
-964;Carolina;Parra;ramón.moreno@prodigy.net.mx;Ordoñez y Ordoñez S.A. de C.V.;75.83
-965;Andrea;Báez;alejandra.mendoza@gmail.com;Grupo Arellano S.A.B.;48.10
-966;Petra;Rosas;guillermo.sierra@prodigy.net.mx;Francisco y Francisco S.A.B.;40.46
-967;Francisca;Gallardo;rogelio.carmona@yahoo.com;Campos S.A. de C.V.;65.67
-968;Martha;Moreno;lilia.alcántara@gmail.com;Guzmán S.A.;47.98
-969;Ă“scar;Castellanos;lorena.gálvez@yahoo.com;"Gaytán; Gaytán y Gaytán Asociados S.A.B.";11.44
-970;Rosario;Estrada;maría elena.velasco@yahoo.com;"Ojeda; Ojeda y Ojeda Asociados S.C.";91.52
-971;Eduardo;León;josé alfredo.galindo@hotmail.com;"Escamilla; Escamilla y Escamilla Asociados S.C.";8.07
-972;Micaela;Gallegos;alberto.reséndiz@yahoo.com;Aguilar S.A.;33.24
-973;Mario;Pérez;julia.osorio@gmail.com;Sociedad Cano S.A.;14.42
-974;Virginia;Dávila;josé luis.saucedo@hotmail.com;Sociedad Márquez S.A. de C.V.;39.88
-975;Rodolfo;Lara;sonia.dávila@gmail.com;Moreno S.A.B.;49.94
-976;Patricia;Carrera;petra.correa@yahoo.com;Quiroz Quiroz S.C.;31.95
-977;Sara;Cortez;manuela.castillo@gmail.com;Grupo Financiero Tapia S.A.B.;23.51
-978;Julio;Acosta;norma.villanueva@gmail.com;Quiroz Quiroz S.R.L;21.20
-979;Jorge;Antonio;miguel ángel.gil@yahoo.com;Reyes y Reyes S.A.B.;57.48
-980;Esther;Cano;karina.áviles@yahoo.com;Colegio Pacheco S.C.;3.73
-981;Irma;Macías;guillermina.nájera@yahoo.com;Delgado Delgado S.A.;35.63
-982;Sara;Mata;luz maría.rendón@prodigy.net.mx;Zapata S.C.;40.05
-983;Abel;Velasco;raquel.rivera@gmail.com;Gálvez y Gálvez S.A.B.;88.93
-984;Silvia;Francisco;víctor hugo.del ángel@hotmail.com;Morales y Morales S.A.;51.96
-985;Mercedes;Sosa;gloria.ramos@hotmail.com;Colegio Valle S.C.;29.42
-986;MĂłnica;Álvarez;luz maría.mercado@gmail.com;Cuevas Cuevas S.A.;45.09
-987;Adriana;Arias;isabel.pacheco@yahoo.com;Mora Mora S.A.B.;9.50
-988;Guillermina;Cordero;agustín.carrasco@gmail.com;Caballero y Caballero S.A. de C.V.;79.14
-989;AgustĂ­n;Mondragón;julia.amador@prodigy.net.mx;Alvarado Alvarado S.A. de C.V.;0.04
-990;Sara;Villarreal;victoria.sosa@yahoo.com;Sociedad Mendoza S.R.L;41.13
-991;Francisca;Zamora;fernando.román@gmail.com;Sociedad Venegas S.A. de C.V.;71.91
-992;Adela;Ibarra;consuelo.montiel@yahoo.com;Grupo Aguirre S.A.B.;75.26
-993;Eduardo;Zárate;carlos.salazar@gmail.com;Colegio Salazar S.A. de C.V.;25.45
-994;VĂ­ctor;Castellanos;hugo.antonio@yahoo.com;"Colín; Colín y Colín Asociados S.C.";12.75
-995;Daniel;Robles;ana maría.arriaga@yahoo.com;"Bernal; Bernal y Bernal Asociados S.C.";32.72
-996;Paula;Bonilla;mario.velázquez@yahoo.com;"Yáñez; Yáñez y Yáñez Asociados S.C.";61.58
-997;Paula;Vázquez;rosa maría.del ángel@yahoo.com;Olivares y Olivares S.R.L;47.52
-998;Abel;Romero;agustín.castellanos@yahoo.com;Rendón y Rendón S.A. de C.V.;26.77
-999;BenjamĂ­n;Saldaña;araceli.cano@gmail.com;Vásquez y Vásquez S.R.L;55.03
-1000;Juan Antonio;Marín;raymundo.zúñiga@hotmail.com;Contreras y Contreras S.C.;62.30
+id;nombre;apellido;correo;empresa;fechaNacimiento;sueldo
+1;Marcos;Domínguez;alfredo.cázares@hotmail.com;Beltrán Beltrán S.A.;1980-07-04;63.09
+2;Roberto;Sotelo;ramiro.campos@prodigy.net.mx;Venegas y Venegas S.A. de C.V.;1980-07-05;48.64
+3;Eduardo;Rosales;josefina.ponce@hotmail.com;Hernández Hernández S.R.L;1980-07-06;54.37
+4;Ramiro;Guevara;josé alfredo.carranza@yahoo.com;Balderas Balderas S.R.L;1980-07-07;72.08
+5;Omar;Barrera;josé luis.quintero@yahoo.com;de los Santos de los Santos S.R.L;1980-07-08;19.94
+6;LucĂ­a;Arteaga;silvia.zavala@prodigy.net.mx;"Silva; Silva y Silva Asociados S.C.";1980-07-09;62.09
+7;Isidro;Sierra;leonardo.aguilera@hotmail.com;Grupo Financiero Medrano S.C.;1980-07-10;71.82
+8;BenjamĂ­n;Aguirre;alberto.santos@gmail.com;"Medina; Medina y Medina Asociados S.A.B.";1980-07-11;84.38
+9;Juan Carlos;Saucedo;samuel.rubio@prodigy.net.mx;"Vega; Vega y Vega Asociados S.C.";1980-07-12;80.05
+10;Fabiola;Luna;hugo.jaramillo@hotmail.com;Peña y Peña S.C.;1980-07-13;91.16
+11;Benito;Rodríguez;paula.ortiz@prodigy.net.mx;Garduño y Garduño S.C.;1980-07-14;53.34
+12;JosĂ© Antonio;May;olivia.caballero@yahoo.com;"Nájera; Nájera y Nájera Asociados S.A.B.";1980-07-15;57.53
+13;Gabriela;Romo;josé angel.ochoa@yahoo.com;Sociedad Núñez S.R.L;1980-07-16;24.42
+14;MarĂ­a;Esquivel;rodolfo.salazar@gmail.com;"Galván; Galván y Galván Asociados S.A. de C.V.";1980-07-17;32.4
+15;MoisĂ©s;Medrano;juan.villanueva@yahoo.com;Grupo Treviño S.A. de C.V.;1980-07-18;14.02
+16;Carlos Alberto;Ramírez;angélica.del ángel@gmail.com;"Toledo; Toledo y Toledo Asociados S.R.L";1980-07-19;11.78
+17;Carlos Alberto;Valencia;magdalena.de la torre@gmail.com;"Carrillo; Carrillo y Carrillo Asociados S.A. de C.V.";1980-07-20;76.23
+18;Antonio;Galindo;estela.cabrera@prodigy.net.mx;Leal Leal S.C.;1980-07-21;20.82
+19;Rogelio;Padilla;estela.carrasco@hotmail.com;Alcántara Alcántara S.R.L;1980-07-22;28.41
+20;Mario Alberto;Navarro;miguel.gómez@prodigy.net.mx;Guillén Guillén S.R.L;1980-07-23;26.49
+21;Israel;Cruz;beatriz.guerrero@hotmail.com;Colegio Duarte S.A. de C.V.;1980-07-24;39.05
+22;Mario Alberto;Juárez;benjamín.santos@gmail.com;Soto Soto S.R.L;1980-07-25;50.69
+23;Julio CĂ©sar;Nájera;javier.espinoza@hotmail.com;Armenta y Armenta S.R.L;1980-07-26;29.76
+24;Teresa;Quintana;juan antonio.carbajal@gmail.com;Luna y Luna S.A. de C.V.;1980-07-27;26.39
+25;AgustĂ­n;Marín;maría.caballero@prodigy.net.mx;Ordoñez y Ordoñez S.A.;1980-07-28;57.76
+26;Alberto;Blanco;juan carlos.coronado@yahoo.com;Grupo Financiero Gallegos S.A. de C.V.;1980-07-29;33.81
+27;Daniel;Tovar;gloria.castro@yahoo.com;Guevara y Guevara S.R.L;1980-07-30;91.15
+28;Edgar;Álvarez;rodolfo.monroy@yahoo.com;Fondo Herrera S.A.;1980-07-31;71.96
+29;Reyna;Arenas;ángel.báez@yahoo.com;de León de León S.R.L;1980-08-01;0.05
+30;Elena;Valadez;gabriel.duarte@gmail.com;Álvarez y Álvarez S.A. de C.V.;1980-08-02;0.79
+31;Agustina;del Ángel;teresa.salas@prodigy.net.mx;"Acevedo; Acevedo y Acevedo Asociados S.C.";1980-08-03;38.32
+32;Ăngel;Reyna;rosa maría.amador@prodigy.net.mx;Santillán y Santillán S.C.;1980-08-04;24.35
+33;Laura;Navarrete;guillermo.trejo@yahoo.com;Grupo Cordero S.A. de C.V.;1980-08-05;26.66
+34;Arturo;Rangel;lorenzo.guzmán@gmail.com;Quintero S.A.;1980-08-06;52.66
+35;Petra;Mendoza;carlos.peña@hotmail.com;Félix Félix S.R.L;1980-08-07;9.21
+36;Andrea;Maldonado;josé juan.varela@hotmail.com;"Castro; Castro y Castro Asociados S.C.";1980-08-08;64.49
+37;Maribel;Esparza;hugo.de la rosa@gmail.com;Sociedad Valdés S.C.;1980-08-09;4
+38;Jorge;Montes;sofía.mondragón@hotmail.com;Zapata y Zapata S.C.;1980-08-10;13.21
+39;Alejandra;Ordoñez;susana.nava@hotmail.com;Saldaña y Saldaña S.C.;1980-08-11;6.52
+40;Armando;Ríos;silvia.quintana@prodigy.net.mx;Jímenez y Jímenez S.A.B.;1980-08-12;47.21
+41;Mario Alberto;Leal;josé luis.ocampo@hotmail.com;"Padilla; Padilla y Padilla Asociados S.A.";1980-08-13;14.04
+42;NicolĂˇs;Rojas;maricela.olivares@gmail.com;Arredondo y Arredondo S.C.;1980-08-14;15.45
+43;Esperanza;Acevedo;francisco.córdova@hotmail.com;Molina y Molina S.R.L;1980-08-15;85.79
+44;Luis Alberto;Cisneros;guadalupe.molina@hotmail.com;Gálvez S.C.;1980-08-16;61.87
+45;Magdalena;Salas;laura.huerta@hotmail.com;Arroyo Arroyo S.A.B.;1980-08-17;33.33
+46;Lorenzo;Reyes;rocío.zaragoza@prodigy.net.mx;"Áviles; Áviles y Áviles Asociados S.C.";1980-08-18;79.53
+47;Miguel Ăngel;Escalante;josé alfredo.anaya@hotmail.com;Gallegos Gallegos S.A.B.;1980-08-19;84.11
+48;Elvira;Sánchez;martín.armenta@gmail.com;Santillán S.A.B.;1980-08-20;52.86
+49;Gerardo;Tapia;josé juan.álvarez@gmail.com;Sandoval y Sandoval S.C.;1980-08-21;85.63
+50;Ismael;Mercado;josé luis.morales@gmail.com;"Garza; Garza y Garza Asociados S.A.B.";1980-08-22;4.24
+51;Arturo;Ángeles;erika.solís@yahoo.com;"Rangel; Rangel y Rangel Asociados S.A. de C.V.";1980-08-23;21.95
+52;Lidia;Zavala;hugo.montiel@gmail.com;Palacios Palacios S.R.L;1980-08-24;25.64
+53;TomĂˇs;Téllez;felipe.meléndez@yahoo.com;Villarreal Villarreal S.R.L;1980-08-25;20.45
+54;Esther;Gálvez;gabriel.romo@hotmail.com;"Chávez; Chávez y Chávez Asociados S.A.";1980-08-26;99.09
+55;Martina;Granados;francisco.palacios@yahoo.com;Zamudio Zamudio S.A.;1980-08-27;4.47
+56;Mario Alberto;Gálvez;sofía.parra@prodigy.net.mx;Fondo Ruiz S.C.;1980-08-28;27.21
+57;Pedro;Carmona;marco antonio.valencia@gmail.com;"Figueroa; Figueroa y Figueroa Asociados S.C.";1980-08-29;33.96
+58;Alfonso;Amador;patricia.nieto@hotmail.com;Marín y Marín S.C.;1980-08-30;30.03
+59;Dolores;Ortiz;daniel.cortés@yahoo.com;Quintero Quintero S.R.L;1980-08-31;7.55
+60;Santiago;Amador;salvador.carrasco@hotmail.com;"Mondragón; Mondragón y Mondragón Asociados S.A. de C.V.";1980-09-01;43.09
+61;Martha;Ruiz;socorro.yáñez@yahoo.com;Mondragón Mondragón S.A.B.;1980-09-02;27.81
+62;Elvira;Baltazar;carlos.de la rosa@prodigy.net.mx;"Zapata; Zapata y Zapata Asociados S.A.B.";1980-09-03;38.02
+63;Ignacio;Olivares;beatriz.anaya@gmail.com;Grupo Financiero Ruiz S.A.B.;1980-09-04;58.46
+64;Rosario;Aguilar;maría.lugo@prodigy.net.mx;Guevara Guevara S.R.L;1980-09-05;97.62
+65;Silvia;Barajas;julia.navarrete@prodigy.net.mx;Leyva y Leyva S.R.L;1980-09-06;96.68
+66;Edgar;Yáñez;fernando.villanueva@hotmail.com;Lozano Lozano S.C.;1980-09-07;17.06
+67;Gregorio;Escamilla;gerardo.alcántara@gmail.com;Carrillo Carrillo S.A. de C.V.;1980-09-08;11.5
+68;Esteban;Rojas;juan.torres@prodigy.net.mx;Grupo Financiero Hidalgo S.A.B.;1980-09-09;78.77
+69;Martina;Osorio;elizabeth.de la rosa@gmail.com;Orozco S.C.;1980-09-10;45.69
+70;Juan;Duarte;estela.armenta@hotmail.com;Leyva Leyva S.C.;1980-09-11;5.63
+71;Consuelo;Castro;rosalba.ponce@yahoo.com;"Navarrete; Navarrete y Navarrete Asociados S.R.L";1980-09-12;74.93
+72;Petra;Corona;rosa maría.rocha@yahoo.com;Nieto Nieto S.A.B.;1980-09-13;34.6
+73;Fabiola;Ayala;mercedes.quezada@gmail.com;Carrillo y Carrillo S.R.L;1980-09-14;65.54
+74;Rosa MarĂ­a;Barajas;mario alberto.de la torre@hotmail.com;Cortez y Cortez S.A.B.;1980-09-15;53.94
+75;Rodrigo;Reyna;raymundo.barron@gmail.com;Colegio Medina S.R.L;1980-09-16;66.94
+76;JosĂ© Antonio;Peralta;julia.herrera@gmail.com;"Montoya; Montoya y Montoya Asociados S.A.B.";1980-09-17;4.21
+77;Amalia;Romo;lidia.lozano@gmail.com;"Ramírez; Ramírez y Ramírez Asociados S.A. de C.V.";1980-09-18;34.64
+78;BenjamĂ­n;Ponce;fabiola.valle@hotmail.com;Fondo Aguilera S.A.B.;1980-09-19;78.39
+79;Antonio;de la Rosa;adela.sandoval@hotmail.com;"Valdés; Valdés y Valdés Asociados S.A.";1980-09-20;65.84
+80;Edith;Soriano;esther.carrillo@yahoo.com;Arroyo y Arroyo S.A.B.;1980-09-21;53.06
+81;JosĂ© Antonio;Magaña;lidia.méndez@gmail.com;Alonso S.C.;1980-09-22;75.38
+82;Alicia;Esquivel;gloria.carrillo@gmail.com;Acosta S.A. de C.V.;1980-09-23;4.09
+83;TomĂˇs;Aguilar;gerardo.molina@yahoo.com;Venegas S.A. de C.V.;1980-09-24;72.2
+84;VĂ­ctor Hugo;Ávila;leticia.bautista@prodigy.net.mx;"Cortez; Cortez y Cortez Asociados S.A. de C.V.";1980-09-25;79.76
+85;Carlos Alberto;Lugo;patricia.ventura@yahoo.com;Peralta S.A. de C.V.;1980-09-26;64.67
+86;Ramiro;Villalobos;eduardo.rojas@gmail.com;Sociedad Velasco S.A.B.;1980-09-27;26.36
+87;Adriana;Ortega;salvador.romero@gmail.com;Grupo Villalobos S.A.B.;1980-09-28;19.44
+88;Gustavo;Rocha;rosa maría.guillén@gmail.com;Ramírez Ramírez S.A.;1980-09-29;49.4
+89;Yolanda;Camacho;verónica.córdova@yahoo.com;Varela Varela S.C.;1980-09-30;87.67
+90;Miguel;Hurtado;esteban.vidal@hotmail.com;Robles S.R.L;1980-10-01;93.28
+91;Gerardo;Cabrera;claudia.arriaga@yahoo.com;Santos y Santos S.A. de C.V.;1980-10-02;53.15
+92;Marcos;Pacheco;ismael.contreras@gmail.com;Carmona S.C.;1980-10-03;87.28
+93;Sergio;Madrigal;felipe.moreno@yahoo.com;"Escamilla; Escamilla y Escamilla Asociados S.A. de C.V.";1980-10-04;28.02
+94;Armando;Ojeda;aurora.de los santos@yahoo.com;Colegio Castellanos S.A.;1980-10-05;22.34
+95;Rogelio;Esquivel;jorge luis.cisneros@gmail.com;"Gallegos; Gallegos y Gallegos Asociados S.A. de C.V.";1980-10-06;49.44
+96;Salvador;Esparza;virginia.bravo@prodigy.net.mx;Saldaña y Saldaña S.A. de C.V.;1980-10-07;35.81
+97;TomĂˇs;Guzmán;miguel.márquez@prodigy.net.mx;Grupo Pineda S.R.L;1980-10-08;7.98
+98;Maricela;Gutiérrez;sonia.fuentes@hotmail.com;"Sotelo; Sotelo y Sotelo Asociados S.A. de C.V.";1980-10-09;16.68
+99;Patricia;Gaytán;lorenzo.cordero@yahoo.com;Herrera Herrera S.A. de C.V.;1980-10-10;57.6
+100;Magdalena;Hidalgo;beatriz.medrano@yahoo.com;Grupo Financiero Gutiérrez S.A.B.;1980-10-11;37.63
+101;Araceli;Torres;enrique.durán@gmail.com;Colegio Mondragón S.R.L;1980-10-12;27.42
+102;BenjamĂ­n;Maldonado;alfredo.quintero@hotmail.com;"Rendón; Rendón y Rendón Asociados S.A. de C.V.";1980-10-13;38.77
+103;Gerardo;Madrigal;santiago.garcía@gmail.com;Aguilera y Aguilera S.A.;1980-10-14;33.64
+104;Carlos Alberto;May;francisco.ocampo@yahoo.com;Santiago y Santiago S.C.;1980-10-15;58.11
+105;RamĂłn;Cázares;josé juan.gonzález@prodigy.net.mx;"Ocampo; Ocampo y Ocampo Asociados S.R.L";1980-10-16;1.89
+106;MartĂ­n;Ocampo;josé juan.moreno@gmail.com;Trejo y Trejo S.A.B.;1980-10-17;33.03
+107;Victoria;Ortiz;daniel.báez@gmail.com;Núñez y Núñez S.A.;1980-10-18;77.62
+108;FĂ©lix;Aguilera;josé angel.zapata@prodigy.net.mx;Escobedo S.A.;1980-10-19;1.71
+109;Gloria;Padilla;martín.valdez@gmail.com;"Bravo; Bravo y Bravo Asociados S.A. de C.V.";1980-10-20;67.01
+110;VĂ­ctor Hugo;Solís;antonia.bravo@prodigy.net.mx;Osorio y Osorio S.C.;1980-10-21;62.36
+111;Juan;Estrada;carlos.cuevas@hotmail.com;Alfaro y Alfaro S.A.;1980-10-22;0.04
+112;MarĂ­a Elena;Amador;felipe.caballero@prodigy.net.mx;Sociedad Treviño S.A. de C.V.;1980-10-23;8.43
+113;Rafael;Arteaga;josefina.leal@yahoo.com;Saucedo S.R.L;1980-10-24;98.78
+114;Jorge Alberto;Aranda;rocío.martínez@gmail.com;Suárez S.A.;1980-10-25;38.58
+115;JosĂ© Antonio;Hurtado;gustavo.juárez@yahoo.com;Domínguez Domínguez S.A. de C.V.;1980-10-26;20.29
+116;Rogelio;Velázquez;josefina.rivas@yahoo.com;"Esquivel; Esquivel y Esquivel Asociados S.R.L";1980-10-27;38.83
+117;Edith;Miranda;rodolfo.marín@prodigy.net.mx;Cuevas Cuevas S.A.;1980-10-28;97.65
+118;Juan Antonio;Rivas;paula.castillo@yahoo.com;Palma S.A.;1980-10-29;81.63
+119;Rosa;Ochoa;miriam.moreno@prodigy.net.mx;Muñiz y Muñiz S.A.;1980-10-30;43.7
+120;Rodrigo;de León;alberto.cortés@yahoo.com;"Rivera; Rivera y Rivera Asociados S.A. de C.V.";1980-10-31;69.09
+121;Gregorio;Escamilla;lorenzo.castillo@yahoo.com;Ríos y Ríos S.A.;1980-11-01;97.95
+122;Lorena;Leyva;ignacio.corona@gmail.com;Rojas y Rojas S.A.;1980-11-02;38.25
+123;Ernesto;Ramos;amalia.rico@prodigy.net.mx;Anaya Anaya S.R.L;1980-11-03;72.71
+124;Salvador;Villalobos;rodolfo.soto@prodigy.net.mx;Rivas Rivas S.A.;1980-11-04;21.41
+125;Rosa;Covarrubias;lorenzo.hurtado@yahoo.com;Fondo Alvarado S.A.;1980-11-05;93.65
+126;Rosalba;Trejo;victoria.treviño@gmail.com;Fondo Trujillo S.C.;1980-11-06;27.45
+127;Mariana;Sosa;jesús.balderas@hotmail.com;Nava S.C.;1980-11-07;82.55
+128;Alfredo;Meza;josé juan.acosta@gmail.com;Arias y Arias S.A. de C.V.;1980-11-08;48.94
+129;Guadalupe;Díaz;andrés.saldaña@hotmail.com;Téllez y Téllez S.A. de C.V.;1980-11-09;16.45
+130;Petra;Sandoval;joel.rico@yahoo.com;"de León; de León y de León Asociados S.R.L";1980-11-10;56.78
+131;JosĂ© Antonio;Rodríguez;israel.correa@yahoo.com;"Reséndiz; Reséndiz y Reséndiz Asociados S.A. de C.V.";1980-11-11;31.91
+132;Edgar;Cisneros;beatriz.de la torre@hotmail.com;Segura Segura S.C.;1980-11-12;79.63
+133;Carmen;Dávila;isabel.alarcón@yahoo.com;"Díaz; Díaz y Díaz Asociados S.A. de C.V.";1980-11-13;62.89
+134;MarĂ­a de Lourdes;Saucedo;carmen.ochoa@hotmail.com;Montoya y Montoya S.A. de C.V.;1980-11-14;71.57
+135;Ramiro;Jímenez;teresa.bravo@gmail.com;"Contreras; Contreras y Contreras Asociados S.A. de C.V.";1980-11-15;85.35
+136;Gerardo;García;mónica.nieto@prodigy.net.mx;Corona S.R.L;1980-11-16;98.62
+137;Gerardo;Galván;adela.león@gmail.com;Martínez S.A.B.;1980-11-17;43.26
+138;Lorenzo;Rosas;david.de león@hotmail.com;Valadez y Valadez S.A. de C.V.;1980-11-18;57.17
+139;Rodolfo;León;ofelia.bernal@hotmail.com;"Cuevas; Cuevas y Cuevas Asociados S.C.";1980-11-19;95.41
+140;ConcepciĂłn;Granados;josé angel.guevara@hotmail.com;Ángeles Ángeles S.A. de C.V.;1980-11-20;15.05
+141;JosĂ© Luis;Medina;agustina.palma@prodigy.net.mx;"Solís; Solís y Solís Asociados S.R.L";1980-11-21;17.34
+142;Luis Alberto;Sosa;laura.medrano@prodigy.net.mx;Mejía S.R.L;1980-11-22;13.31
+143;SaĂşl;Enríquez;margarita.villa@yahoo.com;Fondo Domínguez S.A.;1980-11-23;30.01
+144;RocĂ­o;León;david.arias@prodigy.net.mx;Mora y Mora S.A. de C.V.;1980-11-24;15.93
+145;Graciela;Valencia;carolina.alvarado@gmail.com;Ángeles S.A.B.;1980-11-25;89.05
+146;Miguel;García;raquel.magaña@prodigy.net.mx;Villarreal S.A. de C.V.;1980-11-26;59.36
+147;CĂ©sar;Vargas;abel.becerra@gmail.com;Sociedad Castillo S.A. de C.V.;1980-11-27;33.1
+148;Abel;Jímenez;jorge.quezada@gmail.com;Sandoval y Sandoval S.R.L;1980-11-28;56.85
+149;JosĂ© Luis;Enríquez;amalia.trujillo@gmail.com;"Calderón; Calderón y Calderón Asociados S.R.L";1980-11-29;55.75
+150;Esperanza;Trejo;rigoberto.de la cruz@gmail.com;Herrera Herrera S.A. de C.V.;1980-11-30;9.35
+151;CĂ©sar;Meza;marisol.cervantes@yahoo.com;Villarreal y Villarreal S.A. de C.V.;1980-12-01;75.46
+152;Elizabeth;Alvarado;gabriel.barrios@hotmail.com;Juárez Juárez S.C.;1980-12-02;77.69
+153;Pablo;Ortiz;yolanda.acosta@yahoo.com;Espinosa Espinosa S.A.;1980-12-03;46.13
+154;JosĂ© Alfredo;Zavala;alfredo.fernández@prodigy.net.mx;Ibarra y Ibarra S.C.;1980-12-04;76.28
+155;JosĂ© Angel;Medrano;adrián.ibarra@prodigy.net.mx;Serrano Serrano S.A.B.;1980-12-05;86.14
+156;Guadalupe;Acevedo;margarita.hidalgo@prodigy.net.mx;Grupo Cárdenas S.A. de C.V.;1980-12-06;59.64
+157;Israel;Escalante;gilberto.arreola@hotmail.com;Medina y Medina S.C.;1980-12-07;35.67
+158;Beatriz;Correa;ángel.cano@prodigy.net.mx;Grupo Financiero Santillán S.C.;1980-12-08;26.94
+159;VerĂłnica;Medina;mario.rubio@gmail.com;Fernández S.A. de C.V.;1980-12-09;55.26
+160;Pablo;Marín;concepción.rico@hotmail.com;Gil S.A. de C.V.;1980-12-10;59.49
+161;Margarita;Tovar;rosa.mondragón@gmail.com;Grupo Financiero Reyna S.A.;1980-12-11;97.99
+162;Aurora;Aguirre;esther.escalante@gmail.com;Zamora y Zamora S.A.B.;1980-12-12;10.3
+163;Ignacio;Jaramillo;juan.lugo@gmail.com;Fondo Román S.R.L;1980-12-13;63.63
+164;Petra;Segura;isabel.salas@prodigy.net.mx;Olivares S.R.L;1980-12-14;66.68
+165;Mercedes;Olivares;eduardo.delgado@gmail.com;Caballero y Caballero S.C.;1980-12-15;36.64
+166;Andrea;Solís;leticia.sánchez@prodigy.net.mx;Trejo Trejo S.C.;1980-12-16;25.34
+167;Ăngel;Guzmán;sonia.leal@prodigy.net.mx;Fondo Granados S.R.L;1980-12-17;26.22
+168;Andrea;Tapia;margarita.sotelo@gmail.com;Grupo Financiero Carrillo S.A.;1980-12-18;29.48
+169;Guillermina;Molina;jorge luis.quiroz@prodigy.net.mx;Barragán S.A.B.;1980-12-19;42.84
+170;Ignacio;Domínguez;óscar.antonio@yahoo.com;Estrada Estrada S.C.;1980-12-20;77.32
+171;JosĂ© Angel;Velasco;elvira.ángeles@hotmail.com;Lugo y Lugo S.A. de C.V.;1980-12-21;32.65
+172;AndrĂ©s;Vásquez;maría.arias@gmail.com;"Salinas; Salinas y Salinas Asociados S.A. de C.V.";1980-12-22;87.2
+173;RamĂłn;Maldonado;miguel ángel.zapata@yahoo.com;"del Ángel; del Ángel y del Ángel Asociados S.C.";1980-12-23;41.49
+174;Jorge Luis;de la Torre;luis alberto.armenta@hotmail.com;Grupo Financiero Morales S.C.;1980-12-24;95.72
+175;Leticia;Arredondo;aurora.rubio@hotmail.com;"Medrano; Medrano y Medrano Asociados S.A. de C.V.";1980-12-25;30.14
+176;Juan Carlos;Carranza;agustín.padilla@gmail.com;"Durán; Durán y Durán Asociados S.A.B.";1980-12-26;27.77
+177;Mario Alberto;Duarte;óscar.trejo@yahoo.com;Colegio Enríquez S.R.L;1980-12-27;20.72
+178;JosĂ© Juan;Velázquez;rosa maría.antonio@yahoo.com;Camacho y Camacho S.C.;1980-12-28;51.22
+179;Ismael;Yáñez;sandra.antonio@prodigy.net.mx;Rosales S.R.L;1980-12-29;22.54
+180;Arturo;Félix;josé angel.carrera@hotmail.com;"Barrios; Barrios y Barrios Asociados S.C.";1980-12-30;61.8
+181;Erika;Barajas;catalina.pacheco@hotmail.com;Salgado Salgado S.C.;1980-12-31;87.8
+182;Juan Antonio;Tovar;carolina.morales@yahoo.com;de la Rosa y de la Rosa S.R.L;1981-01-01;14.63
+183;Teresa;Alvarado;antonia.vega@gmail.com;Villalobos y Villalobos S.A. de C.V.;1981-01-02;51.93
+184;SofĂ­a;Gómez;alejandra.olvera@hotmail.com;Tovar S.A. de C.V.;1981-01-03;67.53
+185;Mercedes;Márquez;moisés.valadez@prodigy.net.mx;May May S.A.B.;1981-01-04;58.52
+186;Joel;Chávez;salvador.lópez@yahoo.com;"Figueroa; Figueroa y Figueroa Asociados S.A.B.";1981-01-05;46.3
+187;Claudia;Pineda;jesús.tovar@prodigy.net.mx;Grupo Valdés S.A. de C.V.;1981-01-06;88.94
+188;Raymundo;Aguilera;guillermo.bernal@gmail.com;Rocha S.A.B.;1981-01-07;14.69
+189;Silvia;Chávez;alejandra.barrera@gmail.com;Méndez Méndez S.A.;1981-01-08;66.33
+190;Estela;Ruiz;petra.santos@hotmail.com;Macías Macías S.C.;1981-01-09;90.95
+191;TomĂˇs;Blanco;omar.salinas@yahoo.com;Guerrero S.C.;1981-01-10;82.3
+192;Edgar;Enríquez;micaela.pacheco@gmail.com;"Gallardo; Gallardo y Gallardo Asociados S.R.L";1981-01-11;19.29
+193;LucĂ­a;Valencia;karina.vega@hotmail.com;Colegio Morales S.C.;1981-01-12;72.37
+194;BenjamĂ­n;Ruiz;elizabeth.rosas@gmail.com;Escamilla Escamilla S.R.L;1981-01-13;80.08
+195;Celia;Arellano;ángela.villalobos@gmail.com;Núñez Núñez S.A.;1981-01-14;8.43
+196;CĂ©sar;Segura;juan carlos.balderas@gmail.com;"Guevara; Guevara y Guevara Asociados S.A. de C.V.";1981-01-15;16.59
+197;Gabriel;Ocampo;josé antonio.navarro@gmail.com;Castellanos Castellanos S.A.B.;1981-01-16;68.58
+198;MarĂ­a Luisa;Valencia;marco antonio.aguirre@prodigy.net.mx;"Varela; Varela y Varela Asociados S.A.B.";1981-01-17;11.56
+199;Petra;Rico;marina.arreola@prodigy.net.mx;Grupo Santos S.R.L;1981-01-18;18.26
+200;Cristina;Vega;marina.santillán@prodigy.net.mx;Rodríguez S.A.B.;1981-01-19;64.65
+201;Gerardo;Parra;julia.lira@hotmail.com;Colegio Camacho S.A. de C.V.;1981-01-20;91.95
+202;AngĂ©lica;Soto;sandra.mata@hotmail.com;"Núñez; Núñez y Núñez Asociados S.R.L";1981-01-21;84.38
+203;Esther;Dávila;gilberto.rangel@gmail.com;"Herrera; Herrera y Herrera Asociados S.A.B.";1981-01-22;99.37
+204;Angelina;Francisco;luis.mercado@hotmail.com;León S.A.B.;1981-01-23;7.15
+205;Marina;Parra;carmen.salas@hotmail.com;Santana Santana S.A.B.;1981-01-24;10.16
+206;Ignacio;Zavala;yolanda.arroyo@prodigy.net.mx;Dávila S.A. de C.V.;1981-01-25;15.78
+207;NicolĂˇs;Áviles;raquel.sierra@prodigy.net.mx;Torres S.A.B.;1981-01-26;59.53
+208;Alejandra;Salas;karina.castañeda@yahoo.com;Sosa Sosa S.A.B.;1981-01-27;30.88
+209;Ofelia;Huerta;salvador.olvera@prodigy.net.mx;Sociedad Salas S.A. de C.V.;1981-01-28;96.08
+210;Silvia;Aparicio;rosa.córdova@hotmail.com;Molina Molina S.A.B.;1981-01-29;56.84
+211;Teresa;Miranda;jorge.córdova@yahoo.com;Santana y Santana S.A.B.;1981-01-30;89.77
+212;Antonia;Salas;antonia.valadez@yahoo.com;Molina y Molina S.R.L;1981-01-31;50.68
+213;Gerardo;Medina;liliana.guillén@hotmail.com;Grupo Parra S.A.B.;1981-02-01;82.17
+214;MarĂ­a Luisa;Montes;patricia.solís@hotmail.com;Sociedad Carranza S.A.B.;1981-02-02;53.58
+215;Adela;Áviles;tomás.acevedo@prodigy.net.mx;"Ibarra; Ibarra y Ibarra Asociados S.A. de C.V.";1981-02-03;84.22
+216;Margarita;Villarreal;andrés.villalobos@hotmail.com;"Báez; Báez y Báez Asociados S.A. de C.V.";1981-02-04;42.5
+217;Carolina;Arellano;maría de lourdes.ayala@prodigy.net.mx;Pérez Pérez S.A.;1981-02-05;74.06
+218;Graciela;Cano;jorge alberto.de la torre@prodigy.net.mx;Cázares y Cázares S.R.L;1981-02-06;70.81
+219;NicolĂˇs;Godínez;benjamín.barajas@gmail.com;Reséndiz S.A. de C.V.;1981-02-07;77.71
+220;Vicente;Morán;arturo.cabrera@prodigy.net.mx;Colegio Santiago S.A.;1981-02-08;24.04
+221;RubĂ©n;Huerta;olivia.macías@gmail.com;Santana Santana S.A.;1981-02-09;7.45
+222;Susana;Luna;concepción.de león@yahoo.com;"Alonso; Alonso y Alonso Asociados S.A.";1981-02-10;7.7
+223;Julia;Bravo;angelina.valenzuela@hotmail.com;Quintero S.A.B.;1981-02-11;11.78
+224;Jorge Luis;Yáñez;agustín.aparicio@yahoo.com;Granados y Granados S.A.B.;1981-02-12;51.44
+225;Benito;Lara;lilia.ávalos@yahoo.com;Saucedo S.A. de C.V.;1981-02-13;52.25
+226;AgustĂ­n;Zamora;reyna.navarrete@hotmail.com;Colegio Ríos S.R.L;1981-02-14;86.04
+227;Elizabeth;Acosta;gerardo.velasco@hotmail.com;Sociedad Zavala S.R.L;1981-02-15;55.27
+228;Isidro;Bernal;celia.márquez@prodigy.net.mx;Leyva y Leyva S.A.B.;1981-02-16;60.57
+229;Francisco;Barragán;nicolás.dávila@hotmail.com;de León S.A.B.;1981-02-17;3.55
+230;MarĂ­a Elena;Álvarez;irene.alarcón@gmail.com;Escobedo S.A. de C.V.;1981-02-18;84.76
+231;Catalina;May;eva.lira@yahoo.com;Cortés y Cortés S.A. de C.V.;1981-02-19;86.63
+232;SofĂ­a;Peña;verónica.arellano@hotmail.com;Martínez y Martínez S.A.B.;1981-02-20;31.87
+233;Antonia;Hernández;moisés.madrigal@prodigy.net.mx;Sierra y Sierra S.C.;1981-02-21;50.32
+234;Ăngel;Santillán;josé antonio.campos@hotmail.com;Suárez S.C.;1981-02-22;27.7
+235;Ofelia;Mata;gustavo.ponce@yahoo.com;Herrera S.A.B.;1981-02-23;91.36
+236;Alicia;Zavala;margarita.miranda@prodigy.net.mx;Quezada S.R.L;1981-02-24;98.74
+237;Dolores;Gámez;ramiro.gallardo@gmail.com;"Arteaga; Arteaga y Arteaga Asociados S.A.B.";1981-02-25;79.61
+238;Rodolfo;Valencia;david.enríquez@hotmail.com;Barrios y Barrios S.A. de C.V.;1981-02-26;5.4
+239;Lorenzo;Rendón;óscar.rojas@yahoo.com;Cárdenas Cárdenas S.C.;1981-02-27;40.59
+240;Isabel;Benítez;roberto.vidal@yahoo.com;Esparza S.A.B.;1981-02-28;51.25
+241;Samuel;Zúñiga;sergio.soriano@yahoo.com;Grupo Financiero Rosales S.C.;1981-03-01;56.59
+242;Sergio;Soto;norma.magaña@prodigy.net.mx;Bernal y Bernal S.C.;1981-03-02;26.41
+243;Esperanza;Meléndez;laura.galindo@prodigy.net.mx;Grupo Alonso S.C.;1981-03-03;94.44
+244;Guillermo;Navarrete;maricela.saldaña@yahoo.com;Meléndez S.A.B.;1981-03-04;9.54
+245;Martha;Romo;dolores.antonio@yahoo.com;Castellanos S.A. de C.V.;1981-03-05;18.82
+246;Humberto;Gómez;maría.varela@prodigy.net.mx;Colegio Alarcón S.A. de C.V.;1981-03-06;48.59
+247;Joel;Nava;sandra.carranza@gmail.com;de la Torre S.A.B.;1981-03-07;17.19
+248;MarĂ­a Elena;Solano;víctor.granados@gmail.com;Muñoz S.A.;1981-03-08;53.7
+249;Agustina;Solís;césar.villarreal@gmail.com;"Francisco; Francisco y Francisco Asociados S.C.";1981-03-09;36.99
+250;Guadalupe;Monroy;irene.vásquez@gmail.com;Salas Salas S.R.L;1981-03-10;36.84
+251;Armando;Galicia;carolina.ordoñez@gmail.com;Sociedad Figueroa S.C.;1981-03-11;0.63
+252;Leticia;Gámez;julia.ramírez@gmail.com;"Galván; Galván y Galván Asociados S.A.";1981-03-12;1.29
+253;JosĂ© Alfredo;Ayala;juan carlos.alarcón@yahoo.com;Dávila Dávila S.A.;1981-03-13;23.7
+254;Gilberto;González;mercedes.piña@gmail.com;Sociedad Islas S.R.L;1981-03-14;30.11
+255;Mario;Zamora;edgar.vargas@prodigy.net.mx;Sociedad Mata S.A.;1981-03-15;66.31
+256;Julio;Ochoa;lilia.amador@hotmail.com;Hernández S.A.B.;1981-03-16;17.17
+257;JosĂ© Luis;Gallardo;edith.moreno@prodigy.net.mx;Armenta y Armenta S.A.;1981-03-17;17.01
+258;AgustĂ­n;Valle;celia.dávila@hotmail.com;Áviles Áviles S.R.L;1981-03-18;77.37
+259;Ă“scar;Santillán;lucía.huerta@hotmail.com;"Villarreal; Villarreal y Villarreal Asociados S.A.";1981-03-19;58.08
+260;Claudia;Islas;josé juan.segura@hotmail.com;Ortiz S.C.;1981-03-20;25.74
+261;SaĂşl;Guerrero;rosalba.santillán@prodigy.net.mx;"Fernández; Fernández y Fernández Asociados S.A.";1981-03-21;25.88
+262;JosĂ© Alfredo;Salazar;elena.molina@gmail.com;Grupo Aranda S.A.B.;1981-03-22;20.32
+263;Alfonso;Gallegos;eduardo.villarreal@prodigy.net.mx;"Jímenez; Jímenez y Jímenez Asociados S.R.L";1981-03-23;42.11
+264;Silvia;Marín;adriana.lópez@yahoo.com;Núñez S.A.;1981-03-24;70.76
+265;JosĂ© Juan;Zamora;marina.lugo@hotmail.com;Grupo Financiero Espinoza S.R.L;1981-03-25;1.16
+266;Jaime;Orozco;elvira.meza@gmail.com;Grupo Blanco S.C.;1981-03-26;58.47
+267;VerĂłnica;Félix;rodrigo.tapia@yahoo.com;Arias Arias S.C.;1981-03-27;3.09
+268;Celia;Zaragoza;juan carlos.piña@yahoo.com;Alarcón S.A.B.;1981-03-28;34.36
+269;Rosalba;Zúñiga;verónica.ventura@prodigy.net.mx;Santiago Santiago S.A.;1981-03-29;87.53
+270;Lilia;Colín;olivia.núñez@yahoo.com;Fondo Suárez S.A. de C.V.;1981-03-30;31.37
+271;Angelina;Alvarado;samuel.zamudio@yahoo.com;Corona S.C.;1981-03-31;62.67
+272;Carlos;Gallardo;carolina.navarro@hotmail.com;"Martínez; Martínez y Martínez Asociados S.R.L";1981-04-01;83.35
+273;Rodolfo;Valdés;julio césar.rendón@gmail.com;Arellano y Arellano S.A. de C.V.;1981-04-02;19.32
+274;Cecilia;Aparicio;socorro.gonzález@hotmail.com;Mora S.A. de C.V.;1981-04-03;92.45
+275;Alejandro;Domínguez;martha.zavala@yahoo.com;Lugo y Lugo S.A.B.;1981-04-04;48.95
+276;Luz MarĂ­a;Leal;tomás.ramos@hotmail.com;"Anaya; Anaya y Anaya Asociados S.A.B.";1981-04-05;58.48
+277;Teresa;Fuentes;víctor.carmona@gmail.com;Contreras S.R.L;1981-04-06;46.34
+278;Julia;Gálvez;guillermina.jaramillo@prodigy.net.mx;Medrano y Medrano S.A.;1981-04-07;28.73
+279;Isabel;Torres;pedro.escamilla@hotmail.com;Gómez Gómez S.A.B.;1981-04-08;14.33
+280;Sergio;Dávila;susana.esquivel@prodigy.net.mx;"Ávila; Ávila y Ávila Asociados S.C.";1981-04-09;60.07
+281;Armando;Ávalos;hugo.salinas@prodigy.net.mx;Sociedad Contreras S.A. de C.V.;1981-04-10;14.57
+282;Raymundo;Román;carolina.castro@gmail.com;Cabrera y Cabrera S.R.L;1981-04-11;1.91
+283;Virginia;Vázquez;lilia.herrera@yahoo.com;Carrillo S.A. de C.V.;1981-04-12;32.97
+284;SaĂşl;Cisneros;miguel.de la torre@yahoo.com;"Vargas; Vargas y Vargas Asociados S.A.B.";1981-04-13;12.35
+285;HĂ©ctor;Yáñez;ana maría.carrera@gmail.com;Murillo y Murillo S.A. de C.V.;1981-04-14;80.98
+286;Javier;Quiroz;tomás.gálvez@yahoo.com;Aguirre y Aguirre S.A.B.;1981-04-15;47.34
+287;HĂ©ctor;Espinosa;elena.arreola@gmail.com;Vásquez S.A. de C.V.;1981-04-16;9.12
+288;Carmen;Aguilera;ana maría.molina@prodigy.net.mx;"Arroyo; Arroyo y Arroyo Asociados S.R.L";1981-04-17;7.78
+289;Celia;Bonilla;ignacio.trujillo@yahoo.com;Ramos S.R.L;1981-04-18;11.76
+290;RaĂşl;Macías;eduardo.de la rosa@hotmail.com;Padilla Padilla S.R.L;1981-04-19;69.77
+291;Gabriela;Lira;ángela.franco@gmail.com;"Barrera; Barrera y Barrera Asociados S.A.";1981-04-20;92.51
+292;Francisca;Galindo;armando.monroy@prodigy.net.mx;Gallegos S.R.L;1981-04-21;42.7
+293;Luis Alberto;Flores;juan carlos.vargas@prodigy.net.mx;May May S.A.B.;1981-04-22;98.92
+294;SofĂ­a;Rivas;laura.carbajal@yahoo.com;Mata Mata S.R.L;1981-04-23;17.32
+295;Mariana;del Ángel;elizabeth.núñez@prodigy.net.mx;Yáñez S.C.;1981-04-24;28.35
+296;Eduardo;Cortés;rosa.vargas@yahoo.com;"Madrigal; Madrigal y Madrigal Asociados S.A.";1981-04-25;56
+297;Araceli;Cisneros;angelina.del ángel@yahoo.com;Carbajal S.A. de C.V.;1981-04-26;31.4
+298;Virginia;Estrada;raquel.vázquez@yahoo.com;Grupo Financiero Hidalgo S.A.B.;1981-04-27;98.25
+299;JosĂ©;Mora;leticia.castellanos@hotmail.com;Córdova S.A. de C.V.;1981-04-28;65.72
+300;Juan Carlos;Delgado;maría de lourdes.flores@yahoo.com;Fondo Peralta S.A.;1981-04-29;73.78
+301;Pedro;Molina;adela.murillo@prodigy.net.mx;de León S.C.;1981-04-30;73.8
+302;Abel;Hernández;sandra.segura@yahoo.com;Santillán y Santillán S.C.;1981-05-01;29.4
+303;Raquel;Villanueva;marcela.pacheco@yahoo.com;Carrera y Carrera S.A.;1981-05-02;10.64
+304;FĂ©lix;Venegas;mercedes.rivera@yahoo.com;Grupo Financiero Estrada S.A. de C.V.;1981-05-03;44.5
+305;Eduardo;Carrera;consuelo.santiago@prodigy.net.mx;Soriano S.A.B.;1981-05-04;38.37
+306;Esperanza;Becerra;ernesto.varela@hotmail.com;Báez Báez S.A.;1981-05-05;69.41
+307;Rafael;de Jesús;miriam.molina@hotmail.com;Pacheco Pacheco S.A. de C.V.;1981-05-06;37.67
+308;David;Medina;guillermo.delgado@gmail.com;"Rivera; Rivera y Rivera Asociados S.A.";1981-05-07;21.68
+309;VerĂłnica;Chávez;edgar.piña@prodigy.net.mx;Mendoza y Mendoza S.C.;1981-05-08;84
+310;Enrique;Salas;rafael.aguirre@prodigy.net.mx;Grupo Ávalos S.R.L;1981-05-09;95.04
+311;Humberto;Leyva;leticia.venegas@hotmail.com;Luna S.R.L;1981-05-10;67.58
+312;Angelina;Marín;gregorio.domínguez@yahoo.com;Villarreal y Villarreal S.R.L;1981-05-11;14.06
+313;Micaela;Meza;juan antonio.bautista@yahoo.com;Fondo Sánchez S.R.L;1981-05-12;39.71
+314;Humberto;Guevara;pedro.hurtado@yahoo.com;"Quiroz; Quiroz y Quiroz Asociados S.A. de C.V.";1981-05-13;24.95
+315;Edgar;Arteaga;arturo.de jesús@prodigy.net.mx;Fondo Salgado S.R.L;1981-05-14;77.55
+316;Samuel;Solís;isabel.sierra@hotmail.com;Zepeda y Zepeda S.A.;1981-05-15;76.77
+317;Julio CĂ©sar;Ortega;angélica.pérez@hotmail.com;Durán y Durán S.A.B.;1981-05-16;29.61
+318;Jaime;Báez;manuel.granados@yahoo.com;Francisco S.A. de C.V.;1981-05-17;81.41
+319;Fernando;Cordero;josé.osorio@prodigy.net.mx;Segura y Segura S.A. de C.V.;1981-05-18;35.16
+320;NicolĂˇs;Islas;esteban.ventura@hotmail.com;"Cano; Cano y Cano Asociados S.A. de C.V.";1981-05-19;61.49
+321;Sergio;Garduño;silvia.ángeles@gmail.com;"Vega; Vega y Vega Asociados S.R.L";1981-05-20;71.19
+322;Lilia;Valdés;omar.solano@gmail.com;May y May S.A.;1981-05-21;7.68
+323;Adela;Cisneros;marcos.castellanos@prodigy.net.mx;Espinoza Espinoza S.A.B.;1981-05-22;37.7
+324;Salvador;Leal;alfredo.monroy@prodigy.net.mx;Orozco Orozco S.A.;1981-05-23;77.97
+325;Araceli;Medina;gabriela.santana@gmail.com;Caballero S.R.L;1981-05-24;29.62
+326;MarĂ­a de Lourdes;Magaña;edgar.velasco@gmail.com;Fondo Saldaña S.A. de C.V.;1981-05-25;26.35
+327;MarĂ­a;del Ángel;carolina.bautista@hotmail.com;Caballero y Caballero S.R.L;1981-05-26;94.31
+328;Elena;Nájera;agustina.gallegos@prodigy.net.mx;Ramos Ramos S.A.;1981-05-27;45.45
+329;Karina;Salas;adela.nava@hotmail.com;Montiel S.A. de C.V.;1981-05-28;36.87
+330;Graciela;Félix;miguel ángel.leal@prodigy.net.mx;Cabrera Cabrera S.A.B.;1981-05-29;32.36
+331;Luis;Espinoza;angelina.reyna@hotmail.com;Rojas Rojas S.A. de C.V.;1981-05-30;10.11
+332;Manuela;Vargas;cecilia.meléndez@gmail.com;Carbajal Carbajal S.A. de C.V.;1981-05-31;27.88
+333;Alejandro;Francisco;ángel.armenta@yahoo.com;Fondo Acevedo S.R.L;1981-06-01;26.31
+334;Araceli;Fernández;martina.alfaro@yahoo.com;Figueroa y Figueroa S.A.;1981-06-02;63.21
+335;FĂ©lix;Macías;rosa.pacheco@yahoo.com;del Ángel del Ángel S.A. de C.V.;1981-06-03;18.56
+336;Ramiro;Ávalos;carmen.cázares@hotmail.com;Valle Valle S.A.;1981-06-04;54.29
+337;Gabriel;Ocampo;martina.toledo@hotmail.com;Guillén Guillén S.C.;1981-06-05;91.28
+338;Ramiro;Balderas;maribel.pérez@hotmail.com;Reséndiz Reséndiz S.C.;1981-06-06;78.45
+339;RubĂ©n;Ruiz;margarita.díaz@gmail.com;Olivares Olivares S.A.;1981-06-07;61.16
+340;Luis Alberto;Calderón;araceli.muñiz@hotmail.com;"Mora; Mora y Mora Asociados S.A. de C.V.";1981-06-08;22.44
+341;Ăngel;Guillén;maribel.mercado@yahoo.com;Olvera S.A.;1981-06-09;48.79
+342;Martina;Villanueva;victoria.torres@prodigy.net.mx;Rivera y Rivera S.R.L;1981-06-10;10.86
+343;Eva;Saldaña;israel.martínez@hotmail.com;Olivares y Olivares S.R.L;1981-06-11;32.23
+344;Juan Carlos;Ángeles;maría.muñoz@yahoo.com;Rendón S.A. de C.V.;1981-06-12;72.25
+345;Paula;Carrera;antonio.mata@hotmail.com;Grupo Financiero Ocampo S.A.B.;1981-06-13;78.67
+346;Gregorio;Meza;josé alberto.montes@hotmail.com;"Flores; Flores y Flores Asociados S.A. de C.V.";1981-06-14;22.29
+347;Norma;Hernández;rodrigo.palacios@yahoo.com;Mondragón y Mondragón S.C.;1981-06-15;90.24
+348;ConcepciĂłn;Zamudio;susana.carrillo@prodigy.net.mx;Varela y Varela S.A.;1981-06-16;93.98
+349;Carlos;Serrano;esther.chávez@gmail.com;Luna Luna S.A.B.;1981-06-17;12.74
+350;JosĂ© Alberto;de León;rosalba.rangel@prodigy.net.mx;Grupo Financiero Treviño S.A. de C.V.;1981-06-18;8.76
+351;Pedro;Valencia;marcela.vega@prodigy.net.mx;"Rosales; Rosales y Rosales Asociados S.C.";1981-06-19;87.22
+352;RocĂ­o;Alonso;beatriz.flores@yahoo.com;Gámez S.A.;1981-06-20;5.34
+353;Joel;Aguilar;rocío.alonso@yahoo.com;Mata Mata S.C.;1981-06-21;68.57
+354;Jorge Alberto;Rentería;daniel.saldaña@hotmail.com;Morales y Morales S.R.L;1981-06-22;51.39
+355;Roberto;Vargas;david.jímenez@gmail.com;Benítez y Benítez S.A.B.;1981-06-23;82.96
+356;Martha;Zavala;josé alfredo.solís@hotmail.com;Camacho S.R.L;1981-06-24;91.6
+357;Sonia;Domínguez;andrea.armenta@gmail.com;Hurtado y Hurtado S.A.;1981-06-25;58.07
+358;Eduardo;Quintero;sergio.aguilar@prodigy.net.mx;"Medina; Medina y Medina Asociados S.A.B.";1981-06-26;2.34
+359;Roberto;Treviño;gregorio.arreola@prodigy.net.mx;Grupo Financiero Córdova S.A. de C.V.;1981-06-27;91.58
+360;Erika;Uribe;juan.palacios@gmail.com;Baltazar Baltazar S.R.L;1981-06-28;53.33
+361;Rosa MarĂ­a;Hurtado;francisco.arroyo@gmail.com;Espinosa Espinosa S.A.B.;1981-06-29;52.42
+362;Mario;Huerta;mario alberto.trujillo@hotmail.com;Zamudio Zamudio S.A. de C.V.;1981-06-30;28.39
+363;Jorge Luis;Enríquez;omar.mata@prodigy.net.mx;Fondo Toledo S.A.;1981-07-01;54.77
+364;Celia;Zaragoza;beatriz.arellano@prodigy.net.mx;Vázquez S.C.;1981-07-02;47.46
+365;MarĂ­a de Lourdes;Lira;julio.camacho@hotmail.com;Sociedad Segura S.A.;1981-07-03;51.75
+366;Ignacio;Flores;luis.herrera@gmail.com;Castañeda Castañeda S.A. de C.V.;1981-07-04;8.61
+367;LucĂ­a;Olvera;marcela.cuevas@gmail.com;Ayala Ayala S.A. de C.V.;1981-07-05;48.22
+368;Alberto;Nájera;benjamín.rivera@hotmail.com;Villegas S.A.;1981-07-06;38.97
+369;Yolanda;Ramírez;marcela.nieto@gmail.com;Lara S.A.;1981-07-07;90.5
+370;Martina;Alvarado;guillermina.soriano@yahoo.com;Fondo Blanco S.R.L;1981-07-08;97.12
+371;HĂ©ctor;de la Torre;samuel.escamilla@prodigy.net.mx;"Zavala; Zavala y Zavala Asociados S.A.B.";1981-07-09;5.45
+372;Adriana;Ventura;fabiola.morales@hotmail.com;de León S.R.L;1981-07-10;3.13
+373;MoisĂ©s;Márquez;irene.sierra@hotmail.com;Santana y Santana S.A.;1981-07-11;7.52
+374;Teresa;Torres;reyna.sierra@gmail.com;Guillén Guillén S.R.L;1981-07-12;17.2
+375;Elizabeth;Alvarado;reyna.romo@prodigy.net.mx;Pineda S.A.;1981-07-13;86.79
+376;SaĂşl;Zárate;alberto.de león@hotmail.com;Alvarado S.A. de C.V.;1981-07-14;31
+377;Lidia;Santillán;benito.rodríguez@hotmail.com;Pérez y Pérez S.A.B.;1981-07-15;23.71
+378;Juan Carlos;Robles;jesús.islas@yahoo.com;Grupo Velasco S.R.L;1981-07-16;48.62
+379;Olivia;Salas;omar.mata@hotmail.com;"Galindo; Galindo y Galindo Asociados S.A.";1981-07-17;30.45
+380;Sara;de Jesús;paula.arias@hotmail.com;Leal Leal S.R.L;1981-07-18;94.56
+381;VĂ­ctor;Contreras;ángela.hurtado@yahoo.com;Grupo Muñiz S.A.;1981-07-19;99.55
+382;Catalina;Campos;socorro.duarte@hotmail.com;Reyna S.A.B.;1981-07-20;6.85
+383;Claudia;Valdés;luis alberto.galván@hotmail.com;Serrano Serrano S.C.;1981-07-21;97.03
+384;Marcela;Estrada;rosa maría.bautista@hotmail.com;"Campos; Campos y Campos Asociados S.A.";1981-07-22;22.13
+385;Graciela;Rubio;rogelio.ríos@yahoo.com;Grupo Financiero Magaña S.A.B.;1981-07-23;89.6
+386;Margarita;Muñiz;jaime.ponce@gmail.com;Colegio Salazar S.A.B.;1981-07-24;89.37
+387;TomĂˇs;Fernández;alejandra.covarrubias@hotmail.com;Rico y Rico S.C.;1981-07-25;59.59
+388;JosĂ© Juan;Huerta;irene.quiroz@hotmail.com;Corona y Corona S.R.L;1981-07-26;19.6
+389;Francisca;Rosales;mario alberto.leal@prodigy.net.mx;Téllez Téllez S.C.;1981-07-27;72.01
+390;Marcela;Serrano;ernesto.vázquez@gmail.com;Guerrero Guerrero S.A.B.;1981-07-28;82.43
+391;Andrea;Castellanos;petra.lugo@prodigy.net.mx;Arroyo S.C.;1981-07-29;96.79
+392;Daniel;Gutiérrez;karina.garcía@prodigy.net.mx;Colegio Valdés S.A. de C.V.;1981-07-30;48.32
+393;Alicia;Fernández;consuelo.espinosa@yahoo.com;"Arias; Arias y Arias Asociados S.A. de C.V.";1981-07-31;7.15
+394;Ă“scar;Castañeda;jorge alberto.vera@hotmail.com;Camacho y Camacho S.R.L;1981-08-01;79.61
+395;Sara;Arteaga;maría de lourdes.balderas@yahoo.com;May y May S.A. de C.V.;1981-08-02;18.88
+396;NicolĂˇs;Magaña;armando.amador@yahoo.com;"Chávez; Chávez y Chávez Asociados S.R.L";1981-08-03;36.95
+397;Celia;Serrano;yolanda.rentería@hotmail.com;Solís S.C.;1981-08-04;71.41
+398;Isabel;Rico;fernando.bautista@yahoo.com;Arenas S.A. de C.V.;1981-08-05;62.58
+399;Teresa;Campos;guillermo.ramos@prodigy.net.mx;Molina Molina S.R.L;1981-08-06;92.84
+400;Elena;Ortega;humberto.galicia@yahoo.com;Sotelo Sotelo S.R.L;1981-08-07;60.83
+401;Araceli;Rico;ángela.meza@prodigy.net.mx;Tapia y Tapia S.C.;1981-08-08;19.76
+402;Alejandro;Moreno;elvira.guillén@gmail.com;"Ocampo; Ocampo y Ocampo Asociados S.A.B.";1981-08-09;34.07
+403;Lorena;Olvera;joel.carrillo@gmail.com;Trujillo S.A.B.;1981-08-10;36.24
+404;Abel;Sosa;paula.ortiz@hotmail.com;Vázquez Vázquez S.A. de C.V.;1981-08-11;70.31
+405;Celia;Gutiérrez;carmen.solano@prodigy.net.mx;Grupo Financiero Delgado S.C.;1981-08-12;53.8
+406;Elvira;Vidal;socorro.tovar@gmail.com;Morales S.C.;1981-08-13;73.03
+407;Edith;Cortés;juan carlos.pérez@gmail.com;Félix Félix S.R.L;1981-08-14;17.82
+408;Salvador;Salazar;maría luisa.rivera@prodigy.net.mx;"Peralta; Peralta y Peralta Asociados S.A. de C.V.";1981-08-15;87.13
+409;JosĂ© Luis;Alvarado;patricia.hernández@yahoo.com;May S.A.;1981-08-16;10.81
+410;Vicente;Rentería;mario.mata@hotmail.com;"Félix; Félix y Félix Asociados S.A.";1981-08-17;2.94
+411;Maribel;Serrano;marisol.mora@hotmail.com;Colegio Rico S.A.;1981-08-18;36.62
+412;Marco Antonio;Correa;martha.gálvez@yahoo.com;Bautista y Bautista S.A.B.;1981-08-19;16.5
+413;Jorge Luis;Montoya;yolanda.díaz@hotmail.com;Arenas Arenas S.R.L;1981-08-20;43.64
+414;MartĂ­n;Aparicio;miguel ángel.del ángel@hotmail.com;Fondo Velázquez S.R.L;1981-08-21;25.72
+415;Ernesto;Rico;margarita.francisco@gmail.com;Fondo Barrera S.C.;1981-08-22;51.41
+416;Ernesto;Zaragoza;alfonso.de jesús@yahoo.com;Miranda S.A.B.;1981-08-23;42.25
+417;Fabiola;Bonilla;pedro.lara@prodigy.net.mx;Vargas y Vargas S.A. de C.V.;1981-08-24;31.41
+418;Susana;Yáñez;arturo.ayala@gmail.com;Grupo Andrade S.A. de C.V.;1981-08-25;75.39
+419;Javier;Trujillo;alfredo.rubio@gmail.com;Grupo Baltazar S.R.L;1981-08-26;97.51
+420;Vicente;Ortiz;jorge.lópez@prodigy.net.mx;"Serrano; Serrano y Serrano Asociados S.A.";1981-08-27;81.52
+421;Virginia;Alonso;araceli.duarte@hotmail.com;"Yáñez; Yáñez y Yáñez Asociados S.A. de C.V.";1981-08-28;46.45
+422;Pablo;Zamora;adela.guillén@hotmail.com;"Guzmán; Guzmán y Guzmán Asociados S.A.B.";1981-08-29;88.78
+423;Angelina;Morales;bertha.ordoñez@hotmail.com;Santillán Santillán S.A.B.;1981-08-30;58.91
+424;Estela;Moreno;sandra.olvera@gmail.com;Gaytán y Gaytán S.C.;1981-08-31;76.75
+425;Virginia;Amador;abel.gómez@gmail.com;Pineda S.A.;1981-09-01;4.57
+426;Rafael;May;gabriela.salas@prodigy.net.mx;"Áviles; Áviles y Áviles Asociados S.R.L";1981-09-02;73.47
+427;Ana MarĂ­a;Calderón;martín.madrigal@hotmail.com;Serrano S.A.;1981-09-03;60.27
+428;Edgar;Zúñiga;jorge.armenta@gmail.com;Villegas Villegas S.C.;1981-09-04;93.24
+429;Elizabeth;Franco;marina.zavala@prodigy.net.mx;Grupo Financiero de Jesús S.A. de C.V.;1981-09-05;41.99
+430;Miguel;Olivares;nicolás.gallegos@hotmail.com;"Valdés; Valdés y Valdés Asociados S.R.L";1981-09-06;77.37
+431;Lorena;de Jesús;israel.zaragoza@hotmail.com;Carrillo Carrillo S.C.;1981-09-07;5.59
+432;MĂłnica;Valencia;héctor.quintero@prodigy.net.mx;Colegio Zamudio S.A. de C.V.;1981-09-08;72.6
+433;Sara;Amador;andrea.mendoza@hotmail.com;Cordero y Cordero S.R.L;1981-09-09;95.52
+434;Santiago;Treviño;rubén.arias@hotmail.com;"Gallardo; Gallardo y Gallardo Asociados S.C.";1981-09-10;28.75
+435;Elizabeth;Zamora;adriana.zavala@gmail.com;Rosales y Rosales S.C.;1981-09-11;18.17
+436;Ăngela;Islas;sonia.romero@prodigy.net.mx;Áviles y Áviles S.C.;1981-09-12;64.67
+437;Jaime;Rojas;maricela.ponce@hotmail.com;Duarte S.C.;1981-09-13;10.14
+438;Lorenzo;Ortega;félix.de la torre@gmail.com;Cisneros y Cisneros S.R.L;1981-09-14;20.62
+439;JosĂ© Alberto;de la Torre;paula.rivas@gmail.com;Gámez y Gámez S.R.L;1981-09-15;29.83
+440;MĂłnica;Gallardo;gloria.gómez@yahoo.com;"Trujillo; Trujillo y Trujillo Asociados S.A. de C.V.";1981-09-16;23.48
+441;Norma;Gaytán;óscar.quintana@prodigy.net.mx;Cortés y Cortés S.A.;1981-09-17;62.3
+442;Esperanza;Montoya;david.uribe@gmail.com;Grupo Leal S.R.L;1981-09-18;59.5
+443;Julio CĂ©sar;Valdez;adrián.olivares@gmail.com;Ojeda y Ojeda S.A.B.;1981-09-19;26.72
+444;Mario;Medrano;maribel.acosta@gmail.com;Guzmán y Guzmán S.R.L;1981-09-20;6.52
+445;Lorenzo;Villalobos;maría de lourdes.guerra@yahoo.com;Sociedad Calderón S.A. de C.V.;1981-09-21;66.28
+446;Beatriz;Benítez;teresa.peralta@prodigy.net.mx;de la Torre de la Torre S.R.L;1981-09-22;84.58
+447;JesĂşs;Ordoñez;alfonso.lira@prodigy.net.mx;Covarrubias Covarrubias S.R.L;1981-09-23;83.33
+448;JosĂ© Alfredo;Gallardo;leonardo.luna@yahoo.com;Álvarez Álvarez S.A. de C.V.;1981-09-24;60.63
+449;JosĂ© Antonio;Galindo;roberto.arteaga@hotmail.com;Peralta S.A. de C.V.;1981-09-25;26.42
+450;FĂ©lix;Segura;mariana.ortega@gmail.com;Quintero S.A.B.;1981-09-26;90.76
+451;Hugo;Quiroz;silvia.juárez@hotmail.com;Silva Silva S.C.;1981-09-27;7.12
+452;Ăngela;Montiel;luis alberto.olivares@hotmail.com;Zamora y Zamora S.A.;1981-09-28;12.96
+453;Carolina;de Jesús;francisca.alvarado@prodigy.net.mx;Alcántara y Alcántara S.A.;1981-09-29;8.19
+454;Teresa;Galicia;miguel ángel.yáñez@gmail.com;Ordoñez Ordoñez S.A. de C.V.;1981-09-30;56.37
+455;Luis;Valadez;patricia.olivares@prodigy.net.mx;del Ángel y del Ángel S.A. de C.V.;1981-10-01;71.68
+456;Patricia;Blanco;socorro.duarte@gmail.com;Yáñez Yáñez S.C.;1981-10-02;10.69
+457;Francisco;Cisneros;edith.escobar@yahoo.com;Franco y Franco S.C.;1981-10-03;27.77
+458;Francisca;Estrada;antonio.medina@gmail.com;Grupo Domínguez S.A.;1981-10-04;85.02
+459;Elena;Hernández;raymundo.garcía@prodigy.net.mx;Grupo Financiero Medrano S.C.;1981-10-05;38.4
+460;Lorena;de la Cruz;maría luisa.martínez@prodigy.net.mx;Montiel Montiel S.C.;1981-10-06;69.41
+461;Vicente;Gutiérrez;francisca.guillén@hotmail.com;López S.A.;1981-10-07;1.41
+462;Ăngel;Santillán;aurora.márquez@gmail.com;Espinoza Espinoza S.R.L;1981-10-08;19.57
+463;Jorge;Vega;alicia.rubio@gmail.com;Carrillo y Carrillo S.A.;1981-10-09;53.29
+464;Raquel;Tapia;sandra.campos@prodigy.net.mx;Bernal y Bernal S.R.L;1981-10-10;96.87
+465;Vicente;Cruz;fernando.bonilla@yahoo.com;Piña y Piña S.C.;1981-10-11;53.42
+466;Julio;Muñoz;carlos.gutiérrez@hotmail.com;Colegio García S.A.B.;1981-10-12;76.12
+467;Esperanza;Castillo;sonia.mejía@hotmail.com;Sociedad Quiroz S.R.L;1981-10-13;59.02
+468;JosĂ© Antonio;Ortega;césar.báez@prodigy.net.mx;Santiago S.A.;1981-10-14;56.08
+469;Esperanza;Castellanos;vicente.rocha@yahoo.com;Colegio Quiroz S.A. de C.V.;1981-10-15;55.01
+470;Rodrigo;Villegas;micaela.molina@gmail.com;Cuevas S.A.;1981-10-16;75.92
+471;JosĂ©;Varela;josé.saucedo@gmail.com;"Caballero; Caballero y Caballero Asociados S.A.";1981-10-17;80.09
+472;Sonia;Galván;moisés.valle@hotmail.com;Sociedad Ochoa S.A.;1981-10-18;19.67
+473;Vicente;Santos;guadalupe.castellanos@prodigy.net.mx;"Castañeda; Castañeda y Castañeda Asociados S.A.B.";1981-10-19;54.56
+474;Rigoberto;Sierra;andrea.olvera@hotmail.com;Castañeda y Castañeda S.A.;1981-10-20;23.79
+475;TomĂˇs;Tapia;rocío.vidal@hotmail.com;Félix Félix S.C.;1981-10-21;23.69
+476;Erika;Morales;alberto.ojeda@yahoo.com;Fondo Espinosa S.A. de C.V.;1981-10-22;46.26
+477;Esteban;Madrigal;isidro.rangel@yahoo.com;"Valdez; Valdez y Valdez Asociados S.A. de C.V.";1981-10-23;64.7
+478;Socorro;Medina;omar.guerra@hotmail.com;Solís S.A.B.;1981-10-24;93.41
+479;Gabriel;Segura;olivia.gil@gmail.com;Varela S.R.L;1981-10-25;88.07
+480;MarĂ­a Luisa;Zepeda;verónica.sierra@prodigy.net.mx;"Zamora; Zamora y Zamora Asociados S.C.";1981-10-26;78.59
+481;Martha;Zamudio;gustavo.romo@prodigy.net.mx;Jaramillo y Jaramillo S.A.;1981-10-27;91.31
+482;Luis;Anaya;marcela.de los santos@yahoo.com;"Ortiz; Ortiz y Ortiz Asociados S.A.B.";1981-10-28;31.52
+483;AdriĂˇn;Gámez;marco antonio.acosta@prodigy.net.mx;Colegio Mendoza S.R.L;1981-10-29;85.93
+484;Abel;Quintana;alejandro.becerra@gmail.com;"Cuevas; Cuevas y Cuevas Asociados S.A. de C.V.";1981-10-30;23.08
+485;Rosa;Pérez;sergio.velázquez@yahoo.com;Colegio Téllez S.R.L;1981-10-31;25.34
+486;Manuela;Juárez;abel.gaytán@hotmail.com;Villanueva Villanueva S.A.B.;1981-11-01;85.9
+487;Irene;Rosales;josé luis.varela@gmail.com;"Suárez; Suárez y Suárez Asociados S.A. de C.V.";1981-11-02;70.92
+488;Samuel;Bernal;josé alfredo.villa@hotmail.com;Colegio Duarte S.A. de C.V.;1981-11-03;21.16
+489;Irene;Calderón;maría elena.vargas@hotmail.com;Trujillo S.C.;1981-11-04;69.6
+490;Ăngel;Saldaña;margarita.coronado@prodigy.net.mx;Áviles y Áviles S.A. de C.V.;1981-11-05;95.42
+491;Alejandro;Hurtado;esteban.palacios@gmail.com;"Martínez; Martínez y Martínez Asociados S.C.";1981-11-06;2.33
+492;Marina;Castellanos;jorge luis.arreola@hotmail.com;Grupo Financiero Mendoza S.A. de C.V.;1981-11-07;63.51
+493;Cecilia;Rubio;césar.meza@prodigy.net.mx;Zárate y Zárate S.A.;1981-11-08;39.56
+494;RubĂ©n;Barrios;rosa maría.escalante@prodigy.net.mx;Tovar Tovar S.C.;1981-11-09;54.18
+495;Ernesto;León;alejandro.baltazar@hotmail.com;"González; González y González Asociados S.A.";1981-11-10;94.96
+496;Socorro;Saucedo;susana.rico@yahoo.com;González González S.A. de C.V.;1981-11-11;30.44
+497;VerĂłnica;Carbajal;hugo.aguilar@yahoo.com;Ponce Ponce S.A.;1981-11-12;59.66
+498;Guadalupe;Magaña;rafael.lira@gmail.com;Gómez Gómez S.C.;1981-11-13;76.38
+499;Norma;Balderas;concepción.solano@prodigy.net.mx;Grupo Financiero Alfaro S.C.;1981-11-14;79
+500;Carlos;Magaña;óscar.zapata@prodigy.net.mx;Fondo Arteaga S.A. de C.V.;1981-11-15;63.6
+501;Benito;Barron;félix.velasco@gmail.com;Monroy Monroy S.A. de C.V.;1981-11-16;74.82
+502;Marcela;Ochoa;rosalba.márquez@hotmail.com;Anaya S.A.;1981-11-17;43.8
+503;Olivia;Galván;josé guadalupe.valdez@gmail.com;"Peralta; Peralta y Peralta Asociados S.A.";1981-11-18;38.57
+504;Hugo;Soto;socorro.jaramillo@gmail.com;Hidalgo Hidalgo S.A.;1981-11-19;87.62
+505;Aurora;Escobar;reyna.zaragoza@prodigy.net.mx;Ávalos S.C.;1981-11-20;10.7
+506;Jaime;Saucedo;adela.león@prodigy.net.mx;Durán Durán S.A. de C.V.;1981-11-21;13.45
+507;Rosario;Chávez;juan carlos.murillo@yahoo.com;"González; González y González Asociados S.A.B.";1981-11-22;5.98
+508;Vicente;Rojas;maría de lourdes.corona@hotmail.com;Márquez y Márquez S.A.;1981-11-23;3.63
+509;Maricela;Rivas;rocío.antonio@hotmail.com;Palacios Palacios S.R.L;1981-11-24;45.45
+510;Graciela;Valle;sara.arriaga@hotmail.com;"Acevedo; Acevedo y Acevedo Asociados S.A.";1981-11-25;99.52
+511;Reyna;Zúñiga;gabriela.arellano@hotmail.com;Fondo Ríos S.A.B.;1981-11-26;64.3
+512;Leonardo;Ochoa;carlos.reséndiz@hotmail.com;Colegio Vásquez S.A. de C.V.;1981-11-27;70.78
+513;Virginia;Ocampo;juan antonio.piña@yahoo.com;"Armenta; Armenta y Armenta Asociados S.A. de C.V.";1981-11-28;0.94
+514;Norma;Barragán;pedro.santiago@hotmail.com;Arenas y Arenas S.R.L;1981-11-29;20.68
+515;Martina;Bautista;pablo.molina@gmail.com;Fondo León S.A.;1981-11-30;50.36
+516;Joel;Gómez;ramón.garcía@gmail.com;Grupo Valencia S.C.;1981-12-01;77.11
+517;JosĂ© Alberto;Palacios;maría de lourdes.montoya@prodigy.net.mx;Barron Barron S.A.B.;1981-12-02;21.91
+518;Juan;Espinosa;araceli.zepeda@yahoo.com;Grupo Torres S.C.;1981-12-03;21.54
+519;Silvia;Cortés;ricardo.valadez@prodigy.net.mx;Gaytán Gaytán S.R.L;1981-12-04;56.91
+520;Raymundo;Delgado;raquel.andrade@prodigy.net.mx;Serrano y Serrano S.A.B.;1981-12-05;76.2
+521;Victoria;Arreola;agustina.moreno@yahoo.com;Escamilla Escamilla S.A.;1981-12-06;87.82
+522;Irma;Quintana;victoria.rodríguez@gmail.com;"Carrasco; Carrasco y Carrasco Asociados S.R.L";1981-12-07;35.31
+523;Alejandra;Lira;ofelia.rodríguez@yahoo.com;Saucedo Saucedo S.C.;1981-12-08;3.78
+524;Norma;Escobar;irene.barron@prodigy.net.mx;Fondo Luna S.A.B.;1981-12-09;32.34
+525;Luis;Flores;sofía.esparza@hotmail.com;"Cervantes; Cervantes y Cervantes Asociados S.A.B.";1981-12-10;94.18
+526;Javier;Acosta;raúl.zúñiga@gmail.com;Fondo Fuentes S.A.;1981-12-11;53.7
+527;Elizabeth;Galicia;leticia.velasco@yahoo.com;Colegio Morán S.C.;1981-12-12;85.45
+528;Consuelo;Jaramillo;alejandra.armenta@prodigy.net.mx;Grupo Financiero Reyes S.A. de C.V.;1981-12-13;73.74
+529;Elena;Carrasco;josé juan.alvarado@prodigy.net.mx;"Coronado; Coronado y Coronado Asociados S.A.B.";1981-12-14;47.48
+530;Socorro;Saldaña;maría.sotelo@yahoo.com;Rendón S.A.B.;1981-12-15;9.64
+531;Maribel;Jaramillo;ernesto.navarrete@prodigy.net.mx;Gallardo S.A. de C.V.;1981-12-16;4.95
+532;Guadalupe;Valenzuela;jorge.sandoval@prodigy.net.mx;Valencia S.R.L;1981-12-17;0.52
+533;MarĂ­a de Lourdes;Campos;david.félix@hotmail.com;Colegio Flores S.C.;1981-12-18;41.07
+534;VĂ­ctor;Rocha;verónica.suárez@yahoo.com;Salas Salas S.C.;1981-12-19;58.48
+535;Samuel;Santana;mónica.zepeda@yahoo.com;Grupo Ponce S.C.;1981-12-20;72.72
+536;Aurora;Olvera;olivia.rico@yahoo.com;Ramos S.A.;1981-12-21;32.32
+537;MarĂ­a de Lourdes;Aguilar;elena.carrera@gmail.com;de Jesús y de Jesús S.A. de C.V.;1981-12-22;18.21
+538;SofĂ­a;Córdova;virginia.yáñez@hotmail.com;Leal S.R.L;1981-12-23;64.28
+539;Santiago;Zamudio;celia.quiroz@hotmail.com;"Magaña; Magaña y Magaña Asociados S.C.";1981-12-24;83.04
+540;Victoria;Ortiz;felipe.del ángel@yahoo.com;Martínez S.R.L;1981-12-25;9.01
+541;AdriĂˇn;Mora;santiago.félix@yahoo.com;Dávila y Dávila S.A.;1981-12-26;82.62
+542;Celia;Aguirre;verónica.ramos@yahoo.com;Sociedad Nájera S.A.;1981-12-27;59.12
+543;Ăngel;Sosa;julio.luna@gmail.com;Garduño Garduño S.A.B.;1981-12-28;80.23
+544;Humberto;Arroyo;josé angel.sosa@prodigy.net.mx;Alfaro Alfaro S.A. de C.V.;1981-12-29;77.01
+545;Roberto;Barrios;martín.ordoñez@yahoo.com;"Guerra; Guerra y Guerra Asociados S.A.B.";1981-12-30;87.26
+546;Marco Antonio;Osorio;pablo.medrano@prodigy.net.mx;Sociedad Guzmán S.R.L;1981-12-31;45.39
+547;Felipe;Aguilar;vicente.vidal@hotmail.com;Sierra S.R.L;1982-01-01;92.49
+548;Alejandro;Carrera;marcos.román@yahoo.com;Fondo Valdez S.A. de C.V.;1982-01-02;3.88
+549;Carmen;Yáñez;jorge.áviles@prodigy.net.mx;Fondo Zaragoza S.A. de C.V.;1982-01-03;17.37
+550;HĂ©ctor;Espinosa;gilberto.castro@yahoo.com;"Bravo; Bravo y Bravo Asociados S.A.B.";1982-01-04;53.86
+551;Julio CĂ©sar;Pacheco;jesús.cortés@prodigy.net.mx;Fondo Bonilla S.C.;1982-01-05;41.77
+552;Bertha;Delgado;karina.ibarra@hotmail.com;"Trejo; Trejo y Trejo Asociados S.A.";1982-01-06;64.09
+553;Elvira;Zavala;petra.reyes@yahoo.com;Ríos Ríos S.A.;1982-01-07;85.34
+554;Gabriela;Espinoza;omar.zepeda@prodigy.net.mx;Saldaña y Saldaña S.R.L;1982-01-08;53.37
+555;Alicia;Leyva;araceli.sotelo@prodigy.net.mx;"Valadez; Valadez y Valadez Asociados S.A.B.";1982-01-09;35.02
+556;Petra;Luna;martina.ayala@prodigy.net.mx;Fondo Vargas S.C.;1982-01-10;30.22
+557;Norma;Cordero;rogelio.alonso@gmail.com;"Valencia; Valencia y Valencia Asociados S.A. de C.V.";1982-01-11;71.59
+558;VerĂłnica;Antonio;benito.quintana@yahoo.com;"Valenzuela; Valenzuela y Valenzuela Asociados S.C.";1982-01-12;32.23
+559;Martha;Valencia;celia.colín@gmail.com;Hurtado Hurtado S.A.;1982-01-13;4.07
+560;Francisca;Venegas;aurora.muñoz@yahoo.com;"Mondragón; Mondragón y Mondragón Asociados S.R.L";1982-01-14;85.24
+561;Norma;Acosta;mario alberto.corona@gmail.com;Meléndez Meléndez S.R.L;1982-01-15;78.52
+562;Vicente;Huerta;rodolfo.villarreal@prodigy.net.mx;Castillo y Castillo S.A.B.;1982-01-16;35.64
+563;Maricela;Aguilera;marcos.vidal@yahoo.com;Guillén S.R.L;1982-01-17;89.56
+564;Luz MarĂ­a;Anaya;sara.bravo@hotmail.com;Sociedad Galindo S.C.;1982-01-18;44.35
+565;Ignacio;Peralta;joel.jímenez@prodigy.net.mx;"Ayala; Ayala y Ayala Asociados S.R.L";1982-01-19;12.33
+566;SofĂ­a;Rendón;elena.torres@prodigy.net.mx;Calderón y Calderón S.A.B.;1982-01-20;48.78
+567;Carlos;Becerra;mario alberto.zavala@gmail.com;Galindo S.A.;1982-01-21;57.42
+568;Jorge Luis;Zapata;paula.zapata@yahoo.com;Sociedad Sosa S.A.;1982-01-22;37.36
+569;Ismael;Montiel;josé.arredondo@gmail.com;"Rubio; Rubio y Rubio Asociados S.A.B.";1982-01-23;71.68
+570;NicolĂˇs;Lara;adriana.nájera@gmail.com;Grupo Barrera S.R.L;1982-01-24;61.17
+571;Lorenzo;Cervantes;lilia.vásquez@gmail.com;Flores S.A. de C.V.;1982-01-25;95.75
+572;Julio CĂ©sar;Soriano;sergio.cárdenas@yahoo.com;Rivera y Rivera S.R.L;1982-01-26;56.58
+573;Fabiola;Arias;armando.téllez@hotmail.com;Molina Molina S.A. de C.V.;1982-01-27;1.22
+574;Miriam;Mora;víctor hugo.padilla@gmail.com;Díaz Díaz S.A.B.;1982-01-28;33.96
+575;Julio CĂ©sar;Guillén;guillermo.valle@gmail.com;Cázares S.R.L;1982-01-29;64.67
+576;AndrĂ©s;Piña;josé guadalupe.santiago@yahoo.com;Alfaro y Alfaro S.C.;1982-01-30;19.24
+577;Julio;Arteaga;claudia.rangel@hotmail.com;Dávila y Dávila S.C.;1982-01-31;63.22
+578;Alicia;Zepeda;fernando.saucedo@gmail.com;Méndez S.A.;1982-02-01;19.18
+579;Ăngel;Medina;raúl.nava@hotmail.com;Rangel S.R.L;1982-02-02;61.72
+580;Elvira;Rentería;gabriela.gámez@hotmail.com;Grupo Medina S.A.B.;1982-02-03;28.35
+581;Miguel Ăngel;Ayala;elizabeth.quintero@prodigy.net.mx;"Becerra; Becerra y Becerra Asociados S.A. de C.V.";1982-02-04;91.15
+582;Gloria;Cabrera;alejandro.beltrán@yahoo.com;Álvarez y Álvarez S.R.L;1982-02-05;47.55
+583;HĂ©ctor;Macías;lorena.soto@yahoo.com;Espinosa S.R.L;1982-02-06;21.82
+584;Jorge Luis;Hurtado;paula.zárate@gmail.com;Dávila S.R.L;1982-02-07;41.45
+585;MarĂ­a;Escobedo;josé antonio.peralta@prodigy.net.mx;Monroy Monroy S.C.;1982-02-08;15.32
+586;Adela;Ocampo;eva.márquez@prodigy.net.mx;Hurtado Hurtado S.A.;1982-02-09;9.69
+587;Martina;Galicia;julio césar.castro@gmail.com;"Arias; Arias y Arias Asociados S.R.L";1982-02-10;91.94
+588;Juan Antonio;Barajas;maría de lourdes.medina@prodigy.net.mx;"Meza; Meza y Meza Asociados S.A. de C.V.";1982-02-11;72.73
+589;Manuel;Castillo;edgar.barrios@gmail.com;Gómez S.A. de C.V.;1982-02-12;92.53
+590;SaĂşl;Montiel;josé alfredo.mata@gmail.com;Nava S.A.;1982-02-13;4.54
+591;Hugo;Ponce;miriam.galván@hotmail.com;"Arroyo; Arroyo y Arroyo Asociados S.A.";1982-02-14;8.21
+592;Lilia;Quiroz;adela.báez@yahoo.com;Arteaga S.A. de C.V.;1982-02-15;60.81
+593;Lorenzo;Pacheco;alejandra.delgado@yahoo.com;Arias y Arias S.A.B.;1982-02-16;29.3
+594;Santiago;Salinas;petra.alvarado@gmail.com;Grupo Estrada S.R.L;1982-02-17;18.48
+595;Francisco;Carbajal;leticia.rivera@gmail.com;Baltazar Baltazar S.A.;1982-02-18;55.69
+596;CĂ©sar;Cortés;césar.figueroa@yahoo.com;"Leal; Leal y Leal Asociados S.A.";1982-02-19;31.88
+597;JosĂ© Angel;Ayala;micaela.valadez@prodigy.net.mx;Colegio Guerra S.R.L;1982-02-20;61.29
+598;MĂłnica;Flores;ramón.soriano@prodigy.net.mx;Villegas Villegas S.C.;1982-02-21;28.52
+599;Rafael;Correa;olivia.romo@yahoo.com;"Parra; Parra y Parra Asociados S.A.";1982-02-22;9.75
+600;Irma;Santiago;salvador.alarcón@yahoo.com;Grupo Financiero Navarro S.C.;1982-02-23;75.66
+601;Mercedes;Salinas;moisés.arreola@hotmail.com;"Ramírez; Ramírez y Ramírez Asociados S.A.B.";1982-02-24;40.42
+602;Abel;de la Cruz;samuel.arenas@gmail.com;"Lozano; Lozano y Lozano Asociados S.A. de C.V.";1982-02-25;94.05
+603;Julio;Alcántara;rocío.peña@prodigy.net.mx;Arellano S.A.B.;1982-02-26;41.98
+604;Ricardo;Fernández;hugo.carrasco@prodigy.net.mx;Cárdenas y Cárdenas S.A.;1982-02-27;30.53
+605;Yolanda;Fuentes;marcos.quezada@prodigy.net.mx;Valdés S.R.L;1982-02-28;85.43
+606;Jorge Luis;Garza;lidia.arias@prodigy.net.mx;Muñoz y Muñoz S.R.L;1982-03-01;12.84
+607;Martina;Villarreal;david.ortiz@prodigy.net.mx;Salas S.C.;1982-03-02;23.21
+608;Agustina;Aranda;jaime.garcía@hotmail.com;Rivera y Rivera S.A. de C.V.;1982-03-03;43.36
+609;Ramiro;Zaragoza;alejandro.delgado@hotmail.com;Sociedad Serrano S.A.B.;1982-03-04;71.76
+610;Miriam;Quiroz;marcos.zúñiga@yahoo.com;"Castañeda; Castañeda y Castañeda Asociados S.A.";1982-03-05;69.13
+611;Irene;González;gustavo.arias@hotmail.com;"Lira; Lira y Lira Asociados S.R.L";1982-03-06;71.62
+612;Erika;Piña;rosa.hurtado@hotmail.com;"Alcántara; Alcántara y Alcántara Asociados S.A.";1982-03-07;29.12
+613;Luis;Arriaga;manuela.villalobos@gmail.com;"Córdova; Córdova y Córdova Asociados S.A. de C.V.";1982-03-08;72.25
+614;Fernando;Camacho;yolanda.flores@gmail.com;Ortiz S.A. de C.V.;1982-03-09;94.36
+615;Gregorio;Gómez;carmen.gallardo@prodigy.net.mx;"Zepeda; Zepeda y Zepeda Asociados S.R.L";1982-03-10;74.91
+616;Andrea;de la Cruz;francisca.anaya@gmail.com;Sociedad Duarte S.R.L;1982-03-11;6.38
+617;Sergio;Yáñez;marcela.vidal@gmail.com;Palacios Palacios S.A.B.;1982-03-12;11.42
+618;Julio CĂ©sar;Barajas;maría elena.alfaro@gmail.com;Vázquez S.R.L;1982-03-13;94.27
+619;Samuel;Colín;antonia.márquez@yahoo.com;"Lara; Lara y Lara Asociados S.R.L";1982-03-14;62
+620;JosĂ© Antonio;Parra;micaela.soto@gmail.com;"Franco; Franco y Franco Asociados S.A.";1982-03-15;25.51
+621;Alejandro;Valenzuela;enrique.anaya@prodigy.net.mx;"de los Santos; de los Santos y de los Santos Asociados S.A. de C.V.";1982-03-16;62.95
+622;Martina;Delgado;jorge.zavala@hotmail.com;Cervantes y Cervantes S.C.;1982-03-17;70.12
+623;Israel;Castillo;liliana.ochoa@yahoo.com;Solano Solano S.A.;1982-03-18;11.91
+624;Daniel;Garduño;miriam.ortega@hotmail.com;Zapata S.A.B.;1982-03-19;38.13
+625;Catalina;Valenzuela;esther.armenta@prodigy.net.mx;"Rojas; Rojas y Rojas Asociados S.C.";1982-03-20;2.62
+626;Guillermo;Rangel;víctor.ojeda@yahoo.com;Grupo Villarreal S.R.L;1982-03-21;76.29
+627;Rogelio;Romo;jesús.serrano@hotmail.com;Grupo Financiero López S.A.;1982-03-22;65.49
+628;Silvia;Ángeles;ignacio.reséndiz@gmail.com;Esquivel Esquivel S.C.;1982-03-23;79.15
+629;JosĂ© Juan;Acosta;josé guadalupe.acevedo@gmail.com;Medrano Medrano S.R.L;1982-03-24;26.85
+630;Liliana;Molina;adrián.soriano@gmail.com;"Morales; Morales y Morales Asociados S.A.B.";1982-03-25;11.81
+631;Juan Antonio;Alvarado;aurora.olivares@gmail.com;Huerta Huerta S.A. de C.V.;1982-03-26;48.93
+632;Gerardo;Arredondo;sara.alarcón@gmail.com;Solano y Solano S.A. de C.V.;1982-03-27;45.05
+633;Martina;Rivas;andrea.cisneros@yahoo.com;Saucedo y Saucedo S.R.L;1982-03-28;61.18
+634;JosĂ© Angel;Villegas;agustín.vargas@hotmail.com;Fondo Aguilera S.A. de C.V.;1982-03-29;38.87
+635;Andrea;Solano;miriam.gallardo@hotmail.com;"Barrera; Barrera y Barrera Asociados S.C.";1982-03-30;27.02
+636;Margarita;Blanco;marina.salinas@yahoo.com;Garza Garza S.A.;1982-03-31;56.4
+637;JesĂşs;Pineda;susana.rodríguez@prodigy.net.mx;Grupo Financiero Mondragón S.A.;1982-04-01;11.91
+638;JesĂşs;Segura;humberto.escobedo@hotmail.com;Trejo S.R.L;1982-04-02;58.24
+639;Marcela;Montoya;micaela.espinosa@hotmail.com;Serrano Serrano S.A. de C.V.;1982-04-03;79.26
+640;JosĂ©;Tapia;ricardo.rosas@hotmail.com;Flores y Flores S.A.;1982-04-04;86.19
+641;Francisca;Carrera;martín.sánchez@hotmail.com;Espinosa y Espinosa S.A.;1982-04-05;59.66
+642;Juan;Leyva;víctor hugo.valle@yahoo.com;Fondo Salgado S.A. de C.V.;1982-04-06;48.1
+643;Mario;Salgado;vicente.alonso@gmail.com;Lara y Lara S.C.;1982-04-07;31.55
+644;Guillermo;Saucedo;felipe.vega@gmail.com;Fondo Cortés S.A.;1982-04-08;20.94
+645;Catalina;Bravo;micaela.guerrero@gmail.com;Chávez Chávez S.A.;1982-04-09;53.73
+646;Marina;Cortés;josé guadalupe.garcía@gmail.com;"Calderón; Calderón y Calderón Asociados S.R.L";1982-04-10;90.85
+647;Lilia;Cázares;félix.rosas@prodigy.net.mx;"Salazar; Salazar y Salazar Asociados S.R.L";1982-04-11;82.82
+648;Javier;Carmona;ángel.carrillo@yahoo.com;Escobedo S.A.B.;1982-04-12;96.64
+649;Ăngel;Molina;bertha.sotelo@yahoo.com;Contreras Contreras S.A. de C.V.;1982-04-13;42.89
+650;Ăngel;Sosa;gabriela.rivas@prodigy.net.mx;de Jesús S.R.L;1982-04-14;70.5
+651;BenjamĂ­n;Bernal;juan antonio.montiel@hotmail.com;Mendoza S.C.;1982-04-15;37.21
+652;Adriana;Arteaga;julio.villalobos@prodigy.net.mx;González González S.A.B.;1982-04-16;18.02
+653;Petra;Esparza;irma.arteaga@gmail.com;Fondo Soto S.A.B.;1982-04-17;69.81
+654;Micaela;Valenzuela;josé.castillo@yahoo.com;Hidalgo Hidalgo S.C.;1982-04-18;22.32
+655;Alberto;Contreras;rosario.paredes@hotmail.com;Acosta S.C.;1982-04-19;89.5
+656;Rogelio;May;josé alberto.huerta@gmail.com;Guerra y Guerra S.A.B.;1982-04-20;26.1
+657;RamĂłn;Rodríguez;ignacio.barajas@yahoo.com;Grupo Financiero Ruiz S.R.L;1982-04-21;64.01
+658;Vicente;Morán;andrea.valdez@prodigy.net.mx;Villarreal Villarreal S.A.;1982-04-22;55.98
+659;Juan;Armenta;elena.rojas@yahoo.com;Huerta S.R.L;1982-04-23;14.77
+660;Teresa;Mondragón;karina.parra@gmail.com;"Colín; Colín y Colín Asociados S.R.L";1982-04-24;26.49
+661;Martha;Gallegos;jaime.domínguez@hotmail.com;Zavala y Zavala S.R.L;1982-04-25;91.17
+662;Maricela;Morán;luis alberto.gutiérrez@gmail.com;Meza y Meza S.R.L;1982-04-26;53.38
+663;Julio;Márquez;jaime.cruz@hotmail.com;Córdova y Córdova S.C.;1982-04-27;81.14
+664;ConcepciĂłn;Zavala;socorro.alcántara@hotmail.com;Mercado S.A.B.;1982-04-28;28.98
+665;Marco Antonio;Arellano;claudia.rivas@gmail.com;Grupo Financiero Amador S.A.B.;1982-04-29;55.8
+666;Enrique;Lara;cristina.anaya@gmail.com;Segura y Segura S.A.B.;1982-04-30;63.52
+667;Miriam;Téllez;josé alfredo.cuevas@yahoo.com;Sociedad de la Rosa S.A.;1982-05-01;39.12
+668;Yolanda;Quezada;sandra.zamudio@gmail.com;Núñez S.A.;1982-05-02;77.27
+669;Felipe;Zúñiga;jorge luis.ortiz@hotmail.com;Osorio S.C.;1982-05-03;8.12
+670;Silvia;Camacho;alicia.valdés@yahoo.com;Sotelo Sotelo S.A.B.;1982-05-04;77.88
+671;Esperanza;Ordoñez;rosa.rodríguez@prodigy.net.mx;"Zúñiga; Zúñiga y Zúñiga Asociados S.A. de C.V.";1982-05-05;40.24
+672;Aurora;Castellanos;maría de lourdes.aguilera@gmail.com;Macías Macías S.A.;1982-05-06;67.3
+673;Gabriel;Escalante;teresa.colín@yahoo.com;Arredondo Arredondo S.A. de C.V.;1982-05-07;76.53
+674;Alejandra;Bonilla;norma.contreras@hotmail.com;de los Santos de los Santos S.A.B.;1982-05-08;71.95
+675;Amalia;Sandoval;benito.hernández@yahoo.com;Morán y Morán S.A.;1982-05-09;3.49
+676;Alberto;León;marisol.villalobos@prodigy.net.mx;"Téllez; Téllez y Téllez Asociados S.C.";1982-05-10;62.24
+677;Manuel;López;paula.solano@prodigy.net.mx;Valdés Valdés S.R.L;1982-05-11;32.32
+678;Juan Antonio;Mejía;edgar.alfaro@hotmail.com;Ibarra Ibarra S.A. de C.V.;1982-05-12;41.27
+679;JosĂ© Guadalupe;Corona;carlos alberto.tovar@hotmail.com;"Guillén; Guillén y Guillén Asociados S.A.B.";1982-05-13;78.61
+680;Gabriela;Cano;carmen.baltazar@yahoo.com;"Galván; Galván y Galván Asociados S.R.L";1982-05-14;12.75
+681;Mercedes;Ponce;erika.sosa@gmail.com;Grupo Rivera S.A.B.;1982-05-15;94.82
+682;Salvador;Ángeles;antonio.de la cruz@hotmail.com;Padilla y Padilla S.A.B.;1982-05-16;43.53
+683;Enrique;García;luis alberto.castañeda@yahoo.com;Cordero Cordero S.C.;1982-05-17;52.14
+684;Teresa;Rentería;cristina.núñez@hotmail.com;Fondo de los Santos S.A. de C.V.;1982-05-18;82.33
+685;Antonia;Toledo;olivia.áviles@gmail.com;Gil y Gil S.R.L;1982-05-19;1.88
+686;MarĂ­a Elena;Zárate;erika.pérez@gmail.com;Beltrán Beltrán S.A.;1982-05-20;82.39
+687;Ăngel;Estrada;fabiola.díaz@hotmail.com;Molina Molina S.C.;1982-05-21;4.23
+688;AdriĂˇn;Rojas;cristina.tovar@yahoo.com;"Rivera; Rivera y Rivera Asociados S.C.";1982-05-22;59.2
+689;VĂ­ctor Hugo;Meza;abel.vidal@yahoo.com;Ávila y Ávila S.R.L;1982-05-23;3.1
+690;Ă“scar;Alfaro;mario.islas@hotmail.com;Castañeda y Castañeda S.A.;1982-05-24;32.89
+691;Olivia;Villalobos;martha.salgado@yahoo.com;"Aranda; Aranda y Aranda Asociados S.A.";1982-05-25;52.11
+692;Agustina;Vásquez;omar.ordoñez@yahoo.com;Morán y Morán S.A.;1982-05-26;8.57
+693;MarĂ­a Luisa;Mata;alfredo.nieto@prodigy.net.mx;"Mondragón; Mondragón y Mondragón Asociados S.C.";1982-05-27;81.67
+694;Martha;Varela;antonio.guillén@hotmail.com;Rentería y Rentería S.A. de C.V.;1982-05-28;13.94
+695;RubĂ©n;Cázares;olivia.antonio@prodigy.net.mx;Calderón y Calderón S.A. de C.V.;1982-05-29;9.42
+696;Mario;Valencia;patricia.ocampo@gmail.com;Sierra y Sierra S.A. de C.V.;1982-05-30;82.11
+697;MartĂ­n;Arriaga;catalina.del ángel@gmail.com;Ramírez y Ramírez S.A. de C.V.;1982-05-31;73.91
+698;Rosa MarĂ­a;Guerra;raymundo.piña@gmail.com;Barragán S.A. de C.V.;1982-06-01;58.83
+699;TomĂˇs;Chávez;miguel ángel.olivares@yahoo.com;Santiago S.A.;1982-06-02;49.92
+700;Lorena;Gámez;socorro.navarro@gmail.com;Sociedad Valle S.R.L;1982-06-03;55.09
+701;JosĂ© Alberto;Navarro;manuela.lugo@prodigy.net.mx;"de la Torre; de la Torre y de la Torre Asociados S.A.B.";1982-06-04;35.6
+702;Amalia;Herrera;eva.carrasco@gmail.com;"Duarte; Duarte y Duarte Asociados S.C.";1982-06-05;21.32
+703;Cristina;Contreras;adrián.ávalos@hotmail.com;Colegio Ramos S.A. de C.V.;1982-06-06;88.62
+704;RocĂ­o;Orozco;andrea.cabrera@prodigy.net.mx;Martínez y Martínez S.A.B.;1982-06-07;5.95
+705;Victoria;Espinosa;fernando.alarcón@hotmail.com;Carmona y Carmona S.A.B.;1982-06-08;98.67
+706;LucĂ­a;Jímenez;manuela.arroyo@prodigy.net.mx;Baltazar Baltazar S.R.L;1982-06-09;81.72
+707;Martha;Ángeles;luis alberto.villegas@prodigy.net.mx;Madrigal y Madrigal S.C.;1982-06-10;83.76
+708;Alejandra;Cázares;agustín.nieto@prodigy.net.mx;Serrano y Serrano S.R.L;1982-06-11;87.66
+709;Marcela;Alvarado;juan antonio.morales@gmail.com;"Covarrubias; Covarrubias y Covarrubias Asociados S.A. de C.V.";1982-06-12;72.92
+710;SaĂşl;Serrano;yolanda.acevedo@gmail.com;Colegio Sandoval S.A.;1982-06-13;85.36
+711;Sandra;Cárdenas;mario alberto.solís@yahoo.com;Colegio Mora S.R.L;1982-06-14;18.99
+712;Guadalupe;Silva;samuel.delgado@hotmail.com;Sociedad Alvarado S.A.B.;1982-06-15;66.16
+713;AngĂ©lica;Galicia;maribel.ortega@gmail.com;Saldaña y Saldaña S.C.;1982-06-16;73.31
+714;Gerardo;Balderas;esperanza.arenas@yahoo.com;Colegio Galicia S.C.;1982-06-17;53.85
+715;JosĂ© Luis;Trejo;omar.zavala@gmail.com;Gallegos S.A.;1982-06-18;46.91
+716;Gabriel;Méndez;josefina.villegas@prodigy.net.mx;Jímenez y Jímenez S.C.;1982-06-19;16.82
+717;Josefina;Luna;adrián.áviles@yahoo.com;Olvera S.A.;1982-06-20;95.54
+718;Esther;Galicia;abel.bravo@hotmail.com;"Mejía; Mejía y Mejía Asociados S.C.";1982-06-21;58.59
+719;Manuel;Benítez;araceli.trejo@yahoo.com;Fondo Gil S.A.B.;1982-06-22;61.86
+720;Sonia;Paredes;gilberto.vásquez@yahoo.com;Sánchez y Sánchez S.C.;1982-06-23;76.92
+721;Lidia;Magaña;olivia.acosta@yahoo.com;Molina S.C.;1982-06-24;20.14
+722;Virginia;Mondragón;lidia.aguilar@hotmail.com;Grupo Suárez S.A.;1982-06-25;35.56
+723;Francisca;Acevedo;vicente.sánchez@gmail.com;Grupo Financiero Figueroa S.A. de C.V.;1982-06-26;23.2
+724;Rodolfo;Quiroz;agustina.vargas@yahoo.com;Espinosa S.C.;1982-06-27;49.38
+725;Marisol;Rodríguez;francisco.lópez@prodigy.net.mx;Guerra S.A.B.;1982-06-28;98.13
+726;Ignacio;Cruz;agustina.flores@yahoo.com;Ramos Ramos S.C.;1982-06-29;50.49
+727;Josefina;Calderón;ignacio.durán@gmail.com;Colegio Blanco S.A. de C.V.;1982-06-30;68.47
+728;Eva;Alcántara;marcos.andrade@gmail.com;Quintero S.C.;1982-07-01;40.98
+729;Elena;Aguilera;josé angel.acevedo@hotmail.com;Covarrubias Covarrubias S.C.;1982-07-02;60.59
+730;Miguel;Ávila;julio.arreola@gmail.com;Rivas S.A.B.;1982-07-03;94.51
+731;Jorge Alberto;Dávila;marco antonio.maldonado@prodigy.net.mx;"Pérez; Pérez y Pérez Asociados S.A.B.";1982-07-04;40
+732;Juan;Carrasco;sofía.cárdenas@gmail.com;Juárez S.R.L;1982-07-05;96.94
+733;CĂ©sar;León;petra.gutiérrez@prodigy.net.mx;"Ocampo; Ocampo y Ocampo Asociados S.A.";1982-07-06;98.27
+734;JosĂ© Alfredo;Palma;cecilia.ojeda@gmail.com;"de los Santos; de los Santos y de los Santos Asociados S.A.";1982-07-07;1.53
+735;JosĂ© Angel;Balderas;josé antonio.ruiz@prodigy.net.mx;Alvarado Alvarado S.A.;1982-07-08;98.1
+736;Teresa;Guillén;víctor hugo.lara@yahoo.com;Aguilar Aguilar S.A.B.;1982-07-09;62.94
+737;MarĂ­a;Tapia;luis alberto.zárate@prodigy.net.mx;Reyes Reyes S.C.;1982-07-10;78.07
+738;Lidia;Quintero;marcos.jaramillo@hotmail.com;Barragán S.R.L;1982-07-11;30.84
+739;Edgar;Ruiz;ismael.zárate@gmail.com;"Moreno; Moreno y Moreno Asociados S.A. de C.V.";1982-07-12;9.7
+740;MarĂ­a;López;julia.arias@gmail.com;Fondo Reyes S.A.;1982-07-13;65.54
+741;Luis;Vázquez;mónica.piña@yahoo.com;Nieto Nieto S.A. de C.V.;1982-07-14;98.21
+742;Rosa MarĂ­a;Mejía;olivia.osorio@prodigy.net.mx;Vázquez y Vázquez S.A. de C.V.;1982-07-15;51.21
+743;Alberto;Pérez;josé guadalupe.cázares@gmail.com;Díaz S.A.B.;1982-07-16;81.67
+744;FĂ©lix;Juárez;esperanza.sandoval@gmail.com;Colegio Meza S.A.B.;1982-07-17;52.42
+745;Rodrigo;Hernández;césar.rocha@gmail.com;Valdés y Valdés S.C.;1982-07-18;35.57
+746;SaĂşl;Robles;humberto.islas@prodigy.net.mx;"Duarte; Duarte y Duarte Asociados S.A.";1982-07-19;95.62
+747;Alfonso;Lira;virginia.galindo@hotmail.com;"Delgado; Delgado y Delgado Asociados S.C.";1982-07-20;55.17
+748;Esther;Reséndiz;reyna.silva@hotmail.com;Bravo y Bravo S.C.;1982-07-21;75.06
+749;JosĂ© Alfredo;Villarreal;enrique.ibarra@gmail.com;del Ángel y del Ángel S.R.L;1982-07-22;5.59
+750;Micaela;del Ángel;irma.palma@hotmail.com;Molina S.A. de C.V.;1982-07-23;30.24
+751;Jorge Alberto;Nava;manuela.enríquez@yahoo.com;Grupo Esquivel S.A.;1982-07-24;89.27
+752;Angelina;Cruz;felipe.serrano@prodigy.net.mx;Sociedad Leyva S.C.;1982-07-25;28.14
+753;Elizabeth;Ayala;tomás.juárez@gmail.com;Fondo Cabrera S.A.;1982-07-26;37.31
+754;Gabriela;Ramírez;lucía.arriaga@prodigy.net.mx;Estrada Estrada S.R.L;1982-07-27;95.38
+755;VĂ­ctor Hugo;Tapia;cristina.alonso@gmail.com;Arredondo S.A.B.;1982-07-28;40.02
+756;Carlos;Benítez;estela.muñoz@prodigy.net.mx;Guerra Guerra S.A.;1982-07-29;82.25
+757;Carolina;Aranda;lilia.chávez@hotmail.com;Guevara Guevara S.A.B.;1982-07-30;64.73
+758;Cristina;Ordoñez;rosa.mendoza@gmail.com;Zepeda S.A.;1982-07-31;31.67
+759;LucĂ­a;Rojas;jorge luis.de león@yahoo.com;"Navarrete; Navarrete y Navarrete Asociados S.A.";1982-08-01;84.6
+760;JosĂ© Guadalupe;Martínez;concepción.báez@gmail.com;Rico S.A. de C.V.;1982-08-02;59.63
+761;Raquel;Leyva;moisés.aparicio@prodigy.net.mx;Robles S.R.L;1982-08-03;49.02
+762;Alfredo;Santos;rodrigo.escobar@yahoo.com;Sociedad Correa S.A. de C.V.;1982-08-04;0.1
+763;Francisca;Salas;maría de lourdes.peralta@gmail.com;Carrasco y Carrasco S.C.;1982-08-05;49.31
+764;Ăngel;Espinoza;josé angel.guerra@yahoo.com;Villanueva y Villanueva S.A.B.;1982-08-06;6.26
+765;Josefina;Suárez;susana.de la torre@yahoo.com;Colegio Trujillo S.A.B.;1982-08-07;75.75
+766;Arturo;Pineda;silvia.olivares@hotmail.com;Rentería Rentería S.A.;1982-08-08;41.45
+767;Alicia;Guerrero;erika.de jesús@prodigy.net.mx;Fondo Saldaña S.A.;1982-08-09;74.65
+768;Luis Alberto;Gil;edgar.galicia@prodigy.net.mx;Leyva S.A.B.;1982-08-10;7.57
+769;NicolĂˇs;Barrios;fernando.aguilar@hotmail.com;Sociedad Quintero S.A.;1982-08-11;16.28
+770;Pedro;Mondragón;petra.orozco@yahoo.com;Zamora Zamora S.A.;1982-08-12;97.37
+771;JesĂşs;Rivas;joel.camacho@prodigy.net.mx;Ponce Ponce S.A.;1982-08-13;91.48
+772;Rafael;Aguilera;maría de lourdes.valdés@hotmail.com;"Zepeda; Zepeda y Zepeda Asociados S.A.";1982-08-14;80.48
+773;MartĂ­n;Villarreal;guillermina.zapata@yahoo.com;Aguilar y Aguilar S.R.L;1982-08-15;3.12
+774;Miguel Ăngel;Francisco;josé alfredo.aguilar@prodigy.net.mx;Gutiérrez Gutiérrez S.A. de C.V.;1982-08-16;33.09
+775;Alicia;de la Torre;omar.esquivel@hotmail.com;Mora Mora S.A.B.;1982-08-17;87.71
+776;Eva;Aguilera;olivia.durán@hotmail.com;de la Torre y de la Torre S.C.;1982-08-18;49.26
+777;Ignacio;Guzmán;dolores.alcántara@yahoo.com;Lara S.R.L;1982-08-19;45.2
+778;Adriana;Morales;guillermo.zavala@yahoo.com;Arroyo S.A.B.;1982-08-20;60.24
+779;Marcos;Rubio;mario.rivera@prodigy.net.mx;Sociedad Macías S.A. de C.V.;1982-08-21;17.06
+780;CĂ©sar;Varela;mariana.islas@hotmail.com;Parra Parra S.A. de C.V.;1982-08-22;79.47
+781;Guillermina;Guerrero;maribel.medrano@prodigy.net.mx;Carmona Carmona S.C.;1982-08-23;1.03
+782;Arturo;Franco;benjamín.lópez@hotmail.com;Romo S.R.L;1982-08-24;56.82
+783;VerĂłnica;Arellano;felipe.blanco@prodigy.net.mx;Macías y Macías S.A.B.;1982-08-25;38.09
+784;MarĂ­a Luisa;Lozano;rosa.luna@prodigy.net.mx;Rico Rico S.C.;1982-08-26;0.51
+785;Esperanza;Acevedo;rocío.huerta@yahoo.com;Grupo Financiero Maldonado S.R.L;1982-08-27;35.24
+786;Josefina;García;reyna.pineda@gmail.com;Grupo Financiero Díaz S.R.L;1982-08-28;21.35
+787;RaĂşl;Fernández;francisco.vidal@gmail.com;Palma Palma S.R.L;1982-08-29;75.09
+788;Carmen;Córdova;magdalena.treviño@hotmail.com;"Bautista; Bautista y Bautista Asociados S.A.B.";1982-08-30;94.89
+789;Maricela;Correa;estela.francisco@gmail.com;Nájera y Nájera S.A.;1982-08-31;7.09
+790;Paula;Silva;araceli.valdés@gmail.com;"Esparza; Esparza y Esparza Asociados S.A.";1982-09-01;78.07
+791;MarĂ­a de Lourdes;Galván;rigoberto.maldonado@prodigy.net.mx;Colegio Campos S.C.;1982-09-02;60.52
+792;Rosario;Flores;lucía.castellanos@yahoo.com;Granados Granados S.A.;1982-09-03;70.3
+793;Carlos;Sandoval;joel.villegas@hotmail.com;Islas S.C.;1982-09-04;78.23
+794;David;de la Torre;elvira.álvarez@gmail.com;Martínez Martínez S.R.L;1982-09-05;70.92
+795;Marisol;Baltazar;isidro.navarro@hotmail.com;Durán S.A.;1982-09-06;52.72
+796;Manuela;Segura;rodrigo.arenas@gmail.com;Fondo Ibarra S.A.;1982-09-07;59.16
+797;Marcela;Arredondo;reyna.colín@gmail.com;"Covarrubias; Covarrubias y Covarrubias Asociados S.C.";1982-09-08;81.64
+798;MarĂ­a;Cordero;angélica.aguilera@gmail.com;Alarcón Alarcón S.C.;1982-09-09;45.63
+799;Pablo;Torres;concepción.lópez@prodigy.net.mx;"Campos; Campos y Campos Asociados S.A.B.";1982-09-10;22.71
+800;Armando;Meléndez;josé antonio.andrade@gmail.com;Cisneros Cisneros S.R.L;1982-09-11;9.46
+801;RamĂłn;Trejo;karina.cisneros@gmail.com;Pacheco y Pacheco S.R.L;1982-09-12;63.34
+802;Juan Carlos;Sandoval;norma.silva@hotmail.com;Blanco y Blanco S.A.;1982-09-13;21.15
+803;Cristina;Barajas;mónica.rivas@yahoo.com;"Alfaro; Alfaro y Alfaro Asociados S.C.";1982-09-14;68.8
+804;Bertha;Monroy;carmen.castillo@gmail.com;Colegio Cruz S.A.;1982-09-15;40.81
+805;Consuelo;Gómez;ángela.villegas@yahoo.com;Salgado Salgado S.C.;1982-09-16;94.46
+806;Irma;Lira;karina.sosa@prodigy.net.mx;"Aranda; Aranda y Aranda Asociados S.A. de C.V.";1982-09-17;94.26
+807;Lidia;Bonilla;josé guadalupe.acosta@gmail.com;"Barrios; Barrios y Barrios Asociados S.C.";1982-09-18;48.95
+808;Hugo;Santos;leonardo.arreola@gmail.com;Figueroa y Figueroa S.C.;1982-09-19;39.79
+809;Omar;Galindo;marcela.caballero@prodigy.net.mx;"Zamora; Zamora y Zamora Asociados S.A.";1982-09-20;52.3
+810;Leticia;Mercado;josé alfredo.escamilla@yahoo.com;"Ortiz; Ortiz y Ortiz Asociados S.A.";1982-09-21;4.72
+811;Daniel;Miranda;catalina.arroyo@hotmail.com;"Salas; Salas y Salas Asociados S.A.";1982-09-22;17.26
+812;Marcela;Carrillo;ángel.olivares@prodigy.net.mx;Grupo Méndez S.A.B.;1982-09-23;60.16
+813;Yolanda;Rendón;lorenzo.gálvez@yahoo.com;Arredondo Arredondo S.A.B.;1982-09-24;85.9
+814;Alejandro;Garza;beatriz.leal@yahoo.com;Zamudio Zamudio S.A.B.;1982-09-25;12.06
+815;Fabiola;Suárez;adriana.balderas@yahoo.com;Cano Cano S.C.;1982-09-26;13.3
+816;Teresa;Hidalgo;rosalba.mora@yahoo.com;Mercado S.A. de C.V.;1982-09-27;74.87
+817;BenjamĂ­n;Madrigal;salvador.cordero@yahoo.com;Fondo Becerra S.C.;1982-09-28;14.41
+818;Ăngela;Cuevas;martina.pineda@gmail.com;Arias Arias S.R.L;1982-09-29;99.74
+819;Ana MarĂ­a;Olivares;cecilia.nava@prodigy.net.mx;Grupo Financiero Hidalgo S.A. de C.V.;1982-09-30;80.75
+820;Amalia;Barragán;hugo.may@yahoo.com;Segura y Segura S.A. de C.V.;1982-10-01;99.41
+821;Beatriz;Tapia;saúl.nava@prodigy.net.mx;"Gámez; Gámez y Gámez Asociados S.A.";1982-10-02;54.31
+822;Jorge;Valenzuela;tomás.cortez@hotmail.com;Alfaro Alfaro S.R.L;1982-10-03;27.57
+823;Yolanda;de Jesús;mónica.valencia@prodigy.net.mx;Grupo Financiero Piña S.A.B.;1982-10-04;85.23
+824;Patricia;Anaya;francisca.cruz@yahoo.com;Cabrera Cabrera S.C.;1982-10-05;69.01
+825;JesĂşs;Zárate;elizabeth.vásquez@hotmail.com;"Godínez; Godínez y Godínez Asociados S.A. de C.V.";1982-10-06;35.69
+826;Julia;Alcántara;maría luisa.camacho@hotmail.com;Grupo Granados S.A.;1982-10-07;99.04
+827;Cecilia;Becerra;javier.galván@hotmail.com;Reséndiz y Reséndiz S.C.;1982-10-08;60.44
+828;Reyna;Salgado;rogelio.villalobos@yahoo.com;de los Santos de los Santos S.C.;1982-10-09;5.7
+829;JosĂ© Guadalupe;Santos;agustín.félix@gmail.com;Rosas S.A.;1982-10-10;46.84
+830;Araceli;López;gabriel.galicia@gmail.com;Calderón y Calderón S.C.;1982-10-11;96.76
+831;Omar;May;mario alberto.morales@hotmail.com;"Nieto; Nieto y Nieto Asociados S.R.L";1982-10-12;36.22
+832;Marina;Campos;lorena.salinas@yahoo.com;Barron S.R.L;1982-10-13;55.51
+833;Mariana;Quezada;dolores.guzmán@yahoo.com;Grupo Financiero Zúñiga S.A.B.;1982-10-14;41.74
+834;Irene;Nava;fernando.varela@yahoo.com;"Castellanos; Castellanos y Castellanos Asociados S.C.";1982-10-15;66.07
+835;Ăngel;Guzmán;enrique.sánchez@prodigy.net.mx;Soto S.C.;1982-10-16;92.66
+836;Mariana;Vidal;dolores.valdés@hotmail.com;"Peña; Peña y Peña Asociados S.A.B.";1982-10-17;11.15
+837;Humberto;Escobar;luz maría.ojeda@hotmail.com;Meléndez Meléndez S.A. de C.V.;1982-10-18;55.42
+838;JosĂ© Antonio;Jímenez;araceli.acevedo@hotmail.com;Rojas S.A. de C.V.;1982-10-19;94.8
+839;Julio CĂ©sar;Lozano;silvia.palma@prodigy.net.mx;"Leal; Leal y Leal Asociados S.R.L";1982-10-20;40.3
+840;Jorge Alberto;Arreola;félix.muñiz@gmail.com;Arias y Arias S.A.B.;1982-10-21;60.62
+841;Ismael;Sánchez;alfredo.quezada@gmail.com;Esquivel Esquivel S.R.L;1982-10-22;98.65
+842;MartĂ­n;Delgado;jaime.carmona@hotmail.com;"Áviles; Áviles y Áviles Asociados S.A.";1982-10-23;45.18
+843;Cecilia;Nájera;isabel.quezada@hotmail.com;"Galicia; Galicia y Galicia Asociados S.R.L";1982-10-24;47.93
+844;Juan Antonio;Gutiérrez;silvia.bautista@prodigy.net.mx;Venegas y Venegas S.R.L;1982-10-25;18.67
+845;Patricia;Cruz;mónica.meza@hotmail.com;Valencia y Valencia S.A.;1982-10-26;45.04
+846;Jorge;de León;antonia.carrillo@prodigy.net.mx;Sociedad Enríquez S.R.L;1982-10-27;43.01
+847;Arturo;Pacheco;miguel ángel.osorio@yahoo.com;Jaramillo y Jaramillo S.A.;1982-10-28;26.86
+848;Samuel;Bravo;alberto.de león@yahoo.com;"Rangel; Rangel y Rangel Asociados S.A. de C.V.";1982-10-29;4.63
+849;Guadalupe;Alarcón;rodolfo.pérez@prodigy.net.mx;Sociedad Díaz S.C.;1982-10-30;81.54
+850;Margarita;del Ángel;abel.zúñiga@yahoo.com;de la Cruz de la Cruz S.C.;1982-10-31;18.83
+851;Alicia;Meléndez;carmen.zamora@gmail.com;Covarrubias Covarrubias S.A.;1982-11-01;33.31
+852;Martha;Chávez;maría.varela@yahoo.com;Colegio Quintero S.A. de C.V.;1982-11-02;27.33
+853;Ofelia;Cárdenas;patricia.venegas@yahoo.com;Ángeles S.A.B.;1982-11-03;66.07
+854;RubĂ©n;Olivares;sonia.dávila@yahoo.com;"Sotelo; Sotelo y Sotelo Asociados S.A.B.";1982-11-04;25.7
+855;Gabriel;Arellano;petra.de los santos@prodigy.net.mx;"Reséndiz; Reséndiz y Reséndiz Asociados S.A.B.";1982-11-05;68.89
+856;Alfonso;Rodríguez;graciela.corona@gmail.com;"Arenas; Arenas y Arenas Asociados S.C.";1982-11-06;26.25
+857;Adriana;Ángeles;silvia.álvarez@yahoo.com;Sociedad Bautista S.C.;1982-11-07;25.05
+858;Catalina;Lara;teresa.montiel@hotmail.com;"Islas; Islas y Islas Asociados S.A. de C.V.";1982-11-08;29.27
+859;Catalina;Carbajal;sonia.escalante@prodigy.net.mx;Fondo Álvarez S.A.B.;1982-11-09;43.57
+860;NicolĂˇs;Balderas;roberto.anaya@gmail.com;"Delgado; Delgado y Delgado Asociados S.C.";1982-11-10;96.1
+861;Marina;Venegas;virginia.carmona@hotmail.com;Sociedad Rico S.C.;1982-11-11;27.84
+862;Rogelio;Valdés;humberto.olivares@gmail.com;Orozco y Orozco S.C.;1982-11-12;77.26
+863;Abel;Trujillo;verónica.zamora@yahoo.com;Flores Flores S.R.L;1982-11-13;14.79
+864;Rosa MarĂ­a;Saldaña;enrique.navarrete@hotmail.com;Morán Morán S.R.L;1982-11-14;91.74
+865;MarĂ­a;Mendoza;irma.leal@prodigy.net.mx;Grupo Financiero de la Cruz S.A.;1982-11-15;95.32
+866;Juan;Piña;andrés.méndez@hotmail.com;Flores y Flores S.A.;1982-11-16;7.22
+867;Ăngela;Arenas;marco antonio.meléndez@gmail.com;Grupo Dávila S.C.;1982-11-17;32.04
+868;Edith;Escalante;fernando.vidal@hotmail.com;Galván Galván S.A. de C.V.;1982-11-18;69.92
+869;Antonia;Murillo;benito.romo@hotmail.com;Leyva S.A. de C.V.;1982-11-19;35.15
+870;Alejandro;Báez;josefina.salazar@gmail.com;Colegio Olivares S.C.;1982-11-20;44.49
+871;Lidia;Becerra;magdalena.barragán@prodigy.net.mx;Vega y Vega S.A. de C.V.;1982-11-21;97.12
+872;Rodrigo;Ávila;samuel.villarreal@hotmail.com;"Salgado; Salgado y Salgado Asociados S.A.B.";1982-11-22;75.01
+873;Javier;Caballero;nicolás.santana@yahoo.com;Leyva S.A. de C.V.;1982-11-23;47.91
+874;Rodrigo;Piña;micaela.amador@prodigy.net.mx;Martínez Martínez S.R.L;1982-11-24;75.31
+875;MarĂ­a de Lourdes;Trejo;antonio.gaytán@hotmail.com;Grupo Financiero Corona S.A.;1982-11-25;96.7
+876;Gregorio;Valadez;mercedes.carrasco@gmail.com;Valadez S.A.;1982-11-26;16.76
+877;Yolanda;Ángeles;marco antonio.solís@yahoo.com;Grupo Acosta S.A.B.;1982-11-27;14.89
+878;Julio;Ayala;israel.lópez@yahoo.com;Guevara Guevara S.A.;1982-11-28;54.13
+879;Carmen;de Jesús;alicia.mejía@gmail.com;Medina y Medina S.R.L;1982-11-29;76.31
+880;Guillermina;Navarrete;omar.vera@prodigy.net.mx;Becerra Becerra S.A.B.;1982-11-30;20.16
+881;Celia;Acosta;catalina.román@gmail.com;Alcántara Alcántara S.R.L;1982-12-01;61.05
+882;Juan Carlos;Velasco;nicolás.acosta@gmail.com;Barrera Barrera S.C.;1982-12-02;18.6
+883;Esteban;Gómez;rosario.enríquez@gmail.com;Coronado Coronado S.A. de C.V.;1982-12-03;2.37
+884;Salvador;Valadez;guillermo.gámez@prodigy.net.mx;Salgado y Salgado S.A.B.;1982-12-04;49.59
+885;Gilberto;Zepeda;erika.arriaga@yahoo.com;"Márquez; Márquez y Márquez Asociados S.A.";1982-12-05;84.62
+886;Jaime;Escamilla;teresa.téllez@yahoo.com;Palacios S.R.L;1982-12-06;40.9
+887;VerĂłnica;Salgado;jorge luis.carbajal@yahoo.com;Villegas y Villegas S.A.;1982-12-07;2.67
+888;Alberto;Mora;jaime.gonzález@gmail.com;Arellano y Arellano S.A.;1982-12-08;22.58
+889;Dolores;Becerra;marco antonio.castillo@prodigy.net.mx;Zamora S.C.;1982-12-09;58.76
+890;Carmen;Martínez;mariana.gaytán@prodigy.net.mx;Grupo Granados S.R.L;1982-12-10;40.03
+891;Samuel;Nieto;benjamín.ventura@prodigy.net.mx;Antonio S.A. de C.V.;1982-12-11;84.55
+892;Fabiola;Villarreal;liliana.alvarado@hotmail.com;"Ávalos; Ávalos y Ávalos Asociados S.A.B.";1982-12-12;32.07
+893;Alfonso;Hurtado;lorenzo.alfaro@yahoo.com;Mata y Mata S.A. de C.V.;1982-12-13;40.01
+894;Raymundo;May;roberto.mercado@yahoo.com;Ortiz S.R.L;1982-12-14;15.89
+895;MarĂ­a de Lourdes;Núñez;consuelo.de los santos@yahoo.com;Palma S.A. de C.V.;1982-12-15;4.79
+896;Pablo;Rocha;armando.robles@gmail.com;"Durán; Durán y Durán Asociados S.A.";1982-12-16;90.22
+897;Alicia;Parra;claudia.de la cruz@hotmail.com;"Cabrera; Cabrera y Cabrera Asociados S.A. de C.V.";1982-12-17;63.19
+898;Susana;Leyva;lucía.acevedo@gmail.com;"Carranza; Carranza y Carranza Asociados S.A.";1982-12-18;43.15
+899;Ricardo;Aparicio;ismael.anaya@prodigy.net.mx;Colegio Vega S.A. de C.V.;1982-12-19;5.7
+900;Arturo;Arriaga;mónica.solís@yahoo.com;Salazar y Salazar S.R.L;1982-12-20;91.86
+901;CĂ©sar;Tovar;sara.arteaga@prodigy.net.mx;González S.A.B.;1982-12-21;63.28
+902;Miriam;Maldonado;martha.cázares@yahoo.com;Jaramillo Jaramillo S.R.L;1982-12-22;80.57
+903;JosĂ© Luis;Gallardo;paula.gutiérrez@yahoo.com;Salas y Salas S.A.;1982-12-23;37.6
+904;Pedro;Cárdenas;paula.morán@yahoo.com;Valencia S.C.;1982-12-24;71.03
+905;Sara;Zepeda;rafael.correa@hotmail.com;Hidalgo S.R.L;1982-12-25;40.78
+906;Luis Alberto;Olvera;miguel ángel.lara@yahoo.com;Enríquez y Enríquez S.A.;1982-12-26;9.8
+907;Guillermina;Figueroa;mariana.sotelo@gmail.com;"Covarrubias; Covarrubias y Covarrubias Asociados S.R.L";1982-12-27;59.7
+908;Carmen;Murillo;esperanza.godínez@hotmail.com;"Jímenez; Jímenez y Jímenez Asociados S.A.B.";1982-12-28;90.15
+909;Isabel;Juárez;esperanza.uribe@prodigy.net.mx;Villalobos Villalobos S.A. de C.V.;1982-12-29;79.35
+910;Joel;Robles;josefina.serrano@yahoo.com;Velázquez S.R.L;1982-12-30;16.37
+911;Sonia;Félix;lorenzo.arredondo@prodigy.net.mx;Colegio Arellano S.C.;1982-12-31;48.38
+912;Felipe;Román;isidro.león@hotmail.com;"Ayala; Ayala y Ayala Asociados S.C.";1983-01-01;58.2
+913;Marisol;Valle;esperanza.varela@gmail.com;Molina S.A. de C.V.;1983-01-02;31.5
+914;JosĂ© Angel;Ordoñez;moisés.guillén@prodigy.net.mx;Durán Durán S.A. de C.V.;1983-01-03;65.44
+915;Raymundo;Acevedo;norma.quintero@yahoo.com;Grupo Financiero Fernández S.A.B.;1983-01-04;45.04
+916;Marina;Bravo;gerardo.muñoz@hotmail.com;Velasco y Velasco S.A.B.;1983-01-05;21.58
+917;Sara;Parra;elena.mendoza@gmail.com;Grupo Financiero Estrada S.A.;1983-01-06;11.86
+918;Adriana;Navarrete;josé alberto.maldonado@hotmail.com;Medina Medina S.C.;1983-01-07;4.95
+919;Mercedes;Alonso;micaela.anaya@yahoo.com;"Cruz; Cruz y Cruz Asociados S.R.L";1983-01-08;43.64
+920;Laura;Acevedo;rosalba.téllez@prodigy.net.mx;Grupo Financiero Áviles S.C.;1983-01-09;9.34
+921;Consuelo;Gálvez;irma.lugo@hotmail.com;Arriaga S.R.L;1983-01-10;75.81
+922;Amalia;Rosas;arturo.román@gmail.com;Hurtado y Hurtado S.A. de C.V.;1983-01-11;49.41
+923;JosĂ© Angel;Félix;olivia.zamora@gmail.com;Alarcón y Alarcón S.R.L;1983-01-12;52.65
+924;Ăngela;Zaragoza;ramón.barajas@hotmail.com;Trujillo Trujillo S.C.;1983-01-13;43.06
+925;JosĂ© Guadalupe;Gámez;pablo.esquivel@hotmail.com;Espinosa S.A.B.;1983-01-14;15.93
+926;Carmen;Leyva;jesús.gaytán@gmail.com;Camacho S.A.B.;1983-01-15;59.31
+927;Israel;Morales;andrea.dávila@gmail.com;Tapia S.C.;1983-01-16;65.46
+928;Silvia;Espinosa;estela.ángeles@prodigy.net.mx;Grupo Hernández S.A. de C.V.;1983-01-17;40.96
+929;Martha;Nieto;juan.ventura@hotmail.com;Chávez y Chávez S.A.;1983-01-18;78.69
+930;Mario Alberto;Coronado;jorge alberto.vera@yahoo.com;Castillo S.R.L;1983-01-19;33.02
+931;Paula;Salgado;rafael.treviño@gmail.com;Godínez y Godínez S.A.B.;1983-01-20;38.89
+932;JosĂ©;Gil;rosalba.molina@gmail.com;de León S.A.;1983-01-21;55.52
+933;Miguel Ăngel;Tapia;maricela.muñoz@prodigy.net.mx;Reyna Reyna S.A. de C.V.;1983-01-22;89.5
+934;JesĂşs;Montiel;gustavo.zapata@prodigy.net.mx;"Robles; Robles y Robles Asociados S.A. de C.V.";1983-01-23;70.65
+935;Dolores;Esparza;andrea.vidal@gmail.com;"Arellano; Arellano y Arellano Asociados S.A.";1983-01-24;10.15
+936;AndrĂ©s;Carbajal;marisol.vázquez@yahoo.com;"Garduño; Garduño y Garduño Asociados S.C.";1983-01-25;84.66
+937;Margarita;Montiel;julio.caballero@yahoo.com;"Venegas; Venegas y Venegas Asociados S.A.";1983-01-26;75.18
+938;JosĂ© Alberto;Vega;ofelia.leal@yahoo.com;"Vega; Vega y Vega Asociados S.A.";1983-01-27;52.84
+939;Luz MarĂ­a;Acevedo;leticia.marín@gmail.com;Fuentes y Fuentes S.A.B.;1983-01-28;79.48
+940;Claudia;Herrera;sandra.de jesús@hotmail.com;Sociedad Carmona S.C.;1983-01-29;87.31
+941;Catalina;Castillo;israel.torres@yahoo.com;Alvarado S.A.;1983-01-30;90.49
+942;Gilberto;Bautista;jorge.zúñiga@gmail.com;Fondo Paredes S.A. de C.V.;1983-01-31;1.23
+943;Salvador;Fernández;josé alfredo.cisneros@prodigy.net.mx;Reséndiz Reséndiz S.A.B.;1983-02-01;47.6
+944;RocĂ­o;Soto;héctor.padilla@yahoo.com;Garza y Garza S.A.B.;1983-02-02;16.25
+945;Jorge Luis;Gil;ernesto.villalobos@hotmail.com;Robles S.A. de C.V.;1983-02-03;86.96
+946;Yolanda;Islas;miriam.tovar@yahoo.com;Guzmán Guzmán S.C.;1983-02-04;51.86
+947;MĂłnica;Escamilla;pablo.guillén@yahoo.com;León y León S.A.B.;1983-02-05;25.14
+948;Paula;Trejo;olivia.quiroz@hotmail.com;Grupo Zavala S.R.L;1983-02-06;53.18
+949;Gerardo;Alonso;rosa.segura@yahoo.com;Dávila Dávila S.A.B.;1983-02-07;11.42
+950;Julio CĂ©sar;Gallardo;pedro.velázquez@prodigy.net.mx;Gutiérrez y Gutiérrez S.A.B.;1983-02-08;78.23
+951;Ramiro;May;erika.andrade@prodigy.net.mx;Treviño Treviño S.A.;1983-02-09;24.59
+952;Hugo;Castillo;carolina.rangel@gmail.com;"López; López y López Asociados S.C.";1983-02-10;94.22
+953;Maricela;Alfaro;micaela.delgado@gmail.com;"Ayala; Ayala y Ayala Asociados S.R.L";1983-02-11;84.36
+954;Lorena;Reyes;gregorio.espinosa@hotmail.com;Mondragón y Mondragón S.A.B.;1983-02-12;46.03
+955;AgustĂ­n;de León;cristina.serrano@gmail.com;Fondo Salas S.A.;1983-02-13;4.49
+956;Marina;Vega;alejandra.caballero@hotmail.com;Quintana Quintana S.A.B.;1983-02-14;87.51
+957;Israel;Mata;óscar.garza@prodigy.net.mx;Zamora S.C.;1983-02-15;88.65
+958;ConcepciĂłn;Venegas;humberto.macías@yahoo.com;Paredes Paredes S.A. de C.V.;1983-02-16;68.65
+959;Paula;Arriaga;benjamín.andrade@prodigy.net.mx;"Córdova; Córdova y Córdova Asociados S.A.";1983-02-17;60.06
+960;Alejandro;Guevara;elizabeth.rivas@gmail.com;Villarreal y Villarreal S.A.;1983-02-18;68.79
+961;Mario;Miranda;adriana.cárdenas@yahoo.com;Vidal Vidal S.A.B.;1983-02-19;93.27
+962;AgustĂ­n;Mora;guillermo.osorio@hotmail.com;Grupo Chávez S.A. de C.V.;1983-02-20;58.86
+963;Maricela;Uribe;victoria.arredondo@hotmail.com;"Salazar; Salazar y Salazar Asociados S.A.";1983-02-21;45.08
+964;Carolina;Parra;ramón.moreno@prodigy.net.mx;Ordoñez y Ordoñez S.A. de C.V.;1983-02-22;75.83
+965;Andrea;Báez;alejandra.mendoza@gmail.com;Grupo Arellano S.A.B.;1983-02-23;48.1
+966;Petra;Rosas;guillermo.sierra@prodigy.net.mx;Francisco y Francisco S.A.B.;1983-02-24;40.46
+967;Francisca;Gallardo;rogelio.carmona@yahoo.com;Campos S.A. de C.V.;1983-02-25;65.67
+968;Martha;Moreno;lilia.alcántara@gmail.com;Guzmán S.A.;1983-02-26;47.98
+969;Ă“scar;Castellanos;lorena.gálvez@yahoo.com;"Gaytán; Gaytán y Gaytán Asociados S.A.B.";1983-02-27;11.44
+970;Rosario;Estrada;maría elena.velasco@yahoo.com;"Ojeda; Ojeda y Ojeda Asociados S.C.";1983-02-28;91.52
+971;Eduardo;León;josé alfredo.galindo@hotmail.com;"Escamilla; Escamilla y Escamilla Asociados S.C.";1983-03-01;8.07
+972;Micaela;Gallegos;alberto.reséndiz@yahoo.com;Aguilar S.A.;1983-03-02;33.24
+973;Mario;Pérez;julia.osorio@gmail.com;Sociedad Cano S.A.;1983-03-03;14.42
+974;Virginia;Dávila;josé luis.saucedo@hotmail.com;Sociedad Márquez S.A. de C.V.;1983-03-04;39.88
+975;Rodolfo;Lara;sonia.dávila@gmail.com;Moreno S.A.B.;1983-03-05;49.94
+976;Patricia;Carrera;petra.correa@yahoo.com;Quiroz Quiroz S.C.;1983-03-06;31.95
+977;Sara;Cortez;manuela.castillo@gmail.com;Grupo Financiero Tapia S.A.B.;1983-03-07;23.51
+978;Julio;Acosta;norma.villanueva@gmail.com;Quiroz Quiroz S.R.L;1983-03-08;21.2
+979;Jorge;Antonio;miguel ángel.gil@yahoo.com;Reyes y Reyes S.A.B.;1983-03-09;57.48
+980;Esther;Cano;karina.áviles@yahoo.com;Colegio Pacheco S.C.;1983-03-10;3.73
+981;Irma;Macías;guillermina.nájera@yahoo.com;Delgado Delgado S.A.;1983-03-11;35.63
+982;Sara;Mata;luz maría.rendón@prodigy.net.mx;Zapata S.C.;1983-03-12;40.05
+983;Abel;Velasco;raquel.rivera@gmail.com;Gálvez y Gálvez S.A.B.;1983-03-13;88.93
+984;Silvia;Francisco;víctor hugo.del ángel@hotmail.com;Morales y Morales S.A.;1983-03-14;51.96
+985;Mercedes;Sosa;gloria.ramos@hotmail.com;Colegio Valle S.C.;1983-03-15;29.42
+986;MĂłnica;Álvarez;luz maría.mercado@gmail.com;Cuevas Cuevas S.A.;1983-03-16;45.09
+987;Adriana;Arias;isabel.pacheco@yahoo.com;Mora Mora S.A.B.;1983-03-17;9.5
+988;Guillermina;Cordero;agustín.carrasco@gmail.com;Caballero y Caballero S.A. de C.V.;1983-03-18;79.14
+989;AgustĂ­n;Mondragón;julia.amador@prodigy.net.mx;Alvarado Alvarado S.A. de C.V.;1983-03-19;0.04
+990;Sara;Villarreal;victoria.sosa@yahoo.com;Sociedad Mendoza S.R.L;1983-03-20;41.13
+991;Francisca;Zamora;fernando.román@gmail.com;Sociedad Venegas S.A. de C.V.;1983-03-21;71.91
+992;Adela;Ibarra;consuelo.montiel@yahoo.com;Grupo Aguirre S.A.B.;1983-03-22;75.26
+993;Eduardo;Zárate;carlos.salazar@gmail.com;Colegio Salazar S.A. de C.V.;1983-03-23;25.45
+994;VĂ­ctor;Castellanos;hugo.antonio@yahoo.com;"Colín; Colín y Colín Asociados S.C.";1983-03-24;12.75
+995;Daniel;Robles;ana maría.arriaga@yahoo.com;"Bernal; Bernal y Bernal Asociados S.C.";1983-03-25;32.72
+996;Paula;Bonilla;mario.velázquez@yahoo.com;"Yáñez; Yáñez y Yáñez Asociados S.C.";1983-03-26;61.58
+997;Paula;Vázquez;rosa maría.del ángel@yahoo.com;Olivares y Olivares S.R.L;1983-03-27;47.52
+998;Abel;Romero;agustín.castellanos@yahoo.com;Rendón y Rendón S.A. de C.V.;1983-03-28;26.77
+999;BenjamĂ­n;Saldaña;araceli.cano@gmail.com;Vásquez y Vásquez S.R.L;1983-03-29;55.03
+1000;Juan Antonio;Marín;raymundo.zúñiga@hotmail.com;Contreras y Contreras S.C.;1983-03-30;62.3
