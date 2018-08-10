@@ -40,6 +40,10 @@
             <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
                 <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
                 <th jh-sort-by="nombre"><span data-translate="handsontableApp.persona.nombre">Nombre</span> <span class="glyphicon glyphicon-sort"></span></th>
+                <th jh-sort-by="apellido"><span data-translate="handsontableApp.persona.apellido">Apellido</span> <span class="glyphicon glyphicon-sort"></span></th>
+                <th jh-sort-by="correo"><span data-translate="handsontableApp.persona.correo">Correo</span> <span class="glyphicon glyphicon-sort"></span></th>
+                <th jh-sort-by="empresa"><span data-translate="handsontableApp.persona.empresa">Empresa</span> <span class="glyphicon glyphicon-sort"></span></th>
+                <th jh-sort-by="sueldo"><span data-translate="handsontableApp.persona.sueldo">Sueldo</span> <span class="glyphicon glyphicon-sort"></span></th>
                 <th></th>
             </tr>
         </thead>
@@ -47,6 +51,10 @@
             <tr ng-repeat="persona in vm.personas track by persona.id">
                 <td><a ui-sref="persona-detail({id:persona.id})">{{persona.id}}</a></td>
                 <td>{{persona.nombre}}</td>
+                <td>{{persona.apellido}}</td>
+                <td>{{persona.correo}}</td>
+                <td>{{persona.empresa}}</td>
+                <td>{{persona.sueldo}}</td>
                 <td class="text-right">
                     <div class="btn-group flex-btn-group-container">
                         <button type="submit"

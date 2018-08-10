@@ -1,3 +1,7 @@
 entity Persona {
-    nombre: String
+	nombre : String,
+	apellido : String,
+	correo : String,
+	empresa : String,
+	sueldo : Float
 }

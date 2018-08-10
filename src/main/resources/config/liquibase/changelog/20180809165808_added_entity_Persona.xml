@@ -25,7 +25,20 @@
 
             <column name="nombre" type="varchar(255)">
                 <constraints nullable="true" />
-            </column>            
+            </column>
+            <column name="apellido" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="correo" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="empresa" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
+            <column name="sueldo" type="${floatType}">
+                <constraints nullable="true" />
+            </column>
+		
         </createTable>
         <loadData encoding="UTF-8"
                   file="config/liquibase/personas.csv"
@@ -33,6 +46,10 @@
                   tableName="personas">
             <column name="id" type="numeric"/>
             <column name="nombre" type="string"/>
+            <column name="apellido" type="string"/>
+            <column name="correo" type="string"/>
+            <column name="empresa" type="string"/>
+            <column name="sueldo" type="numeric"/>
         </loadData>
 
     </changeSet>

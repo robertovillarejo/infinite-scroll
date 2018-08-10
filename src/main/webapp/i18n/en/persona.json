@@ -16,7 +16,11 @@
             "detail": {
                 "title": "Persona"
             },
-            "nombre": "Nombre"
+            "nombre": "Nombre", 
+            "apellido": "Apellido", 
+            "correo": "Correo", 
+            "empresa": "Empresa", 
+            "sueldo": "Sueldo"
         }
     }
 }

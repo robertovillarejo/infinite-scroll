@@ -21,6 +21,47 @@
             <div ng-show="editForm.nombre.$invalid">
             </div>	
         </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="handsontableApp.persona.apellido" for="field_apellido">Apellido</label>
+            <input type="text" class="form-control" name="apellido" id="field_apellido"
+                ng-model="vm.persona.apellido"
+   
+                />
+            <div ng-show="editForm.apellido.$invalid">
+            </div>	
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="handsontableApp.persona.correo" for="field_correo">Correo</label>
+            <input type="text" class="form-control" name="correo" id="field_correo"
+                ng-model="vm.persona.correo"
+   
+                />
+            <div ng-show="editForm.correo.$invalid">
+            </div>	
+        </div>
+        <div class="form-group">
+            <label class="control-label" data-translate="handsontableApp.persona.empresa" for="field_empresa">Empresa</label>
+            <input type="text" class="form-control" name="empresa" id="field_empresa"
+                ng-model="vm.persona.empresa"
+   
+                />
+            <div ng-show="editForm.empresa.$invalid">
+            </div>	
+        </div>
+			<div class="form-group">
+				<label class="control-label" data-translate="handsontableApp.persona.sueldo"
+					for="field_sueldo">sueldo</label>
+				<input type="number" class="form-control" name="sueldo" id="field_sueldo"
+					ng-model="vm.persona.sueldo"
+  
+					/>
+				<div ng-show="editForm.sueldo.$invalid">
+	                <p class="help-block"
+	                    ng-show="editForm.sueldo.$error.number" data-translate="entity.validation.number">
+	                    This field should be a number.
+	                </p>
+            	</div>	
+			</div>
     </div>
     <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">

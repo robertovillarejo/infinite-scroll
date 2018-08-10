@@ -68,6 +68,54 @@ public class Persona implements Serializable {
     private String nombre;
     
 
+	
+    /**
+     * Este campo fue generado automaticamente por kukulkan 
+     * Este campo corresponde a la tabla personas
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    @SheetColumn
+    @Column(name = "apellido")
+    private String apellido;
+    
+
+	
+    /**
+     * Este campo fue generado automaticamente por kukulkan 
+     * Este campo corresponde a la tabla personas
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    @SheetColumn
+    @Column(name = "correo")
+    private String correo;
+    
+
+	
+    /**
+     * Este campo fue generado automaticamente por kukulkan 
+     * Este campo corresponde a la tabla personas
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    @SheetColumn
+    @Column(name = "empresa")
+    private String empresa;
+    
+
+	
+    /**
+     * Este campo fue generado automaticamente por kukulkan 
+     * Este campo corresponde a la tabla personas
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    @SheetColumn
+    @Column(name = "sueldo")
+    private Float sueldo;
+    
+
     /**
      * Este método fue generado automaticamente por kukulkan 
      * Este método GETTER fue generado para la llave primaria personas.id
@@ -118,6 +166,110 @@ public class Persona implements Serializable {
         this.nombre = nombre;
     }
     
+
+    
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método GETTER fue generado para la propiedad personas.apellido
+     *
+     * @return el valor de apellido
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public String getApellido() {
+        return apellido;
+    }
+
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método SETTER fue generado para la propiedad. personas.apellido
+     *
+     * @return el valor de Apellido
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+    
+
+    
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método GETTER fue generado para la propiedad personas.correo
+     *
+     * @return el valor de correo
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public String getCorreo() {
+        return correo;
+    }
+
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método SETTER fue generado para la propiedad. personas.correo
+     *
+     * @return el valor de Correo
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
+    
+
+    
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método GETTER fue generado para la propiedad personas.empresa
+     *
+     * @return el valor de empresa
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public String getEmpresa() {
+        return empresa;
+    }
+
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método SETTER fue generado para la propiedad. personas.empresa
+     *
+     * @return el valor de Empresa
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public void setEmpresa(String empresa) {
+        this.empresa = empresa;
+    }
+    
+
+    
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método GETTER fue generado para la propiedad personas.sueldo
+     *
+     * @return el valor de sueldo
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public Float getSueldo() {
+        return sueldo;
+    }
+
+    /**
+     * Este método fue generado automaticamente por kukulkan 
+     * Este método SETTER fue generado para la propiedad. personas.sueldo
+     *
+     * @return el valor de Sueldo
+     *
+     * @kukulkanGenerated 20180809165807
+     */
+    public void setSueldo(Float sueldo) {
+        this.sueldo = sueldo;
+    }
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -145,6 +297,10 @@ public class Persona implements Serializable {
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
                 sb.append(", nombre=").append(nombre);
+        sb.append(", apellido=").append(apellido);
+        sb.append(", correo=").append(correo);
+        sb.append(", empresa=").append(empresa);
+        sb.append(", sueldo=").append(sueldo);
         sb.append("]");
         return sb.toString();
     }
