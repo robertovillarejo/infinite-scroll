@@ -10,9 +10,9 @@
     function PersonaHandsontableController($scope, hotRegisterer, PersonaHandsontable, AlertService, paginationConstants) {
         var vm = this;
         var hotInstance;
-        var plugin;
+        var autoRowSizePlugin;
         //Umbral
-        var nearLastRowsCount = 3
+        var nearLastRowsCount = 3;
 
         //Table data
         vm.data = [];
@@ -21,8 +21,8 @@
 
         //Load next page when 
         function loadPage() {
-            console.log(plugin.getLastVisibleRow() + " last visible row");
-            if (plugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount) && vm.hasNextPage) {
+            console.log(autoRowSizePlugin.getLastVisibleRow() + " last visible row");
+            if (autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount) && vm.hasNextPage) {
                 vm.page++;
                 loadAll();
             }
@@ -35,10 +35,19 @@
         }
 
         $scope.$on('$viewContentLoaded', function () {
-            hotInstance = hotRegisterer.getInstance('my-handsontable');
-            plugin = hotInstance.getPlugin('AutoRowSize');
+            hotInstance = hotRegisterer.getInstance('persona-handsontable');
+            autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
             loadAll();
         });
+
+        //Overwrite settings from service
+        function overwriteSettings() {
+            vm.settings.height = 450;
+            //Set function to trigger when scrolling table
+            vm.settings.afterScrollVertically = loadPage;
+            //Avoid empty rows in table
+            vm.settings.maxRows = vm.data.length;
+        }
 
         function loadAll() {
             PersonaHandsontable.query({
@@ -48,7 +57,8 @@
             function onSuccess(settings, headers) {
                 vm.hasNextPage = headers('X-Has-Next-Page') === "true";
                 vm.settings = settings;
-                vm.settings.height = 450;
+                overwriteSettings();
+
                 //Append new data
                 for (var i = 0; i < settings.data.length; i++) {
                     vm.data.push(settings.data[i]);
@@ -57,10 +67,6 @@
                 }
                 //Pass vm.data reference to vm.settings
                 vm.settings.data = vm.data;
-                //Set function to trigger when scrolling table
-                vm.settings.afterScrollVertically = loadPage;
-                //Avoid empty rows in table
-                vm.settings.maxRows = vm.data.length;
                 //Update hot instance settings
                 hotInstance.updateSettings(vm.settings);
             }

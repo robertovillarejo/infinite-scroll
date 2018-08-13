@@ -1,5 +1,12 @@
 # handsontable
 
+Éste es un proyecto sobre el cual se desarrolla una nueva característica para Kukulkán. 
+Esta nueva característica consiste en generar automáticamente la vista de *Hoja de cálculo* de una entidad. Para lograrlo se utiliza la librería Handsontable para AngularJS y la librería propia *Kukulkan-Tables*. 
+
+Para esta característica se realizaron los siguientes pasos:
+- se añadió la dependencia de `kukulkan-tables` al pom.xml
+- se añadió la dependencia  
+
 ## Development
 
 Before you can build this project, you must install and configure the following dependencies on your machine:
