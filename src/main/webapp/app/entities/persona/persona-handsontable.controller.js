@@ -47,6 +47,7 @@
             vm.settings.afterScrollVertically = loadPage;
             //Avoid empty rows in table
             vm.settings.maxRows = vm.data.length;
+
         }
 
         function loadAll() {

@@ -26,6 +26,8 @@ package com.example.domain;
 import java.time.LocalDate;
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.SheetColumn;
 
@@ -38,7 +40,7 @@ import java.io.Serializable;
  * @author kukulkan
  *
  */
-@Sheet(readOnly = true)
+@Sheet
 @Entity
 @Table(name = "personas")
 public class Persona implements Serializable {
@@ -127,6 +129,10 @@ public class Persona implements Serializable {
     @SheetColumn
     @Column(name = "sueldo")
     private Float sueldo;
+
+    @SheetColumn
+    @Transient
+    private Genre genre = Genre.FEMALE;
     
 
     /**
@@ -307,6 +313,24 @@ public class Persona implements Serializable {
      */
     public void setSueldo(Float sueldo) {
         this.sueldo = sueldo;
+    }
+
+    /**
+     * @return the genre
+     */
+    public Genre getGenre() {
+        return genre;
+    }
+
+    /**
+     * @param genre the genre to set
+     */
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+
+    enum Genre {
+        MALE, FEMALE
     }
     
     @Override
