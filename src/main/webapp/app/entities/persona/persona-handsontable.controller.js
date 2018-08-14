@@ -18,21 +18,23 @@
         vm.data = [];
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.page = 0;
-        var loading = false;
-
-        //Load next page when
-        function loadPage() {
-            console.log(autoRowSizePlugin.getLastVisibleRow() + "/" + hotInstance.countRows() + " last visible row");
-            if (!loading && autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount) && vm.hasNextPage) {
-                vm.page++;
-                loadAll();
-            }
-        }
+        vm.loading = false;
 
         //Useful for initialization
         vm.settings = {
             rowHeaders: true,
             colHeaders: true
+        }
+
+        //Load next page when
+        function loadPage() {
+            if (vm.hasNextPage && !vm.loading) {
+                console.log(autoRowSizePlugin.getLastVisibleRow() + "/" + hotInstance.countRows() + " last visible row");
+                if (autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount)) {
+                    vm.page++;
+                    loadAll();
+                }
+            }
         }
 
         $scope.$on('$viewContentLoaded', function () {
@@ -52,7 +54,7 @@
         }
 
         function loadAll() {
-            loading = true;
+            vm.loading = true;
             PersonaHandsontable.query({
                 page: vm.page,
                 size: vm.itemsPerPage
@@ -71,11 +73,11 @@
                 vm.settings.data = vm.data;
                 //Update hot instance settings
                 hotInstance.updateSettings(vm.settings);
-                loading = false;
+                vm.loading = false;
             }
             function onError(error) {
                 AlertService.error(error.data.message);
-                loading = false;
+                vm.loading = false;
             }
         }
     }

@@ -22,10 +22,10 @@
  * SOFTWARE.
  */
 package com.example.repository;
+
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
 import org.springframework.data.jpa.repository.JpaRepository;
-
 
 import com.example.domain.Persona;
 
@@ -36,7 +36,5 @@ import com.example.domain.Persona;
  * @kukulkanGenerated 20180809165807
  */
 public interface PersonaRepository extends JpaRepository<Persona, Long> {
-
-    Slice<Persona> findAllByNombreNotNull(Pageable pageable);
 
 }

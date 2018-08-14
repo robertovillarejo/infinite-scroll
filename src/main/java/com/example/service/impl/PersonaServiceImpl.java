@@ -27,6 +27,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Slice;
+import org.springframework.data.domain.SliceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -101,7 +102,8 @@ public class PersonaServiceImpl implements PersonaService {
     @Override
     public HandsontableSlice<Persona> getHandsontable(Pageable pageable) {
         Handsontable<Persona> table = HandsontableFactory.createHandsontable(Persona.class);
-        Slice<Persona> slice = repository.findAllByNombreNotNull(pageable);
+        Page<Persona> page = repository.findAll(pageable);
+        Slice<Persona> slice = new SliceImpl<>(page.getContent(), pageable, page.hasNext());
         return new HandsontableSlice<>(table, slice);
     }
 }
