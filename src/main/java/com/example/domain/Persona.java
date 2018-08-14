@@ -26,8 +26,6 @@ package com.example.domain;
 import java.time.LocalDate;
 import javax.persistence.*;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.SheetColumn;
 
@@ -131,8 +129,9 @@ public class Persona implements Serializable {
     private Float sueldo;
 
     @SheetColumn
-    @Transient
-    private Genre genre = Genre.FEMALE;
+    @Enumerated(EnumType.STRING)
+    @Column(name = "genero")
+    private Genero genero = Genero.HOMBRE;
     
 
     /**
@@ -316,21 +315,21 @@ public class Persona implements Serializable {
     }
 
     /**
-     * @return the genre
+     * @return the genero
      */
-    public Genre getGenre() {
-        return genre;
+    public Genero getGenero() {
+        return genero;
     }
 
     /**
-     * @param genre the genre to set
+     * @param genero the genero to set
      */
-    public void setGenre(Genre genre) {
-        this.genre = genre;
+    public void setGenero(Genero genero) {
+        this.genero = genero;
     }
 
-    enum Genre {
-        MALE, FEMALE
+    enum Genero {
+        HOMBRE, MUJER
     }
     
     @Override
@@ -365,6 +364,7 @@ public class Persona implements Serializable {
         sb.append(", empresa=").append(empresa);
         sb.append(", fechaNacimiento=").append(fechaNacimiento);
         sb.append(", sueldo=").append(sueldo);
+        sb.append(", genero=").append(genero);
         sb.append("]");
         return sb.toString();
     }

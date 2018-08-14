@@ -41,6 +41,9 @@
             <column name="sueldo" type="${floatType}">
                 <constraints nullable="true" />
             </column>
+            <column name="genero" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
 		
         </createTable>
         <loadData encoding="UTF-8"
@@ -54,6 +57,7 @@
             <column name="empresa" type="string"/>
             <column name="fecha_nacimiento" header="fechaNacimiento" type="date"/>
             <column name="sueldo" type="numeric"/>
+            <column name="genero" type="string"/>
         </loadData>
 
     </changeSet>
