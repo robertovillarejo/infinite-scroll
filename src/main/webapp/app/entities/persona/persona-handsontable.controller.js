@@ -18,11 +18,12 @@
         vm.data = [];
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.page = 0;
+        var loading = false;
 
         //Load next page when
         function loadPage() {
-            console.log(autoRowSizePlugin.getLastVisibleRow() + " last visible row");
-            if (autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount) && vm.hasNextPage) {
+            console.log(autoRowSizePlugin.getLastVisibleRow() + "/" + hotInstance.countRows() + " last visible row");
+            if (!loading && autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount) && vm.hasNextPage) {
                 vm.page++;
                 loadAll();
             }
@@ -51,6 +52,7 @@
         }
 
         function loadAll() {
+            loading = true;
             PersonaHandsontable.query({
                 page: vm.page,
                 size: vm.itemsPerPage
@@ -63,15 +65,17 @@
 
                 //Append new data
                 for (var i = 0; i < settings.data.length; i++) {
-                    vm.data.push(settings.data[i]);                    
+                    vm.data.push(settings.data[i]);
                 }
                 //Pass vm.data reference to vm.settings
                 vm.settings.data = vm.data;
                 //Update hot instance settings
                 hotInstance.updateSettings(vm.settings);
+                loading = false;
             }
             function onError(error) {
                 AlertService.error(error.data.message);
+                loading = false;
             }
         }
     }
