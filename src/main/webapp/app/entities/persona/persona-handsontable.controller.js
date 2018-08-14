@@ -48,7 +48,6 @@
             vm.settings.afterScrollVertically = loadPage;
             //Avoid empty rows in table
             vm.settings.maxRows = vm.data.length;
-
         }
 
         function loadAll() {
@@ -58,14 +57,13 @@
             }, onSuccess, onError);
             function onSuccess(settings, headers) {
                 vm.hasNextPage = headers('X-Has-Next-Page') === "true";
+                console.log("got " + settings.data.length + " elements");
                 vm.settings = settings;
                 overwriteSettings();
 
                 //Append new data
                 for (var i = 0; i < settings.data.length; i++) {
-                    vm.data.push(settings.data[i]);
-                    //console.log(settings.data[i]);
-                    console.log("got " + settings.data.length + " elements");
+                    vm.data.push(settings.data[i]);                    
                 }
                 //Pass vm.data reference to vm.settings
                 vm.settings.data = vm.data;
