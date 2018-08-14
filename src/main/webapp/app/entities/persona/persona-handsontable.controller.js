@@ -19,7 +19,7 @@
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.page = 0;
 
-        //Load next page when 
+        //Load next page when
         function loadPage() {
             console.log(autoRowSizePlugin.getLastVisibleRow() + " last visible row");
             if (autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount) && vm.hasNextPage) {
@@ -43,6 +43,7 @@
         //Overwrite settings from service
         function overwriteSettings() {
             vm.settings.height = 450;
+            vm.settings.stretchH = 'all';
             //Set function to trigger when scrolling table
             vm.settings.afterScrollVertically = loadPage;
             //Avoid empty rows in table
