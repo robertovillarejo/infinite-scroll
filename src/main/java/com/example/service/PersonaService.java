@@ -93,5 +93,10 @@ public interface PersonaService {
      */
     Page<Persona> search(String query, Pageable pageable);
 
+    /**
+     * Regresa una HandsontableSlice de Persona
+     * @param pageable la información de paginación
+     * @return HandsontableSlice de todas las entidades
+     */
     HandsontableSlice<Persona> getHandsontable(Pageable pageable);
 }

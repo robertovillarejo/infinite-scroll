@@ -31,7 +31,6 @@
     "swagger-ui": "2.1.5",
     "rdash-ui": "^1.0.1",
     "components-font-awesome": "^5.0.6",
-    "handsontable": "^0.28.0",
     "ngHandsontable": "^0.13.0"
   },
   "devDependencies": {

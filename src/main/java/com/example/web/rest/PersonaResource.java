@@ -181,6 +181,13 @@ public class PersonaResource {
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
     }
 
+    /**
+     * GET /personas/handsontale : recupera una Handsontable de personas.
+     *
+     * @param pageable información de paginación
+     * @return El objeto ResponseEntity con estado de 200 (OK) y la Handsontable de
+     *         personas en el cuerpo del mensaje
+     */
     @GetMapping("/personas/handsontable")
     @Timed
     public ResponseEntity<Handsontable<Persona>> getPersonaHandsontable(@ApiParam Pageable pageable) {
