@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaHandsontableController', PersonaHandsontableController);
 
-    PersonaHandsontableController.$inject = ['$scope', 'hotRegisterer', 'PersonaHandsontable', 'AlertService', 'paginationConstants'];
+    PersonaHandsontableController.$inject = ['$scope', 'hotRegisterer', 'PersonaHandsontable', 'AlertService', 'paginationConstants', 'pagingParams'];
 
-    function PersonaHandsontableController($scope, hotRegisterer, PersonaHandsontable, AlertService, paginationConstants) {
+    function PersonaHandsontableController($scope, hotRegisterer, PersonaHandsontable, AlertService, paginationConstants, pagingParams) {
         var vm = this;
         var hotInstance;
         var autoRowSizePlugin;
@@ -15,6 +15,8 @@
 
         vm.data = [];
         vm.itemsPerPage = paginationConstants.itemsPerPage;
+        vm.predicate = pagingParams.predicate;
+        vm.reverse = pagingParams.ascending;
         vm.page = 0;
         vm.loading = false;
 
@@ -49,8 +51,16 @@
             vm.loading = true;
             PersonaHandsontable.query({
                 page: vm.page,
-                size: vm.itemsPerPage
+                size: vm.itemsPerPage,
+                sort: sort()
             }, onSuccess, onError);
+            function sort() {
+                var result = [vm.predicate + ',' + (vm.reverse ? 'asc' : 'desc')];
+                if (vm.predicate !== 'id') {
+                    result.push('id');
+                }
+                return result;
+            }
             function onSuccess(settings, headers) {
                 vm.hasNextPage = headers('X-Has-Next-Page') === "true";
                 vm.settings = settings;
