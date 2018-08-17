@@ -16,7 +16,6 @@
             'ui.router',
             'infinite-scroll',
             'angular-loading-bar',
-            'ngHandsontable',
             'ngCsv'
             // jhipster-needle-angularjs-add-module JHipster will add new module here
         ])

@@ -17,7 +17,7 @@
         <node.version>v8.9.3</node.version>
         <yarn.version>v1.3.2</yarn.version>
         <jmeter.version>2.7.0</jmeter.version>
-        <kukulkan-tables.version>0.0.1-SNAPSHOT</kukulkan-tables.version>
+        <kukulkan-tables.version>0.0.1-RELEASE</kukulkan-tables.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.testresult.directory>${project.build.directory}/test-results</project.testresult.directory>

@@ -5,47 +5,27 @@
         .module('handsontableApp')
         .controller('PersonaHandsontableController', PersonaHandsontableController);
 
-    PersonaHandsontableController.$inject = ['$scope', 'hotRegisterer', 'PersonaHandsontable', 'AlertService', 'paginationConstants', 'pagingParams'];
+    PersonaHandsontableController.$inject = ['$scope', 'PersonaHandsontable', 'AlertService', 'paginationConstants', 'pagingParams'];
 
-    function PersonaHandsontableController($scope, hotRegisterer, PersonaHandsontable, AlertService, paginationConstants, pagingParams) {
+    function PersonaHandsontableController($scope, PersonaHandsontable, AlertService, paginationConstants, pagingParams) {
+
         var vm = this;
-        var hotInstance;
-        var autoRowSizePlugin;
-        var nearLastRowsCount = 3;
 
-        vm.data = [];
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.predicate = pagingParams.predicate;
         vm.reverse = pagingParams.ascending;
         vm.page = 0;
         vm.loading = false;
 
-        vm.settings = {
-            rowHeaders: true,
-            colHeaders: true
-        }
+        var div = angular.element("#persona-handsontable")[0];
 
-        function loadPage() {
-            if (vm.hasNextPage && !vm.loading) {
-                if (autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount)) {
-                    vm.page++;
-                    loadAll();
-                }
-            }
-        }
+        vm.data = [];
 
-        $scope.$on('$viewContentLoaded', function () {
-            hotInstance = hotRegisterer.getInstance('persona-handsontable');
-            autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
-            loadAll();
-        });
+        var hotInstance = new Handsontable(div, {});
+        var autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
+        var nearLastRowsCount = 3;
 
-        function overwriteSettings() {
-            vm.settings.height = 450;
-            vm.settings.stretchH = 'all';
-            vm.settings.afterScrollVertically = loadPage;
-            vm.settings.maxRows = vm.data.length;
-        }
+        loadAll();
 
         function loadAll() {
             vm.loading = true;
@@ -63,20 +43,49 @@
             }
             function onSuccess(settings, headers) {
                 vm.hasNextPage = headers('X-Has-Next-Page') === "true";
-                vm.settings = settings;
-                overwriteSettings();
+                overwriteSettings(settings);
 
                 for (var i = 0; i < settings.data.length; i++) {
                     vm.data.push(settings.data[i]);
                 }
-                vm.settings.data = vm.data;
-                hotInstance.updateSettings(vm.settings);
+                //hotInstance.updateSettings(settings);
+                
+                hotInstance.updateSettings({
+                    allowEmpty: settings.allowEmpty,
+                    data: vm.data,
+                    colHeaders: settings.colHeaders,
+                    columns: settings.columns,
+                    columnSorting: true,
+                    contextMenu: true,
+                    readOnly: false,
+                    rowHeaders: true,
+                    afterScrollVertically: loadPage,
+                    height : 450,
+                    stretchH : 'all',
+                    maxRows : vm.data.length,
+                });
                 vm.loading = false;
             }
             function onError(error) {
                 AlertService.error(error.data);
                 vm.loading = false;
             }
+        }
+
+        function loadPage() {
+            if (vm.hasNextPage && !vm.loading) {
+                if (autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - nearLastRowsCount)) {
+                    vm.page++;
+                    loadAll();
+                }
+            }
+        }
+
+        function overwriteSettings(settings) {
+            settings.height = 450;
+            settings.stretchH = 'all';
+            settings.afterScrollVertically = loadPage;
+            settings.maxRows = vm.data.length;
         }
     }
 })();

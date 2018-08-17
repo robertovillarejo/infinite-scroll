@@ -1,11 +1,11 @@
 {
   "name": "handsontable",
   "title": "Handsontable",
-  "version": "0.28.4",
+  "version": "5.0.1",
   "author": {
-    "name": "Marcin Warpechowski",
+    "name": "Handsoncode",
     "email": "hello@handsontable.com",
-    "url": "http://www.nextgen.pl/"
+    "url": "http://handsontable.com/"
   },
   "licenses": [
     {

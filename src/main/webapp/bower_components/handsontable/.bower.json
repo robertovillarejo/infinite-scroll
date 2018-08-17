@@ -39,21 +39,21 @@
   ],
   "dependencies": {
     "moment": "^2.13.0",
-    "numbro": "^1.8.0",
-    "pikaday": "^1.4.0",
-    "zeroclipboard": "^2.2.0"
+    "numbro": "^2.0.6",
+    "pikaday": "^1.4.0"
   },
   "devDependencies": {
     "chroma-js": "~0.5.6"
   },
-  "version": "0.28.4",
-  "_release": "0.28.4",
+  "version": "5.0.1",
+  "_release": "5.0.1",
   "_resolution": {
     "type": "version",
-    "tag": "0.28.4",
-    "commit": "1dfbc14fb84a8fa913b1717d0fab7d637de957d3"
+    "tag": "5.0.1",
+    "commit": "09fca1b22f9d9ea5cc09f59f4acc5e55718b644d"
   },
   "_source": "https://github.com/handsontable/handsontable.git",
-  "_target": "~0.28.4",
-  "_originalSource": "handsontable"
+  "_target": "^5.0.1",
+  "_originalSource": "handsontable",
+  "_direct": true
 }
