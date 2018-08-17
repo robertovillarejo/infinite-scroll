@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaHandsontableController', PersonaHandsontableController);
 
-    PersonaHandsontableController.$inject = ['$scope', 'PersonaHandsontable', 'AlertService', 'paginationConstants', 'pagingParams'];
+    PersonaHandsontableController.$inject = ['PersonaHandsontable', 'AlertService', 'paginationConstants', 'pagingParams'];
 
-    function PersonaHandsontableController($scope, PersonaHandsontable, AlertService, paginationConstants, pagingParams) {
+    function PersonaHandsontableController(PersonaHandsontable, AlertService, paginationConstants, pagingParams) {
 
         var vm = this;
 

@@ -57,6 +57,12 @@
       "main": [
         "dist/css/bootstrap.css"
       ]
+    },
+    "handsontable": {
+      "main": [
+        "dist/handsontable.full.js",
+        "dist/handsontable.css"
+      ]
     }
   },
   "resolutions": {
