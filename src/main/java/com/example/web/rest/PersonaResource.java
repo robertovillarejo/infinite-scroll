@@ -23,14 +23,18 @@
  */
 package com.example.web.rest;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.List;
 import java.util.Optional;
 
-import com.codahale.metrics.annotation.Timed;
-import io.swagger.annotations.ApiParam;
-import mx.infotec.dads.kukulkan.tables.handsontable.Handsontable;
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
-import io.github.jhipster.web.util.ResponseUtil;
+import javax.validation.Valid;
+
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +42,7 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -47,16 +52,19 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.validation.Valid;
-import java.net.URI;
-import java.net.URISyntaxException;
+import com.codahale.metrics.annotation.Timed;
+import com.example.domain.Persona;
+import com.example.service.PersonaService;
 import com.example.web.rest.util.HeaderUtil;
 import com.example.web.rest.util.PaginationUtil;
 
-import com.example.domain.Persona;
-import com.example.service.PersonaService;
+import io.github.jhipster.web.util.ResponseUtil;
+import io.swagger.annotations.ApiParam;
+import mx.infotec.dads.kukulkan.tables.handsontable.Handsontable;
+import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
 
 /**
  * 
@@ -77,7 +85,8 @@ public class PersonaResource {
     /**
      * GET /personas : recupera todos los personas.
      *
-     * @param pageable información de paginación
+     * @param pageable
+     *            información de paginación
      * @return El objeto ResponseEntity con estado de 200 (OK) y la lista de
      *         personas en el cuerpo del mensaje
      */
@@ -93,7 +102,8 @@ public class PersonaResource {
     /**
      * GET /personas/:id : recupera por "id" de Persona.
      *
-     * @param id el id del Persona que se desea recuperar
+     * @param id
+     *            el id del Persona que se desea recuperar
      * @return El objeto ResponseEntity con el estado de 200 (OK) y dentro del
      *         cuerpo del mensaje el Persona, o con estado de 404 (Not Found)
      */
@@ -108,11 +118,13 @@ public class PersonaResource {
     /**
      * POST /personas : Create a new usuario.
      *
-     * @param persona el persona que se desea crear
+     * @param persona
+     *            el persona que se desea crear
      * @return El objeto ResponseEntity con estado 201 (Created) y en el cuerpo un
      *         nuevo persona, o con estado 400 (Bad Request) si el usuario ya tiene
      *         un ID
-     * @throws URISyntaxException Si la sintaxis de la URI no es correcta
+     * @throws URISyntaxException
+     *             Si la sintaxis de la URI no es correcta
      */
     @PostMapping("/personas")
     @Timed
@@ -131,12 +143,14 @@ public class PersonaResource {
     /**
      * PUT /personas : Actualiza un Persona existente.
      *
-     * @param persona el persona que se desea actualizar
+     * @param persona
+     *            el persona que se desea actualizar
      * @return el objeto ResponseEntity con estado de 200 (OK) y en el cuerpo de la
      *         respuesta el Persona actualizado, o con estatus de 400 (Bad Request)
      *         si el persona no es valido, o con estatus de 500 (Internal Server
      *         Error) si el persona no se puede actualizar
-     * @throws URISyntaxException si la sintaxis de la URI no es correcta
+     * @throws URISyntaxException
+     *             si la sintaxis de la URI no es correcta
      */
     @PutMapping("/personas")
     @Timed
@@ -153,7 +167,8 @@ public class PersonaResource {
     /**
      * DELETE /personas/:id : borrar el Persona con "id".
      *
-     * @param id el id del Persona que se desea borrar
+     * @param id
+     *            el id del Persona que se desea borrar
      * @return el objeto ResponseEntity con estatus 200 (OK)
      */
     @DeleteMapping("/personas/{id}")
@@ -168,8 +183,10 @@ public class PersonaResource {
      * SEARCH /_search/personas?query=:query : buscar por el persona correspondiente
      * to the query.
      *
-     * @param query    el query para el persona que se desea buscar
-     * @param pageable información de la paginación
+     * @param query
+     *            el query para el persona que se desea buscar
+     * @param pageable
+     *            información de la paginación
      * @return el resultado de la busqueda
      */
     @GetMapping("/_search/personas")
@@ -184,7 +201,8 @@ public class PersonaResource {
     /**
      * GET /personas/handsontale : recupera una Handsontable de personas.
      *
-     * @param pageable información de paginación
+     * @param pageable
+     *            información de paginación
      * @return El objeto ResponseEntity con estado de 200 (OK) y la Handsontable de
      *         personas en el cuerpo del mensaje
      */
@@ -195,6 +213,17 @@ public class PersonaResource {
         HandsontableSlice<Persona> table = service.getHandsontable(pageable);
         HttpHeaders headers = PaginationUtil.generateSliceHttpHeaders(table);
         return new ResponseEntity<>(table, headers, HttpStatus.OK);
+    }
+
+    @GetMapping(produces = MediaType.APPLICATION_OCTET_STREAM_VALUE, path = "/personas/workbook")
+    @Timed
+    public @ResponseBody byte[] getPersonaWorkbook() throws FileNotFoundException, IOException {
+        log.debug("REST request to get Persona Workbook");
+        Optional<File> file = service.getWorkbook();
+        if (file.isPresent()) {
+            return IOUtils.toByteArray(new FileInputStream(file.get()));
+        }
+        return null;
     }
 
 }

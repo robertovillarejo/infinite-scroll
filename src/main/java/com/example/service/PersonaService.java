@@ -23,10 +23,14 @@
  */
 package com.example.service;
 
+import org.apache.poi.ss.usermodel.Workbook;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
 import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
+
+import java.io.File;
+import java.util.Optional;
 
 import com.example.domain.Persona;
 
@@ -95,8 +99,11 @@ public interface PersonaService {
 
     /**
      * Regresa una HandsontableSlice de Persona
+     * 
      * @param pageable la información de paginación
      * @return HandsontableSlice de todas las entidades
      */
     HandsontableSlice<Persona> getHandsontable(Pageable pageable);
+
+    Optional<File> getWorkbook();
 }

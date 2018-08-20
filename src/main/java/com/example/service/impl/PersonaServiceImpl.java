@@ -23,6 +23,16 @@
  */
 package com.example.service.impl;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.Optional;
+
+import org.apache.poi.ss.usermodel.Workbook;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -31,15 +41,15 @@ import org.springframework.data.domain.SliceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import mx.infotec.dads.kukulkan.tables.handsontable.Handsontable;
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableFactory;
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import com.example.domain.Persona;
 import com.example.repository.PersonaRepository;
 import com.example.service.PersonaService;
+
+import mx.infotec.dads.kukulkan.tables.apachepoi.PojoToXlsxConverter;
+import mx.infotec.dads.kukulkan.tables.apachepoi.SheetDataSupplier;
+import mx.infotec.dads.kukulkan.tables.handsontable.Handsontable;
+import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableFactory;
+import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
 
 /**
  * PersonaServiceImpl
@@ -101,9 +111,33 @@ public class PersonaServiceImpl implements PersonaService {
 
     @Override
     public HandsontableSlice<Persona> getHandsontable(Pageable pageable) {
+        log.debug("Request to get a Handsontable of Persona ");
         Handsontable<Persona> table = HandsontableFactory.createHandsontable(Persona.class);
+        // Should create add a method in repository that returns a Slice instead use a
+        // Page
         Page<Persona> page = repository.findAll(pageable);
         Slice<Persona> slice = new SliceImpl<>(page.getContent(), pageable, page.hasNext());
         return new HandsontableSlice<>(table, slice);
+    }
+
+    @Override
+    public Optional<File> getWorkbook() {
+        log.debug("Request to get a Workbook of Persona ");
+        SheetDataSupplier<Persona> dataSupplier = new SheetDataSupplier<>((Pageable pageable) -> {
+            return repository.findAll(pageable);
+        });
+        PojoToXlsxConverter<Persona> converter = new PojoToXlsxConverter<>(Persona.class, dataSupplier);
+        Workbook wb = converter.getWorkbook();
+        try {
+            Path path = Files.createTempFile("kukulkan", "workbook");
+            File file = path.toFile();
+            FileOutputStream outputStream = new FileOutputStream(path.toFile());
+            wb.write(outputStream);
+            outputStream.close();
+            wb.close();
+            return Optional.of(file);
+        } catch (IOException e) {
+            return Optional.empty();
+        }
     }
 }
