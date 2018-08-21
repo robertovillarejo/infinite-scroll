@@ -16,7 +16,8 @@
             'ui.router',
             'infinite-scroll',
             'angular-loading-bar',
-            'ngCsv'
+            'ngCsv',
+            'ngFileSaver'
             // jhipster-needle-angularjs-add-module JHipster will add new module here
         ])
         .run(run);

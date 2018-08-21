@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaHandsontableController', PersonaHandsontableController);
 
-    PersonaHandsontableController.$inject = ['PersonaHandsontable', 'AlertService', 'paginationConstants', 'pagingParams'];
+    PersonaHandsontableController.$inject = ['PersonaHandsontable', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'Blob'];
 
-    function PersonaHandsontableController(PersonaHandsontable, AlertService, paginationConstants, pagingParams) {
+    function PersonaHandsontableController(PersonaHandsontable, AlertService, paginationConstants, pagingParams, FileSaver, Blob) {
 
         var vm = this;
 
@@ -16,6 +16,7 @@
         vm.reverse = pagingParams.ascending;
         vm.page = 0;
         vm.loading = false;
+        vm.download = download;
 
         var div = angular.element("#persona-handsontable")[0];
 
@@ -86,6 +87,16 @@
             settings.stretchH = 'all';
             settings.afterScrollVertically = loadPage;
             settings.maxRows = vm.data.length;
+        }
+
+        function download() {
+            PersonaHandsontable.download({}, onSuccess, onError);
+            function onSuccess(response) {
+                FileSaver.saveAs(response.blob, 'personas.xlsx');
+            }
+            function onError(error) {
+                AlertService.error(error.data);
+            }
         }
     }
 })();

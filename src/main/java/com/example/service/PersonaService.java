@@ -23,16 +23,15 @@
  */
 package com.example.service;
 
-import org.apache.poi.ss.usermodel.Workbook;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
-
 import java.io.File;
 import java.util.Optional;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+
 import com.example.domain.Persona;
+
+import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
 
 /**
  * PersonaService
@@ -90,9 +89,11 @@ public interface PersonaService {
     /**
      * Buscar Persona con el correspondiente al query.
      *
-     * @param query    El query de la busqueda
+     * @param query
+     *            El query de la busqueda
      * 
-     * @param pageable la información de paginación
+     * @param pageable
+     *            la información de paginación
      * @return Page de todas las entidades
      */
     Page<Persona> search(String query, Pageable pageable);
@@ -100,10 +101,16 @@ public interface PersonaService {
     /**
      * Regresa una HandsontableSlice de Persona
      * 
-     * @param pageable la información de paginación
+     * @param pageable
+     *            la información de paginación
      * @return HandsontableSlice de todas las entidades
      */
     HandsontableSlice<Persona> getHandsontable(Pageable pageable);
 
+    /**
+     * Regresa un archivo Workbook que contienen todos los registros de Persona
+     * 
+     * @return Optional<File>
+     */
     Optional<File> getWorkbook();
 }

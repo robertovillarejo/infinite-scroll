@@ -24,9 +24,7 @@
 package com.example.web.rest;
 
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -34,10 +32,11 @@ import java.util.Optional;
 
 import javax.validation.Valid;
 
-import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
@@ -52,7 +51,6 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.codahale.metrics.annotation.Timed;
@@ -199,7 +197,7 @@ public class PersonaResource {
     }
 
     /**
-     * GET /personas/handsontale : recupera una Handsontable de personas.
+     * GET /personas/handsontable : recupera una Handsontable de personas.
      *
      * @param pageable
      *            información de paginación
@@ -215,15 +213,31 @@ public class PersonaResource {
         return new ResponseEntity<>(table, headers, HttpStatus.OK);
     }
 
+    /**
+     * GET /personas/workbook : recupera un workbook de todas las personas.
+     * 
+     * @return Un archivo workbook con extensión xlsx de todas las personas.
+     * @throws MalformedURLException
+     */
     @GetMapping(produces = MediaType.APPLICATION_OCTET_STREAM_VALUE, path = "/personas/workbook")
     @Timed
-    public @ResponseBody byte[] getPersonaWorkbook() throws FileNotFoundException, IOException {
+    public ResponseEntity<Resource> getPersonaWorkbook() {
         log.debug("REST request to get Persona Workbook");
         Optional<File> file = service.getWorkbook();
         if (file.isPresent()) {
-            return IOUtils.toByteArray(new FileInputStream(file.get()));
+            Resource resource = null;
+            try {
+                resource = new UrlResource(file.get().toURI());
+                return ResponseEntity.ok().contentType(MediaType.APPLICATION_OCTET_STREAM)
+                        .header(HttpHeaders.CONTENT_DISPOSITION,
+                                "attachment; filename=\"" + resource.getFilename() + "\"")
+                        .body(resource);
+            } catch (MalformedURLException e) {
+                return ResponseUtil.wrapOrNotFound(Optional.ofNullable(resource));
+            }
+
         }
-        return null;
+        return ResponseEntity.noContent().build();
     }
 
 }

@@ -28,6 +28,8 @@ module.exports = function (config) {
             'src/main/webapp/bower_components/json3/lib/json3.js',
             'src/main/webapp/bower_components/moment/moment.js',
             'src/main/webapp/bower_components/pikaday/pikaday.js',
+            'src/main/webapp/bower_components/blob-polyfill/Blob.js',
+            'src/main/webapp/bower_components/file-saver.js/FileSaver.js',
             'src/main/webapp/bower_components/angular/angular.js',
             'src/main/webapp/bower_components/angular-aria/angular-aria.js',
             'src/main/webapp/bower_components/angular-bootstrap/ui-bootstrap-tpls.js',
@@ -48,6 +50,7 @@ module.exports = function (config) {
             'src/main/webapp/bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js',
             'src/main/webapp/bower_components/ng-csv/build/ng-csv.min.js',
             'src/main/webapp/bower_components/handsontable/dist/handsontable.full.js',
+            'src/main/webapp/bower_components/angular-file-saver/dist/angular-file-saver.bundle.js',
             'src/main/webapp/bower_components/angular-mocks/angular-mocks.js',
             // endbower
             'src/main/webapp/app/app.module.js',

@@ -127,14 +127,13 @@ public class PersonaServiceImpl implements PersonaService {
             return repository.findAll(pageable);
         });
         PojoToXlsxConverter<Persona> converter = new PojoToXlsxConverter<>(Persona.class, dataSupplier);
-        Workbook wb = converter.getWorkbook();
-        try {
-            Path path = Files.createTempFile("kukulkan", "workbook");
+        converter.convert();
+        try (Workbook wb = converter.getWorkbook();) {
+            Path path = Files.createTempFile("personas", ".xslx");
             File file = path.toFile();
             FileOutputStream outputStream = new FileOutputStream(path.toFile());
             wb.write(outputStream);
             outputStream.close();
-            wb.close();
             return Optional.of(file);
         } catch (IOException e) {
             return Optional.empty();
