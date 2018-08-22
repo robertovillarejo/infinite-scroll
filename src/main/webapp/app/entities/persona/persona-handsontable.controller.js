@@ -24,7 +24,7 @@
 
         var hotInstance = new Handsontable(div, {});
         var autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
-        var nearLastRowsCount = 3;
+        var nearLastRowsCount = 10;
 
         loadAll();
 
@@ -49,8 +49,7 @@
                 for (var i = 0; i < settings.data.length; i++) {
                     vm.data.push(settings.data[i]);
                 }
-                //hotInstance.updateSettings(settings);
-                
+
                 hotInstance.updateSettings({
                     allowEmpty: settings.allowEmpty,
                     data: vm.data,
@@ -61,9 +60,9 @@
                     readOnly: false,
                     rowHeaders: true,
                     afterScrollVertically: loadPage,
-                    height : 450,
-                    stretchH : 'all',
-                    maxRows : vm.data.length,
+                    height: 450,
+                    stretchH: 'all',
+                    maxRows: vm.data.length,
                 });
                 vm.loading = false;
             }

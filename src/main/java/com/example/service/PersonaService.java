@@ -23,9 +23,7 @@
  */
 package com.example.service;
 
-import java.io.File;
-import java.util.Optional;
-
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -112,5 +110,5 @@ public interface PersonaService {
      * 
      * @return Optional<File>
      */
-    Optional<File> getWorkbook();
+    SXSSFWorkbook getWorkbook();
 }

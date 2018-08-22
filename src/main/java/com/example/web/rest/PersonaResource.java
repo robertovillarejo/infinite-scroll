@@ -24,6 +24,8 @@
 package com.example.web.rest;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -32,11 +34,12 @@ import java.util.Optional;
 
 import javax.validation.Valid;
 
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.FileSystemResource;
 import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
@@ -223,21 +226,20 @@ public class PersonaResource {
     @Timed
     public ResponseEntity<Resource> getPersonaWorkbook() {
         log.debug("REST request to get Persona Workbook");
-        Optional<File> file = service.getWorkbook();
-        if (file.isPresent()) {
-            Resource resource = null;
-            try {
-                resource = new UrlResource(file.get().toURI());
-                return ResponseEntity.ok().contentType(MediaType.APPLICATION_OCTET_STREAM)
-                        .header(HttpHeaders.CONTENT_DISPOSITION,
-                                "attachment; filename=\"" + resource.getFilename() + "\"")
-                        .body(resource);
-            } catch (MalformedURLException e) {
-                return ResponseUtil.wrapOrNotFound(Optional.ofNullable(resource));
-            }
+        SXSSFWorkbook wb = service.getWorkbook();
+        ResponseEntity<Resource> response = null;
+        File file = new File("personas.xlsx");
+        try {
+            FileOutputStream outputStream = new FileOutputStream(file);
+            wb.write(outputStream);
+            response = ResponseEntity.ok().contentType(MediaType.APPLICATION_OCTET_STREAM)
+                    .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getName() + "\"")
+                    .body(new FileSystemResource(file));
 
+        } catch (IOException e) {
+            response = new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return ResponseEntity.noContent().build();
+        return response;
     }
 
 }

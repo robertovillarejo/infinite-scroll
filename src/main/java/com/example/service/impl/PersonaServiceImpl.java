@@ -31,6 +31,8 @@ import java.nio.file.Path;
 import java.util.Optional;
 
 import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -45,7 +47,7 @@ import com.example.domain.Persona;
 import com.example.repository.PersonaRepository;
 import com.example.service.PersonaService;
 
-import mx.infotec.dads.kukulkan.tables.apachepoi.PojoToXlsxConverter;
+import mx.infotec.dads.kukulkan.tables.apachepoi.WorkbookWriter;
 import mx.infotec.dads.kukulkan.tables.apachepoi.SheetDataSupplier;
 import mx.infotec.dads.kukulkan.tables.handsontable.Handsontable;
 import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableFactory;
@@ -121,22 +123,13 @@ public class PersonaServiceImpl implements PersonaService {
     }
 
     @Override
-    public Optional<File> getWorkbook() {
+    public SXSSFWorkbook getWorkbook() {
         log.debug("Request to get a Workbook of Persona ");
         SheetDataSupplier<Persona> dataSupplier = new SheetDataSupplier<>((Pageable pageable) -> {
             return repository.findAll(pageable);
         });
-        PojoToXlsxConverter<Persona> converter = new PojoToXlsxConverter<>(Persona.class, dataSupplier);
-        converter.convert();
-        try (Workbook wb = converter.getWorkbook();) {
-            Path path = Files.createTempFile("personas", ".xslx");
-            File file = path.toFile();
-            FileOutputStream outputStream = new FileOutputStream(path.toFile());
-            wb.write(outputStream);
-            outputStream.close();
-            return Optional.of(file);
-        } catch (IOException e) {
-            return Optional.empty();
-        }
+        WorkbookWriter<Persona> converter = new WorkbookWriter<>(Persona.class);
+        converter.addData(dataSupplier);
+        return converter.getWorkbook();
     }
 }
