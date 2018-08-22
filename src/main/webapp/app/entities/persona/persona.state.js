@@ -94,6 +94,34 @@
                     }]
                 }
             })
+            .state('personaHandsontable.new', {
+                parent: 'personaHandsontable',
+                url: '/new',
+                data: {
+                    authorities: ['ROLE_USER']
+                },
+                onEnter: ['$stateParams', '$state', '$uibModal', function ($stateParams, $state, $uibModal) {
+                    $uibModal.open({
+                        templateUrl: 'app/entities/persona/persona-dialog.html',
+                        controller: 'PersonaDialogController',
+                        controllerAs: 'vm',
+                        backdrop: 'static',
+                        size: 'lg',
+                        resolve: {
+                            entity: function () {
+                                return {
+                                    id: null,
+                                    nombre: null
+                                };
+                            }
+                        }
+                    }).result.then(function () {
+                        $state.go('personaHandsontable', null, { reload: 'personaHandsontable' });
+                    }, function () {
+                        $state.go('personaHandsontable');
+                    });
+                }]
+            })
             .state('persona-detail', {
                 parent: 'persona',
                 url: '/personas/{id}',

@@ -1,10 +1,15 @@
+<div class="widget">
+    <rd-widget-header>
+        <div class="widget-header ng-binding">
+            <i class="fas icon" data-translate="handsontableApp.persona.home.title">Personas</i>
+        </div>
+    </rd-widget-header>
+</div>
+<jhi-alert></jhi-alert>
 <div class="content container-fluid">
     <div class="well">
-        <h1>Persona</h1>
+        <button type="menu" ng-click="vm.download()"><i class="far fa-save fa-lg"></i></button>
+        <button type="menu" ui-sref="personaHandsontable.new"><i class="fas fa-plus fa-lg"></i></button>
         <div id="persona-handsontable"></div>
-
     </div>
-    <!--<button type="button" ng-csv="vm.data" csv-header="vm.settings.colHeaders" filename="personas.csv">Export</button>-->
-
-    <button type="button" ng-click="vm.download()">Download</button>
 </div>
