@@ -51,7 +51,7 @@ public class Persona implements Serializable {
      *
      * @kukulkanGenerated 20180809165807
      */
-    @SheetColumn
+    @SheetColumn(readOnly = true)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
