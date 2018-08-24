@@ -23,23 +23,31 @@
  */
 package com.example.web.rest;
 
+import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Base64;
 import java.util.List;
 import java.util.Optional;
 
 import javax.validation.Valid;
 
+import org.apache.commons.io.IOUtils;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
+import org.springframework.core.io.UrlResource;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpHeaders;
@@ -86,8 +94,7 @@ public class PersonaResource {
     /**
      * GET /personas : recupera todos los personas.
      *
-     * @param pageable
-     *            información de paginación
+     * @param pageable información de paginación
      * @return El objeto ResponseEntity con estado de 200 (OK) y la lista de
      *         personas en el cuerpo del mensaje
      */
@@ -103,8 +110,7 @@ public class PersonaResource {
     /**
      * GET /personas/:id : recupera por "id" de Persona.
      *
-     * @param id
-     *            el id del Persona que se desea recuperar
+     * @param id el id del Persona que se desea recuperar
      * @return El objeto ResponseEntity con el estado de 200 (OK) y dentro del
      *         cuerpo del mensaje el Persona, o con estado de 404 (Not Found)
      */
@@ -119,13 +125,11 @@ public class PersonaResource {
     /**
      * POST /personas : Create a new usuario.
      *
-     * @param persona
-     *            el persona que se desea crear
+     * @param persona el persona que se desea crear
      * @return El objeto ResponseEntity con estado 201 (Created) y en el cuerpo un
      *         nuevo persona, o con estado 400 (Bad Request) si el usuario ya tiene
      *         un ID
-     * @throws URISyntaxException
-     *             Si la sintaxis de la URI no es correcta
+     * @throws URISyntaxException Si la sintaxis de la URI no es correcta
      */
     @PostMapping("/personas")
     @Timed
@@ -144,14 +148,12 @@ public class PersonaResource {
     /**
      * PUT /personas : Actualiza un Persona existente.
      *
-     * @param persona
-     *            el persona que se desea actualizar
+     * @param persona el persona que se desea actualizar
      * @return el objeto ResponseEntity con estado de 200 (OK) y en el cuerpo de la
      *         respuesta el Persona actualizado, o con estatus de 400 (Bad Request)
      *         si el persona no es valido, o con estatus de 500 (Internal Server
      *         Error) si el persona no se puede actualizar
-     * @throws URISyntaxException
-     *             si la sintaxis de la URI no es correcta
+     * @throws URISyntaxException si la sintaxis de la URI no es correcta
      */
     @PutMapping("/personas")
     @Timed
@@ -168,8 +170,7 @@ public class PersonaResource {
     /**
      * DELETE /personas/:id : borrar el Persona con "id".
      *
-     * @param id
-     *            el id del Persona que se desea borrar
+     * @param id el id del Persona que se desea borrar
      * @return el objeto ResponseEntity con estatus 200 (OK)
      */
     @DeleteMapping("/personas/{id}")
@@ -184,10 +185,8 @@ public class PersonaResource {
      * SEARCH /_search/personas?query=:query : buscar por el persona correspondiente
      * to the query.
      *
-     * @param query
-     *            el query para el persona que se desea buscar
-     * @param pageable
-     *            información de la paginación
+     * @param query    el query para el persona que se desea buscar
+     * @param pageable información de la paginación
      * @return el resultado de la busqueda
      */
     @GetMapping("/_search/personas")
@@ -202,8 +201,7 @@ public class PersonaResource {
     /**
      * GET /personas/handsontable : recupera una Handsontable de personas.
      *
-     * @param pageable
-     *            información de paginación
+     * @param pageable información de paginación
      * @return El objeto ResponseEntity con estado de 200 (OK) y la Handsontable de
      *         personas en el cuerpo del mensaje
      */
@@ -222,7 +220,7 @@ public class PersonaResource {
      * @return Un archivo workbook con extensión xlsx de todas las personas.
      * @throws MalformedURLException
      */
-    @GetMapping(produces = MediaType.APPLICATION_OCTET_STREAM_VALUE, path = "/personas/workbook")
+    @GetMapping(produces = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", path = "/personas/workbook")
     @Timed
     public ResponseEntity<Resource> getPersonaWorkbook() {
         log.debug("REST request to get Persona Workbook");
@@ -232,9 +230,9 @@ public class PersonaResource {
         try {
             FileOutputStream outputStream = new FileOutputStream(file);
             wb.write(outputStream);
-            response = ResponseEntity.ok().contentType(MediaType.APPLICATION_OCTET_STREAM)
+            response = ResponseEntity.ok()
                     .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + file.getName() + "\"")
-                    .body(new FileSystemResource(file));
+                    .body(new InputStreamResource(new FileInputStream(file)));
 
         } catch (IOException e) {
             response = new ResponseEntity<>(HttpStatus.NOT_FOUND);
