@@ -44,8 +44,18 @@
             <column name="genero" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="usuario" type="bigint">
+                <constraints nullable="true" />
+            </column>
 		
         </createTable>
+
+        <addForeignKeyConstraint baseColumnNames="usuario"
+                                 baseTableName="personas"
+                                 constraintName="fk_persona.usuario_id_core_user.id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="core_user"/>
+
         <loadData encoding="UTF-8"
                   file="config/liquibase/personas.csv"
                   separator=";"

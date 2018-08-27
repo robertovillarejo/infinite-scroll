@@ -7,6 +7,9 @@ import org.apache.commons.lang3.StringUtils;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.validator.constraints.Email;
 
+import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
+import mx.infotec.dads.kukulkan.tables.handsontable.annotations.SheetColumn;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -21,6 +24,7 @@ import java.time.Instant;
 /**
  * A user.
  */
+@Sheet
 @Entity
 @Table(name = "core_user")
 
@@ -28,10 +32,12 @@ public class User extends AbstractAuditingEntity implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    @SheetColumn(readOnly = true)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @SheetColumn
     @NotNull
     @Pattern(regexp = Constants.LOGIN_REGEX)
     @Size(min = 1, max = 50)
@@ -44,19 +50,23 @@ public class User extends AbstractAuditingEntity implements Serializable {
     @Column(name = "password_hash", length = 60)
     private String password;
 
+    @SheetColumn
     @Size(max = 50)
     @Column(name = "first_name", length = 50)
     private String firstName;
 
+    @SheetColumn
     @Size(max = 50)
     @Column(name = "last_name", length = 50)
     private String lastName;
 
+    @SheetColumn
     @Email
     @Size(min = 5, max = 100)
     @Column(length = 100, unique = true)
     private String email;
 
+    @SheetColumn
     @NotNull
     @Column(nullable = false)
     private boolean activated = false;

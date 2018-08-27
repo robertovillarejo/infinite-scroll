@@ -202,10 +202,10 @@ public class PersonaResource {
      * @return El objeto ResponseEntity con estado de 200 (OK) y la Handsontable de
      *         personas en el cuerpo del mensaje
      */
-    @GetMapping("/personas/handsontable")
+    @GetMapping("/personas/sheet")
     @Timed
-    public ResponseEntity<Handsontable<Persona>> getPersonaHandsontable(@ApiParam Pageable pageable) {
-        log.debug("REST request to get Persona Handsontable");
+    public ResponseEntity<Handsontable<Persona>> getPersonaSheet(@ApiParam Pageable pageable) {
+        log.debug("REST request to get Persona Sheet");
         HandsontableSlice<Persona> table = service.getHandsontable(pageable);
         HttpHeaders headers = PaginationUtil.generateSliceHttpHeaders(table);
         return new ResponseEntity<>(table, headers, HttpStatus.OK);

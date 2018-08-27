@@ -2,12 +2,12 @@
     'use strict';
     angular
         .module('handsontableApp')
-        .factory('PersonaHandsontable', PersonaHandsontable);
+        .factory('PersonaSheet', PersonaSheet);
 
-    PersonaHandsontable.$inject = ['$resource'];
+    PersonaSheet.$inject = ['$resource'];
 
-    function PersonaHandsontable($resource) {
-        var resourceUrl = 'api/personas/handsontable';
+    function PersonaSheet($resource) {
+        var resourceUrl = 'api/personas/sheet';
 
         return $resource(resourceUrl, {}, {
             'query': { method: 'GET' },

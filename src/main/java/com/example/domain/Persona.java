@@ -26,6 +26,7 @@ package com.example.domain;
 import java.time.LocalDate;
 import javax.persistence.*;
 
+import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableOptions.Type;
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.SheetColumn;
 
@@ -132,6 +133,11 @@ public class Persona implements Serializable {
     @Enumerated(EnumType.STRING)
     @Column(name = "genero")
     private Genero genero = Genero.HOMBRE;
+
+    @SheetColumn(type = Type.HANDSONTABLE)
+    @OneToOne
+    @JoinColumn(name = "usuario", unique = true)
+    private User usuario;
     
 
     /**

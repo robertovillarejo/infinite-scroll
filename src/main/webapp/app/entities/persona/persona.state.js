@@ -51,17 +51,17 @@
                     }]
                 }
             })
-            .state('personaHandsontable', {
+            .state('personaSheet', {
                 parent: 'entity',
-                url: '/personas/handsontable?page&sort&search',
+                url: '/personas/sheet?page&sort&search',
                 data: {
                     authorities: ['ROLE_USER'],
                     pageTitle: 'handsontableApp.persona.home.title'
                 },
                 views: {
                     'content@': {
-                        templateUrl: 'app/entities/persona/personas-handsontable.html',
-                        controller: 'PersonaHandsontableController',
+                        templateUrl: 'app/entities/persona/personas-sheet.html',
+                        controller: 'PersonaSheetController',
                         controllerAs: 'vm'
                     }
                 },
