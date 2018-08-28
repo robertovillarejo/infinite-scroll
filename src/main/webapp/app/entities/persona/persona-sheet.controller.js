@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['PersonaSheet', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet'];
+    PersonaSheetController.$inject = ['$state','PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet'];
 
-    function PersonaSheetController(PersonaSheet, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet) {
+    function PersonaSheetController($state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet) {
 
         var vm = this;
 
@@ -25,6 +25,8 @@
         vm.users = UserSheet.query();
 
         var umbral = 10;
+        var editMap = new Map();
+
 
         loadAll();
 
@@ -59,9 +61,31 @@
                             var selection = this.getSelectedLast();
                             return this.getSourceDataAtRow(selection[0]).id;
                         }
+
                     };
                 overwriteSettings(settings);
                 personaSheet.updateSettings(settings);
+                personaSheet.updateSettings({
+                    beforeRemoveRow: function(index, amount) {
+                        var id = personaSheet.getDataAtRowProp(index,'id');
+                        confirmDelete(id);
+                    },
+                    afterChange: function (changes, src) {
+                        if (changes)
+                        {
+                            var row = changes[0][0];
+                            var metaData = personaSheet.getCellMetaAtRow(row)
+                            var obj = {};
+                            for(var i = 0; i < metaData.length; i++){
+                                //hotInstance.setCellMeta(row, metaData[i].col, 'className', 'modified');
+                                obj[metaData[i].prop] = personaSheet.getDataAtRowProp(row, metaData[i].prop)
+                            }
+                            editMap.set(obj.id,obj);
+                            save(obj,row);
+                            personaSheet.render();
+                        }
+                    }
+                });
                 vm.loading = false;
             }
 
@@ -75,9 +99,10 @@
             settings.afterScrollVertically = loadPage;
             settings.height = 450;
             settings.stretchH = 'all';
-            settings.maxRows = vm.data.length;
             settings.persistenState = true;
             settings.data = vm.data;
+            settings.maxRows = vm.data.length;
+
         }
 
         function loadPage() {
@@ -99,5 +124,29 @@
                 AlertService.error(error);
             }
         }
+
+        function save(persona, row) {
+            var createdId = null;
+            if (persona.id !== null) {
+                Persona.update(persona, onSaveSuccess, onSaveError);
+            } else {
+                Persona.save(persona, function(response){
+                    personaSheet.setDataAtRowProp(row, "id", response.id);
+                }, onSaveError);
+            }
+        }
+
+        function onSaveSuccess(result) {
+            console.log(result.id)
+        }
+
+        function onSaveError(error) {
+                AlertService.error(error.data);
+        }
+
+        function confirmDelete(idPersona){
+            $state.go('personaSheet.delete',{id:idPersona});
+        }
+
     }
 })();

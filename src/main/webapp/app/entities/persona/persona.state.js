@@ -255,7 +255,32 @@
                         $state.go('^');
                     });
                 }]
+            })
+            .state('personaSheet.delete', {
+                parent: 'personaSheet',
+                url: '/{id}/delete',
+                data: {
+                    authorities: ['ROLE_USER']
+                },
+                onEnter: ['$stateParams', '$state', '$uibModal', function ($stateParams, $state, $uibModal) {
+                    $uibModal.open({
+                        templateUrl: 'app/entities/persona/persona-delete-dialog.html',
+                        controller: 'PersonaDeleteController',
+                        controllerAs: 'vm',
+                        size: 'md',
+                        resolve: {
+                            entity: ['Persona', function (Persona) {
+                                return Persona.get({ id: $stateParams.id }).$promise;
+                            }]
+                        }
+                    }).result.then(function () {
+                        $state.go('personaSheet', null, { reload: 'personaSheet' });
+                    }, function () {
+                        $state.go('personaSheet');
+                    });
+                }]
             });
+
     }
 
 })();
