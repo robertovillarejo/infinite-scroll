@@ -56,6 +56,7 @@ public class Direccion implements Serializable {
     @Column(name = "id", unique = true, nullable = false)
     private Long id;
 
+    @SheetColumn
     @Column(name = "calle", nullable = true)
     private String calle;
 

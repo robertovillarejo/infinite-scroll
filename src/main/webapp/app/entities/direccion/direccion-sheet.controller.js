@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('DireccionSheetController', DireccionSheetController);
 
-    DireccionSheetController.$inject = ['$state', 'DireccionSheet', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver'];
+    DireccionSheetController.$inject = ['$state', 'DireccionSheet', 'Direccion', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver'];
 
-    function DireccionSheetController($state, DireccionSheet, AlertService, paginationConstants, pagingParams, FileSaver) {
+    function DireccionSheetController($state, DireccionSheet, Direccion, AlertService, paginationConstants, pagingParams, FileSaver) {
 
         var vm = this;
 
@@ -112,12 +112,12 @@
             }
         }
 
-        function save(persona, row) {
+        function save(direccion, row) {
             var createdId = null;
-            if (persona.id !== null) {
-                Persona.update(persona, onSaveSuccess, onSaveError);
+            if (direccion.id !== null) {
+                Direccion.update(direccion, onSaveSuccess, onSaveError);
             } else {
-                Persona.save(persona, function (response) {
+                Direccion.save(direccion, function (response) {
                     direccionSheet.setDataAtRowProp(row, "id", response.id);
                 }, onSaveError);
             }
@@ -131,7 +131,7 @@
             AlertService.error(error.data);
         }
 
-        function confirmDelete(idPersona) {
+        function confirmDelete(idDireccion) {
             $state.go('direccionSheet.delete', { id: idDireccion });
         }
 
