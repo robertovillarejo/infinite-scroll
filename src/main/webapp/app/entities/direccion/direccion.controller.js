@@ -3,15 +3,15 @@
 
     angular
         .module('handsontableApp')
-        .controller('DireccionSheetController', DireccionSheetController);
+        .controller('DireccionController', DireccionController);
 
-    DireccionSheetController.$inject = ['$state', 'DireccionSheet', 'Direccion', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver'];
+    DireccionController.$inject = ['$state', 'Direccion', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver'];
 
-    function DireccionSheetController($state, DireccionSheet, Direccion, AlertService, paginationConstants, pagingParams, FileSaver) {
+    function DireccionController($state, Direccion, AlertService, paginationConstants, pagingParams, FileSaver) {
 
         var vm = this;
 
-        var div = angular.element("#direccion-handsontable")[0];
+        var div = angular.element("#direccion-sheet")[0];
         var direccionSheet = new Handsontable(div, {});
         var autoRowSizePlugin = direccionSheet.getPlugin('AutoRowSize');
 
@@ -31,7 +31,7 @@
 
         function loadAll() {
             vm.loading = true;
-            DireccionSheet.query({
+            Direccion.sheet({
                 page: vm.page - 1,
                 size: vm.itemsPerPage,
                 sort: sort()
@@ -103,7 +103,7 @@
         }
 
         function download() {
-            DireccionSheet.download({}, onSuccess, onError);
+            Direccion.download({}, onSuccess, onError);
             function onSuccess(response) {
                 FileSaver.saveAs(response.blob, 'direcciones.xlsx');
             }

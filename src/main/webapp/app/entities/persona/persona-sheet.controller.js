@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'DireccionSheet'];
+    PersonaSheetController.$inject = ['$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion'];
 
-    function PersonaSheetController($state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, DireccionSheet) {
+    function PersonaSheetController($state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion) {
 
         var vm = this;
 
@@ -23,7 +23,7 @@
         vm.download = download;
         vm.data = [];
         vm.users = UserSheet.query();
-        vm.direcciones = DireccionSheet.query();
+        vm.direcciones = Direccion.sheet();
 
         var umbral = 10;
         var editMap = new Map();
