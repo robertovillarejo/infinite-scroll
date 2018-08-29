@@ -83,13 +83,12 @@
         }
 
         function overwriteSettings(settings) {
+            settings.maxRows = Infinity;
             settings.afterScrollVertically = loadPage;
             settings.height = 450;
             settings.stretchH = 'all';
             settings.persistenState = true;
             settings.data = vm.data;
-            settings.maxRows = undefined;
-
         }
 
         function loadPage() {

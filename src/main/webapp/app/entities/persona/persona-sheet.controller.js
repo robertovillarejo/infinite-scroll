@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion'];
+    PersonaSheetController.$inject = ['$scope', '$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion', '$uibModal'];
 
-    function PersonaSheetController($state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion) {
+    function PersonaSheetController($scope, $state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion, $uibModal) {
 
         var vm = this;
 
@@ -26,8 +26,6 @@
         vm.direcciones = Direccion.sheet();
 
         var umbral = 10;
-        var editMap = new Map();
-
 
         loadAll();
 
@@ -53,50 +51,57 @@
                     vm.data.push(settings.data[i]);
                 }
 
-                settings.columns.find(function (col) { return col.data === "usuario" }).handsontable =
+                var usuarioCol = settings.columns.find(function (col) { return col.data === "usuario" });
+                usuarioCol.data = 'usuario';
+                usuarioCol.allowEmpty = true;
+                usuarioCol.handsontable =
                     {
                         colHeaders: vm.users.colHeaders,
                         autoColumnSize: true,
                         data: vm.users.data,
                         getValue: function () {
+                            //Get Usuario
                             var selection = this.getSelectedLast();
-                            return this.getSourceDataAtRow(selection[0]).id;
-                        }
+                            var physicalRowNumber = this.toPhysicalRow(selection[0]);
+                            var userSelected = vm.users.data[physicalRowNumber];
 
+                            //Get Persona
+                            var personaSelection = personaSheet.getSelectedLast();
+                            var personaPhysicalRowNumber = personaSheet.toPhysicalRow(personaSelection[0]);
+                            var personaSelected = vm.data[personaPhysicalRowNumber];
+
+                            //Assign usuario to persona
+                            personaSelected.usuario = userSelected;
+                            return userSelected;
+                        }
                     };
+
+
                 settings.columns.find(function (col) { return col.data === "direccion" }).handsontable =
                     {
                         colHeaders: vm.direcciones.colHeaders,
                         autoColumnSize: true,
                         data: vm.direcciones.data,
                         getValue: function () {
+                            //Get Direccion
                             var selection = this.getSelectedLast();
-                            return this.getSourceDataAtRow(selection[0]).id;
+                            var physicalRowNumber = this.toPhysicalRow(selection[0]);
+                            var direccionSelected = vm.direcciones.data[physicalRowNumber];
+
+                            //Get Persona
+                            var personaSelection = personaSheet.getSelectedLast();
+                            var personaPhysicalRowNumber = personaSheet.toPhysicalRow(personaSelection[0]);
+                            var personaSelected = vm.data[personaPhysicalRowNumber];
+
+                            //Assign direccion to persona
+                            personaSelected.direccion = direccionSelected;
+                            return direccionSelected;
                         }
 
                     };
                 overwriteSettings(settings);
                 personaSheet.updateSettings(settings);
-                personaSheet.updateSettings({
-                    beforeRemoveRow: function (index) {
-                        var id = parseInt(personaSheet.getDataAtRowProp(index, 'id'));
-                        confirmDelete(id);
-                    },
-                    afterChange: function (changes, src) {
-                        if (changes) {
-                            var row = changes[0][0];
-                            var metaData = personaSheet.getCellMetaAtRow(row)
-                            var obj = {};
-                            for (var i = 0; i < metaData.length; i++) {
-                                //hotInstance.setCellMeta(row, metaData[i].col, 'className', 'modified');
-                                obj[metaData[i].prop] = personaSheet.getDataAtRowProp(row, metaData[i].prop)
-                            }
-                            editMap.set(obj.id, obj);
-                            save(obj, row);
-                            personaSheet.render();
-                        }
-                    }
-                });
+                personaSheet.validateCells();
                 vm.loading = false;
             }
 
@@ -112,8 +117,24 @@
             settings.stretchH = 'all';
             settings.persistenState = true;
             settings.data = vm.data;
-            settings.maxRows = undefined;
-
+            settings.maxRows = Infinity;
+            settings.persistenState = true;
+            settings.beforeRemoveRow = function (index) {
+                var physicalRow = personaSheet.toPhysicalRow(index);
+                var persona = vm.data[physicalRow];
+                confirmDelete(persona, physicalRow);
+                return false;
+            }
+            settings.afterChange = function (changes, src) {
+                if (!changes || src === "ObserveChanges.change") return;
+                changes.forEach(([row, prop, oldValue, newValue]) => {
+                    if (oldValue !== newValue) {
+                        var physicalRowNumber = personaSheet.toPhysicalRow(row);
+                        var modifiedPersona = vm.data[physicalRowNumber];
+                        save(modifiedPersona);
+                    }
+                });
+            }
         }
 
         function loadPage() {
@@ -136,27 +157,34 @@
             }
         }
 
-        function save(persona, row) {
-            var createdId = null;
+        function save(persona) {
             if (persona.id !== null) {
                 Persona.update(persona, onSaveSuccess, onSaveError);
             } else {
-                Persona.save(persona, function (response) {
-                    personaSheet.setDataAtRowProp(row, "id", response.id);
-                }, onSaveError);
+                Persona.save(persona, onSaveSuccess, onSaveError);
             }
         }
 
         function onSaveSuccess(result) {
-            console.log(result.id)
+            $scope.$emit('handsontableApp:personaUpdate', result);
         }
 
         function onSaveError(error) {
-            AlertService.error(error.data);
+            AlertService.error(error.data.message);
         }
 
-        function confirmDelete(idPersona) {
-            $state.go('personaSheet.delete', { id: idPersona });
+        function confirmDelete(persona, index) {
+            $uibModal.open({
+                templateUrl: 'app/entities/persona/persona-delete-dialog.html',
+                controller: 'PersonaDeleteController',
+                controllerAs: 'vm',
+                size: 'md',
+                resolve: {
+                    entity: persona
+                }
+            }).result.then(function () {
+                vm.data.splice(index, 1);
+            });
         }
 
     }
