@@ -8,6 +8,7 @@
             "entities": {
                 "main": "Entidades",
                 "persona": "Persona",
+                "direccion": "Direccion",
                 "jhipster-needle-menu-add-entry": "Generator will add additional entities here (do not translate!)"
             },
             "account": {
@@ -50,7 +51,7 @@
                 "register": "¿No tienes una cuenta todavía? <a class=\"alert-link\" href=\"\" ng-click=\"vm.register()\">Crea una cuenta</a>"
             },
             "error": {
-                "dontmatch" : "¡La contraseña y la confirmación de contraseña no coinciden!"
+                "dontmatch": "¡La contraseña y la confirmación de contraseña no coinciden!"
             },
             "validate": {
                 "newpassword": {
@@ -73,10 +74,10 @@
             }
         },
         "field": {
-            "id" : "ID"
+            "id": "ID"
         },
         "ribbon": {
-            "dev":"Development"
+            "dev": "Development"
         },
         "item-count": "Mostrando {{first}} - {{second}} de {{total}} artículos."
     },

@@ -5,6 +5,7 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="classpath:config/liquibase/changelog/20180828181500_added_entity_Direccion.xml" relativeToChangelogFile="false"/>
     <include file="classpath:config/liquibase/changelog/20180809165808_added_entity_Persona.xml" relativeToChangelogFile="false"/>
 	<!-- add-entities - entities added -->
 	<!-- add-constraints-entities - constraints to entities added -->

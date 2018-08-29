@@ -8,6 +8,7 @@
             "entities": {
                 "main": "Entities",
                 "persona": "Persona",
+                "direccion": "Direccion",
                 "jhipster-needle-menu-add-entry": "Generator will add additional entities here (do not translate!)"
             },
             "account": {

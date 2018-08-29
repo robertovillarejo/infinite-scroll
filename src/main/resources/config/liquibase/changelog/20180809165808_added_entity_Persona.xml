@@ -44,17 +44,26 @@
             <column name="genero" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
-            <column name="usuario" type="bigint">
+            <column name="usuario_id" type="bigint">
+                <constraints unique="true" nullable="true" />
+            </column>
+            <column name="direccion_id" type="bigint">
                 <constraints nullable="true" />
             </column>
 		
         </createTable>
 
-        <addForeignKeyConstraint baseColumnNames="usuario"
+        <addForeignKeyConstraint baseColumnNames="usuario_id"
                                  baseTableName="personas"
-                                 constraintName="fk_persona.usuario_id_core_user.id"
+                                 constraintName="fk_personas.usuario_id_core_user.id"
                                  referencedColumnNames="id"
                                  referencedTableName="core_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="direccion_id"
+                                 baseTableName="personas"
+                                 constraintName="fk_personas.direccion_id_direcciones.id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="direcciones"/>
 
         <loadData encoding="UTF-8"
                   file="config/liquibase/personas.csv"

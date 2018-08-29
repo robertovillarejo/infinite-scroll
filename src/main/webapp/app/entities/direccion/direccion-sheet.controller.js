@@ -3,17 +3,17 @@
 
     angular
         .module('handsontableApp')
-        .controller('PersonaSheetController', PersonaSheetController);
+        .controller('DireccionSheetController', DireccionSheetController);
 
-    PersonaSheetController.$inject = ['$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'DireccionSheet'];
+    DireccionSheetController.$inject = ['$state', 'DireccionSheet', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver'];
 
-    function PersonaSheetController($state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, DireccionSheet) {
+    function DireccionSheetController($state, DireccionSheet, AlertService, paginationConstants, pagingParams, FileSaver) {
 
         var vm = this;
 
-        var div = angular.element("#persona-handsontable")[0];
-        var personaSheet = new Handsontable(div, {});
-        var autoRowSizePlugin = personaSheet.getPlugin('AutoRowSize');
+        var div = angular.element("#direccion-handsontable")[0];
+        var direccionSheet = new Handsontable(div, {});
+        var autoRowSizePlugin = direccionSheet.getPlugin('AutoRowSize');
 
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.predicate = pagingParams.predicate;
@@ -22,8 +22,6 @@
         vm.loading = false;
         vm.download = download;
         vm.data = [];
-        vm.users = UserSheet.query();
-        vm.direcciones = DireccionSheet.query();
 
         var umbral = 10;
         var editMap = new Map();
@@ -33,7 +31,7 @@
 
         function loadAll() {
             vm.loading = true;
-            PersonaSheet.query({
+            DireccionSheet.query({
                 page: vm.page - 1,
                 size: vm.itemsPerPage,
                 sort: sort()
@@ -53,47 +51,25 @@
                     vm.data.push(settings.data[i]);
                 }
 
-                settings.columns.find(function (col) { return col.data === "usuario" }).handsontable =
-                    {
-                        colHeaders: vm.users.colHeaders,
-                        autoColumnSize: true,
-                        data: vm.users.data,
-                        getValue: function () {
-                            var selection = this.getSelectedLast();
-                            return this.getSourceDataAtRow(selection[0]).id;
-                        }
-
-                    };
-                settings.columns.find(function (col) { return col.data === "direccion" }).handsontable =
-                    {
-                        colHeaders: vm.direcciones.colHeaders,
-                        autoColumnSize: true,
-                        data: vm.direcciones.data,
-                        getValue: function () {
-                            var selection = this.getSelectedLast();
-                            return this.getSourceDataAtRow(selection[0]).id;
-                        }
-
-                    };
                 overwriteSettings(settings);
-                personaSheet.updateSettings(settings);
-                personaSheet.updateSettings({
+                direccionSheet.updateSettings(settings);
+                direccionSheet.updateSettings({
                     beforeRemoveRow: function (index) {
-                        var id = parseInt(personaSheet.getDataAtRowProp(index, 'id'));
+                        var id = parseInt(direccionSheet.getDataAtRowProp(index, 'id'));
                         confirmDelete(id);
                     },
                     afterChange: function (changes, src) {
                         if (changes) {
                             var row = changes[0][0];
-                            var metaData = personaSheet.getCellMetaAtRow(row)
+                            var metaData = direccionSheet.getCellMetaAtRow(row)
                             var obj = {};
                             for (var i = 0; i < metaData.length; i++) {
                                 //hotInstance.setCellMeta(row, metaData[i].col, 'className', 'modified');
-                                obj[metaData[i].prop] = personaSheet.getDataAtRowProp(row, metaData[i].prop)
+                                obj[metaData[i].prop] = direccionSheet.getDataAtRowProp(row, metaData[i].prop)
                             }
                             editMap.set(obj.id, obj);
                             save(obj, row);
-                            personaSheet.render();
+                            direccionSheet.render();
                         }
                     }
                 });
@@ -119,7 +95,7 @@
         function loadPage() {
             var page = vm.page + 1;
             if (vm.hasNextPage && !vm.loading) {
-                if (autoRowSizePlugin.getLastVisibleRow() >= (personaSheet.countRows() - umbral)) {
+                if (autoRowSizePlugin.getLastVisibleRow() >= (direccionSheet.countRows() - umbral)) {
                     vm.page = page;
                     loadAll();
                 }
@@ -127,9 +103,9 @@
         }
 
         function download() {
-            PersonaSheet.download({}, onSuccess, onError);
+            DireccionSheet.download({}, onSuccess, onError);
             function onSuccess(response) {
-                FileSaver.saveAs(response.blob, 'personas.xlsx');
+                FileSaver.saveAs(response.blob, 'direcciones.xlsx');
             }
             function onError(error) {
                 AlertService.error(error);
@@ -142,7 +118,7 @@
                 Persona.update(persona, onSaveSuccess, onSaveError);
             } else {
                 Persona.save(persona, function (response) {
-                    personaSheet.setDataAtRowProp(row, "id", response.id);
+                    direccionSheet.setDataAtRowProp(row, "id", response.id);
                 }, onSaveError);
             }
         }
@@ -156,7 +132,7 @@
         }
 
         function confirmDelete(idPersona) {
-            $state.go('personaSheet.delete', { id: idPersona });
+            $state.go('direccionSheet.delete', { id: idDireccion });
         }
 
     }

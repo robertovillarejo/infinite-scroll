@@ -45,10 +45,10 @@ import java.io.Serializable;
 public class Persona implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    
+
     /**
-     * Este campo fue generado automaticamente por kukulkan 
-     * Este campo corresponde a la llave primaria id
+     * Este campo fue generado automaticamente por kukulkan Este campo corresponde a
+     * la llave primaria id
      *
      * @kukulkanGenerated 20180809165807
      */
@@ -57,71 +57,60 @@ public class Persona implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true, nullable = false)
     private Long id;
-	
-	
+
     /**
-     * Este campo fue generado automaticamente por kukulkan 
-     * Este campo corresponde a la tabla personas
+     * Este campo fue generado automaticamente por kukulkan Este campo corresponde a
+     * la tabla personas
      *
      * @kukulkanGenerated 20180809165807
      */
     @SheetColumn
     @Column(name = "nombre")
     private String nombre;
-    
 
-	
     /**
-     * Este campo fue generado automaticamente por kukulkan 
-     * Este campo corresponde a la tabla personas
+     * Este campo fue generado automaticamente por kukulkan Este campo corresponde a
+     * la tabla personas
      *
      * @kukulkanGenerated 20180809165807
      */
     @SheetColumn
     @Column(name = "apellido")
     private String apellido;
-    
 
-	
     /**
-     * Este campo fue generado automaticamente por kukulkan 
-     * Este campo corresponde a la tabla personas
+     * Este campo fue generado automaticamente por kukulkan Este campo corresponde a
+     * la tabla personas
      *
      * @kukulkanGenerated 20180809165807
      */
     @SheetColumn
     @Column(name = "correo")
     private String correo;
-    
 
-	
     /**
-     * Este campo fue generado automaticamente por kukulkan 
-     * Este campo corresponde a la tabla personas
+     * Este campo fue generado automaticamente por kukulkan Este campo corresponde a
+     * la tabla personas
      *
      * @kukulkanGenerated 20180809165807
      */
     @SheetColumn
     @Column(name = "empresa")
     private String empresa;
-    
 
-	
     /**
-     * Este campo fue generado automaticamente por kukulkan 
-     * Este campo corresponde a la tabla personas
+     * Este campo fue generado automaticamente por kukulkan Este campo corresponde a
+     * la tabla personas
      *
      * @kukulkanGenerated 20180809165807
      */
     @SheetColumn
     @Column(name = "fecha_nacimiento")
     private LocalDate fechaNacimiento;
-    
 
-	
     /**
-     * Este campo fue generado automaticamente por kukulkan 
-     * Este campo corresponde a la tabla personas
+     * Este campo fue generado automaticamente por kukulkan Este campo corresponde a
+     * la tabla personas
      *
      * @kukulkanGenerated 20180809165807
      */
@@ -136,13 +125,17 @@ public class Persona implements Serializable {
 
     @SheetColumn(type = Type.HANDSONTABLE)
     @OneToOne
-    @JoinColumn(name = "usuario", unique = true)
+    @JoinColumn(name = "usuario_id", unique = true)
     private User usuario;
-    
+
+    @SheetColumn(type = Type.HANDSONTABLE)
+    @ManyToOne
+    @JoinColumn(name = "direccion_id")
+    private Direccion direccion;
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método GETTER fue generado para la llave primaria personas.id
+     * Este método fue generado automaticamente por kukulkan Este método GETTER fue
+     * generado para la llave primaria personas.id
      *
      * @return el valor de id
      *
@@ -153,8 +146,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método SETTER fue generado para la llave primaria. personas.id
+     * Este método fue generado automaticamente por kukulkan Este método SETTER fue
+     * generado para la llave primaria. personas.id
      *
      * @return el valor de id
      *
@@ -164,11 +157,9 @@ public class Persona implements Serializable {
         this.id = id;
     }
 
-	
-    
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método GETTER fue generado para la propiedad personas.nombre
+     * Este método fue generado automaticamente por kukulkan Este método GETTER fue
+     * generado para la propiedad personas.nombre
      *
      * @return el valor de nombre
      *
@@ -179,8 +170,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método SETTER fue generado para la propiedad. personas.nombre
+     * Este método fue generado automaticamente por kukulkan Este método SETTER fue
+     * generado para la propiedad. personas.nombre
      *
      * @return el valor de Nombre
      *
@@ -189,12 +180,10 @@ public class Persona implements Serializable {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-    
 
-    
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método GETTER fue generado para la propiedad personas.apellido
+     * Este método fue generado automaticamente por kukulkan Este método GETTER fue
+     * generado para la propiedad personas.apellido
      *
      * @return el valor de apellido
      *
@@ -205,8 +194,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método SETTER fue generado para la propiedad. personas.apellido
+     * Este método fue generado automaticamente por kukulkan Este método SETTER fue
+     * generado para la propiedad. personas.apellido
      *
      * @return el valor de Apellido
      *
@@ -215,12 +204,10 @@ public class Persona implements Serializable {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-    
 
-    
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método GETTER fue generado para la propiedad personas.correo
+     * Este método fue generado automaticamente por kukulkan Este método GETTER fue
+     * generado para la propiedad personas.correo
      *
      * @return el valor de correo
      *
@@ -231,8 +218,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método SETTER fue generado para la propiedad. personas.correo
+     * Este método fue generado automaticamente por kukulkan Este método SETTER fue
+     * generado para la propiedad. personas.correo
      *
      * @return el valor de Correo
      *
@@ -241,12 +228,10 @@ public class Persona implements Serializable {
     public void setCorreo(String correo) {
         this.correo = correo;
     }
-    
 
-    
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método GETTER fue generado para la propiedad personas.empresa
+     * Este método fue generado automaticamente por kukulkan Este método GETTER fue
+     * generado para la propiedad personas.empresa
      *
      * @return el valor de empresa
      *
@@ -257,8 +242,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método SETTER fue generado para la propiedad. personas.empresa
+     * Este método fue generado automaticamente por kukulkan Este método SETTER fue
+     * generado para la propiedad. personas.empresa
      *
      * @return el valor de Empresa
      *
@@ -267,12 +252,10 @@ public class Persona implements Serializable {
     public void setEmpresa(String empresa) {
         this.empresa = empresa;
     }
-    
 
-    
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método GETTER fue generado para la propiedad personas.fecha_nacimiento
+     * Este método fue generado automaticamente por kukulkan Este método GETTER fue
+     * generado para la propiedad personas.fecha_nacimiento
      *
      * @return el valor de fechaNacimiento
      *
@@ -283,8 +266,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método SETTER fue generado para la propiedad. personas.fechaNacimiento
+     * Este método fue generado automaticamente por kukulkan Este método SETTER fue
+     * generado para la propiedad. personas.fechaNacimiento
      *
      * @return el valor de FechaNacimiento
      *
@@ -293,12 +276,10 @@ public class Persona implements Serializable {
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-    
 
-    
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método GETTER fue generado para la propiedad personas.sueldo
+     * Este método fue generado automaticamente por kukulkan Este método GETTER fue
+     * generado para la propiedad personas.sueldo
      *
      * @return el valor de sueldo
      *
@@ -309,8 +290,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * Este método fue generado automaticamente por kukulkan 
-     * Este método SETTER fue generado para la propiedad. personas.sueldo
+     * Este método fue generado automaticamente por kukulkan Este método SETTER fue
+     * generado para la propiedad. personas.sueldo
      *
      * @return el valor de Sueldo
      *
@@ -334,10 +315,38 @@ public class Persona implements Serializable {
         this.genero = genero;
     }
 
+    /**
+     * @return the direccion
+     */
+    public Direccion getDireccion() {
+        return direccion;
+    }
+
+    /**
+     * @param direccion the direccion to set
+     */
+    public void setDireccion(Direccion direccion) {
+        this.direccion = direccion;
+    }
+
+    /**
+     * @return the usuario
+     */
+    public User getUsuario() {
+        return usuario;
+    }
+
+    /**
+     * @param usuario the usuario to set
+     */
+    public void setUsuario(User usuario) {
+        this.usuario = usuario;
+    }
+
     enum Genero {
         HOMBRE, MUJER
     }
-    
+
     @Override
     public boolean equals(Object o) {
         if (this == o) {
@@ -357,20 +366,22 @@ public class Persona implements Serializable {
     public int hashCode() {
         return Objects.hashCode(getId());
     }
-    
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append(getClass().getSimpleName());
         sb.append(" [");
         sb.append("Hash = ").append(hashCode());
-                sb.append(", nombre=").append(nombre);
+        sb.append(", nombre=").append(nombre);
         sb.append(", apellido=").append(apellido);
         sb.append(", correo=").append(correo);
         sb.append(", empresa=").append(empresa);
         sb.append(", fechaNacimiento=").append(fechaNacimiento);
         sb.append(", sueldo=").append(sueldo);
         sb.append(", genero=").append(genero);
+        sb.append(", usuario=").append(usuario);
+        sb.append(", direccion=").append(direccion);
         sb.append("]");
         return sb.toString();
     }

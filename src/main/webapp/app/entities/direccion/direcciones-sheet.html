@@ -1,0 +1,16 @@
+
+<div class="widget">
+    <rd-widget-header>
+        <div class="widget-header ng-binding">
+            <i class="fas icon" data-translate="handsontableApp.direccion.home.title">Direcciones</i>
+        </div>
+    </rd-widget-header>
+</div>
+<jhi-alert></jhi-alert>
+<div class="content container-fluid">
+    <div class="well">
+        <button type="menu" ng-click="vm.download()"><i class="far fa-save fa-lg"></i></button>
+        <button type="menu" ui-sref="direccionSheet.new"><i class="fas fa-plus fa-lg"></i></button>
+        <div id="direccion-handsontable"></div>
+    </div>
+</div>
