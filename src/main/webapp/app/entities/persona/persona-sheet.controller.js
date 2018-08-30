@@ -21,6 +21,7 @@
         vm.page = 1;
         vm.loading = false;
         vm.download = download;
+        vm.refresh = refresh;
         vm.data = [];
         vm.users = UserSheet.query();
         vm.direcciones = Direccion.sheet();
@@ -136,7 +137,7 @@
                     if (oldValue !== newValue) {
                         var physicalRowNumber = personaSheet.toPhysicalRow(row);
                         var modifiedPersona = vm.data[physicalRowNumber];
-                        save(modifiedPersona);
+                        save(modifiedPersona, physicalRowNumber);
                     }
                 });
             }
@@ -162,17 +163,18 @@
             }
         }
 
-        function save(persona) {
-            if (persona.id !== null) {
+        function save(persona,row) {
+            if (persona.id !== null && persona.id !== undefined) {
                 Persona.update(persona, onSaveSuccess, onSaveError);
             } else {
-                Persona.save(persona, onSaveSuccess, onSaveError);
+                Persona.save(persona, function (result) {
+                   personaSheet.setDataAtRowProp(row, "id", result.id);
+                }, onSaveError);
             }
         }
 
         function onSaveSuccess(result) {
             $scope.$emit('handsontableApp:personaUpdate', result);
-            $state.go('personaSheet', null, { reload: 'personaSheet' });
         }
 
         function onSaveError(error) {
@@ -198,6 +200,10 @@
                 page: 1,
                 sort: vm.predicate + ',' + (vm.reverse ? 'asc' : 'desc')
             });
+        }
+
+        function refresh(){
+            $state.go('personaSheet', null, { reload: 'personaSheet' });
         }
 
     }
