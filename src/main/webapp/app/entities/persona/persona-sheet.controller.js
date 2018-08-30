@@ -126,9 +126,8 @@
             settings.data = vm.data;
             settings.persistenState = true;
             settings.beforeRemoveRow = function (index) {
-                var physicalRow = personaSheet.toPhysicalRow(index);
-                var persona = vm.data[physicalRow];
-                confirmDelete(persona, physicalRow);
+                var id = personaSheet.getDataAtRowProp(index, 'id');
+                confirmDelete(id);
                 return false;
             }
             settings.afterChange = function (changes, src) {
@@ -163,12 +162,12 @@
             }
         }
 
-        function save(persona,row) {
+        function save(persona, row) {
             if (persona.id !== null && persona.id !== undefined) {
                 Persona.update(persona, onSaveSuccess, onSaveError);
             } else {
                 Persona.save(persona, function (result) {
-                   personaSheet.setDataAtRowProp(row, "id", result.id);
+                    personaSheet.setDataAtRowProp(row, "id", result.id);
                 }, onSaveError);
             }
         }
@@ -181,18 +180,8 @@
             AlertService.error(error.data.message);
         }
 
-        function confirmDelete(persona, index) {
-            $uibModal.open({
-                templateUrl: 'app/entities/persona/persona-delete-dialog.html',
-                controller: 'PersonaDeleteController',
-                controllerAs: 'vm',
-                size: 'md',
-                resolve: {
-                    entity: persona
-                }
-            }).result.then(function () {
-                vm.data.splice(index, 1);
-            });
+        function confirmDelete(idPersona) {
+            $state.go('personaSheet.delete', { id: idPersona }, { reload: false });
         }
 
         function transition() {
@@ -202,7 +191,7 @@
             });
         }
 
-        function refresh(){
+        function refresh() {
             $state.go('personaSheet', null, { reload: 'personaSheet' });
         }
 

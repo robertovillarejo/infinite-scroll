@@ -1,6 +1,6 @@
 {
     "handsontableApp": {
-        "persona" : {
+        "persona": {
             "home": {
                 "title": "Personas",
                 "createLabel": "Crear nuevo Persona",
@@ -16,11 +16,11 @@
             "detail": {
                 "title": "Persona"
             },
-            "nombre": "Nombre", 
-            "apellido": "Apellido", 
-            "correo": "Correo", 
-            "empresa": "Empresa", 
-            "fechaNacimiento": "FechaNacimiento", 
+            "nombre": "Nombre",
+            "apellido": "Apellido",
+            "correo": "Correo",
+            "empresa": "Empresa",
+            "fechaNacimiento": "FechaNacimiento",
             "sueldo": "Sueldo"
         }
     }
