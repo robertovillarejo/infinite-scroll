@@ -25,7 +25,7 @@
         vm.users = UserSheet.query();
         vm.direcciones = Direccion.sheet();
 
-        var umbral = 10;
+        var umbral = 20;
 
         loadAll();
 
@@ -112,12 +112,17 @@
         }
 
         function overwriteSettings(settings) {
+            settings.beforeColumnSort = function (column, order) {
+                vm.predicate = settings.colHeaders[column].toLowerCase();
+                vm.reverse = (order === "asc" || order === "none") ? true : false;
+                transition();
+            };
+            settings.sortIndicator = true;
             settings.afterScrollVertically = loadPage;
             settings.height = 450;
             settings.stretchH = 'all';
             settings.persistenState = true;
             settings.data = vm.data;
-            settings.maxRows = Infinity;
             settings.persistenState = true;
             settings.beforeRemoveRow = function (index) {
                 var physicalRow = personaSheet.toPhysicalRow(index);
@@ -167,6 +172,7 @@
 
         function onSaveSuccess(result) {
             $scope.$emit('handsontableApp:personaUpdate', result);
+            $state.go('personaSheet', null, { reload: 'personaSheet' });
         }
 
         function onSaveError(error) {
@@ -184,6 +190,13 @@
                 }
             }).result.then(function () {
                 vm.data.splice(index, 1);
+            });
+        }
+
+        function transition() {
+            $state.transitionTo($state.$current, {
+                page: 1,
+                sort: vm.predicate + ',' + (vm.reverse ? 'asc' : 'desc')
             });
         }
 

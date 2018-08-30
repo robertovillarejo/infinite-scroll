@@ -66,21 +66,21 @@
                     }
                 },
                 params: {
-                    /*
+
                     page: {
                         value: '1',
                         squash: true
-                    },*/
+                    },
                     sort: {
                         value: 'id,asc',
                         squash: true
-                    }/*,
-                    search: null*/
+                    }
+                    //search: null
                 },
                 resolve: {
                     pagingParams: ['$stateParams', 'PaginationUtil', function ($stateParams, PaginationUtil) {
                         return {
-                            //page: PaginationUtil.parsePage($stateParams.page),
+                            page: PaginationUtil.parsePage($stateParams.page),
                             sort: $stateParams.sort,
                             predicate: PaginationUtil.parsePredicate($stateParams.sort),
                             ascending: PaginationUtil.parseAscending($stateParams.sort),
@@ -94,8 +94,8 @@
                     }]
                 }
             })
-            .state('personaHandsontable.new', {
-                parent: 'personaHandsontable',
+            .state('personaSheet.new', {
+                parent: 'personaSheet',
                 url: '/new',
                 data: {
                     authorities: ['ROLE_USER']
