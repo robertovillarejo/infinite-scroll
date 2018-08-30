@@ -131,7 +131,7 @@
                 return false;
             }
             settings.afterChange = function (changes, src) {
-                if (!changes || src === "ObserveChanges.change") return;
+                if (!changes) return;
                 changes.forEach(([row, prop, oldValue, newValue]) => {
                     if (oldValue !== newValue) {
                         var physicalRowNumber = personaSheet.toPhysicalRow(row);
@@ -186,7 +186,6 @@
 
         function transition() {
             $state.transitionTo($state.$current, {
-                page: 1,
                 sort: vm.predicate + ',' + (vm.reverse ? 'asc' : 'desc')
             });
         }
