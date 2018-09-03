@@ -10,7 +10,9 @@
         var resourceUrl = 'api/personas/sheet';
 
         return $resource(resourceUrl, {}, {
-            'query': { method: 'GET' },
+            'query': {
+                method: 'GET'
+            },
             'download': {
                 method: 'GET',
                 url: 'api/personas/workbook',

@@ -52,51 +52,32 @@
                     vm.data.push(settings.data[i]);
                 }
 
-                var usuarioCol = settings.columns.find(function (col) { return col.data === "usuario" });
-                usuarioCol.data = 'usuario';
-                usuarioCol.allowEmpty = true;
+                var usuarioCol = findColumn("usuario.id", settings);
                 usuarioCol.handsontable =
                     {
                         colHeaders: vm.users.colHeaders,
                         autoColumnSize: true,
                         data: vm.users.data,
                         getValue: function () {
-                            //Get Usuario
                             var selection = this.getSelectedLast();
                             var physicalRowNumber = this.toPhysicalRow(selection[0]);
                             var userSelected = vm.users.data[physicalRowNumber];
-
-                            //Get Persona
-                            var personaSelection = personaSheet.getSelectedLast();
-                            var personaPhysicalRowNumber = personaSheet.toPhysicalRow(personaSelection[0]);
-                            var personaSelected = vm.data[personaPhysicalRowNumber];
-
-                            //Assign usuario to persona
-                            personaSelected.usuario = userSelected;
-                            return userSelected;
+                            return userSelected.id;
                         }
                     };
 
 
-                settings.columns.find(function (col) { return col.data === "direccion" }).handsontable =
+                var direccionCol = findColumn("direccion.id", settings);
+                direccionCol.handsontable =
                     {
                         colHeaders: vm.direcciones.colHeaders,
                         autoColumnSize: true,
                         data: vm.direcciones.data,
                         getValue: function () {
-                            //Get Direccion
                             var selection = this.getSelectedLast();
                             var physicalRowNumber = this.toPhysicalRow(selection[0]);
                             var direccionSelected = vm.direcciones.data[physicalRowNumber];
-
-                            //Get Persona
-                            var personaSelection = personaSheet.getSelectedLast();
-                            var personaPhysicalRowNumber = personaSheet.toPhysicalRow(personaSelection[0]);
-                            var personaSelected = vm.data[personaPhysicalRowNumber];
-
-                            //Assign direccion to persona
-                            personaSelected.direccion = direccionSelected;
-                            return direccionSelected;
+                            return direccionSelected.id;
                         }
 
                     };
@@ -118,6 +99,7 @@
                 vm.reverse = (order === "asc" || order === "none") ? true : false;
                 transition();
             };
+            settings.observeChanges = true;
             settings.sortIndicator = true;
             settings.afterScrollVertically = loadPage;
             settings.height = 450;
@@ -163,7 +145,8 @@
         }
 
         function save(persona, row) {
-            if (persona.id !== null && persona.id !== undefined) {
+            console.log(persona);
+            if (persona.id) {
                 Persona.update(persona, onSaveSuccess, onSaveError);
             } else {
                 Persona.save(persona, function (result) {
@@ -192,6 +175,10 @@
 
         function refresh() {
             $state.go('personaSheet', null, { reload: 'personaSheet' });
+        }
+
+        function findColumn(colName, settings) {
+            return settings.columns.find(function (col) { return col.data === colName });
         }
 
     }

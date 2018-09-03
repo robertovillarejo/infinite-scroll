@@ -26,6 +26,8 @@ package com.example.domain;
 import java.time.LocalDate;
 import javax.persistence.*;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableOptions.Type;
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
 import mx.infotec.dads.kukulkan.tables.handsontable.annotations.SheetColumn;
@@ -39,6 +41,7 @@ import java.io.Serializable;
  * @author kukulkan
  *
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 @Sheet
 @Entity
 @Table(name = "personas")
@@ -123,12 +126,12 @@ public class Persona implements Serializable {
     @Column(name = "genero")
     private Genero genero = Genero.HOMBRE;
 
-    @SheetColumn(type = Type.HANDSONTABLE)
+    @SheetColumn(type = Type.HANDSONTABLE, data = "usuario.id")
     @OneToOne
     @JoinColumn(name = "usuario_id", unique = true)
     private User usuario;
 
-    @SheetColumn(type = Type.HANDSONTABLE)
+    @SheetColumn(type = Type.HANDSONTABLE, data = "direccion.id")
     @ManyToOne
     @JoinColumn(name = "direccion_id")
     private Direccion direccion;
