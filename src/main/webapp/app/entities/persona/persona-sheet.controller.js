@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['$scope', '$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion', '$uibModal'];
+    PersonaSheetController.$inject = ['$scope', '$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion'];
 
-    function PersonaSheetController($scope, $state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion, $uibModal) {
+    function PersonaSheetController($scope, $state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion) {
 
         var vm = this;
 
@@ -52,35 +52,6 @@
                     vm.data.push(settings.data[i]);
                 }
 
-                var usuarioCol = findColumn("usuario.id", settings);
-                usuarioCol.handsontable =
-                    {
-                        colHeaders: vm.users.colHeaders,
-                        autoColumnSize: true,
-                        data: vm.users.data,
-                        getValue: function () {
-                            var selection = this.getSelectedLast();
-                            var physicalRowNumber = this.toPhysicalRow(selection[0]);
-                            var userSelected = vm.users.data[physicalRowNumber];
-                            return userSelected.id;
-                        }
-                    };
-
-
-                var direccionCol = findColumn("direccion.id", settings);
-                direccionCol.handsontable =
-                    {
-                        colHeaders: vm.direcciones.colHeaders,
-                        autoColumnSize: true,
-                        data: vm.direcciones.data,
-                        getValue: function () {
-                            var selection = this.getSelectedLast();
-                            var physicalRowNumber = this.toPhysicalRow(selection[0]);
-                            var direccionSelected = vm.direcciones.data[physicalRowNumber];
-                            return direccionSelected.id;
-                        }
-
-                    };
                 overwriteSettings(settings);
                 personaSheet.updateSettings(settings);
                 personaSheet.validateCells();
@@ -118,10 +89,43 @@
                     if (oldValue !== newValue) {
                         var physicalRowNumber = personaSheet.toPhysicalRow(row);
                         var modifiedPersona = vm.data[physicalRowNumber];
+                        if (newValue === "") {
+                            var property = prop.substring(0, prop.indexOf("."));
+                            modifiedPersona[property] = undefined;
+                        }
                         save(modifiedPersona, physicalRowNumber);
                     }
                 });
-            }
+            };
+            var usuarioCol = findColumn("usuario.id", settings);
+            usuarioCol.handsontable =
+                {
+                    colHeaders: vm.users.colHeaders,
+                    autoColumnSize: true,
+                    data: vm.users.data,
+                    getValue: function () {
+                        var selection = this.getSelectedLast();
+                        var physicalRowNumber = this.toPhysicalRow(selection[0]);
+                        var userSelected = vm.users.data[physicalRowNumber];
+                        return userSelected.id;
+                    }
+                };
+
+
+            var direccionCol = findColumn("direccion.id", settings);
+            direccionCol.handsontable =
+                {
+                    colHeaders: vm.direcciones.colHeaders,
+                    autoColumnSize: true,
+                    data: vm.direcciones.data,
+                    getValue: function () {
+                        var selection = this.getSelectedLast();
+                        var physicalRowNumber = this.toPhysicalRow(selection[0]);
+                        var direccionSelected = vm.direcciones.data[physicalRowNumber];
+                        return direccionSelected.id;
+                    }
+
+                };
         }
 
         function loadPage() {
@@ -145,7 +149,6 @@
         }
 
         function save(persona, row) {
-            console.log(persona);
             if (persona.id) {
                 Persona.update(persona, onSaveSuccess, onSaveError);
             } else {
