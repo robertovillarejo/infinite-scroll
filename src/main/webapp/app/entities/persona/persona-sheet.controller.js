@@ -65,12 +65,13 @@
         }
 
         function overwriteSettings(settings) {
-            settings.beforeColumnSort = function (column, order) {
-                vm.predicate = settings.colHeaders[column].toLowerCase();
-                vm.reverse = (order === "asc" || order === "none") ? true : false;
+            settings.beforeColumnSort = function (column) {
+                vm.reverse = !vm.reverse;
+                vm.predicate = settings.columns[column].data;
                 transition();
             };
             settings.observeChanges = true;
+            settings.manualColumnResize = true;
             settings.sortIndicator = true;
             settings.afterScrollVertically = loadPage;
             settings.height = 450;

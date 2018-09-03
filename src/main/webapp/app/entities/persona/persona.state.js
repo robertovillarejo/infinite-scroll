@@ -116,9 +116,9 @@
                             }
                         }
                     }).result.then(function () {
-                        $state.go('personaHandsontable', null, { reload: 'personaHandsontable' });
+                        $state.go('personaSheet', null, { reload: 'personaSheet' });
                     }, function () {
-                        $state.go('personaHandsontable');
+                        $state.go('personaSheet');
                     });
                 }]
             })
