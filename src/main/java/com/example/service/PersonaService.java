@@ -26,6 +26,7 @@ package com.example.service;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 
 import com.example.domain.Persona;
 
@@ -110,5 +111,5 @@ public interface PersonaService {
      * 
      * @return Optional<File>
      */
-    SXSSFWorkbook getWorkbook();
+    SXSSFWorkbook getWorkbook(Sort sort);
 }

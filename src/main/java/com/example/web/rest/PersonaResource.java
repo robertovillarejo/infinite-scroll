@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -219,9 +220,9 @@ public class PersonaResource {
      */
     @GetMapping(produces = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", path = "/personas/workbook")
     @Timed
-    public ResponseEntity<StreamingResponseBody> getPersonaWorkbook() {
+    public ResponseEntity<StreamingResponseBody> getPersonaWorkbook(@ApiParam Sort sort) {
         log.debug("REST request to get Persona Workbook");
-        SXSSFWorkbook wb = service.getWorkbook();
+        SXSSFWorkbook wb = service.getWorkbook(sort);
         return ResponseEntity.ok()
                 .header(HttpHeaders.CONTENT_DISPOSITION, "attachment; filename=\"" + "personas.xlsx" + "\"")
                 .body((os) -> {

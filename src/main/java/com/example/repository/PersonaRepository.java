@@ -23,11 +23,11 @@
  */
 package com.example.repository;
 
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
-import org.springframework.data.jpa.repository.JpaRepository;
-
 import com.example.domain.Persona;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * PersonaRepository
@@ -36,5 +36,7 @@ import com.example.domain.Persona;
  * @kukulkanGenerated 20180809165807
  */
 public interface PersonaRepository extends JpaRepository<Persona, Long> {
+
+    public Page<Persona> findBySueldoLessThan(Float sueldo, Pageable pageable);
 
 }

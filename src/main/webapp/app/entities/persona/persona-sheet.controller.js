@@ -30,6 +30,14 @@
 
         loadAll();
 
+        function sort() {
+            var result = [vm.predicate + ',' + (vm.reverse ? 'asc' : 'desc')];
+            if (vm.predicate !== 'id') {
+                result.push('id');
+            }
+            return result;
+        }
+
         function loadAll() {
             vm.loading = true;
             PersonaSheet.query({
@@ -37,13 +45,6 @@
                 size: vm.itemsPerPage,
                 sort: sort()
             }, onSuccess, onError);
-            function sort() {
-                var result = [vm.predicate + ',' + (vm.reverse ? 'asc' : 'desc')];
-                if (vm.predicate !== 'id') {
-                    result.push('id');
-                }
-                return result;
-            }
 
             function onSuccess(settings, headers) {
                 vm.hasNextPage = headers('X-Has-Next-Page') === "true";
@@ -140,7 +141,7 @@
         }
 
         function download() {
-            PersonaSheet.download({}, onSuccess, onError);
+            PersonaSheet.download({ sort: sort() }, onSuccess, onError);
             function onSuccess(response) {
                 FileSaver.saveAs(response.blob, 'personas.xlsx');
             }
