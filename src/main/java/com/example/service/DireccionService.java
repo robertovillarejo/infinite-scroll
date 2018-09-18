@@ -23,14 +23,11 @@
  */
 package com.example.service;
 
+import com.example.domain.Direccion;
+
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-
-import com.example.domain.Direccion;
-import com.example.domain.Persona;
-
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
 
 /**
  * DireccionService
@@ -88,23 +85,12 @@ public interface DireccionService {
     /**
      * Buscar Direccion con el correspondiente al query.
      *
-     * @param query
-     *            El query de la busqueda
+     * @param query    El query de la busqueda
      * 
-     * @param pageable
-     *            la información de paginación
+     * @param pageable la información de paginación
      * @return Page de todas las entidades
      */
     Page<Direccion> search(String query, Pageable pageable);
-
-    /**
-     * Regresa una HandsontableSlice de Direccion
-     * 
-     * @param pageable
-     *            la información de paginación
-     * @return HandsontableSlice de todas las entidades
-     */
-    HandsontableSlice<Direccion> getHandsontable(Pageable pageable);
 
     /**
      * Regresa un archivo Workbook que contienen todos los registros de Direccion

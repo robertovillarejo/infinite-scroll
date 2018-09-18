@@ -36,6 +36,18 @@
 				    copy.fechaNacimiento = DateUtils.convertLocalDateToServer(copy.fechaNacimiento);
                     return angular.toJson(copy);
                 }
+            },
+            'download': {
+                method: 'GET',
+                url: 'api/personas/workbook',
+                responseType: 'blob',
+                transformResponse: function (data) {
+                    return {
+                        blob: new Blob([data], {
+                            type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+                        })
+                    }
+                }
             }
         });
     }

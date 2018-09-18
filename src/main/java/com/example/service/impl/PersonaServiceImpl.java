@@ -33,17 +33,12 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
-import org.springframework.data.domain.SliceImpl;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import mx.infotec.dads.kukulkan.tables.apachepoi.SheetDataSupplier;
 import mx.infotec.dads.kukulkan.tables.apachepoi.WorkbookWriter;
-import mx.infotec.dads.kukulkan.tables.handsontable.Handsontable;
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableFactory;
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
 
 /**
  * PersonaServiceImpl
@@ -101,17 +96,6 @@ public class PersonaServiceImpl implements PersonaService {
     public Page<Persona> search(String query, Pageable pageable) {
         log.debug("Request to search for a page of Persona ");
         return repository.findAll(pageable);
-    }
-
-    @Override
-    public HandsontableSlice<Persona> getHandsontable(Pageable pageable) {
-        log.debug("Request to get a Handsontable of Persona ");
-        Handsontable<Persona> table = HandsontableFactory.createHandsontable(Persona.class);
-        // Should create add a method in repository that returns a Slice instead use a
-        // Page
-        Page<Persona> page = repository.findAll(pageable);
-        Slice<Persona> slice = new SliceImpl<>(page.getContent(), pageable, page.hasNext());
-        return new HandsontableSlice<>(table, slice);
     }
 
     @Override

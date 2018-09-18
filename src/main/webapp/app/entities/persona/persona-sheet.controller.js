@@ -5,50 +5,12 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['$q', '$scope', '$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion', 'hotRegisterer'];
+    PersonaSheetController.$inject = ['$timeout', '$q', '$scope', '$state', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'User', 'Direccion', 'hotRegisterer'];
 
-    function PersonaSheetController($q, $scope, $state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion, hotRegisterer) {
+    function PersonaSheetController($timeout, $q, $scope, $state, Persona, AlertService, paginationConstants, pagingParams, FileSaver, User, Direccion, hotRegisterer) {
 
         var vm = this;
-
-        vm.settings = {
-            columnSorting: true,
-            contextMenu: true,
-            search: true,
-            beforeColumnSort: function (column) {
-                vm.reverse = !vm.reverse,
-                    vm.predicate = settings.columns[column].data,
-                    transition();
-            },
-            observeChanges: true,
-            manualColumnResize: true,
-            sortIndicator: true,
-            afterScrollVertically: loadPage,
-            height: 450,
-            stretchH: 'all',
-            persistenState: true,
-            data: vm.data,
-            persistenState: true,
-            beforeRemoveRow: function (index) {
-                var id = this.getDataAtRowProp(index, 'id');
-                confirmDelete(id);
-                return false;
-            }
-        };
-
-        //var div = angular.element("#persona-handsontable")[0];
-        //var personaSheet = new Handsontable(div, {});
-        var hotInstance = $q.defer();
-        var autoRowSizePlugin = $q.defer();
-        setTimeout(function() {
-            hotInstance = hotRegisterer.getInstance("personasSheet");
-        }, 1000);
-
-        setTimeout(function() {
-            autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
-        }, 2000);
-        //hotRegisterer.getInstance("personasSheet").getPlugin('AutoRowSize');
-
+        vm.personas = [];
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.predicate = pagingParams.predicate;
         vm.reverse = pagingParams.ascending;
@@ -56,11 +18,81 @@
         vm.loading = false;
         vm.download = download;
         vm.refresh = refresh;
-        vm.data = [];
-        vm.users = UserSheet.query();
-        vm.direcciones = Direccion.sheet();
+        vm.users = User.query();
+        vm.direcciones = Direccion.query();
 
         var umbral = 20;
+        var hotInstance = $q.defer();
+        var autoRowSizePlugin = $q.defer();
+
+        vm.usersHandsontable = {
+            colHeaders: ["Id", "Login", "Email", "Idioma", "Perfiles", "Fecha de creación"],
+            autoColumnSize: true,
+            data: vm.users,
+            getValue: function () {
+                var selection = this.getSelectedLast();
+                var physicalRowNumber = this.toPhysicalRow(selection[0]);
+                var userSelected = vm.users[physicalRowNumber];
+                console.log(userSelected);
+                return userSelected.id;
+            }
+        }
+
+        vm.direccionHandsontable = {
+            colHeaders: [],
+            autoColumnSize: true,
+            data: vm.direcciones,
+            getValue: function () {
+                var selection = this.getSelectedLast();
+                var physicalRowNumber = this.toPhysicalRow(selection[0]);
+                var direccionSelected = vm.direcciones[physicalRowNumber];
+                return direccionSelected.id;
+            }
+        };
+
+        vm.settings = {
+            columnSorting: true,
+            contextMenu: true,
+            search: true,
+            beforeColumnSort: function (column) {
+                vm.reverse = !vm.reverse;
+                vm.predicate = hotInstance.getSettings().columns[column].data;
+                transition();
+            },
+            observeChanges: true,
+            manualColumnResize: true,
+            sortIndicator: true,
+            afterScrollVertically: loadPage,
+            stretchH: 'all',
+            persistenState: true,
+            beforeRemoveRow: function (index) {
+                var id = this.getDataAtRowProp(index, 'id');
+                confirmDelete(id);
+                return false;
+            },
+            afterChange: function (changes, src) {
+                if (!changes) return;
+                changes.forEach(function (change) {
+                    if (change[2] !== change[3]) {
+                        var physicalRowNumber = hotInstance.toPhysicalRow(change[0]);
+                        var modifiedPersona = vm.personas[physicalRowNumber];
+                        if (change[3] === "") {
+                            var property = change[1].substring(0, change[1].indexOf("."));
+                            modifiedPersona[property] = undefined;
+                        }
+                        save(modifiedPersona, physicalRowNumber);
+                    }
+                });
+            }
+        };
+
+        $timeout(function () {
+            hotInstance = hotRegisterer.getInstance("personasSheet");
+        });
+
+        $timeout(function () {
+            autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
+        });
 
         loadAll();
 
@@ -74,22 +106,20 @@
 
         function loadAll() {
             vm.loading = true;
-            PersonaSheet.query({
+            Persona.query({
                 page: vm.page - 1,
                 size: vm.itemsPerPage,
                 sort: sort()
             }, onSuccess, onError);
 
-            function onSuccess(settings, headers) {
+            function onSuccess(data, headers) {
                 vm.hasNextPage = headers('X-Has-Next-Page') === "true";
 
-                for (var i = 0; i < settings.data.length; i++) {
-                    vm.data.push(settings.data[i]);
+                for (var i = 0; i < data.length; i++) {
+                    vm.personas.push(data[i]);
                 }
 
-                //overwriteSettings(settings);
-                //personaSheet.updateSettings(settings);
-                //personaSheet.validateCells();
+                //hotInstance.validateCells();
                 vm.loading = false;
             }
 
@@ -98,75 +128,6 @@
                 vm.loading = false;
             }
         }
-
-        /*
-        function overwriteSettings(settings) {
-            settings.beforeColumnSort = function (column) {
-                vm.reverse = !vm.reverse;
-                vm.predicate = settings.columns[column].data;
-                transition();
-            };
-            settings.observeChanges = true;
-            settings.manualColumnResize = true;
-            settings.sortIndicator = true;
-            settings.afterScrollVertically = loadPage;
-            settings.height = 450;
-            settings.stretchH = 'all';
-            settings.persistenState = true;
-            settings.data = vm.data;
-            settings.persistenState = true;
-            settings.beforeRemoveRow = function (index) {
-                var id = personaSheet.getDataAtRowProp(index, 'id');
-                confirmDelete(id);
-                return false;
-            }
-
-            settings.afterChange = function (changes, src) {
-                if (!changes) return;
-                changes.forEach(function ([row, prop, oldValue, newValue]) {
-                    if (oldValue !== newValue) {
-                        var physicalRowNumber = personaSheet.toPhysicalRow(row);
-                        var modifiedPersona = vm.data[physicalRowNumber];
-                        if (newValue === "") {
-                            var property = prop.substring(0, prop.indexOf("."));
-                            modifiedPersona[property] = undefined;
-                        }
-                        save(modifiedPersona, physicalRowNumber);
-                    }
-                });
-            };
-
-            var usuarioCol = findColumn("usuario.id", settings);
-            usuarioCol.handsontable =
-                {
-                    colHeaders: vm.users.colHeaders,
-                    autoColumnSize: true,
-                    data: vm.users.data,
-                    getValue: function () {
-                        var selection = this.getSelectedLast();
-                        var physicalRowNumber = this.toPhysicalRow(selection[0]);
-                        var userSelected = vm.users.data[physicalRowNumber];
-                        return userSelected.id;
-                    }
-                };
-
-
-            var direccionCol = findColumn("direccion.id", settings);
-            direccionCol.handsontable =
-                {
-                    colHeaders: vm.direcciones.colHeaders,
-                    autoColumnSize: true,
-                    data: vm.direcciones.data,
-                    getValue: function () {
-                        var selection = this.getSelectedLast();
-                        var physicalRowNumber = this.toPhysicalRow(selection[0]);
-                        var direccionSelected = vm.direcciones.data[physicalRowNumber];
-                        return direccionSelected.id;
-                    }
-
-                };
-        }
-        */
 
         function loadPage() {
             var page = vm.page + 1;
@@ -179,7 +140,7 @@
         }
 
         function download() {
-            PersonaSheet.download({ sort: sort() }, onSuccess, onError);
+            Persona.download({ sort: sort() }, onSuccess, onError);
             function onSuccess(response) {
                 FileSaver.saveAs(response.blob, 'personas.xlsx');
             }
@@ -218,10 +179,6 @@
 
         function refresh() {
             $state.go('personaSheet', null, { reload: 'personaSheet' });
-        }
-
-        function findColumn(colName, settings) {
-            return settings.columns.find(function (col) { return col.data === colName });
         }
 
     }

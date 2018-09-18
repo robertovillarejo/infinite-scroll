@@ -37,7 +37,6 @@
                     return angular.toJson(copy);
                 }
             },
-            'sheet': { method: 'GET', url: 'api/direcciones/sheet', isArray: false },
             'download': {
                 method: 'GET',
                 url: 'api/direcciones/workbook',

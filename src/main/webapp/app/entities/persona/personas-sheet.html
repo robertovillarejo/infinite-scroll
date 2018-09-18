@@ -24,9 +24,17 @@
             </div>
         </div>
 
-        <hot-table settings=vm.settings datarows="vm.data" hot-id="personasSheet">
+        <hot-table settings=vm.settings datarows="vm.personas" hot-id="personasSheet" height=450>
             <hot-column title="'Id'" data="id" read-only></hot-column>
             <hot-column title="'Nombre'" data="nombre"></hot-column>
+            <hot-column title="'Apellido'" data="apellido"></hot-column>
+            <hot-column title="'Correo'" data="correo"></hot-column>
+            <hot-column title="'Empresa'" data="empresa"></hot-column>
+            <hot-column title="'Fecha de Nacimiento'" data="fechaNacimiento" type="'date'" dateFormat="'YYYY-MM-DD'"/>
+            <hot-column title="'Sueldo'" data="sueldo" type="'numeric'" numericFormat="{pattern:'0,00.00', culture:'es-MX'}"/>
+            <hot-column title="'Género'" data="genero" type="'dropdown'" source="['HOMBRE', 'MUJER']"/>
+            <hot-column title="'Usuario'" data="usuario" type="'handsontable'" handsontable="vm.usersHandsontable"/>
+            <hot-column title="'Dirección'" data="direccion" type="'handsontable'" handsontable="vm.direccionHandsontable"/>
         </hot-table>
     </div>
 </div>

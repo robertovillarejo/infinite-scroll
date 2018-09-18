@@ -23,38 +23,21 @@
  */
 package com.example.service.impl;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.Optional;
+import com.example.domain.Direccion;
+import com.example.repository.DireccionRepository;
+import com.example.service.DireccionService;
 
-import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Slice;
-import org.springframework.data.domain.SliceImpl;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.domain.Direccion;
-import com.example.domain.Persona;
-import com.example.repository.DireccionRepository;
-import com.example.repository.PersonaRepository;
-import com.example.service.DireccionService;
-import com.example.service.PersonaService;
-
-import mx.infotec.dads.kukulkan.tables.apachepoi.WorkbookWriter;
 import mx.infotec.dads.kukulkan.tables.apachepoi.SheetDataSupplier;
-import mx.infotec.dads.kukulkan.tables.handsontable.Handsontable;
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableFactory;
-import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableSlice;
+import mx.infotec.dads.kukulkan.tables.apachepoi.WorkbookWriter;
 
 /**
  * DireccionServiceImpl
@@ -112,17 +95,6 @@ public class DireccionServiceImpl implements DireccionService {
     public Page<Direccion> search(String query, Pageable pageable) {
         log.debug("Request to search for a page of Direccion ");
         return repository.findAll(pageable);
-    }
-
-    @Override
-    public HandsontableSlice<Direccion> getHandsontable(Pageable pageable) {
-        log.debug("Request to get a Handsontable of Persona ");
-        Handsontable<Direccion> table = HandsontableFactory.createHandsontable(Direccion.class);
-        // Should create add a method in repository that returns a Slice instead use a
-        // Page
-        Page<Direccion> page = repository.findAll(pageable);
-        Slice<Direccion> slice = new SliceImpl<>(page.getContent(), pageable, page.hasNext());
-        return new HandsontableSlice<>(table, slice);
     }
 
     @Override
