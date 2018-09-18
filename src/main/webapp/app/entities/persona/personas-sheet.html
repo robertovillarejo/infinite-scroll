@@ -11,10 +11,10 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="col-md-2">
-                    <button type="menu" class="btn pull-left"  ng-click="vm.download()" title="Download"><i class="fa fa-download"></i></button>
+                    <button type="menu" class="btn pull-left" ng-click="vm.download()" title="Download"><i class="fa fa-download"></i></button>
                 </div>
                 <div class="col-md-1">
-                    <button type="menu" class="btn pull-left"  ui-sref="personaSheet.new"><i class="fa fa-plus"></i></button>
+                    <button type="menu" class="btn pull-left" ui-sref="personaSheet.new"><i class="fa fa-plus"></i></button>
                 </div>
             </div>
             <div class="col-md-6 text-right">
@@ -24,6 +24,9 @@
             </div>
         </div>
 
-        <div id="persona-handsontable"></div>
+        <hot-table settings=vm.settings datarows="vm.data" hot-id="personasSheet">
+            <hot-column title="'Id'" data="id" read-only></hot-column>
+            <hot-column title="'Nombre'" data="nombre"></hot-column>
+        </hot-table>
     </div>
 </div>

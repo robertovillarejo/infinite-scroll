@@ -5,15 +5,49 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['$scope', '$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion'];
+    PersonaSheetController.$inject = ['$q', '$scope', '$state', 'PersonaSheet', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'UserSheet', 'Direccion', 'hotRegisterer'];
 
-    function PersonaSheetController($scope, $state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion) {
+    function PersonaSheetController($q, $scope, $state, PersonaSheet, Persona, AlertService, paginationConstants, pagingParams, FileSaver, UserSheet, Direccion, hotRegisterer) {
 
         var vm = this;
 
-        var div = angular.element("#persona-handsontable")[0];
-        var personaSheet = new Handsontable(div, {});
-        var autoRowSizePlugin = personaSheet.getPlugin('AutoRowSize');
+        vm.settings = {
+            columnSorting: true,
+            contextMenu: true,
+            search: true,
+            beforeColumnSort: function (column) {
+                vm.reverse = !vm.reverse,
+                    vm.predicate = settings.columns[column].data,
+                    transition();
+            },
+            observeChanges: true,
+            manualColumnResize: true,
+            sortIndicator: true,
+            afterScrollVertically: loadPage,
+            height: 450,
+            stretchH: 'all',
+            persistenState: true,
+            data: vm.data,
+            persistenState: true,
+            beforeRemoveRow: function (index) {
+                var id = this.getDataAtRowProp(index, 'id');
+                confirmDelete(id);
+                return false;
+            }
+        };
+
+        //var div = angular.element("#persona-handsontable")[0];
+        //var personaSheet = new Handsontable(div, {});
+        var hotInstance = $q.defer();
+        var autoRowSizePlugin = $q.defer();
+        setTimeout(function() {
+            hotInstance = hotRegisterer.getInstance("personasSheet");
+        }, 1000);
+
+        setTimeout(function() {
+            autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
+        }, 2000);
+        //hotRegisterer.getInstance("personasSheet").getPlugin('AutoRowSize');
 
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.predicate = pagingParams.predicate;
@@ -53,9 +87,9 @@
                     vm.data.push(settings.data[i]);
                 }
 
-                overwriteSettings(settings);
-                personaSheet.updateSettings(settings);
-                personaSheet.validateCells();
+                //overwriteSettings(settings);
+                //personaSheet.updateSettings(settings);
+                //personaSheet.validateCells();
                 vm.loading = false;
             }
 
@@ -65,6 +99,7 @@
             }
         }
 
+        /*
         function overwriteSettings(settings) {
             settings.beforeColumnSort = function (column) {
                 vm.reverse = !vm.reverse;
@@ -85,9 +120,10 @@
                 confirmDelete(id);
                 return false;
             }
+
             settings.afterChange = function (changes, src) {
                 if (!changes) return;
-                changes.forEach(([row, prop, oldValue, newValue]) => {
+                changes.forEach(function ([row, prop, oldValue, newValue]) {
                     if (oldValue !== newValue) {
                         var physicalRowNumber = personaSheet.toPhysicalRow(row);
                         var modifiedPersona = vm.data[physicalRowNumber];
@@ -99,6 +135,7 @@
                     }
                 });
             };
+
             var usuarioCol = findColumn("usuario.id", settings);
             usuarioCol.handsontable =
                 {
@@ -129,11 +166,12 @@
 
                 };
         }
+        */
 
         function loadPage() {
             var page = vm.page + 1;
             if (vm.hasNextPage && !vm.loading) {
-                if (autoRowSizePlugin.getLastVisibleRow() >= (personaSheet.countRows() - umbral)) {
+                if (autoRowSizePlugin.getLastVisibleRow() >= (hotInstance.countRows() - umbral)) {
                     vm.page = page;
                     loadAll();
                 }

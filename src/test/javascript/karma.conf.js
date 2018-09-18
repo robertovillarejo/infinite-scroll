@@ -51,6 +51,7 @@ module.exports = function (config) {
             'src/main/webapp/bower_components/ng-csv/build/ng-csv.min.js',
             'src/main/webapp/bower_components/handsontable/dist/handsontable.full.js',
             'src/main/webapp/bower_components/angular-file-saver/dist/angular-file-saver.bundle.js',
+            'src/main/webapp/bower_components/ngHandsontable/dist/ngHandsontable.js',
             'src/main/webapp/bower_components/angular-mocks/angular-mocks.js',
             // endbower
             'src/main/webapp/app/app.module.js',

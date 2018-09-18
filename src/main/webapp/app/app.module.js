@@ -17,7 +17,8 @@
             'infinite-scroll',
             'angular-loading-bar',
             'ngCsv',
-            'ngFileSaver'
+            'ngFileSaver',
+            'ngHandsontable'
             // jhipster-needle-angularjs-add-module JHipster will add new module here
         ])
         .run(run);
