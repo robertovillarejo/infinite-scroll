@@ -33,7 +33,6 @@
                 var selection = this.getSelectedLast();
                 var physicalRowNumber = this.toPhysicalRow(selection[0]);
                 var userSelected = vm.users[physicalRowNumber];
-                console.log(userSelected);
                 return userSelected.id;
             }
         }
@@ -51,7 +50,6 @@
         };
 
         vm.settings = {
-            helloWorldPlugin: true,
             columnSorting: true,
             contextMenu: true,
             search: true,
@@ -75,8 +73,10 @@
                 if (!changes) return;
                 changes.forEach(function (change) {
                     if (change[2] !== change[3]) {
+
                         var physicalRowNumber = hotInstance.toPhysicalRow(change[0]);
                         var modifiedPersona = vm.personas[physicalRowNumber];
+                        //Replace empty string with undefined when clear a cell
                         if (change[3] === "") {
                             var property = change[1].substring(0, change[1].indexOf("."));
                             modifiedPersona[property] = undefined;
@@ -117,7 +117,6 @@
                     vm.personas.push(data[i]);
                 }
 
-                //hotInstance.validateCells();
                 vm.loading = false;
             }
 

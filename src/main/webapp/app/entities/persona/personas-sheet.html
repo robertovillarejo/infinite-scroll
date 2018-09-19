@@ -33,8 +33,8 @@
             <hot-column title="'Fecha de Nacimiento'" data="fechaNacimiento" type="'date'" date-format="'YYYY-MM-DD'"/>
             <hot-column title="'Sueldo'" data="sueldo" type="'numeric'"/>
             <hot-column title="'Género'" data="genero" type="'dropdown'" source="['HOMBRE', 'MUJER']"/>
-            <hot-column title="'Usuario'" data="usuario" type="'handsontable'" handsontable="vm.usersHandsontable"/>
-            <hot-column title="'Dirección'" data="direccion" type="'handsontable'" handsontable="vm.direccionHandsontable"/>
+            <hot-column title="'Usuario'" data="usuario.login" read-only/>
+            <hot-column title="'Dirección'" data="direccion.calle" read-only/>
         </hot-table>
     </div>
 </div>
