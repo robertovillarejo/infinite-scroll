@@ -5,11 +5,14 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['$q', '$scope', '$state', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'User', 'Direccion', 'hotRegisterer'];
+    PersonaSheetController.$inject = ['$scope', '$state', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'hotRegisterer'];
 
-    function PersonaSheetController($q, $scope, $state, Persona, AlertService, paginationConstants, pagingParams, FileSaver, User, Direccion, hotRegisterer) {
+    function PersonaSheetController($scope, $state, Persona, AlertService, paginationConstants, pagingParams, FileSaver, hotRegisterer) {
 
         var vm = this;
+        var hotInstance;
+        var autoRowSizePlugin;
+
         vm.personas = [];
         vm.itemsPerPage = paginationConstants.itemsPerPage;
         vm.predicate = pagingParams.predicate;
@@ -18,36 +21,13 @@
         vm.loading = false;
         vm.download = download;
         vm.refresh = refresh;
-        vm.users = User.query();
-        vm.direcciones = Direccion.query();
 
-        var umbral = 20;
-        var hotInstance = $q.defer();
-        var autoRowSizePlugin = $q.defer();
+        var umbral = paginationConstants.itemsPerPage - 3;
 
-        vm.usersHandsontable = {
-            colHeaders: ["Id", "Login", "Email", "Idioma", "Perfiles", "Fecha de creación"],
-            autoColumnSize: true,
-            data: vm.users,
-            getValue: function () {
-                var selection = this.getSelectedLast();
-                var physicalRowNumber = this.toPhysicalRow(selection[0]);
-                var userSelected = vm.users[physicalRowNumber];
-                return userSelected.id;
-            }
-        }
-
-        vm.direccionHandsontable = {
-            colHeaders: [],
-            autoColumnSize: true,
-            data: vm.direcciones,
-            getValue: function () {
-                var selection = this.getSelectedLast();
-                var physicalRowNumber = this.toPhysicalRow(selection[0]);
-                var direccionSelected = vm.direcciones[physicalRowNumber];
-                return direccionSelected.id;
-            }
-        };
+        $scope.$on('$viewContentLoaded', function () {
+            hotInstance = hotRegisterer.getInstance('personasSheet');
+            autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
+        });
 
         vm.settings = {
             columnSorting: true,
@@ -69,16 +49,15 @@
                 confirmDelete(id);
                 return false;
             },
-            afterChange: function (changes, src) {
+            afterChange: function (changes) {
                 if (!changes) return;
-                changes.forEach(function (change) {
-                    if (change[2] !== change[3]) {
-
-                        var physicalRowNumber = hotInstance.toPhysicalRow(change[0]);
+                changes.forEach(function ([row, prop, oldVal, newVal]) {
+                    if (oldVal !== newVal) {
+                        var physicalRowNumber = hotInstance.toPhysicalRow(row);
                         var modifiedPersona = vm.personas[physicalRowNumber];
                         //Replace empty string with undefined when clear a cell
-                        if (change[3] === "") {
-                            var property = change[1].substring(0, change[1].indexOf("."));
+                        if (newVal === "") {
+                            var property = prop.substring(0, prop.indexOf("."));
                             modifiedPersona[property] = undefined;
                         }
                         save(modifiedPersona, physicalRowNumber);
@@ -86,11 +65,6 @@
                 });
             }
         };
-
-        $scope.$on('$viewContentLoaded', function () {
-            hotInstance = hotRegisterer.getInstance('personasSheet');
-            autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
-        });
 
         loadAll();
 
@@ -116,7 +90,6 @@
                 for (var i = 0; i < data.length; i++) {
                     vm.personas.push(data[i]);
                 }
-
                 vm.loading = false;
             }
 
