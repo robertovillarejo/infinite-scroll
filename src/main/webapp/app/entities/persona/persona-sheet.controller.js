@@ -5,9 +5,9 @@
         .module('handsontableApp')
         .controller('PersonaSheetController', PersonaSheetController);
 
-    PersonaSheetController.$inject = ['$timeout', '$q', '$scope', '$state', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'User', 'Direccion', 'hotRegisterer'];
+    PersonaSheetController.$inject = ['$q', '$scope', '$state', 'Persona', 'AlertService', 'paginationConstants', 'pagingParams', 'FileSaver', 'User', 'Direccion', 'hotRegisterer'];
 
-    function PersonaSheetController($timeout, $q, $scope, $state, Persona, AlertService, paginationConstants, pagingParams, FileSaver, User, Direccion, hotRegisterer) {
+    function PersonaSheetController($q, $scope, $state, Persona, AlertService, paginationConstants, pagingParams, FileSaver, User, Direccion, hotRegisterer) {
 
         var vm = this;
         vm.personas = [];
@@ -51,6 +51,7 @@
         };
 
         vm.settings = {
+            helloWorldPlugin: true,
             columnSorting: true,
             contextMenu: true,
             search: true,
@@ -86,11 +87,8 @@
             }
         };
 
-        $timeout(function () {
-            hotInstance = hotRegisterer.getInstance("personasSheet");
-        });
-
-        $timeout(function () {
+        $scope.$on('$viewContentLoaded', function () {
+            hotInstance = hotRegisterer.getInstance('personasSheet');
             autoRowSizePlugin = hotInstance.getPlugin('AutoRowSize');
         });
 

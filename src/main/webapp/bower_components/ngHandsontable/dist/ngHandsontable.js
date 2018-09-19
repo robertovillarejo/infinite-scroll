@@ -5,7 +5,7 @@
  * Copyright 2015 Handsoncode sp. z o.o. <hello@handsontable.com>
  * Licensed under the MIT license.
  * https://github.com/handsontable/ngHandsontable
- * Date: Wed Oct 26 2016 10:00:05 GMT+0200 (CEST)
+ * Date: Tue Sep 18 2018 18:30:00 GMT-0500 (CDT)
 */
 
 if (document.all && !document.addEventListener) { // IE 8 and lower
