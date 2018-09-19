@@ -6,84 +6,35 @@
     </rd-widget-header>
 </div>
 <jhi-alert></jhi-alert>
-<div class="row top">
-    <div class="pull-right">
-        <button class="btn btn-primary" ui-sref="persona.new">
-            <span class="glyphicon glyphicon-plus"></span>
-            <span data-translate="handsontableApp.persona.home.createLabel">
-                Create new Persona
-            </span>
-        </button>
-    </div>
-    <div class="col-xs-8 no-padding-right">
-        <form name="searchForm" class="form-inline">
-            <div class="input-group pull-right">
-                <input type="text" class="form-control" ng-model="vm.searchQuery" id="searchQuery" placeholder="{{ 'handsontableApp.persona.home.search' | translate }}">
-                <span class="input-group-btn width-min">
-                    <button class="btn btn-info" ng-click="vm.search(vm.searchQuery)">
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                </span>
-                <span class="input-group-btn width-min" ng-if="vm.currentSearch">
-                    <button class="btn btn-info" ng-click="vm.clear()">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </button>
-                </span>
+<div class="content container-fluid">
+    <div class="well">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="col-md-2">
+                    <button type="menu" class="btn pull-left" ng-click="vm.download()" title="Download"><i class="fa fa-download"></i></button>
+                </div>
+                <div class="col-md-1">
+                    <button type="menu" class="btn pull-left" ui-sref="personaSheet.new"><i class="fa fa-plus"></i></button>
+                </div>
             </div>
-        </form>
+            <div class="col-md-6 text-right">
+                <button type="button" class="btn .navbar-right" ng-click="vm.refresh()">
+                    <span class="glyphicon glyphicon-refresh"></span>&nbsp;
+                </button>
+            </div>
+        </div>
+
+        <hot-table settings=vm.settings datarows="vm.personas" hot-id="personasSheet" height=450>
+            <hot-column title="'Id'" data="id" read-only></hot-column>
+            <hot-column title="'Nombre'" data="nombre"></hot-column>
+            <hot-column title="'Apellido'" data="apellido"></hot-column>
+            <hot-column title="'Correo'" data="correo"></hot-column>
+            <hot-column title="'Empresa'" data="empresa"></hot-column>
+            <hot-column title="'Fecha de Nacimiento'" data="fechaNacimiento" type="'date'" date-format="'YYYY-MM-DD'"/>
+            <hot-column title="'Sueldo'" data="sueldo" type="'numeric'"/>
+            <hot-column title="'Género'" data="genero" type="'dropdown'" source="['HOMBRE', 'MUJER']"/>
+            <hot-column title="'Usuario'" data="usuario.login" read-only/>
+            <hot-column title="'Dirección'" data="direccion.calle" read-only/>
+        </hot-table>
     </div>
-</div>
-<br/>
-<div class="table-responsive">
-    <table class="jh-table table table-striped">
-        <thead>
-            <tr jh-sort="vm.predicate" ascending="vm.reverse" callback="vm.transition()">
-                <th jh-sort-by="id"><span data-translate="global.field.id">ID</span> <span class="glyphicon glyphicon-sort"></span></th>
-                <th jh-sort-by="nombre"><span data-translate="handsontableApp.persona.nombre">Nombre</span> <span class="glyphicon glyphicon-sort"></span></th>
-                <th jh-sort-by="apellido"><span data-translate="handsontableApp.persona.apellido">Apellido</span> <span class="glyphicon glyphicon-sort"></span></th>
-                <th jh-sort-by="correo"><span data-translate="handsontableApp.persona.correo">Correo</span> <span class="glyphicon glyphicon-sort"></span></th>
-                <th jh-sort-by="empresa"><span data-translate="handsontableApp.persona.empresa">Empresa</span> <span class="glyphicon glyphicon-sort"></span></th>
-                <th jh-sort-by="fechaNacimiento"><span data-translate="handsontableApp.persona.fechaNacimiento">FechaNacimiento</span> <span class="glyphicon glyphicon-sort"></span></th>
-                <th jh-sort-by="sueldo"><span data-translate="handsontableApp.persona.sueldo">Sueldo</span> <span class="glyphicon glyphicon-sort"></span></th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr ng-repeat="persona in vm.personas track by persona.id">
-                <td><a ui-sref="persona-detail({id:persona.id})">{{persona.id}}</a></td>
-                <td>{{persona.nombre}}</td>
-                <td>{{persona.apellido}}</td>
-                <td>{{persona.correo}}</td>
-                <td>{{persona.empresa}}</td>
-                <td>{{persona.fechaNacimiento | date:'mediumDate'}}</td>
-                <td>{{persona.sueldo}}</td>
-                <td class="text-right">
-                    <div class="btn-group flex-btn-group-container">
-                        <button type="submit"
-                                ui-sref="persona-detail({id:persona.id})"
-                                class="btn btn-info btn-sm">
-                            <span class="glyphicon glyphicon-eye-open"></span>
-                            <span class="hidden-sm-down" data-translate="entity.action.view"></span>
-                        </button>
-                        <button type="submit"
-                                ui-sref="persona.edit({id:persona.id})"
-                                class="btn btn-primary btn-sm">
-                            <span class="glyphicon glyphicon-pencil"></span>
-                            <span class="hidden-sm-down" data-translate="entity.action.edit"></span>
-                        </button>
-                        <button type="submit"
-                                ui-sref="persona.delete({id:persona.id})"
-                                class="btn btn-danger btn-sm">
-                            <span class="glyphicon glyphicon-remove-circle"></span>
-                            <span class="hidden-sm-down" data-translate="entity.action.delete"></span>
-                        </button>
-                    </div>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div class="text-center">
-    <jhi-item-count page="vm.page" total="vm.queryCount" items-per-page="vm.itemsPerPage"></jhi-item-count>
-    <uib-pagination class="pagination-sm" total-items="vm.totalItems" items-per-page="vm.itemsPerPage" ng-model="vm.page" ng-change="vm.transition()"></uib-pagination>
 </div>
