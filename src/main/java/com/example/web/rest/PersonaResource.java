@@ -32,6 +32,8 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -193,23 +195,6 @@ public class PersonaResource {
         Page<Persona> page = service.search(query, pageable);
         HttpHeaders headers = PaginationUtil.generateSearchPaginationHttpHeaders(query, page, "/api/_search/personas");
         return new ResponseEntity<>(page.getContent(), headers, HttpStatus.OK);
-    }
-
-    /**
-     * GET /personas/handsontable : recupera una Handsontable de personas.
-     *
-     * @param pageable
-     *            información de paginación
-     * @return El objeto ResponseEntity con estado de 200 (OK) y la Handsontable de
-     *         personas en el cuerpo del mensaje
-     */
-    @GetMapping("/personas/sheet")
-    @Timed
-    public ResponseEntity<Handsontable<Persona>> getPersonaSheet(@ApiParam Pageable pageable) {
-        log.debug("REST request to get Persona Sheet");
-        HandsontableSlice<Persona> table = service.getHandsontable(pageable);
-        HttpHeaders headers = PaginationUtil.generateSliceHttpHeaders(table);
-        return new ResponseEntity<>(table, headers, HttpStatus.OK);
     }
 
     /**

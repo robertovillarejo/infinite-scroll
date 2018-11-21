@@ -87,7 +87,11 @@
             }
             settings.afterChange = function (changes, src) {
                 if (!changes) return;
-                changes.forEach(([row, prop, oldValue, newValue]) => {
+                changes.forEach(function (array) {
+	            var row = array[0];
+		    var prop = array[1];
+	            var oldValue = array[2];
+                    var newValue = array[3];
                     if (oldValue !== newValue) {
                         var physicalRowNumber = personaSheet.toPhysicalRow(row);
                         var modifiedPersona = vm.data[physicalRowNumber];

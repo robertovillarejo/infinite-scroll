@@ -25,8 +25,8 @@ package com.example.domain;
 
 import javax.persistence.*;
 
-import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
-import mx.infotec.dads.kukulkan.tables.handsontable.annotations.SheetColumn;
+import mx.infotec.dads.kukulkan.tables.annotations.Sheet;
+import mx.infotec.dads.kukulkan.tables.annotations.SheetColumn;
 
 import java.util.Objects;
 import java.io.Serializable;
@@ -96,7 +96,8 @@ public class Direccion implements Serializable {
     }
 
     /**
-     * @param calle the calle to set
+     * @param calle
+     *            the calle to set
      */
     public void setCalle(String calle) {
         this.calle = calle;
@@ -110,7 +111,8 @@ public class Direccion implements Serializable {
     }
 
     /**
-     * @param numero the numero to set
+     * @param numero
+     *            the numero to set
      */
     public void setNumero(int numero) {
         this.numero = numero;

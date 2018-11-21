@@ -23,10 +23,12 @@
  */
 package com.example.service;
 
-import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import com.example.domain.Persona;
 
@@ -96,15 +98,6 @@ public interface PersonaService {
      * @return Page de todas las entidades
      */
     Page<Persona> search(String query, Pageable pageable);
-
-    /**
-     * Regresa una HandsontableSlice de Persona
-     * 
-     * @param pageable
-     *            la información de paginación
-     * @return HandsontableSlice de todas las entidades
-     */
-    HandsontableSlice<Persona> getHandsontable(Pageable pageable);
 
     /**
      * Regresa un archivo Workbook que contienen todos los registros de Persona

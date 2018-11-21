@@ -28,9 +28,9 @@ import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+import mx.infotec.dads.kukulkan.tables.annotations.Sheet;
+import mx.infotec.dads.kukulkan.tables.annotations.SheetColumn;
 import mx.infotec.dads.kukulkan.tables.handsontable.HandsontableOptions.Type;
-import mx.infotec.dads.kukulkan.tables.handsontable.annotations.Sheet;
-import mx.infotec.dads.kukulkan.tables.handsontable.annotations.SheetColumn;
 
 import java.util.Objects;
 import java.io.Serializable;
@@ -312,7 +312,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * @param genero the genero to set
+     * @param genero
+     *            the genero to set
      */
     public void setGenero(Genero genero) {
         this.genero = genero;
@@ -326,7 +327,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * @param direccion the direccion to set
+     * @param direccion
+     *            the direccion to set
      */
     public void setDireccion(Direccion direccion) {
         this.direccion = direccion;
@@ -340,7 +342,8 @@ public class Persona implements Serializable {
     }
 
     /**
-     * @param usuario the usuario to set
+     * @param usuario
+     *            the usuario to set
      */
     public void setUsuario(User usuario) {
         this.usuario = usuario;
